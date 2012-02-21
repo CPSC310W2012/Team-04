@@ -48,11 +48,7 @@ public class DataSet {
 	    		return entry;
 	    }
 	    
-	    throw new EntryNotPresentException("Entry doesn't fucking exist");
+	    throw new EntryNotPresentException();
 	}
 
-	public Date getDateAdded() {
-		return dateAdded;
-	}
-	
 }

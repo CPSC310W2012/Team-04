@@ -22,37 +22,12 @@ public class DataSet {
 	
 	public DataSet( String title ) {
 		this.name = title;
-		this.dateAdded = new Date();
-		this.dataEntries = new ArrayList<DataEntry>();
+		dateAdded = new Date();
+		
 	}
 	
 	public String getName() {
 		return name;
 	}
-	
-	public void setName( String name ) {
-		this.name = name;
-	}
-	
-	public void addEntry( DataEntry entry ) {
-		dataEntries.add(entry);
-	}
-	
-	public void removeEntry( DataEntry entry ) {
-		dataEntries.remove(entry);
-	}
-	
-	public DataEntry getDataEntry( int id ) throws EntryNotPresentException{
-	    for( DataEntry entry : dataEntries ) {
-	    	if ( entry.getID() == id )
-	    		return entry;
-	    }
-	    
-	    throw new EntryNotPresentException("Entry doesn't fucking exist");
-	}
 
-	public Date getDateAdded() {
-		return dateAdded;
-	}
-	
 }

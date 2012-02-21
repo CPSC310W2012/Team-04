@@ -42,17 +42,8 @@ public class DataSet {
 		dataEntries.remove(entry);
 	}
 	
-	public DataEntry getDataEntry( int id ) throws EntryNotPresentException{
-	    for( DataEntry entry : dataEntries ) {
-	    	if ( entry.getID() == id )
-	    		return entry;
-	    }
-	    
-	    throw new EntryNotPresentException("Entry doesn't fucking exist");
+	public DataEntry getDataEntry( int id ) {
+	    return dataEntries.get(id);
 	}
 
-	public Date getDateAdded() {
-		return dateAdded;
-	}
-	
 }
