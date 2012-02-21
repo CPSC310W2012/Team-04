@@ -920,3 +920,9 @@ Binding(COMMAND+SHIFT+F10,
 
 !ENTRY org.eclipse.jdt.ui 2 0 2012-02-21 14:08:06.199
 !MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-21 14:55:46.187
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-21 15:01:43.821
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.

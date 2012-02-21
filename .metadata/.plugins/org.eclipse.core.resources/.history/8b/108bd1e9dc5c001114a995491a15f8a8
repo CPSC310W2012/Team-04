@@ -3,6 +3,8 @@ package com.Team4.client;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
@@ -50,7 +52,7 @@ public class DataSet {
 	    		return entry;
 	    }
 	    
-	    throw new EntryNotPresentException("Entry not found.");
+	    throw new EntryNotPresentException("Entry doesn't fucking exist");
 	}
 
 	public Date getDateAdded() {

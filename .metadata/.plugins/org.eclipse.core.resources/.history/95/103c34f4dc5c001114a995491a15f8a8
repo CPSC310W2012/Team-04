@@ -1,6 +1,7 @@
 package com.Team4.client;
 
-@SuppressWarnings("serial")
+import java.io.Serializable;
+
 public class EntryNotPresentException extends Exception {
 	
 	public EntryNotPresentException() {
