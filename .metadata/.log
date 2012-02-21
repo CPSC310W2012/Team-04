@@ -859,3 +859,52 @@ Binding(COMMAND+SHIFT+F10,
 
 !ENTRY com.google.gdt.eclipse.core 1 0 2012-02-16 17:43:14.386
 !MESSAGE Scheduled rebuild of project EduData because of plugin update (current version: 2.5.1.v201201120043-rel-r35)
+!SESSION 2012-02-21 12:35:43.164 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/RBooth/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/RBooth/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-21 12:37:20.893
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2012-02-21 12:37:38.200
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-21 12:37:38.200
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F11:
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.deliver,Deliver,
+		Deliver,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.filesystem.ui.actions.teamplace.DeliverAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunLast,Run,
+		Run the selected resource or active editor,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-21 12:37:38.200
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.showHistory,Show History,
+		Show the revision history of the currently selected file ,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.internal.filesystem.ui.views.history.actions.ShowHistoryAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowPartPaneMenuHandler@1f31c4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
