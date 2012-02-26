@@ -37,16 +37,21 @@ public class TxtHandler implements FileHandler{
 	        
 	        	String[] toks = line.split("\\t+");
 	            
-	        	// Test - correct data entry values
-	        	System.out.println("School: "+toks[6]+" Grade: "+ toks[11]+" Course: "+toks[7]);
+	        	if(toks[1].equals("SCHOOL LEVEL") && toks[2].equals("BC Public School")){
 	        	
-	        	DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], count);
+	        		
+	        		// Test - correct data entry values
+	        		System.out.println("School: "+toks[6]+" Grade: "+ toks[11]+" Course: "+toks[7]);
 	        	
-	        	//Test - match toks[] and DataEntry
-	        	System.out.println("School: "+dataEntry.getSchool()+ "Grade: "+dataEntry.getGrade() +" Course: "+dataEntry.getCourse()+" Entry ID: "+dataEntry.getID());
+	        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], count);
 	        	
-	        	dataSet.addEntry(dataEntry);
+	        		//Test - match toks[] and DataEntry
+	        		System.out.println("School: "+dataEntry.getSchool()+ "Grade: "+dataEntry.getGrade() +" Course: "+dataEntry.getCourse()+" Entry ID: "+dataEntry.getID());
 	        	
+	        		dataSet.addEntry(dataEntry);
+	        	
+	        	}
+	        
 	        	line = br.readLine();
 	        	
 	        	count++;
@@ -63,7 +68,7 @@ public class TxtHandler implements FileHandler{
 	public static void main(String [ ] args) throws Exception
 	{
 	      TxtHandler hdl = new TxtHandler();
-	      hdl.parseFile("Math10.txt");
+	      hdl.parseFile("Chemistry12Hist.txt");
 	}
 	
 }
