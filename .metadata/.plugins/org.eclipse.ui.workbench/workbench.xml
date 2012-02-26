@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="62" version="2.0">
+<workbench progressCount="66" version="2.0">
 <workbenchAdvisor/>
-<window height="711" width="1024" x="21" y="22">
+<window height="711" width="1024" x="122" y="23">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -24,6 +24,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,18 +37,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EduData.java" partName="EduData.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/EduData.java" title="EduData.java" tooltip="EduData/src/com/Team4/client/EduData.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/client/EduData.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5174" selectionTopPixel="0"/>
-</editor>
-<editor id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="GreetingService.java" partName="GreetingService.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/GreetingService.java" title="GreetingService.java" tooltip="EduData/src/com/Team4/client/GreetingService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/client/GreetingService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileUpload.java" partName="FileUpload.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/server/FileUpload.java" title="FileUpload.java" tooltip="EduData/src/com/Team4/server/FileUpload.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/server/FileUpload.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="695" selectionTopPixel="20"/>
 </editor>
 </editors>
 <views>
@@ -67,7 +64,7 @@
 <expanded>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="226"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -117,7 +114,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.google.gwt.eclipse.DevModeView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="com.google.gwt.eclipse.core.editors.gwtJavaEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.ibm.team.workitem.ide.ui.internal.WorkItemPerspectiveFactory" id="com.ibm.magnolia.ui.workItemPerspective" label="Work Items"/>
 <alwaysOnActionSet id="com.ibm.ccl.help.preferenceharvester.actionSet1"/>
@@ -293,8 +290,8 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="com.ibm.magnolia.workItemExplorer"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.google.gwt.eclipse.DevModeView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -368,17 +365,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/EduData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/GreetingService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataEntry.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/EntryNotPresentException.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSetManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSetNotPresentException.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EduData/src/com/Team4/client/DataEntry.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/FileHandler.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/server/FileUpload.java"/>
+<editor element="=EduData/\/Users\/RBooth\/Documents\/cs310\/commons-fileupload-1.2.2" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="FileUpload.html"/>
 </editors>
-<item historyLabel="EduData.java" index="0">
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataEntry.java" index="1">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataEntry.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GreetingService.java" index="1">
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="EntryNotPresentException.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="EduData.java" index="0">
-<position info="not_deleted" x="4453" y="0"/>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetNotPresentException.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position/>
+</item>
+<item historyLabel="DataEntry.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataEntry.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataSet.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileHandler.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataSetManager.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position/>
+</item>
+<item historyLabel="FileUpload.html" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="1509" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="912" y="21"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="1509" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="7">
+<position info="not_deleted" x="912" y="21"/>
+</item>
+<item active="true" historyLabel="FileUpload.java" index="7">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -386,6 +531,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -402,11 +554,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="GreetingService.java" tooltip="EduData/src/com/Team4/client/GreetingService.java">
-<persistable path="/EduData/src/com/Team4/client/GreetingService.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileUpload.java" tooltip="EduData/src/com/Team4/server/FileUpload.java">
+<persistable path="/EduData/src/com/Team4/server/FileUpload.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="FileUpload.html" tooltip="/Users/RBooth/Documents/cs310/commons-fileupload-1.2.2/FileUpload.html">
+<persistable element="=EduData/\/Users\/RBooth\/Documents\/cs310\/commons-fileupload-1.2.2" path="FileUpload.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileHandler.java" tooltip="EduData/src/com/Team4/client/FileHandler.java">
+<persistable path="/EduData/src/com/Team4/client/FileHandler.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSetManager.java" tooltip="EduData/src/com/Team4/client/DataSetManager.java">
+<persistable path="/EduData/src/com/Team4/client/DataSetManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSet.java" tooltip="EduData/src/com/Team4/client/DataSet.java">
+<persistable path="/EduData/src/com/Team4/client/DataSet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataEntry.java" tooltip="EduData/src/com/Team4/client/DataEntry.java">
+<persistable path="/EduData/src/com/Team4/client/DataEntry.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSetNotPresentException.java" tooltip="EduData/src/com/Team4/client/DataSetNotPresentException.java">
+<persistable path="/EduData/src/com/Team4/client/DataSetNotPresentException.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EntryNotPresentException.java" tooltip="EduData/src/com/Team4/client/EntryNotPresentException.java">
+<persistable path="/EduData/src/com/Team4/client/EntryNotPresentException.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EduData.java" tooltip="EduData/src/com/Team4/client/EduData.java">
 <persistable path="/EduData/src/com/Team4/client/EduData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="GreetingService.java" tooltip="EduData/src/com/Team4/client/GreetingService.java">
+<persistable path="/EduData/src/com/Team4/client/GreetingService.java"/>
 </file>
 </mruList>
 </workbench>

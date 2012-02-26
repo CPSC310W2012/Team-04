@@ -43,7 +43,7 @@ public class TxtHandler implements FileHandler{
 	        		// Test - correct data entry values
 	        		System.out.println("School: "+toks[6]+" Grade: "+ toks[11]+" Course: "+toks[7]);
 	        	
-	        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], count);
+	        		DataEntry dataEntry = new DataEntry(toks[6], Integer.parseInt(toks[11]), toks[7], count);
 	        	
 	        		//Test - match toks[] and DataEntry
 	        		System.out.println("School: "+dataEntry.getSchool()+ "Grade: "+dataEntry.getGrade() +" Course: "+dataEntry.getCourse()+" Entry ID: "+dataEntry.getID());

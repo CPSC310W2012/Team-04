@@ -1,4 +1,4 @@
-#Tue Feb 21 12:46:04 PST 2012
+#Fri Feb 24 17:29:42 PST 2012
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -16,4 +16,5 @@ content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=15
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

@@ -3,11 +3,11 @@ package com.Team4.client;
 public class DataEntry {
 
 	private String schoolName;
-	private String grade;
+	private int grade;
 	private int entryID;
 	private String course;
 	
-	public DataEntry(String schName, String stGrade, String courseName, int ID){
+	public DataEntry(String schName, int stGrade, String courseName, int ID){
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
@@ -22,11 +22,11 @@ public class DataEntry {
 		schoolName = name;	
 	}
 	
-	public String getGrade(){
+	public int getGrade(){
 		return grade;
 	}
 	
-	public void setGrade(String stGrade){
+	public void setGrade(int stGrade){
 		grade = stGrade;
 	}
 	

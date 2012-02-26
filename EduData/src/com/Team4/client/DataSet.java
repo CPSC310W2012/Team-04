@@ -44,6 +44,10 @@ public class DataSet {
 		dataEntries.remove(entry);
 	}
 	
+	public ArrayList<DataEntry> listAll() {
+		return dataEntries;
+	}
+	
 	public DataEntry getDataEntry( int id ) throws EntryNotPresentException{
 	    for( DataEntry entry : dataEntries ) {
 	    	if ( entry.getID() == id )
