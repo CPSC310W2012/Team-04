@@ -48,15 +48,22 @@ public class EduData implements EntryPoint {
 		// Assemble login panel.
 		signInLink.setHref(loginInfo.getLoginUrl());
 		loginPanel.add(loginLabel);
-		loginPanel.add(signInLink);
-		RootPanel.get("ui").add(loginPanel);
+		loginPanel.add(signInLink);	
+		
+		/** TODO: I think the problem is here. The function is trying to access the 
+		 * root panel associated with the element 'ui' but I don't see any initiation 
+		 * of the 'ui' element in the HTML */
+		RootPanel.get().add(loginPanel);
+		//RootPanel.get("ui").add(loginPanel); 
+	
 	}
 
 	private void loadEduData() {
 		RootPanel rootPanel = RootPanel.get("nameFieldContainer");
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 		
-		RootPanel.get("ui").add(rootPanel);
+		RootPanel.get().add(rootPanel);
+		//RootPanel.get("ui").add(rootPanel);
 
 		Grid grid = new Grid(10, 1);
 		rootPanel.add(grid, 0, 0);
