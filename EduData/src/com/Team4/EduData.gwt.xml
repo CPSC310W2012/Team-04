@@ -19,5 +19,13 @@
   <!-- Specify the paths for translatable code                    -->
   <source path='client'/>
   <source path='shared'/>
+  
+  <!-- Include GWTUpload library -->
+  <inherits name="gwtupload.GWTUpload"/>
+  <!-- Load dinamically predefined styles in the library when the application starts -->
+  <stylesheet src="Upload.css"/>
+   
+  <!-- Change this line with your project's entry-point -->
+  <entry-point class="com.Team4.client.EduData"/>
 
 </module>
