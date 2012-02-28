@@ -34,45 +34,26 @@ public class EduData implements EntryPoint {
 
 	public void onModuleLoad() {
 		// Check login status using login service.
-		LoginServiceAsync loginService = GWT.create(LoginService.class);
-		loginService.login(GWT.getHostPageBaseURL(),
-				new AsyncCallback<LoginInfo>() {
-					public void onFailure(Throwable error) {
-					}
-
-					public void onSuccess(LoginInfo result) {
-						loginInfo = result;
-						if (loginInfo.isLoggedIn()) {
-							loadEduData();
-						} else {
-							loadLogin();
-						}
-					}
-				});
-	}
-
-
-	private void loadLogin() {
-		// Assemble login panel.
-		signInLink.setHref(loginInfo.getLoginUrl());
-		loginPanel.add(loginLabel);
-		loginPanel.add(signInLink);	
-		
-		/** TODO: I think the problem is here. The function is trying to access the 
-		 * root panel associated with the element 'ui' but I don't see any initiation 
-		 * of the 'ui' element in the HTML */
-		RootPanel.get().add(loginPanel);
-		//RootPanel.get("ui").add(loginPanel); 
-	
-	}
-
-	private void loadEduData() {
+//		LoginServiceAsync loginService = GWT.create(LoginService.class);
+//		loginService.login(GWT.getHostPageBaseURL(),
+//				new AsyncCallback<LoginInfo>() {
+//					public void onFailure(Throwable error) {
+//					}
+//
+//					public void onSuccess(LoginInfo result) {
+//						loginInfo = result;
+//						if (loginInfo.isLoggedIn()) {
+//							loadEduData();
+//						} else {
+//							loadLogin();
+//						}
+//					}
+//				});
 		RootPanel rootPanel = RootPanel.get("nameFieldContainer");
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 		
 		RootPanel.get().add(rootPanel);
-		//RootPanel.get("ui").add(rootPanel);
-
+		
 		Grid grid = new Grid(10, 1);
 		rootPanel.add(grid, 0, 0);
 		grid.setSize("400px", "500px");
@@ -93,9 +74,6 @@ public class EduData implements EntryPoint {
 		Label mdDescrip = new Label("Browse, upload, and manage data");
 		grid.setWidget(4, 0, mdDescrip);
 
-		Button mdButton = new Button("Manage Datasets");
-		grid.setWidget(5, 0, mdButton);
-
 		Label vdDescrip = new Label("Graph, map, and analyze datasets");
 		grid.setWidget(6, 0, vdDescrip);
 
@@ -111,7 +89,32 @@ public class EduData implements EntryPoint {
 		
 		// Here we set the alignment of the page
 		setAlignment( grid );
+	}
+
+
+//	private void loadLogin() {
+//		// Assemble login panel.
+//		signInLink.setHref(loginInfo.getLoginUrl());
+//		loginPanel.add(loginLabel);
+//		loginPanel.add(signInLink);	
+//		loginPanel.setVisible( true );
+//		RootPanel.get().add(loginPanel);
+//	}
+
+	//private void loadEduData() {
 		
+		
+		/**
+		 * TODO: We need to add the table of imported data sets to the RootPanel.
+		 * I wasn't sure where it should go, so I just implemented the functions 
+		 * for building the table.
+		*/
+	//}
+	
+	private void testDataSetDisplay() {
+		for (int z = 1; z < 10 ; z++ ) {
+			dataSetMgr.addDataSet( new DataSet("DataSet #" + Integer.toString( z ) ) );
+		}
 	}
 	
 	/**
@@ -140,7 +143,7 @@ public class EduData implements EntryPoint {
 		table.setTitle( "Imported Data Sets" );
 		table.setText( 0, 0, "Data Set Name" );
 		
-		//TODO: The table's appearance should be much nicer
+		//TODO: The table's appearance should be much nicer. Right now, it looks like crap
 		// Here, we tune the finer points of the data's display 
 		table.setBorderWidth( 1 );
 		table.setCellPadding( 4 );
