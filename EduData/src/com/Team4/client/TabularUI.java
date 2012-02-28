@@ -12,29 +12,17 @@ import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
-//TODO: Remove table method?
-//TODO: Store Popup Windows?
-//TODO: Popup window retrieval?
-
 /**
  * The TabularUI class
  * This class serves to create, format, and display pop-up windows. 
  * @author Tristan Sebens
  * */
 public class TabularUI {
-
-	private FlexTable dataEntryTable; // The table that will hold the various entries of the data set
-	private PopupPanel popupPanel; // The popup panel that will be displayed
-	private ArrayList<PopUpWindow> popUpWindows;
 	
 	/**
 	 * The TabularUI constructor
 	 * */
-	public TabularUI() {
-		popupPanel = new PopupPanel();
-		dataEntryTable = new FlexTable();
-		popUpWindows = new ArrayList<PopUpWindow>();
-	}
+	public TabularUI() {}
 		
 	/**
 	 * The publicly accessible method for displaying a data set in tabular form.
@@ -53,12 +41,8 @@ public class TabularUI {
 			// If the data set is empty, fill the popup window with an error message instead
 			emptyDataSetMessage( newPopUpWindow );
 			return;
-		// TODO: Add reaction to an empty data set. Maybe a text box that displays "Data set is empty" or something
 		} 
 		
-		// Here we add the newly formatted PopUpWindow to the PopUpWindow collection
-		popUpWindows.add( newPopUpWindow );
-
 		// Finally, we format the PopUpWindow and make it visible
 		newPopUpWindow.formatWindow();
 		newPopUpWindow.display();
