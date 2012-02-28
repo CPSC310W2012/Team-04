@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="66" version="2.0">
 <workbenchAdvisor/>
-<window height="711" width="1024" x="122" y="23">
+<window height="711" maximized="true" width="1131" x="71" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -37,13 +37,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileUpload.java" partName="FileUpload.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/server/FileUpload.java" title="FileUpload.java" tooltip="EduData/src/com/Team4/server/FileUpload.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/server/FileUpload.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="695" selectionTopPixel="20"/>
+<editor activePart="true" focus="true" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EduData.java" partName="EduData.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/EduData.java" title="EduData.java" tooltip="EduData/src/com/Team4/client/EduData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/client/EduData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2400" selectionTopPixel="714"/>
+</editor>
+<editor id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="TabularUI.java" partName="TabularUI.java" path="/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TabularUI.java" title="TabularUI.java" tooltip="EduData/src/com/Team4/client/TabularUI.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EduData/src/com/Team4/client/TabularUI.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1420"/>
 </editor>
 </editors>
 <views>
@@ -64,13 +69,16 @@
 <expanded>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1329438940312">
@@ -102,15 +110,14 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="com.ibm.magnolia.workItemExplorer" partName="Work Items">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="com.google.gwt.eclipse.DevModeView" partName="Development Mode">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
 <viewState/>
 </view>
 </views>
@@ -286,14 +293,17 @@
 <view id="com.ibm.team.apt.internal.ui.myWorkView"/>
 <view id="com.ibm.team.process.rcp.ui.teamArtifactsNavigator"/>
 <view id="com.ibm.magnolia.TeamCentral"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
-<view id="com.ibm.magnolia.workItemExplorer"/>
 <view id="com.google.gwt.eclipse.DevModeView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -325,14 +335,14 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74875206" ratioLeft="450" ratioRight="151" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.65776294" ratioLeft="394" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.google.gwt.eclipse.DevModeView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
-<page content="com.ibm.magnolia.workItemExplorer" label="Work Items"/>
 <page content="com.google.gwt.eclipse.DevModeView" label="Development Mode"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="com.ibm.magnolia.workItemExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -343,19 +353,15 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -365,165 +371,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/server/FileUpload.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/TabularUI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSet.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataEntry.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/EntryNotPresentException.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSetManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/DataSetNotPresentException.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EduData/src/com/Team4/client/DataEntry.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/FileHandler.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/server/FileUpload.java"/>
-<editor element="=EduData/\/Users\/RBooth\/Documents\/cs310\/commons-fileupload-1.2.2" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="FileUpload.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EduData/src/com/Team4/client/TxtHandler.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/EduData/war/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/server/FileUploader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" path="/EduData/src/com/Team4/client/EduData.java"/>
 </editors>
-<item historyLabel="DataSet.java" index="0">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataEntry.java" index="1">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataEntry.java" index="1">
+<item historyLabel="DataSet.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DataSetManager.java" index="3">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="EntryNotPresentException.java" index="2">
+<item historyLabel="DataSet.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DataSet.java" index="0">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="DataSetNotPresentException.java" index="4">
+<item historyLabel="DataEntry.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DataSet.java" index="0">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position/>
-</item>
-<item historyLabel="DataSet.java" index="0">
-<position/>
-</item>
-<item historyLabel="DataEntry.java" index="5">
+<item historyLabel="DataSet.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DataEntry.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="DataSet.java" index="2">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="DataSet.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="DataSet.java" index="2">
+<position info="not_deleted" x="982" y="0"/>
 </item>
-<item historyLabel="DataSetManager.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="FileHandler.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DataSetManager.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="FileUpload.java" index="7">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="FileUpload.html" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="DataEntry.java" index="3">
+<position info="not_deleted" x="186" y="0"/>
 </item>
-<item historyLabel="FileUpload.java" index="7">
+<item historyLabel="TxtHandler.java" index="4">
+<position info="not_deleted" x="2001" y="0"/>
+</item>
+<item historyLabel="TxtHandler.java" index="4">
+<position info="not_deleted" x="1309" y="0"/>
+</item>
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="TxtHandler.java" index="4">
+<position info="not_deleted" x="1309" y="0"/>
 </item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="1509" y="0"/>
-</item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="912" y="21"/>
-</item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="1509" y="0"/>
-</item>
-<item historyLabel="FileUpload.java" index="7">
+<item historyLabel="TabularUI.java" index="1">
 <position/>
 </item>
-<item historyLabel="FileUpload.java" index="7">
-<position info="not_deleted" x="912" y="21"/>
+<item historyLabel="DataEntry.java" index="3">
+<position info="not_deleted" x="504" y="0"/>
 </item>
-<item active="true" historyLabel="FileUpload.java" index="7">
+<item historyLabel="TxtHandler.java" index="4">
+<position info="not_deleted" x="1309" y="0"/>
+</item>
+<item historyLabel="TabularUI.java" index="1">
 <position/>
+</item>
+<item historyLabel="TxtHandler.java" index="4">
+<position info="not_deleted" x="1309" y="0"/>
+</item>
+<item historyLabel="DataEntry.java" index="3">
+<position info="not_deleted" x="504" y="0"/>
+</item>
+<item historyLabel="TabularUI.java" index="1">
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="web.xml" index="5">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="0">
+<position/>
+</item>
+<item historyLabel="FileUploader.java" index="6">
+<position/>
+</item>
+<item historyLabel="FileUploader.java" index="6">
+<position/>
+</item>
+<item historyLabel="web.xml" index="5">
+<position/>
+</item>
+<item historyLabel="FileUploader.java" index="6">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="web.xml" index="5">
+<position/>
+</item>
+<item historyLabel="web.xml" index="5">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position info="not_deleted" x="0" y="8935"/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position info="not_deleted" x="3310" y="0"/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="TabularUI.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position/>
+</item>
+<item historyLabel="EduData.java" index="7">
+<position info="not_deleted" x="1535" y="0"/>
+</item>
+<item active="true" historyLabel="EduData.java" index="7">
+<position info="not_deleted" x="8883" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -535,6 +540,7 @@
 <trimItem IMemento.internal.id="left"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -554,8 +560,26 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileUpload.java" tooltip="EduData/src/com/Team4/server/FileUpload.java">
-<persistable path="/EduData/src/com/Team4/server/FileUpload.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="TabularUI.java" tooltip="EduData/src/com/Team4/client/TabularUI.java">
+<persistable path="/EduData/src/com/Team4/client/TabularUI.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EduData.java" tooltip="EduData/src/com/Team4/client/EduData.java">
+<persistable path="/EduData/src/com/Team4/client/EduData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="web.xml" tooltip="EduData/war/WEB-INF/web.xml">
+<persistable path="/EduData/war/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="FileUploader.java" tooltip="EduData/src/com/Team4/server/FileUploader.java">
+<persistable path="/EduData/src/com/Team4/server/FileUploader.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TxtHandler.java" tooltip="EduData/src/com/Team4/client/TxtHandler.java">
+<persistable path="/EduData/src/com/Team4/client/TxtHandler.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataEntry.java" tooltip="EduData/src/com/Team4/client/DataEntry.java">
+<persistable path="/EduData/src/com/Team4/client/DataEntry.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSet.java" tooltip="EduData/src/com/Team4/client/DataSet.java">
+<persistable path="/EduData/src/com/Team4/client/DataSet.java"/>
 </file>
 <file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="FileUpload.html" tooltip="/Users/RBooth/Documents/cs310/commons-fileupload-1.2.2/FileUpload.html">
 <persistable element="=EduData/\/Users\/RBooth\/Documents\/cs310\/commons-fileupload-1.2.2" path="FileUpload.html"/>
@@ -566,20 +590,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSetManager.java" tooltip="EduData/src/com/Team4/client/DataSetManager.java">
 <persistable path="/EduData/src/com/Team4/client/DataSetManager.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSet.java" tooltip="EduData/src/com/Team4/client/DataSet.java">
-<persistable path="/EduData/src/com/Team4/client/DataSet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataEntry.java" tooltip="EduData/src/com/Team4/client/DataEntry.java">
-<persistable path="/EduData/src/com/Team4/client/DataEntry.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="DataSetNotPresentException.java" tooltip="EduData/src/com/Team4/client/DataSetNotPresentException.java">
 <persistable path="/EduData/src/com/Team4/client/DataSetNotPresentException.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EntryNotPresentException.java" tooltip="EduData/src/com/Team4/client/EntryNotPresentException.java">
 <persistable path="/EduData/src/com/Team4/client/EntryNotPresentException.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="EduData.java" tooltip="EduData/src/com/Team4/client/EduData.java">
-<persistable path="/EduData/src/com/Team4/client/EduData.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="GreetingService.java" tooltip="EduData/src/com/Team4/client/GreetingService.java">
 <persistable path="/EduData/src/com/Team4/client/GreetingService.java"/>

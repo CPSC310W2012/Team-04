@@ -4,4 +4,8 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.output.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.FileUpload"/>
+<fullyQualifiedTypeName name="org.apache.tools.ant.taskdefs.Exit"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.Window"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.ScrollPanel"/>
 </qualifiedTypeNameHistroy>
