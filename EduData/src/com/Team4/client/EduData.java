@@ -49,6 +49,20 @@ public class EduData implements EntryPoint {
 //						}
 //					}
 //				});
+		loadEduData();
+	}
+
+
+	private void loadLogin() {
+		// Assemble login panel.
+		signInLink.setHref(loginInfo.getLoginUrl());
+		loginPanel.add(loginLabel);
+		loginPanel.add(signInLink);	
+		loginPanel.setVisible( true );
+		RootPanel.get().add(loginPanel);
+	}
+
+	private void loadEduData() {
 		RootPanel rootPanel = RootPanel.get("nameFieldContainer");
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 		
@@ -89,27 +103,13 @@ public class EduData implements EntryPoint {
 		
 		// Here we set the alignment of the page
 		setAlignment( grid );
-	}
-
-
-//	private void loadLogin() {
-//		// Assemble login panel.
-//		signInLink.setHref(loginInfo.getLoginUrl());
-//		loginPanel.add(loginLabel);
-//		loginPanel.add(signInLink);	
-//		loginPanel.setVisible( true );
-//		RootPanel.get().add(loginPanel);
-//	}
-
-	//private void loadEduData() {
-		
 		
 		/**
 		 * TODO: We need to add the table of imported data sets to the RootPanel.
 		 * I wasn't sure where it should go, so I just implemented the functions 
 		 * for building the table.
 		*/
-	//}
+	}
 	
 	private void testDataSetDisplay() {
 		for (int z = 1; z < 10 ; z++ ) {
