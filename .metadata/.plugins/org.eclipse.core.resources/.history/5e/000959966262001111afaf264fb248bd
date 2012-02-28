@@ -1,0 +1,116 @@
+package com.Team4.client;
+
+import java.util.ArrayList;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style.Position;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.FlexTable;
+import com.google.gwt.user.client.ui.HTMLTable;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.Grid;
+import com.google.gwt.user.client.ui.HasHorizontalAlignment;
+import com.google.gwt.user.client.ui.HasVerticalAlignment;
+import com.google.gwt.user.client.ui.Anchor;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.HorizontalSplitPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.ClickEvent;
+
+/**
+ * Entry point classes define <code>onModuleLoad()</code>.
+ */
+public class EduData implements EntryPoint {
+
+	//private LoginInfo loginInfo = null;
+	//private VerticalPanel loginPanel = new VerticalPanel();
+	//private Label loginLabel = new Label(
+	//			"Please sign in to your Google Account to access the EduData application.");
+	//private Anchor signInLink = new Anchor("Sign In");
+	
+	// Here we define the system classes
+	// DataSetManager dataSetMgr = new DataSetManager();
+	
+
+	public void onModuleLoad() {
+		RootPanel root = RootPanel.get();
+		root.setSize("1000px", "500px");
+		
+		HorizontalPanel horizontalPanel = new HorizontalPanel();
+		root.add(horizontalPanel, 0, 0);
+		horizontalPanel.setSize("800px", "600px");
+		
+		VerticalPanel leftPanel = new VerticalPanel();
+		horizontalPanel.add(leftPanel);
+		leftPanel.setSize("261px", "441px");
+		
+		Label lblWelcomeToEdudata_1 = new Label("Welcome to EduData");
+		lblWelcomeToEdudata_1.setSize("100%", "40px");
+		leftPanel.add(lblWelcomeToEdudata_1);
+		leftPanel.setCellHorizontalAlignment(lblWelcomeToEdudata_1, HasHorizontalAlignment.ALIGN_CENTER);
+		
+		Grid buttonGrid = new Grid(1, 3);
+		leftPanel.add(buttonGrid);
+		buttonGrid.setSize("293px", "59px");
+		
+		Button visualizeButton = new Button("VisualizeData");
+		visualizeButton.setText("Visualize Data");
+		buttonGrid.setWidget(0, 0, visualizeButton);
+		buttonGrid.getCellFormatter().setWidth(0, 0, "33%");
+		visualizeButton.setWidth("100%");
+		
+		Button importButton = new Button("Import");
+		importButton.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				// TODO Add import function
+			}
+		});
+		buttonGrid.setWidget(0, 1, importButton);
+		buttonGrid.getCellFormatter().setHeight(0, 1, "");
+		buttonGrid.getCellFormatter().setWidth(0, 1, "33%");
+		importButton.setSize("100%", "49px");
+		
+		Button accountButton = new Button("Account Settings");
+		buttonGrid.setWidget(0, 2, accountButton);
+		buttonGrid.getCellFormatter().setWidth(0, 2, "33%");
+		accountButton.setWidth("100%");
+		buttonGrid.getCellFormatter().setVerticalAlignment(0, 0, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonGrid.getCellFormatter().setVerticalAlignment(0, 2, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonGrid.getCellFormatter().setVerticalAlignment(0, 1, HasVerticalAlignment.ALIGN_MIDDLE);
+		
+		VerticalPanel dataSetPanel = new VerticalPanel();
+		dataSetPanel.setVerticalAlignment(HasVerticalAlignment.ALIGN_BOTTOM);
+		leftPanel.add(dataSetPanel);
+		dataSetPanel.setSize("292px", "329px");
+		
+		FlexTable dataSetTable = new FlexTable();
+		dataSetPanel.add(dataSetTable);
+		dataSetPanel.setCellVerticalAlignment(dataSetTable, HasVerticalAlignment.ALIGN_MIDDLE);
+		dataSetPanel.setCellHorizontalAlignment(dataSetTable, HasHorizontalAlignment.ALIGN_CENTER);
+		dataSetTable.setSize("100%", "100%");
+		
+		VerticalPanel displayPanel = new VerticalPanel();
+		horizontalPanel.add(displayPanel);
+		displayPanel.setSize("306px", "441px");
+		// Check login status using login service.
+//		LoginServiceAsync loginService = GWT.create(LoginService.class);
+//		loginService.login(GWT.getHostPageBaseURL(),
+//				new AsyncCallback<LoginInfo>() {
+//					public void onFailure(Throwable error) {
+//					}
+//
+//					public void onSuccess(LoginInfo result) {
+//						loginInfo = result;
+//						if (loginInfo.isLoggedIn()) {
+//							loadEduData();
+//						} else {
+//							loadLogin();
+//						}
+//					}
+//				});
+	}
+}
