@@ -1,0 +1,9 @@
+package com.Team4.server;
+
+@SuppressWarnings("serial")
+public class FileUploader {
+	
+	public static 
+	FileUpload fup = new FileUpload();
+	
+}

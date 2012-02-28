@@ -1408,3 +1408,694 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 2 2012-02-26 14:50:09.841
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at com.google.gdt.eclipse.appengine.rpc.validators.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:168)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:257)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:244)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:102)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.core 4 4 2012-02-26 14:50:09.842
+!MESSAGE Exception occurred in reconcile participant
+!STACK 0
+java.lang.NullPointerException
+	at com.google.gdt.eclipse.appengine.rpc.validators.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:168)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:257)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:244)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:102)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.core 4 2 2012-02-26 14:50:32.187
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at com.google.gdt.eclipse.appengine.rpc.validators.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:168)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:257)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:244)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:102)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.core 4 4 2012-02-26 14:50:32.188
+!MESSAGE Exception occurred in reconcile participant
+!STACK 0
+java.lang.NullPointerException
+	at com.google.gdt.eclipse.appengine.rpc.validators.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:168)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:257)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:244)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:102)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:06:03.787
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:08:48.846
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:14:08.209
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:22:17.855
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:26:44.365
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:29:53.409
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:50:56.910
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2012-02-26 15:57:32.359
+!MESSAGE The 'com.google.appengine.eclipse.core.javaJdbcUrlCompletor' proposal computer from the 'com.google.appengine.eclipse.core' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
+!SESSION 2012-02-28 11:31:33.162 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/RBooth/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/RBooth/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 11:31:56.506
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2012-02-28 11:34:10.289
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-28 11:34:10.289
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F11:
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.deliver,Deliver,
+		Deliver,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.filesystem.ui.actions.teamplace.DeliverAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunLast,Run,
+		Run the selected resource or active editor,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-28 11:34:10.289
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.showHistory,Show History,
+		Show the revision history of the currently selected file ,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.internal.filesystem.ui.views.history.actions.ShowHistoryAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowPartPaneMenuHandler@1e87539,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.108
+!MESSAGE NLS unused message: missingOneOfTwoAttributes in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.127
+!MESSAGE NLS unused message: categoryNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.127
+!MESSAGE NLS unused message: actionNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.127
+!MESSAGE NLS unused message: actionAlreadyDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.131
+!MESSAGE NLS unused message: presetNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.132
+!MESSAGE NLS unused message: templateNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.132
+!MESSAGE NLS unused message: invalidActionType in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.133
+!MESSAGE NLS unused message: invalidEventHandlerType in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.133
+!MESSAGE NLS unused message: invalidRequiresConstraint in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.133
+!MESSAGE NLS unused message: invalidConflictsConstraint in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.134
+!MESSAGE NLS unused message: deprecatedRuntimeChangedAction in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.134
+!MESSAGE NLS unused message: tracingActionSorting in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.134
+!MESSAGE NLS unused message: tracingFrameworkActivationStarting in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.135
+!MESSAGE NLS unused message: tracingFrameworkActivationFinished in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.135
+!MESSAGE NLS missing message: problemCaseNotRecognized in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-28 11:56:43.135
+!MESSAGE NLS missing message: runtimeComponentTypeNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2012-02-28 11:56:43.136
+!MESSAGE Project facet wst.web has not been defined. It is used in plugin org.eclipse.jst.common.project.facet.core.
+
+!ENTRY org.eclipse.ui 4 4 2012-02-28 12:17:01.397
+!MESSAGE Invalid preference page path: CSS Files
+
+!ENTRY org.eclipse.ui 4 4 2012-02-28 12:17:01.414
+!MESSAGE Invalid preference page path: JavaScript
+
+!ENTRY org.eclipse.core.resources 4 1 2012-02-28 12:18:27.664
+!MESSAGE Internal Error
+!STACK 0
+java.lang.IllegalArgumentException: Element not found: /EduData/lib/commons-fileupload-1.2.2-src.
+	at org.eclipse.core.internal.watson.ElementTree.elementNotFound(ElementTree.java:255)
+	at org.eclipse.core.internal.watson.ElementTree.createElement(ElementTree.java:183)
+	at org.eclipse.core.internal.resources.Workspace.createResource(Workspace.java:861)
+	at org.eclipse.core.internal.resources.Workspace.createResource(Workspace.java:816)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.createResource(RefreshLocalVisitor.java:80)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.createResource(RefreshLocalAliasVisitor.java:37)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:216)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:290)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:107)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:791)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:775)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1528)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:632)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:576)
+	at org.eclipse.jdt.internal.core.ExternalFoldersManager.createLinkFolder(ExternalFoldersManager.java:113)
+	at org.eclipse.jdt.internal.core.ExternalFolderChange.updateExternalFoldersIfNecessary(ExternalFolderChange.java:47)
+	at org.eclipse.jdt.internal.core.ChangeClasspathOperation.classpathChanged(ChangeClasspathOperation.java:62)
+	at org.eclipse.jdt.internal.core.SetClasspathOperation.executeOperation(SetClasspathOperation.java:62)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:2890)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:2906)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:911)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:735)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:731)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:214)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:4694)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-02-28 12:18:28.012
+!MESSAGE An internal error occurred during: "Setting build path".
+!STACK 0
+java.lang.IllegalArgumentException: Element not found: /EduData/lib/commons-fileupload-1.2.2-src.
+	at org.eclipse.core.internal.watson.ElementTree.elementNotFound(ElementTree.java:255)
+	at org.eclipse.core.internal.watson.ElementTree.createElement(ElementTree.java:183)
+	at org.eclipse.core.internal.resources.Workspace.createResource(Workspace.java:861)
+	at org.eclipse.core.internal.resources.Workspace.createResource(Workspace.java:816)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.createResource(RefreshLocalVisitor.java:80)
+	at org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.createResource(RefreshLocalAliasVisitor.java:37)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:216)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:290)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:107)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:791)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:775)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1528)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:632)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:576)
+	at org.eclipse.jdt.internal.core.ExternalFoldersManager.createLinkFolder(ExternalFoldersManager.java:113)
+	at org.eclipse.jdt.internal.core.ExternalFolderChange.updateExternalFoldersIfNecessary(ExternalFolderChange.java:47)
+	at org.eclipse.jdt.internal.core.ChangeClasspathOperation.classpathChanged(ChangeClasspathOperation.java:62)
+	at org.eclipse.jdt.internal.core.SetClasspathOperation.executeOperation(SetClasspathOperation.java:62)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:2890)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:2906)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:911)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:735)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:731)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:214)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:4694)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2012-02-28 12:43:19.534 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/RBooth/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/RBooth/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 12:43:52.615
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2012-02-28 12:43:58.574
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-28 12:43:58.574
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F11:
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.deliver,Deliver,
+		Deliver,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.filesystem.ui.actions.teamplace.DeliverAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F11,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunLast,Run,
+		Run the selected resource or active editor,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-02-28 12:43:58.574
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.showHistory,Show History,
+		Show the revision history of the currently selected file ,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		ActionDelegateHandlerProxy(null,com.ibm.team.internal.filesystem.ui.views.history.actions.ShowHistoryAction),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowPartPaneMenuHandler@5dfc5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.wb.core 4 4 2012-02-28 12:46:09.624
+!MESSAGE Designer [2.5.0.r35x201202061313]: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 22: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+!STACK 0
+org.eclipse.wb.internal.core.utils.exception.DesignerException: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 22: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+	at com.google.gdt.eclipse.designer.GwtExceptionRewriter.rewrite(GwtExceptionRewriter.java:66)
+	at org.eclipse.wb.internal.core.utils.exception.DesignerExceptionUtils.rewriteException(DesignerExceptionUtils.java:225)
+	at org.eclipse.wb.internal.core.editor.DesignPage.showExceptionOnDesignPane(DesignPage.java:490)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:432)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:266)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:244)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:228)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1079)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3256)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2045)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:323)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3441)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3100)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: com.google.gwt.core.ext.UnableToCompleteException: (see previous log entries)
+	at com.google.gwt.dev.cfg.ModuleDef.checkForSeedTypes(ModuleDef.java:559)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:363)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:354)
+	at com.google.gwt.dev.shell.designtime.HostedModeSupportImpl.createModuleSpaceHost(HostedModeSupportImpl.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.wb.internal.core.utils.reflect.ReflectionUtils.invokeMethod(ReflectionUtils.java:869)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.createModuleSpaceHost(HostedModeSupport.java:407)
+	at com.google.gwt.dev.shell.designtime.ModuleSpace.<init>(ModuleSpace.java:60)
+	at com.google.gdt.eclipse.designer.webkit.jsni.ModuleSpaceWebKit.<init>(ModuleSpaceWebKit.java:45)
+	at com.google.gdt.eclipse.designer.webkit.BrowserShellWebKit.setUrl(BrowserShellWebKit.java:85)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.startup(HostedModeSupport.java:183)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize0(GwtState.java:240)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize(GwtState.java:203)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getClassLoader(ParseFactory.java:429)
+	at org.eclipse.wb.internal.core.parser.AbstractParseFactory.initializeClassLoader(AbstractParseFactory.java:732)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getRootContext(ParseFactory.java:117)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.prepareParseContext(JavaInfoParser.java:1185)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:244)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:240)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:537)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:525)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:452)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:3945)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:449)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:468)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:418)
+	... 44 more
+
+!ENTRY org.eclipse.wb.core 4 4 2012-02-28 12:48:02.301
+!MESSAGE Designer [2.5.0.r35x201202061313]: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 22: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData.java'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData.java' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+!STACK 0
+org.eclipse.wb.internal.core.utils.exception.DesignerException: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 22: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 28: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData.java'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData.java' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+	at com.google.gdt.eclipse.designer.GwtExceptionRewriter.rewrite(GwtExceptionRewriter.java:66)
+	at org.eclipse.wb.internal.core.utils.exception.DesignerExceptionUtils.rewriteException(DesignerExceptionUtils.java:225)
+	at org.eclipse.wb.internal.core.editor.DesignPage.showExceptionOnDesignPane(DesignPage.java:490)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:432)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.DesignPage.refreshGEF(DesignPage.java:395)
+	at org.eclipse.wb.internal.core.editor.actions.RefreshAction.run(RefreshAction.java:46)
+	at org.eclipse.wb.internal.core.editor.actions.DesignPageAction.run(DesignPageAction.java:34)
+	at org.eclipse.wb.internal.core.editor.errors.JavaExceptionComposite.doRefresh(JavaExceptionComposite.java:87)
+	at org.eclipse.wb.internal.core.editor.errors.ExceptionComposite$3.widgetSelected(ExceptionComposite.java:129)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:228)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3441)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3100)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: com.google.gwt.core.ext.UnableToCompleteException: (see previous log entries)
+	at com.google.gwt.dev.cfg.ModuleDef.checkForSeedTypes(ModuleDef.java:559)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:363)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:354)
+	at com.google.gwt.dev.shell.designtime.HostedModeSupportImpl.createModuleSpaceHost(HostedModeSupportImpl.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.wb.internal.core.utils.reflect.ReflectionUtils.invokeMethod(ReflectionUtils.java:869)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.createModuleSpaceHost(HostedModeSupport.java:407)
+	at com.google.gwt.dev.shell.designtime.ModuleSpace.<init>(ModuleSpace.java:60)
+	at com.google.gdt.eclipse.designer.webkit.jsni.ModuleSpaceWebKit.<init>(ModuleSpaceWebKit.java:45)
+	at com.google.gdt.eclipse.designer.webkit.BrowserShellWebKit.setUrl(BrowserShellWebKit.java:85)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.startup(HostedModeSupport.java:183)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize0(GwtState.java:240)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize(GwtState.java:203)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getClassLoader(ParseFactory.java:429)
+	at org.eclipse.wb.internal.core.parser.AbstractParseFactory.initializeClassLoader(AbstractParseFactory.java:732)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getRootContext(ParseFactory.java:117)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.prepareParseContext(JavaInfoParser.java:1185)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:244)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:240)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:537)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:525)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:452)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:3945)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:449)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:468)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:418)
+	... 35 more
+
+!ENTRY org.eclipse.ui 4 4 2012-02-28 12:49:43.701
+!MESSAGE Invalid preference page path: CSS Files
+
+!ENTRY org.eclipse.ui 4 4 2012-02-28 12:49:43.701
+!MESSAGE Invalid preference page path: JavaScript
+
+!ENTRY org.eclipse.wb.core 4 4 2012-02-28 12:52:13.581
+!MESSAGE Designer [2.5.0.r35x201202061313]: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 20: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 22: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData.java'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData.java' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+!STACK 0
+org.eclipse.wb.internal.core.utils.exception.DesignerException: 4108 (Error loading module(s).).    [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/FileParser.java'
+      [ERROR] Line 8: No source code is available for type java.io.File; did you forget to inherit a required module?
+   [ERROR] Errors in 'file:/Users/RBooth/Documents/cs310/Team-04/EduData/src/com/Team4/client/TxtHandler.java'
+      [ERROR] Line 20: No source code is available for type java.io.File; did you forget to inherit a required module?
+      [ERROR] Line 22: No source code is available for type java.io.FileInputStream; did you forget to inherit a required module?
+      [ERROR] Line 24: No source code is available for type java.io.DataInputStream; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.BufferedReader; did you forget to inherit a required module?
+      [ERROR] Line 26: No source code is available for type java.io.InputStreamReader; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'package.com.Team4.client.EduData.java'
+      [ERROR] Hint: Check that the type name 'package.com.Team4.client.EduData.java' is really what you meant
+      [ERROR] Hint: Check that your classpath includes all required source roots
+
+	at com.google.gdt.eclipse.designer.GwtExceptionRewriter.rewrite(GwtExceptionRewriter.java:66)
+	at org.eclipse.wb.internal.core.utils.exception.DesignerExceptionUtils.rewriteException(DesignerExceptionUtils.java:225)
+	at org.eclipse.wb.internal.core.editor.DesignPage.showExceptionOnDesignPane(DesignPage.java:490)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:432)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:266)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:244)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:228)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1079)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3256)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2045)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:323)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3441)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3100)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: com.google.gwt.core.ext.UnableToCompleteException: (see previous log entries)
+	at com.google.gwt.dev.cfg.ModuleDef.checkForSeedTypes(ModuleDef.java:559)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:363)
+	at com.google.gwt.dev.cfg.ModuleDef.getCompilationState(ModuleDef.java:354)
+	at com.google.gwt.dev.shell.designtime.HostedModeSupportImpl.createModuleSpaceHost(HostedModeSupportImpl.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.wb.internal.core.utils.reflect.ReflectionUtils.invokeMethod(ReflectionUtils.java:869)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.createModuleSpaceHost(HostedModeSupport.java:407)
+	at com.google.gwt.dev.shell.designtime.ModuleSpace.<init>(ModuleSpace.java:60)
+	at com.google.gdt.eclipse.designer.webkit.jsni.ModuleSpaceWebKit.<init>(ModuleSpaceWebKit.java:45)
+	at com.google.gdt.eclipse.designer.webkit.BrowserShellWebKit.setUrl(BrowserShellWebKit.java:85)
+	at com.google.gdt.eclipse.designer.hosted.tdt.HostedModeSupport.startup(HostedModeSupport.java:183)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize0(GwtState.java:240)
+	at com.google.gdt.eclipse.designer.model.widgets.support.GwtState.initialize(GwtState.java:203)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getClassLoader(ParseFactory.java:429)
+	at org.eclipse.wb.internal.core.parser.AbstractParseFactory.initializeClassLoader(AbstractParseFactory.java:732)
+	at com.google.gdt.eclipse.designer.parser.ParseFactory.getRootContext(ParseFactory.java:117)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.prepareParseContext(JavaInfoParser.java:1185)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:244)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:240)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:537)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:525)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:452)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:3945)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:449)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:468)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:418)
+	... 44 more

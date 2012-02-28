@@ -4,4 +4,13 @@
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="69" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="InstallationDialogSettings">
+		<item value="702" key="DIALOG_WIDTH"/>
+		<item value="-140" key="DIALOG_Y_ORIGIN"/>
+		<item value="654" key="DIALOG_HEIGHT"/>
+		<item value="-91" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

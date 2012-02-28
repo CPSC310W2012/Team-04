@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.5"?>
+
+<target name="Running Platform">
+<locations>
+<location path="${eclipse_home}" type="Profile"/>
+</locations>
+<environment>
+<os>macosx</os>
+<ws>cocoa</ws>
+<arch>x86</arch>
+<nl>en_US</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Xdock:icon=../Resources/RTC_512.icns -XstartOnFirstThread -Xms100m -Xmx512m -XX:MaxPermSize=256m -Dorg.eclipse.swt.internal.carbon.smallFonts -Dosgi.requiredJavaVersion=1.5 -Dosgi.bundlefile.limit=100</vmArgs>
+</launcherArgs>
+</target>
