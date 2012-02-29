@@ -3,9 +3,10 @@ package com.Team4.client;
 import java.util.ArrayList;
 import javax.jdo.annotations.Persistent;
 
+import com.Team4.server.DataSet;
+
 public class DataSetManager {
 	
-	@Persistent
 	private ArrayList<DataSet> dataSets;
 	
 	public void addDataSet( DataSet dSet ) {

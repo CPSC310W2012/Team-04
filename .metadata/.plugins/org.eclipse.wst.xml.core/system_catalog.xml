@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  <uri name="urn:ui:com.google.gwt.uibinder" uri="http://dl.google.com/gwt/dtd/uibinder.xsd"/>
-  <uri name="urn:import:com.google.gwt.user.client.ui" uri="http://dl.google.com/gwt/dtd/com.google.gwt.user.client.ui.xsd"/>
-</catalog>
