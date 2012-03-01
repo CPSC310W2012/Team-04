@@ -14,7 +14,28 @@
   
     <servlet-mapping>
     <servlet-name>loginService</servlet-name>
-    <url-pattern>/EduData/login</url-pattern>
+    <url-pattern>/edudata/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dataSetService</servlet-name>
+    <servlet-class>com.Team4.server.DataSetServiceImpl</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>dataSetService</servlet-name>
+    <url-pattern>/edudata/dataset</url-pattern>
+  </servlet-mapping>
+  
+   <!-- FileUpload -->
+
+  <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <servlet-class>com.Team4.server.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadServlet</servlet-name>
+    <url-pattern>*.gupld</url-pattern>
   </servlet-mapping>
   
 

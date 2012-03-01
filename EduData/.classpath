@@ -4,9 +4,10 @@
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/RBooth/Documents/cs310/Team-04/EduData/lib/gwtupload-gae-0.6.4.jar"/>
-	<classpathentry kind="lib" path="/Users/RBooth/Documents/cs310/Team-04/EduData/lib/gwtupload-0.6.4.jar"/>
-	<classpathentry kind="lib" path="/Users/RBooth/Documents/cs310/Team-04/EduData/lib/commons-fileupload-1.2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/RBooth/Documents/cs310/Team-04/EduData/lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Anthony/Documents/Dropbox/Github/workspace/Team-04/EduData/lib/gwtupload-0.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Anthony/Documents/Dropbox/Github/workspace/Team-04/EduData/lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Anthony/Documents/Dropbox/Github/workspace/Team-04/EduData/lib/gwtupload-gae-0.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Anthony/Documents/Dropbox/Github/workspace/Team-04/EduData/lib/commons-fileupload-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Anthony/Documents/Dropbox/Github/workspace/Team-04/EduData/lib/commons-fileupload-1.2-javadoc.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

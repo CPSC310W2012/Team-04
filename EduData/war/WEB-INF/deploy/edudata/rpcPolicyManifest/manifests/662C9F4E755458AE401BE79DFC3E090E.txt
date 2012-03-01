@@ -1,0 +1,2 @@
+serviceClass: com.Team4.client.DataSetService
+path: 36A3B54E86F371852C6A094EE72BA5CA.gwt.rpc

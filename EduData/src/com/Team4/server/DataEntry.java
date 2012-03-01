@@ -1,27 +1,31 @@
 package com.Team4.server;
 
+import java.io.Serializable;
+
 import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable(identityType = IdentityType.DATASTORE)
-public class DataEntry {
+import com.google.appengine.api.datastore.Key;
 
+@PersistenceCapable
+public class DataEntry implements Serializable {
+
+	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	private int entryID;
+	private Key entryID;
 	@Persistent
 	private String schoolName;
 	@Persistent
-	private int grade;
+	private String grade;
 	@Persistent
 	private String course;
 	
-	public DataEntry(String schName, int stGrade, String courseName, int ID){
+	public DataEntry(String schName, String stGrade, String courseName){
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
-		entryID = ID;	
 	}
 	
 	public String getSchool(){
@@ -32,15 +36,15 @@ public class DataEntry {
 		schoolName = name;	
 	}
 	
-	public int getGrade(){
+	public String getGrade(){
 		return grade;
 	}
 	
-	public void setGrade(int stGrade){
+	public void setGrade(String stGrade){
 		grade = stGrade;
 	}
 	
-	public int getID(){
+	public Key getID(){
 		return entryID;
 	}
 	

@@ -9,13 +9,14 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 import com.Team4.client.EntryNotPresentException;
+import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class DataSet {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	private int dataSetID;
+	private Long dataSetID;
 	@Persistent
 	private String name;
 	@Persistent
@@ -29,7 +30,7 @@ public class DataSet {
 		this.dataEntries = new ArrayList<DataEntry>();
 	}
 	
-	public int getDataSetID() {
+	public Long getDataSetID() {
 		return dataSetID;
 	}
 	
@@ -53,9 +54,9 @@ public class DataSet {
 		return dataEntries;
 	}
 	
-	public DataEntry getDataEntry( int id ) throws EntryNotPresentException{
+	public DataEntry getDataEntry( Key id ) throws EntryNotPresentException{
 	    for( DataEntry entry : dataEntries ) {
-	    	if ( entry.getID() == id )
+	    	if ( entry.getID().equals(id) )
 	    		return entry;
 	    }
 	    
