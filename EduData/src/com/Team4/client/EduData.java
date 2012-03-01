@@ -6,6 +6,7 @@ import gwtupload.client.IUploader.UploadedInfo;
 import gwtupload.client.SingleUploader;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
@@ -26,11 +27,12 @@ import com.google.gwt.event.dom.client.ClickEvent;
 public class EduData implements EntryPoint {
 	private VerticalPanel displayset;
 	private ClientDataSetManager dSMngr;
-
+	private TabularUI tabMe;
 
 	public void onModuleLoad() {
 		dSMngr = new ClientDataSetManager();
-		dSMngr.loadDataSets();
+		tabMe = new TabularUI();
+		this.generateDataSets();
 		RootPanel root = RootPanel.get();
 
 		VerticalPanel sidebar = new VerticalPanel();
@@ -38,6 +40,7 @@ public class EduData implements EntryPoint {
 		root.add(sidebar, 0, 100);
 		sidebar.setSize("400px", "400px");
 		sidebar.setBorderWidth( 10 );
+		sidebar.add( tabMe.renderDataSetTable( dSMngr.listAll() ) );
 
 		// The panel that will display the TabularUI, the MapUI, and the AccountSettingsUI alternately.
 		displayset = new VerticalPanel();
@@ -45,6 +48,12 @@ public class EduData implements EntryPoint {
 		root.add(displayset, 400, 0);
 		displayset.setSize("580px", "480px");
 		displayset.setBorderWidth( 10 );
+		try {
+			displayset.add( tabMe.renderTable( dSMngr.getDataSet( (long) 1 ) ));
+		} catch (DataSetNotPresentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		HorizontalPanel buttonPanel = new HorizontalPanel();
 		buttonPanel.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
@@ -97,6 +106,23 @@ public class EduData implements EntryPoint {
 		eduDataTitlePanel.add(lblEdudata);
 		lblEdudata.setHeight("50px");
 
+	}
+
+
+	private void generateDataSets() {
+		Long count = (long) 1.0;
+		int count2 = 1;
+		while(count<5){
+		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date() );
+			while(count2<10){
+				ClientDataEntry de = new ClientDataEntry( "" + count2, "Fake School " + count2, "grade " + count2, "course " + count2 );
+				ds.addEntry(de);
+				count2++;
+			}
+		dSMngr.addDataSet(ds);
+		count2 = 1;
+		count++;
+		}
 	}
 
 }

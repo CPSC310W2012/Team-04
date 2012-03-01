@@ -1,6 +1,7 @@
 package com.Team4.server;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
@@ -32,7 +33,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 		PersistenceManager pm = getPersistenceManager();
 		try {
 		      Query q = pm.newQuery(DataSet.class);
-		      ArrayList<DataSet> DataSets = (ArrayList<DataSet>) q.execute();
+		      List<DataSet> DataSets = (List<DataSet>) q.execute();
 		      for (DataSet dataSet : DataSets) {
 		        if (dataSetID == dataSet.getDataSetID() ) {
 		          pm.deletePersistent(dataSet);
@@ -50,12 +51,14 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 	    try {
 	      Query q = pm.newQuery(DataSet.class);
 	      q.setOrdering("dateAdded");
-	      ArrayList<DataSet> DataSets = (ArrayList<DataSet>) q.execute();
+	      List<DataSet> DataSets = (List<DataSet>) q.execute();
 	      for (DataSet dSet : DataSets) {
+	    	System.out.println(dSet.getDataSetID().toString() + " " + dSet.getName() + " " + dSet.getDateAdded());
 	        ClientDataSet cDSet = new ClientDataSet(dSet.getDataSetID(), dSet.getName(), dSet.getDateAdded());
 	        ArrayList<DataEntry> dataEntries = dSet.listAll();
 	        for (DataEntry dEntry : dataEntries ) {
-	        	cDSet.addEntry( new ClientDataEntry( dEntry.getID().toString(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() ));
+		    	System.out.println(dEntry.getID().getName() + " " + dEntry.getSchool() + " " + dEntry.getCourse() + " " + dEntry.getGrade());
+	        	cDSet.addEntry( new ClientDataEntry( dEntry.getID().getName(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() ));
 	        }
 	        dSets.add(cDSet);
 	      }
