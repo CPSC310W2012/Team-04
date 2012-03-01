@@ -132,12 +132,6 @@ public class TabularUI {
 		
 		// A button column for removing DataSets
 				ButtonCell bCell2 = new ButtonCell();  
-				// TODO: Implement the remove function
-				// { // ignore this for now. I'm working on implementing the event handling to remove the data sets. probably won't be finished by the end of the 1st sprint
-//					public void onBrowserEvent( Context c, DataSet d, String s, NativeEvent ne, ValueUpdater ve ) {
-//						break;
-//					}
-//				};
 				Column<ClientDataSet, String> buttonColumn2 = new Column<ClientDataSet, String>(bCell2) {
 					@Override
 					public String getValue(ClientDataSet dSet) {

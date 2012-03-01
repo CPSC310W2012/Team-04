@@ -13,6 +13,10 @@ public class ClientDataSetManager {
 	public ClientDataSetManager() {
 		this.dataSets = new ArrayList<ClientDataSet>();
 	}
+	
+	public void addDataSet( ClientDataSet dSet ) {
+		dataSets.add(dSet);
+	}
 
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {

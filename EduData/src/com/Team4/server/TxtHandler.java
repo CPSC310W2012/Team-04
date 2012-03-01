@@ -36,10 +36,6 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	        		
 	        		// Test - correct data entry values
 	        		System.out.println("School: "+toks[6]+" Grade: "+ toks[11]+" Course: "+toks[7]);
-	        		
-	        		String msk = new String("Msk");
-	        		if( toks[11].equals(msk) )
-	        			toks[11] = "0";
 	        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7]);
 	        	
 	        		//Test - match toks[] and DataEntry
@@ -54,7 +50,7 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	    	in.close();
 	    
 	    }catch (Exception e){
-	      System.err.println("Error: " + e.getMessage());
+	      System.err.println("End of File");
 	    }
 		return dataSet;
 	}
