@@ -51,10 +51,12 @@ public class EduData implements EntryPoint {
 		try {
 			displayset.add( tabMe.renderTable( dSMngr.getDataSet( (long) 1 ) ));
 		} catch (DataSetNotPresentException e) {
-			// TODO Auto-generated catch block
+			// TODO: Some kind of intelligent response to a missing DataSet
 			e.printStackTrace();
 		}
 		
+		
+		// TODO: What does this hideous block of code actually do?
 		HorizontalPanel buttonPanel = new HorizontalPanel();
 		buttonPanel.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
 		root.add(buttonPanel, 0, 50);
@@ -80,18 +82,33 @@ public class EduData implements EntryPoint {
 						}					    
 					});
 				}
-			});
+			});		
+		 
+		// Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
+		Button button0 = new Button("Remove Selected");
+		button0.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				// TODO: Implement the remove DataSet sequence. Call on the TabUI to see what DataSets are selected
+			}
+		});
+		buttonPanel.add(button0);
+		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
+		
 
-		Button button = new Button("Visualize");
+		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
+		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				TabularUI tab = new TabularUI();
+				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
 			}
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button, HasHorizontalAlignment.ALIGN_CENTER);
-
+		
+		
+		// Here we define and implement the Account Info button. When clicked, this button will open a menu that allows the user to view/edit their account information.
 		Button button_1 = new Button("Account Info");
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);

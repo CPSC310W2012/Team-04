@@ -1,19 +1,16 @@
 package com.Team4.client;
 
 import java.util.ArrayList;
+import java.util.Set;
 
-import com.Team4.server.DataEntry;
 import com.google.gwt.cell.client.ButtonCell;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.cell.client.Cell;
+import com.google.gwt.cell.client.CheckboxCell;
+import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DialogBox;
-import com.google.gwt.user.client.ui.FlexTable;
-import com.google.gwt.user.client.ui.ScrollPanel;
-import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.view.client.MultiSelectionModel;
 
 /**
  * The TabularUI class
@@ -21,6 +18,8 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  * @author Tristan Sebens
  * */
 public class TabularUI {
+	
+	private MultiSelectionModel<ClientDataSet> selectionModel = new MultiSelectionModel<ClientDataSet>();
 	
 	/**
 	 * The TabularUI constructor
@@ -49,6 +48,15 @@ public class TabularUI {
 		CellTable<ClientDataSet> table = new CellTable<ClientDataSet>();
 		table.setRowData( 0 , dSets );
 		return formatDataSetCellTable( table );
+	}
+	
+	/**
+	 * The publicly accessible method for retrieving the currently selected DataSets
+	 * @return An ArrayList of all selected ClientDataSets
+	 * */
+	public ArrayList<ClientDataSet> getSelectedDataSets() {
+		return (ArrayList<ClientDataSet>) selectionModel.getSelectedSet();
+		// TODO: Add test cases to ensure that this cast works correctly. As far as I can tell, ArrayList and Set have the same methods, so there should be no trouble here 
 	}
 	
 	/**
@@ -115,36 +123,66 @@ public class TabularUI {
 			}
 		};
 		
-		// A button column for removing DataSets
-		ButtonCell bCell = new ButtonCell();  
-		// TODO: Implement the remove function
-		// { // ignore this for now. I'm working on implementing the event handling to remove the data sets. probably won't be finished by the end of the 1st sprint
-//			public void onBrowserEvent( Context c, DataSet d, String s, NativeEvent ne, ValueUpdater ve ) {
-//				break;
-//			}
-//		};
-		Column<ClientDataSet, String> buttonColumn = new Column<ClientDataSet, String>(bCell) {
+		// The checkbox column that will be used to remove and visualize DataSets
+		Cell<Boolean> cbCell = new CheckboxCell();
+		Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
 			@Override
-			public String getValue(ClientDataSet dSet) {
-				return "X";
+			public Boolean getValue(ClientDataSet object) {
+				return null;
 			}
 		};
 		
-		// A button column for removing DataSets
-				ButtonCell bCell2 = new ButtonCell();  
-				Column<ClientDataSet, String> buttonColumn2 = new Column<ClientDataSet, String>(bCell2) {
-					@Override
-					public String getValue(ClientDataSet dSet) {
-						return "Display";
-					}
-				};
+		// The column that will hold the "Display" buttons. Whenever one is clicked, the corresponding DataSet will be displayed in tabular form
+		ButtonCell buttonCell = new ButtonCell();
+		Column<ClientDataSet, String> tabUI = new Column<ClientDataSet, String>(buttonCell) {
+
+			@Override
+			public String getValue(ClientDataSet object) {
+				return "Display";
+			}
+			
+			
+		};
+		// Here we add our displayListener to listen for clicks on the Display buttons
+		tabUI.setFieldUpdater( new DisplayListener() ); // TODO: Should be a variable?
 		
-		table.addColumn( dataSetNameColumn , 	"Data Set Name" );
-		table.addColumn( dateAddedColumn , 		"Date Added" );
-		table.addColumn( buttonColumn, 			"Remove" );
-		table.addColumn( buttonColumn2 ,		"Tabular View" );
+		table.addColumn( selectColumn, 	"" ); // The check-box column
+		table.addColumn( dataSetNameColumn, "Data Set Name" );
+		table.addColumn( dateAddedColumn, "Date Added" );
+		table.addColumn( tabUI, "Tabular View" );
 		
 		return table;
 	}
 	
+	
+	/**
+	 * Helper class to the TabularUI
+	 * This class listens for clicks made on the "Display" buttons next to each DataSet in the DataSet Table.
+	 * When one is clicked, the update function is called
+	 * */
+	private class DisplayListener implements FieldUpdater {
+
+		/**
+		 * This function gets called whenever the "Display" buttons next to each DataSet in the DataSet Table is called
+		 * @index The current index of the DataSet
+		 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
+		 * */
+		@Override
+		public void update(int index, Object object, Object value) {
+			/**
+			 * TODO:
+			 * Implement the sequence of commands to display a DataSet in Tabular format
+			 * at this point, object represents the DataSet to be displayed
+			 * */
+			
+		}
+		
+	}
+	
+	
 }
+
+
+
+
+
