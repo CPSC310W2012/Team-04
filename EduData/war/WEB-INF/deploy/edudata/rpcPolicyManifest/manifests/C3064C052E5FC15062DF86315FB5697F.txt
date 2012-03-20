@@ -1,2 +1,0 @@
-serviceClass: com.Team4.client.GreetingService
-path: AA8E9F013F4191AFD3AE02AFC04D2714.gwt.rpc
