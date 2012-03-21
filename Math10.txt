@@ -1,0 +1,105 @@
+2004/2005	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501006	Sparwood Secondary	Applications Of Mathematics 10	10	10	10	100
+2004/2005	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501016	Elkford Secondary	Applications Of Mathematics 10	10	19	17	89
+2004/2005	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Applications Of Mathematics 10	10	48	40	83
+2004/2005	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505032	Fernie Secondary School	Applications Of Mathematics 10	10	17	17	100
+2004/2005	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00604015	David Thompson Secondary	Applications Of Mathematics 10	10	12	10	83
+2004/2005	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00618005	Golden Secondary	Applications Of Mathematics 10	10	16	14	88
+2004/2005	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Applications Of Mathematics 10	10	24	24	100
+2004/2005	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807026	W.E. Graham Community School	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886006	Crawford Bay Elem-Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886007	Prince Charles Secondary	Applications Of Mathematics 10	10	12	10	83
+2004/2005	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886018	J V Humphries Elem-Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	010	Arrow Lakes	01010006	Nakusp Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	022	Vernon	02222004	Charles Bloom Secondary	Applications Of Mathematics 10	10	15	8	53
+2004/2005	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Applications Of Mathematics 10	10	25	19	76
+2004/2005	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Applications Of Mathematics 10	10	15	10	67
+2004/2005	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Applications Of Mathematics 10	10	16	16	100
+2004/2005	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Applications Of Mathematics 10	10	27	24	89
+2004/2005	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Applications Of Mathematics 10	10	94	80	85
+2004/2005	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Applications Of Mathematics 10	10	129	118	91
+2004/2005	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Applications Of Mathematics 10	10	30	26	87
+2004/2005	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Applications Of Mathematics 10	10	92	78	85
+2004/2005	SCHOOL LEVEL	BC Public School	028	Quesnel	02828004	Quesnel Junior School	Applications Of Mathematics 10	10	42	35	83
+2004/2005	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Applications Of Mathematics 10	10	27	23	85
+2004/2005	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Applications Of Mathematics 10	10	105	90	86
+2004/2005	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Applications Of Mathematics 10	10	11	6	55
+2004/2005	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Applications Of Mathematics 10	10	13	13	100
+2004/2005	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Applications Of Mathematics 10	10	33	28	85
+2004/2005	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Applications Of Mathematics 10	10	35	33	94
+2004/2005	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Applications Of Mathematics 10	10	32	28	88
+2004/2005	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Applications Of Mathematics 10	10	29	26	90
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Applications Of Mathematics 10	10	22	16	73
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636041	Lord Tweedsmuir Secondary	Applications Of Mathematics 10	10	29	27	93
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Applications Of Mathematics 10	10	34	24	71
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Applications Of Mathematics 10	10	33	29	88
+2004/2005	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Applications Of Mathematics 10	10	28	25	89
+2004/2005	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Applications Of Mathematics 10	10	36	29	81
+2004/2005	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Applications Of Mathematics 10	10	13	12	92
+2004/2005	SCHOOL LEVEL	BC Public School	038	Richmond	03899061	Station Stretch	Applications Of Mathematics 10	10	13	8	62
+2004/2005	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Applications Of Mathematics 10	10	34	27	79
+2004/2005	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Applications Of Mathematics 10	10	20	14	70
+2004/2005	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Applications Of Mathematics 10	10	28	28	100
+2004/2005	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Applications Of Mathematics 10	10	21	18	86
+2004/2005	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Applications Of Mathematics 10	10	31	25	81
+2004/2005	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Applications Of Mathematics 10	10	16	15	94
+2004/2005	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Applications Of Mathematics 10	10	19	8	42
+2004/2005	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Applications Of Mathematics 10	10	13	8	62
+2004/2005	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Applications Of Mathematics 10	10	77	73	95
+2004/2005	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Applications Of Mathematics 10	10	17	15	88
+2004/2005	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Applications Of Mathematics 10	10	11	9	82
+2004/2005	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Applications Of Mathematics 10	10	26	25	96
+2004/2005	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Applications Of Mathematics 10	10	24	22	92
+2004/2005	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	051	Boundary	05199105	Phoenix Program	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Applications Of Mathematics 10	10	18	15	83
+2004/2005	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Applications Of Mathematics 10	10	11	11	100
+2004/2005	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Applications Of Mathematics 10	10	15	8	53
+2004/2005	SCHOOL LEVEL	BC Public School	057	Prince George	05757074	Valemount Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Applications Of Mathematics 10	10	27	24	89
+2004/2005	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05898002	South Central Interior Distance Ed	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	South Peace Secondary	Applications Of Mathematics 10	10	15	12	80
+2004/2005	SCHOOL LEVEL	BC Public School	059	Peace River South	05959027	Tumbler Ridge Secondary	Applications Of Mathematics 10	10	10	8	80
+2004/2005	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Applications Of Mathematics 10	10	19	16	84
+2004/2005	SCHOOL LEVEL	BC Public School	060	Peace River North	06060037	Bert Bowes Jr Secondary	Applications Of Mathematics 10	10	31	27	87
+2004/2005	SCHOOL LEVEL	BC Public School	060	Peace River North	06060045	Clearview Elem-Jr Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	060	Peace River North	06060048	Dr Kearney Jr Secondary	Applications Of Mathematics 10	10	28	23	82
+2004/2005	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Applications Of Mathematics 10	10	12	8	67
+2004/2005	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Applications Of Mathematics 10	10	11	7	64
+2004/2005	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Applications Of Mathematics 10	10	13	12	92
+2004/2005	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Applications Of Mathematics 10	10	47	38	81
+2004/2005	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06199033	S J Willis Educational Centre	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Applications Of Mathematics 10	10	104	91	88
+2004/2005	SCHOOL LEVEL	BC Public School	062	Sooke	06262033	Edward Milne Community School	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Applications Of Mathematics 10	10	40	36	90
+2004/2005	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Applications Of Mathematics 10	10	86	77	90
+2004/2005	SCHOOL LEVEL	BC Public School	063	Saanich	06363022	Parkland Secondary School	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	063	Saanich	06399075	SD 63 Individual Learning Centre	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Applications Of Mathematics 10	10	29	23	79
+2004/2005	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868007	Cedar Community Secondary	Applications Of Mathematics 10	10	14	12	86
+2004/2005	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Applications Of Mathematics 10	10	98	85	87
+2004/2005	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Applications Of Mathematics 10	10	47	47	100
+2004/2005	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Applications Of Mathematics 10	10	47	30	64
+2004/2005	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Applications Of Mathematics 10	10	48	41	85
+2004/2005	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Applications Of Mathematics 10	10	16	9	56
+2004/2005	SCHOOL LEVEL	BC Public School	071	Comox Valley	10171000	North Island Distance Ed.	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324035	Chase Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324044	Nor Kam Secondary	Applications Of Mathematics 10	10	39	35	90
+2004/2005	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Applications Of Mathematics 10	10	13	13	100
+2004/2005	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Applications Of Mathematics 10	10	21	19	90
+2004/2005	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Applications Of Mathematics 10	10	17	14	82
+2004/2005	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Applications Of Mathematics 10	10	68	53	78
+2004/2005	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Applications Of Mathematics 10	10	14	10	71
+2004/2005	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Applications Of Mathematics 10	10	32	27	84
+2004/2005	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08282037	Skeena Junior Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389026	J.L. Jackson Secondary	Applications Of Mathematics 10	10	14	14	100
+2004/2005	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389031	Shuswap Junior Secondary	Applications Of Mathematics 10	10	46	45	98
+2004/2005	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08399132	Educational Outreach Program	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	087	Stikine	08787010	Atlin School	Applications Of Mathematics 10	10	Msk	Msk	Msk
+2004/2005	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156008	Nechako Valley Secondary	Applications Of Mathematics 10	10	27	21	78
+2004/2005	SCHOOL LEVEL	BC Public School	092	Nisga'a	09292007	Nisga'a Elementary Secondary	Applications Of Mathematics 10	10	Msk	Msk	Msk

@@ -1,0 +1,1505 @@
+SCHOOL_YEAR	DATA_LEVEL	PUBLIC_OR_INDEPENDENT	DISTRICT_NUMBER	DISTRICT_NAME	SCHOOL_NUMBER	SCHOOL_NAME	EXAM_SUBJECT	GRADE	NUMBER_OF_EXAM_WRITERS	NUMBER_OF_C_MINUS_OR_BETTER	PERCENT_OF_C_MINUS_OR_BETTER
+2006/2007	PROVINCE LEVEL	PROVINCE - Total					Chemistry 12	12	11273	10295	91
+2006/2007	PROVINCE LEVEL	BC Public School					Chemistry 12	12	10074	9212	91
+2006/2007	PROVINCE LEVEL	BC Independent School					Chemistry 12	12	1199	1083	90
+2006/2007	DISTRICT LEVEL	BC Public School	005	Southeast Kootenay			Chemistry 12	12	98	87	89
+2006/2007	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Chemistry 12	12	49	41	84
+2006/2007	DISTRICT LEVEL	BC Public School	008	Kootenay Lake			Chemistry 12	12	67	60	90
+2006/2007	DISTRICT LEVEL	BC Public School	019	Revelstoke			Chemistry 12	12	25	18	72
+2006/2007	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Chemistry 12	12	85	77	91
+2006/2007	DISTRICT LEVEL	BC Public School	022	Vernon			Chemistry 12	12	173	156	90
+2006/2007	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Chemistry 12	12	352	339	96
+2006/2007	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Chemistry 12	12	77	61	79
+2006/2007	DISTRICT LEVEL	BC Public School	028	Quesnel			Chemistry 12	12	62	55	89
+2006/2007	DISTRICT LEVEL	BC Public School	033	Chilliwack			Chemistry 12	12	101	101	100
+2006/2007	DISTRICT LEVEL	BC Public School	034	Abbotsford			Chemistry 12	12	253	238	94
+2006/2007	DISTRICT LEVEL	BC Public School	035	Langley			Chemistry 12	12	258	235	91
+2006/2007	DISTRICT LEVEL	BC Public School	036	Surrey			Chemistry 12	12	1153	1087	94
+2006/2007	DISTRICT LEVEL	BC Public School	037	Delta			Chemistry 12	12	262	237	90
+2006/2007	DISTRICT LEVEL	BC Public School	038	Richmond			Chemistry 12	12	641	596	93
+2006/2007	DISTRICT LEVEL	BC Public School	039	Vancouver			Chemistry 12	12	1548	1421	92
+2006/2007	DISTRICT LEVEL	BC Public School	040	New Westminster			Chemistry 12	12	179	164	92
+2006/2007	DISTRICT LEVEL	BC Public School	041	Burnaby			Chemistry 12	12	787	707	90
+2006/2007	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Chemistry 12	12	120	114	95
+2006/2007	DISTRICT LEVEL	BC Public School	043	Coquitlam			Chemistry 12	12	741	696	94
+2006/2007	DISTRICT LEVEL	BC Public School	044	North Vancouver			Chemistry 12	12	396	362	91
+2006/2007	DISTRICT LEVEL	BC Public School	045	West Vancouver			Chemistry 12	12	201	192	96
+2006/2007	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Chemistry 12	12	48	44	92
+2006/2007	DISTRICT LEVEL	BC Public School	047	Powell River			Chemistry 12	12	19	19	100
+2006/2007	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Chemistry 12	12	39	35	90
+2006/2007	DISTRICT LEVEL	BC Public School	049	Central Coast			Chemistry 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	050	Haida Gwaii			Chemistry 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	051	Boundary			Chemistry 12	12	24	23	96
+2006/2007	DISTRICT LEVEL	BC Public School	052	Prince Rupert			Chemistry 12	12	41	26	63
+2006/2007	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Chemistry 12	12	38	31	82
+2006/2007	DISTRICT LEVEL	BC Public School	054	Bulkley Valley			Chemistry 12	12	31	22	71
+2006/2007	DISTRICT LEVEL	BC Public School	057	Prince George			Chemistry 12	12	216	174	81
+2006/2007	DISTRICT LEVEL	BC Public School	058	Nicola-Similkameen			Chemistry 12	12	19	16	84
+2006/2007	DISTRICT LEVEL	BC Public School	059	Peace River South			Chemistry 12	12	66	45	68
+2006/2007	DISTRICT LEVEL	BC Public School	060	Peace River North			Chemistry 12	12	39	30	77
+2006/2007	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Chemistry 12	12	326	308	94
+2006/2007	DISTRICT LEVEL	BC Public School	062	Sooke			Chemistry 12	12	76	70	92
+2006/2007	DISTRICT LEVEL	BC Public School	063	Saanich			Chemistry 12	12	217	195	90
+2006/2007	DISTRICT LEVEL	BC Public School	064	Gulf Islands			Chemistry 12	12	30	29	97
+2006/2007	DISTRICT LEVEL	BC Public School	067	Okanagan Skaha			Chemistry 12	12	133	129	97
+2006/2007	DISTRICT LEVEL	BC Public School	068	Nanaimo-Ladysmith			Chemistry 12	12	198	181	91
+2006/2007	DISTRICT LEVEL	BC Public School	069	Qualicum			Chemistry 12	12	69	63	91
+2006/2007	DISTRICT LEVEL	BC Public School	070	Alberni			Chemistry 12	12	59	57	97
+2006/2007	DISTRICT LEVEL	BC Public School	071	Comox Valley			Chemistry 12	12	94	88	94
+2006/2007	DISTRICT LEVEL	BC Public School	072	Campbell River			Chemistry 12	12	76	68	89
+2006/2007	DISTRICT LEVEL	BC Public School	073	Kamloops/Thompson			Chemistry 12	12	190	176	93
+2006/2007	DISTRICT LEVEL	BC Public School	074	Gold Trail			Chemistry 12	12	11	11	100
+2006/2007	DISTRICT LEVEL	BC Public School	075	Mission			Chemistry 12	12	40	36	90
+2006/2007	DISTRICT LEVEL	BC Public School	078	Fraser-Cascade			Chemistry 12	12	15	14	93
+2006/2007	DISTRICT LEVEL	BC Public School	079	Cowichan Valley			Chemistry 12	12	88	79	90
+2006/2007	DISTRICT LEVEL	BC Public School	082	Coast Mountains			Chemistry 12	12	79	70	89
+2006/2007	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Chemistry 12	12	75	60	80
+2006/2007	DISTRICT LEVEL	BC Public School	084	Vancouver Island West			Chemistry 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	085	Vancouver Island North			Chemistry 12	12	18	14	78
+2006/2007	DISTRICT LEVEL	BC Public School	091	Nechako Lakes			Chemistry 12	12	30	20	67
+2006/2007	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Chemistry 12	12	30	25	83
+2006/2007	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501006	Sparwood Secondary	Chemistry 12	12	13	13	100
+2006/2007	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501016	Elkford Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Chemistry 12	12	67	57	85
+2006/2007	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505032	Fernie Secondary School	Chemistry 12	12	15	14	93
+2006/2007	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Chemistry 12	12	12	11	92
+2006/2007	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00604015	David Thompson Secondary	Chemistry 12	12	17	15	88
+2006/2007	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00606000	Continuing Ed SD 06	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00618005	Golden Secondary	Chemistry 12	12	19	15	79
+2006/2007	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Chemistry 12	12	21	21	100
+2006/2007	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807025	Mount Sentinel Secondary	Chemistry 12	12	23	21	91
+2006/2007	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886007	Prince Charles Secondary	Chemistry 12	12	17	14	82
+2006/2007	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886018	J V Humphries Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00898001	Distance Ed School of the Kootenays	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	019	Revelstoke	01919003	Revelstoke Secondary	Chemistry 12	12	25	18	72
+2006/2007	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02009010	Stanley Humphries Secondary	Chemistry 12	12	12	12	100
+2006/2007	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Chemistry 12	12	47	39	83
+2006/2007	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011014	Rossland Secondary	Chemistry 12	12	26	26	100
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222007	W L Seaton Secondary	Chemistry 12	12	42	37	88
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Chemistry 12	12	48	43	90
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Chemistry 12	12	39	36	92
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Chemistry 12	12	33	30	91
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222027	Charles Bloom Elementary Secondary	Chemistry 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Chemistry 12	12	22	22	100
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Chemistry 12	12	63	56	89
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Chemistry 12	12	97	93	96
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Chemistry 12	12	39	39	100
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Chemistry 12	12	131	129	98
+2006/2007	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Chemistry 12	12	41	29	71
+2006/2007	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727056	Peter Skene Ogden Secondary	Chemistry 12	12	17	17	100
+2006/2007	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Chemistry 12	12	19	15	79
+2006/2007	SCHOOL LEVEL	BC Public School	028	Quesnel	02828004	Quesnel Junior School	Chemistry 12	12	34	29	85
+2006/2007	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Chemistry 12	12	28	26	93
+2006/2007	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Chemistry 12	12	35	35	100
+2006/2007	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Chemistry 12	12	64	64	100
+2006/2007	SCHOOL LEVEL	BC Public School	033	Chilliwack	03398003	Fraser Valley Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434000	Bakerview Ctr for Learning - CE	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Chemistry 12	12	36	31	86
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Chemistry 12	12	65	65	100
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Chemistry 12	12	77	70	91
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Chemistry 12	12	34	32	94
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Chemistry 12	12	28	28	100
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Chemistry 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Chemistry 12	12	23	19	83
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535020	Aldergrove Community Secondary School	Chemistry 12	12	21	21	100
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535029	Langley Fine Arts School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535031	H D Stafford Secondary School	Chemistry 12	12	17	17	100
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Chemistry 12	12	64	63	98
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Chemistry 12	12	36	36	100
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535041	R E Mountain Secondary	Chemistry 12	12	27	26	96
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Chemistry 12	12	66	49	74
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03599050	Langley Education Centre	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636000	Continuing Ed SD 36	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Chemistry 12	12	42	38	90
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Chemistry 12	12	68	66	97
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636041	Lord Tweedsmuir Secondary	Chemistry 12	12	33	27	82
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636045	Johnston Heights Secondary	Chemistry 12	12	70	63	90
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636047	Guildford Park Secondary	Chemistry 12	12	33	29	88
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636049	Semiahmoo Secondary	Chemistry 12	12	104	93	89
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636079	L A Matheson Secondary	Chemistry 12	12	41	37	90
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636080	Surrey Traditional	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Chemistry 12	12	64	64	100
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Chemistry 12	12	40	35	88
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Chemistry 12	12	74	72	97
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Chemistry 12	12	117	114	97
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636150	Tamanawis Secondary	Chemistry 12	12	62	60	97
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Chemistry 12	12	76	70	92
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636164	Sullivan Heights Secondary	Chemistry 12	12	32	32	100
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Chemistry 12	12	81	79	98
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636175	Clayton Heights Secondary	Chemistry 12	12	35	34	97
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636246	Princess Margaret Secondary	Chemistry 12	12	125	125	100
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Chemistry 12	12	40	36	90
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03699062	North Surrey Learning Centre	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03699142	Surrey Connect: A Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Chemistry 12	12	45	39	87
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Chemistry 12	12	21	18	86
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737021	Delview Secondary	Chemistry 12	12	23	20	87
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737034	Burnsview Secondary	Chemistry 12	12	31	28	90
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Chemistry 12	12	35	33	94
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737038	Sands Secondary	Chemistry 12	12	10	10	100
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Chemistry 12	12	97	89	92
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838000	Continuing Ed SD 38	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838024	R C Palmer Secondary	Chemistry 12	12	63	62	98
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838031	Hugh Boyd Secondary	Chemistry 12	12	43	40	93
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838033	Hugh McRoberts Secondary	Chemistry 12	12	61	57	93
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838042	J N Burnett Secondary	Chemistry 12	12	107	105	98
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838044	Matthew McNair Secondary	Chemistry 12	12	37	35	95
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Chemistry 12	12	170	159	94
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Chemistry 12	12	29	27	93
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Chemistry 12	12	33	32	97
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838065	Richmond Secondary	Chemistry 12	12	93	75	81
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939000	Continuing Ed SD 39	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939001	King George Secondary	Chemistry 12	12	14	13	93
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939003	Magee Secondary	Chemistry 12	12	109	103	94
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939004	Britannia Community Secondary	Chemistry 12	12	24	15	63
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Chemistry 12	12	112	102	91
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939007	John Oliver Secondary	Chemistry 12	12	49	45	92
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939008	Lord Byng Secondary	Chemistry 12	12	71	71	100
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939010	Templeton Secondary	Chemistry 12	12	68	65	96
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Chemistry 12	12	107	104	97
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939012	Point Grey Secondary	Chemistry 12	12	120	113	94
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939014	Gladstone Secondary	Chemistry 12	12	79	71	90
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Chemistry 12	12	115	96	83
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Chemistry 12	12	131	121	92
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939017	Sir Charles Tupper Secondary	Chemistry 12	12	53	46	87
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Chemistry 12	12	105	100	95
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939019	Prince of Wales Secondary	Chemistry 12	12	117	113	97
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939020	Windermere Community Secondary	Chemistry 12	12	57	44	77
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939022	Eric Hamber Secondary	Chemistry 12	12	129	118	91
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939024	University Hill Secondary	Chemistry 12	12	77	70	91
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03998004	Vancouver Learning Network	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	040	New Westminster	04040000	Continuing Ed SD 40	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Chemistry 12	12	173	159	92
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141000	Burnaby Continuing Education	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141001	Burnaby Central Secondary	Chemistry 12	12	95	83	87
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Chemistry 12	12	213	193	91
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141005	Alpha Secondary	Chemistry 12	12	51	40	78
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Chemistry 12	12	28	21	75
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Chemistry 12	12	113	101	89
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Chemistry 12	12	162	153	94
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Chemistry 12	12	87	84	97
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141068	Byrne Creek Secondary	Chemistry 12	12	31	25	81
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04199145	Burnaby Online Program	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242000	Continuing Ed SD 42	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Chemistry 12	12	28	26	93
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242002	Garibaldi Secondary	Chemistry 12	12	20	18	90
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Chemistry 12	12	23	22	96
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Chemistry 12	12	28	28	100
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242028	Arthur Peake Centre	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Chemistry 12	12	17	16	94
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242045	Samuel Robertson Technical Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343000	Continuing Ed SD 43	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343076	Centennial School	Chemistry 12	12	148	139	94
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Chemistry 12	12	58	55	95
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Chemistry 12	12	80	71	89
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Chemistry 12	12	93	88	95
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Chemistry 12	12	92	89	97
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Chemistry 12	12	119	116	97
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Chemistry 12	12	70	62	89
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Chemistry 12	12	79	74	94
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444000	Continuing Ed SD 44	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Chemistry 12	12	47	45	96
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Chemistry 12	12	117	100	85
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444025	Handsworth Secondary School	Chemistry 12	12	88	81	92
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444026	Windsor Secondary	Chemistry 12	12	34	29	85
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444036	Carson Graham Secondary	Chemistry 12	12	70	67	96
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444047	Seycove Secondary Community	Chemistry 12	12	35	35	100
+2006/2007	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Chemistry 12	12	93	87	94
+2006/2007	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Chemistry 12	12	65	63	97
+2006/2007	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545081	Rockridge Secondary	Chemistry 12	12	43	42	98
+2006/2007	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Chemistry 12	12	24	21	88
+2006/2007	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646012	Pender Harbour Elem-Secondary	Chemistry 12	12	19	18	95
+2006/2007	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	047	Powell River	04747021	Brooks Secondary	Chemistry 12	12	19	19	100
+2006/2007	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Chemistry 12	12	32	28	88
+2006/2007	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848022	Whistler Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	049	Central Coast	04949002	Sir Alexander Mackenzie Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	050	Haida Gwaii	05050012	Queen Charlotte Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Chemistry 12	12	17	16	94
+2006/2007	SCHOOL LEVEL	BC Public School	051	Boundary	05113010	Boundary Central Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252009	Prince Rupert Secondary	Chemistry 12	12	19	13	68
+2006/2007	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Chemistry 12	12	22	13	59
+2006/2007	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Chemistry 12	12	11	8	73
+2006/2007	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Chemistry 12	12	16	13	81
+2006/2007	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Chemistry 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454011	Houston Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454013	Smithers Secondary	Chemistry 12	12	30	21	70
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757012	Duchess Park Secondary	Chemistry 12	12	30	27	90
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Chemistry 12	12	54	40	74
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Chemistry 12	12	46	40	87
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757074	Valemount Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757075	McBride Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757079	Mackenzie Secondary	Chemistry 12	12	16	13	81
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757100	D P Todd Secondary	Chemistry 12	12	37	31	84
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757101	College Heights Secondary	Chemistry 12	12	26	17	65
+2006/2007	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05817008	Princeton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Chemistry 12	12	11	9	82
+2006/2007	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05898002	South Central Interior Distance Ed	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	South Peace Secondary	Chemistry 12	12	48	36	75
+2006/2007	SCHOOL LEVEL	BC Public School	059	Peace River South	05959011	Chetwynd Secondary	Chemistry 12	12	12	7	58
+2006/2007	SCHOOL LEVEL	BC Public School	059	Peace River South	05959027	Tumbler Ridge Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	059	Peace River South	05999102	South Peace Distributed Learning School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Chemistry 12	12	36	29	81
+2006/2007	SCHOOL LEVEL	BC Public School	060	Peace River North	06060060	Hudson's Hope School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161000	Continuing Ed SD 61	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Chemistry 12	12	52	50	96
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161048	Esquimalt High School	Chemistry 12	12	25	23	92
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161049	Mount Douglas Secondary	Chemistry 12	12	105	103	98
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Chemistry 12	12	42	42	100
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Chemistry 12	12	35	33	94
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161064	Lambrick Park Secondary	Chemistry 12	12	53	45	85
+2006/2007	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06199146	Home Learners' Link	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	062	Sooke	06262000	Westshore Centre for Learning & Training	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Chemistry 12	12	67	63	94
+2006/2007	SCHOOL LEVEL	BC Public School	062	Sooke	06262033	Edward Milne Community School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Chemistry 12	12	83	76	92
+2006/2007	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Chemistry 12	12	86	77	90
+2006/2007	SCHOOL LEVEL	BC Public School	063	Saanich	06363022	Parkland Secondary School	Chemistry 12	12	45	39	87
+2006/2007	SCHOOL LEVEL	BC Public School	063	Saanich	06398007	South Island Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	064	Gulf Islands	06464010	Gulf Islands Secondary	Chemistry 12	12	30	29	97
+2006/2007	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Chemistry 12	12	78	77	99
+2006/2007	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715008	Princess Margaret Secondary	Chemistry 12	12	26	24	92
+2006/2007	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06777002	Summerland Secondary	Chemistry 12	12	29	28	97
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868001	Nanaimo District Secondary	Chemistry 12	12	32	30	94
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868002	Ladysmith Secondary	Chemistry 12	12	33	31	94
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868007	Cedar Community Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868010	Dover Bay Secondary	Chemistry 12	12	71	70	99
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868011	John Barsby Community School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Chemistry 12	12	32	26	81
+2006/2007	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868015	Wellington Secondary	Chemistry 12	12	22	17	77
+2006/2007	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Chemistry 12	12	31	27	87
+2006/2007	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Chemistry 12	12	38	36	95
+2006/2007	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Chemistry 12	12	53	52	98
+2006/2007	SCHOOL LEVEL	BC Public School	070	Alberni	07070005	Ucluelet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Chemistry 12	12	33	32	97
+2006/2007	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Chemistry 12	12	38	35	92
+2006/2007	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Chemistry 12	12	23	21	91
+2006/2007	SCHOOL LEVEL	BC Public School	072	Campbell River	07272010	Carihi Secondary	Chemistry 12	12	32	31	97
+2006/2007	SCHOOL LEVEL	BC Public School	072	Campbell River	07272012	Timberline Secondary School	Chemistry 12	12	44	37	84
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324012	South Kamloops Secondary	Chemistry 12	12	95	90	95
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324035	Chase Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324043	Brocklehurst Secondary	Chemistry 12	12	10	10	100
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324044	Nor Kam Secondary	Chemistry 12	12	10	10	100
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324045	Valleyview Secondary	Chemistry 12	12	21	21	100
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324048	Barriere Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324055	Westsyde Secondary	Chemistry 12	12	12	10	83
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Chemistry 12	12	29	26	90
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324070	Logan Lake Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07326005	Clearwater Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	074	Gold Trail	07429015	Lillooet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	074	Gold Trail	07430015	David Stoddart Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	074	Gold Trail	07430016	Ashcroft Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	074	Gold Trail	07499134	Gold Trail Distributed Learning Program	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Chemistry 12	12	19	19	100
+2006/2007	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Chemistry 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Chemistry 12	12	10	7	70
+2006/2007	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07832003	Hope Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07876003	Agassiz Elem-Secondary	Chemistry 12	12	10	9	90
+2006/2007	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Chemistry 12	12	49	44	90
+2006/2007	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Chemistry 12	12	11	9	82
+2006/2007	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Chemistry 12	12	28	26	93
+2006/2007	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08280002	Mount Elizabeth Secondary	Chemistry 12	12	26	24	92
+2006/2007	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288006	Hazelton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288024	Caledonia Sr Secondary	Chemistry 12	12	43	37	86
+2006/2007	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08298009	North Coast Distance Education	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08321004	Pleasant Valley Secondary	Chemistry 12	12	18	13	72
+2006/2007	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Chemistry 12	12	42	37	88
+2006/2007	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389002	A L Fortune Secondary	Chemistry 12	12	12	7	58
+2006/2007	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389010	Eagle River Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	084	Vancouver Island West	08484012	Gold River Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	084	Vancouver Island West	08484022	Captain Meares Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	085	Vancouver Island North	08585018	North Island Secondary	Chemistry 12	12	10	8	80
+2006/2007	SCHOOL LEVEL	BC Public School	085	Vancouver Island North	08585026	Port Hardy Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156002	Fraser Lake Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156007	Fort St James Secondary	Chemistry 12	12	13	11	85
+2006/2007	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156008	Nechako Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09191023	Lakes District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09339006	Kitsilano Secondary (Francophone Prog)	Chemistry 12	12	15	13	87
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09343092	Ecole des Pionniers	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09346017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09357012	Duchess Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09361060	l'ecole Victor Brodeur	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09377002	Ecole Secondaire de Summerland	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09393002	Gabrielle-Roy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			00896749	CHEK-ABC	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			02296261	Vernon Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			02396013	Immaculata Regional High School	Chemistry 12	12	23	22	96
+2006/2007	SCHOOL LEVEL	BC Independent School			02396023	Okanagan Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Chemistry 12	12	20	17	85
+2006/2007	SCHOOL LEVEL	BC Independent School			02396676	Vedanta Educational Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			02396738	Heritage Christian Online School (DL)	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			02796177	Cariboo Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03396209	Timothy Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03396251	Highroad Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03496020	Mennonite Educational Institute	Chemistry 12	12	48	45	94
+2006/2007	SCHOOL LEVEL	BC Independent School			03496069	Abbotsford Christian School	Chemistry 12	12	20	18	90
+2006/2007	SCHOOL LEVEL	BC Independent School			03496595	St John Brebeuf	Chemistry 12	12	16	15	94
+2006/2007	SCHOOL LEVEL	BC Independent School			03596061	Fraser Valley Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03596289	Credo Christian Schools	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03596311	Langley Christian	Chemistry 12	12	16	15	94
+2006/2007	SCHOOL LEVEL	BC Independent School			03596573	Aldergrove Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03696015	Fraser Valley Christian High	Chemistry 12	12	34	32	94
+2006/2007	SCHOOL LEVEL	BC Independent School			03696048	Relevant High	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03696166	Holy Cross Regional High School	Chemistry 12	12	26	25	96
+2006/2007	SCHOOL LEVEL	BC Independent School			03696309	White Rock Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03696394	Pacific Academy	Chemistry 12	12	40	35	88
+2006/2007	SCHOOL LEVEL	BC Independent School			03696476	Regent Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03696484	Heritage Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03696669	Southridge Senior Secondary	Chemistry 12	12	44	39	89
+2006/2007	SCHOOL LEVEL	BC Independent School			03696720	Traditional Learning Academy Online	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03796694	Southpointe Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03896178	Richmond Christian School	Chemistry 12	12	12	12	100
+2006/2007	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Chemistry 12	12	54	53	98
+2006/2007	SCHOOL LEVEL	BC Independent School			03996004	Crofton House	Chemistry 12	12	29	29	100
+2006/2007	SCHOOL LEVEL	BC Independent School			03996007	Vancouver College	Chemistry 12	12	56	52	93
+2006/2007	SCHOOL LEVEL	BC Independent School			03996011	York House School	Chemistry 12	12	21	21	100
+2006/2007	SCHOOL LEVEL	BC Independent School			03996019	Little Flower Academy	Chemistry 12	12	29	29	100
+2006/2007	SCHOOL LEVEL	BC Independent School			03996022	Notre Dame Regional Secondary	Chemistry 12	12	36	35	97
+2006/2007	SCHOOL LEVEL	BC Independent School			03996030	St Patrick Regional Secondary	Chemistry 12	12	16	12	75
+2006/2007	SCHOOL LEVEL	BC Independent School			03996319	Columbia College	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996332	Fraser Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996435	St John's School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996451	King David High School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996497	Canadian Gateway Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996527	St John's International	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996538	Royal Canadian College	Chemistry 12	12	13	12	92
+2006/2007	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Chemistry 12	12	13	12	92
+2006/2007	SCHOOL LEVEL	BC Independent School			03996659	Century High School	Chemistry 12	12	33	23	70
+2006/2007	SCHOOL LEVEL	BC Independent School			03996733	Pattison High School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996805	Pacific Torah Institute International	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			04196031	St Thomas More Collegiate	Chemistry 12	12	20	20	100
+2006/2007	SCHOOL LEVEL	BC Independent School			04196766	Carver Christian High School	Chemistry 12	12	10	9	90
+2006/2007	SCHOOL LEVEL	BC Independent School			04296099	Maple Ridge Christian School	Chemistry 12	12	13	10	77
+2006/2007	SCHOOL LEVEL	BC Independent School			04296673	Meadowridge Secondary	Chemistry 12	12	20	20	100
+2006/2007	SCHOOL LEVEL	BC Independent School			04396349	Coquitlam College	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			04396579	British Columbia Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			04396588	Traditional Learning Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Chemistry 12	12	37	32	86
+2006/2007	SCHOOL LEVEL	BC Independent School			04496062	St Thomas Aquinas	Chemistry 12	12	38	37	97
+2006/2007	SCHOOL LEVEL	BC Independent School			04496551	Bodwell High School	Chemistry 12	12	20	15	75
+2006/2007	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Chemistry 12	12	34	29	85
+2006/2007	SCHOOL LEVEL	BC Independent School			04596701	Mulgrave School	Chemistry 12	12	16	13	81
+2006/2007	SCHOOL LEVEL	BC Independent School			05496091	Houston Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Chemistry 12	12	59	53	90
+2006/2007	SCHOOL LEVEL	BC Independent School			06196010	St Margaret's	Chemistry 12	12	21	20	95
+2006/2007	SCHOOL LEVEL	BC Independent School			06196021	Glenlyon Norfolk School	Chemistry 12	12	19	18	95
+2006/2007	SCHOOL LEVEL	BC Independent School			06196084	Pacific Christian School	Chemistry 12	12	11	11	100
+2006/2007	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Chemistry 12	12	15	14	93
+2006/2007	SCHOOL LEVEL	BC Independent School			06896256	Nanaimo Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			06896650	Malaspina International High School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			07296335	Campbell River Christian School	Chemistry 12	12	11	8	73
+2006/2007	SCHOOL LEVEL	BC Independent School			07396194	St Ann's Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			07396280	Kamloops Christian School	Chemistry 12	12	10	9	90
+2006/2007	SCHOOL LEVEL	BC Independent School			07996005	Brentwood College	Chemistry 12	12	38	38	100
+2006/2007	SCHOOL LEVEL	BC Independent School			07996006	Shawnigan Lake	Chemistry 12	12	40	40	100
+2006/2007	SCHOOL LEVEL	BC Independent School			07996017	Queen Margaret's	Chemistry 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Independent School			07996086	Duncan Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			07996421	Maxwell International School	Chemistry 12	12	12	10	83
+2006/2007	SCHOOL LEVEL	BC Independent School			07996711	Lakeside Preparatory Academy	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			08396240	King's Christian School	Chemistry 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			08396713	Anchor Academy (DL)	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	PROVINCE LEVEL	PROVINCE - Total					Chemistry 12	12	9487	8695	92
+2007/2008	PROVINCE LEVEL	BC Public School					Chemistry 12	12	8482	7771	92
+2007/2008	PROVINCE LEVEL	BC Independent School					Chemistry 12	12	1005	924	92
+2007/2008	DISTRICT LEVEL	BC Public School	005	Southeast Kootenay			Chemistry 12	12	85	70	82
+2007/2008	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Chemistry 12	12	47	42	89
+2007/2008	DISTRICT LEVEL	BC Public School	008	Kootenay Lake			Chemistry 12	12	48	43	90
+2007/2008	DISTRICT LEVEL	BC Public School	010	Arrow Lakes			Chemistry 12	12	24	18	75
+2007/2008	DISTRICT LEVEL	BC Public School	019	Revelstoke			Chemistry 12	12	19	15	79
+2007/2008	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Chemistry 12	12	84	78	93
+2007/2008	DISTRICT LEVEL	BC Public School	022	Vernon			Chemistry 12	12	107	98	92
+2007/2008	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Chemistry 12	12	286	271	95
+2007/2008	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Chemistry 12	12	59	48	81
+2007/2008	DISTRICT LEVEL	BC Public School	028	Quesnel			Chemistry 12	12	53	46	87
+2007/2008	DISTRICT LEVEL	BC Public School	033	Chilliwack			Chemistry 12	12	102	99	97
+2007/2008	DISTRICT LEVEL	BC Public School	034	Abbotsford			Chemistry 12	12	254	249	98
+2007/2008	DISTRICT LEVEL	BC Public School	035	Langley			Chemistry 12	12	257	244	95
+2007/2008	DISTRICT LEVEL	BC Public School	036	Surrey			Chemistry 12	12	1065	974	91
+2007/2008	DISTRICT LEVEL	BC Public School	037	Delta			Chemistry 12	12	213	192	90
+2007/2008	DISTRICT LEVEL	BC Public School	038	Richmond			Chemistry 12	12	631	579	92
+2007/2008	DISTRICT LEVEL	BC Public School	039	Vancouver			Chemistry 12	12	1353	1246	92
+2007/2008	DISTRICT LEVEL	BC Public School	040	New Westminster			Chemistry 12	12	137	129	94
+2007/2008	DISTRICT LEVEL	BC Public School	041	Burnaby			Chemistry 12	12	726	658	91
+2007/2008	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Chemistry 12	12	124	113	91
+2007/2008	DISTRICT LEVEL	BC Public School	043	Coquitlam			Chemistry 12	12	652	607	93
+2007/2008	DISTRICT LEVEL	BC Public School	044	North Vancouver			Chemistry 12	12	298	268	90
+2007/2008	DISTRICT LEVEL	BC Public School	045	West Vancouver			Chemistry 12	12	150	142	95
+2007/2008	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Chemistry 12	12	22	21	95
+2007/2008	DISTRICT LEVEL	BC Public School	047	Powell River			Chemistry 12	12	33	31	94
+2007/2008	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Chemistry 12	12	47	37	79
+2007/2008	DISTRICT LEVEL	BC Public School	049	Central Coast			Chemistry 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	050	Haida Gwaii			Chemistry 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	051	Boundary			Chemistry 12	12	23	23	100
+2007/2008	DISTRICT LEVEL	BC Public School	052	Prince Rupert			Chemistry 12	12	37	20	54
+2007/2008	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Chemistry 12	12	39	30	77
+2007/2008	DISTRICT LEVEL	BC Public School	054	Bulkley Valley			Chemistry 12	12	26	22	85
+2007/2008	DISTRICT LEVEL	BC Public School	057	Prince George			Chemistry 12	12	151	122	81
+2007/2008	DISTRICT LEVEL	BC Public School	058	Nicola-Similkameen			Chemistry 12	12	13	13	100
+2007/2008	DISTRICT LEVEL	BC Public School	059	Peace River South			Chemistry 12	12	52	43	83
+2007/2008	DISTRICT LEVEL	BC Public School	060	Peace River North			Chemistry 12	12	42	39	93
+2007/2008	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Chemistry 12	12	282	268	95
+2007/2008	DISTRICT LEVEL	BC Public School	062	Sooke			Chemistry 12	12	46	44	96
+2007/2008	DISTRICT LEVEL	BC Public School	063	Saanich			Chemistry 12	12	131	125	95
+2007/2008	DISTRICT LEVEL	BC Public School	064	Gulf Islands			Chemistry 12	12	13	12	92
+2007/2008	DISTRICT LEVEL	BC Public School	067	Okanagan Skaha			Chemistry 12	12	126	113	90
+2007/2008	DISTRICT LEVEL	BC Public School	068	Nanaimo-Ladysmith			Chemistry 12	12	125	118	94
+2007/2008	DISTRICT LEVEL	BC Public School	069	Qualicum			Chemistry 12	12	33	28	85
+2007/2008	DISTRICT LEVEL	BC Public School	070	Alberni			Chemistry 12	12	20	19	95
+2007/2008	DISTRICT LEVEL	BC Public School	071	Comox Valley			Chemistry 12	12	98	93	95
+2007/2008	DISTRICT LEVEL	BC Public School	072	Campbell River			Chemistry 12	12	46	45	98
+2007/2008	DISTRICT LEVEL	BC Public School	073	Kamloops/Thompson			Chemistry 12	12	52	50	96
+2007/2008	DISTRICT LEVEL	BC Public School	074	Gold Trail			Chemistry 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	075	Mission			Chemistry 12	12	41	36	88
+2007/2008	DISTRICT LEVEL	BC Public School	078	Fraser-Cascade			Chemistry 12	12	10	10	100
+2007/2008	DISTRICT LEVEL	BC Public School	079	Cowichan Valley			Chemistry 12	12	54	53	98
+2007/2008	DISTRICT LEVEL	BC Public School	081	Fort Nelson			Chemistry 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	082	Coast Mountains			Chemistry 12	12	38	36	95
+2007/2008	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Chemistry 12	12	46	42	91
+2007/2008	DISTRICT LEVEL	BC Public School	084	Vancouver Island West			Chemistry 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	085	Vancouver Island North			Chemistry 12	12	12	11	92
+2007/2008	DISTRICT LEVEL	BC Public School	091	Nechako Lakes			Chemistry 12	12	15	12	80
+2007/2008	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Chemistry 12	12	19	15	79
+2007/2008	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501006	Sparwood Secondary	Chemistry 12	12	19	19	100
+2007/2008	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Chemistry 12	12	54	43	80
+2007/2008	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505032	Fernie Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505033	Elkford Elementary Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00604015	David Thompson Secondary	Chemistry 12	12	17	14	82
+2007/2008	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00618005	Golden Secondary	Chemistry 12	12	23	22	96
+2007/2008	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807012	Salmo Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Chemistry 12	12	24	22	92
+2007/2008	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886007	Prince Charles Secondary	Chemistry 12	12	16	14	88
+2007/2008	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886018	J V Humphries Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	010	Arrow Lakes	01010006	Nakusp Secondary	Chemistry 12	12	21	16	76
+2007/2008	SCHOOL LEVEL	BC Public School	010	Arrow Lakes	01010011	Lucerne Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	019	Revelstoke	01919003	Revelstoke Secondary	Chemistry 12	12	19	15	79
+2007/2008	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02009010	Stanley Humphries Secondary	Chemistry 12	12	24	22	92
+2007/2008	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Chemistry 12	12	47	43	91
+2007/2008	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011014	Rossland Secondary	Chemistry 12	12	13	13	100
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222007	W L Seaton Secondary	Chemistry 12	12	24	23	96
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Chemistry 12	12	32	28	88
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Chemistry 12	12	19	18	95
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Chemistry 12	12	19	17	89
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222027	Charles Bloom Elementary Secondary	Chemistry 12	12	11	10	91
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02299151	vLearn.ca	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323005	Central School Programs	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Chemistry 12	12	28	23	82
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Chemistry 12	12	49	45	92
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Chemistry 12	12	59	56	95
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Chemistry 12	12	45	43	96
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Chemistry 12	12	104	103	99
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727000	GROW Continuing Education Centre	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Chemistry 12	12	19	16	84
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727056	Peter Skene Ogden Secondary	Chemistry 12	12	15	12	80
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Chemistry 12	12	22	17	77
+2007/2008	SCHOOL LEVEL	BC Public School	028	Quesnel	02828004	Quesnel Junior School	Chemistry 12	12	27	22	81
+2007/2008	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Chemistry 12	12	26	24	92
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Chemistry 12	12	34	33	97
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Chemistry 12	12	58	56	97
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03398003	Fraser Valley Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03399056	Ed. Ctr Academic Upgrading	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Chemistry 12	12	14	13	93
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Chemistry 12	12	71	71	100
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Chemistry 12	12	86	86	100
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Chemistry 12	12	34	34	100
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Chemistry 12	12	24	24	100
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Chemistry 12	12	23	19	83
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03499101	Abbotsford Virtual School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Chemistry 12	12	24	22	92
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535020	Aldergrove Community Secondary School	Chemistry 12	12	23	21	91
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535029	Langley Fine Arts School	Chemistry 12	12	27	27	100
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535031	H D Stafford Secondary School	Chemistry 12	12	26	26	100
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Chemistry 12	12	27	27	100
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Chemistry 12	12	30	28	93
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535041	R E Mountain Secondary	Chemistry 12	12	14	13	93
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Chemistry 12	12	63	58	92
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535056	Langley Fundamental Middle/Secondary Sch	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03599050	Langley Education Centre	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03599168	Langley Online and Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03599173	Choices Program	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636000	Continuing Ed SD 36	Chemistry 12	12	23	20	87
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Chemistry 12	12	60	58	97
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Chemistry 12	12	70	69	99
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636041	Lord Tweedsmuir Secondary	Chemistry 12	12	25	25	100
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636045	Johnston Heights Secondary	Chemistry 12	12	61	58	95
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636047	Guildford Park Secondary	Chemistry 12	12	35	32	91
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636049	Semiahmoo Secondary	Chemistry 12	12	80	71	89
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636079	L A Matheson Secondary	Chemistry 12	12	30	23	77
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Chemistry 12	12	42	38	90
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Chemistry 12	12	29	20	69
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Chemistry 12	12	85	80	94
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Chemistry 12	12	80	76	95
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636150	Tamanawis Secondary	Chemistry 12	12	37	36	97
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Chemistry 12	12	58	55	95
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636164	Sullivan Heights Secondary	Chemistry 12	12	28	28	100
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Chemistry 12	12	62	59	95
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636175	Clayton Heights Secondary	Chemistry 12	12	37	35	95
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636232	Panorama Ridge Secondary	Chemistry 12	12	43	35	81
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636246	Princess Margaret Secondary	Chemistry 12	12	99	87	88
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Chemistry 12	12	44	38	86
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03699142	Surrey Connect: A Distributed Learning	Chemistry 12	12	37	31	84
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737000	Delta Continuing Education	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Chemistry 12	12	32	31	97
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Chemistry 12	12	31	30	97
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737021	Delview Secondary	Chemistry 12	12	17	17	100
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737034	Burnsview Secondary	Chemistry 12	12	20	20	100
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Chemistry 12	12	20	17	85
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737038	Sands Secondary	Chemistry 12	12	22	16	73
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Chemistry 12	12	68	59	87
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03799170	Delta Access	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838000	Continuing Ed SD 38	Chemistry 12	12	16	12	75
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838024	R C Palmer Secondary	Chemistry 12	12	35	34	97
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838031	Hugh Boyd Secondary	Chemistry 12	12	30	26	87
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838033	Hugh McRoberts Secondary	Chemistry 12	12	62	55	89
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838042	J N Burnett Secondary	Chemistry 12	12	134	132	99
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838044	Matthew McNair Secondary	Chemistry 12	12	51	50	98
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Chemistry 12	12	142	128	90
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Chemistry 12	12	34	33	97
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Chemistry 12	12	25	25	100
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838064	A.R. MacNeill Secondary	Chemistry 12	12	28	25	89
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838065	Richmond Secondary	Chemistry 12	12	74	59	80
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939000	Continuing Ed SD 39	Chemistry 12	12	66	61	92
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939001	King George Secondary	Chemistry 12	12	14	14	100
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939003	Magee Secondary	Chemistry 12	12	100	93	93
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939004	Britannia Community Secondary	Chemistry 12	12	20	12	60
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Chemistry 12	12	78	74	95
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939007	John Oliver Secondary	Chemistry 12	12	33	28	85
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939008	Lord Byng Secondary	Chemistry 12	12	68	65	96
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939010	Templeton Secondary	Chemistry 12	12	47	43	91
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Chemistry 12	12	86	82	95
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939012	Point Grey Secondary	Chemistry 12	12	89	80	90
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939014	Gladstone Secondary	Chemistry 12	12	69	64	93
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Chemistry 12	12	114	99	87
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Chemistry 12	12	144	140	97
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939017	Sir Charles Tupper Secondary	Chemistry 12	12	25	23	92
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Chemistry 12	12	69	63	91
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939019	Prince of Wales Secondary	Chemistry 12	12	97	95	98
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939020	Windermere Community Secondary	Chemistry 12	12	48	41	85
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939022	Eric Hamber Secondary	Chemistry 12	12	112	101	90
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939024	University Hill Secondary	Chemistry 12	12	68	62	91
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03998004	Vancouver Learning Network	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	040	New Westminster	04040000	Continuing Ed SD 40	Chemistry 12	12	10	8	80
+2007/2008	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Chemistry 12	12	127	121	95
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141000	Burnaby Continuing Education	Chemistry 12	12	16	14	88
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141001	Burnaby Central Secondary	Chemistry 12	12	102	92	90
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Chemistry 12	12	153	139	91
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141005	Alpha Secondary	Chemistry 12	12	38	36	95
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Chemistry 12	12	42	36	86
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Chemistry 12	12	138	127	92
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Chemistry 12	12	107	95	89
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Chemistry 12	12	73	68	93
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141068	Byrne Creek Secondary	Chemistry 12	12	55	49	89
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04199145	Burnaby Online Program	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242000	Continuing Ed SD 42	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Chemistry 12	12	31	28	90
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242002	Garibaldi Secondary	Chemistry 12	12	16	15	94
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Chemistry 12	12	12	10	83
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Chemistry 12	12	25	24	96
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242028	Arthur Peake Centre	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Chemistry 12	12	19	17	89
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242045	Samuel Robertson Technical Secondary	Chemistry 12	12	11	10	91
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04299154	SD42 Connected Learning Community	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343000	Continuing Ed SD 43	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343076	Centennial School	Chemistry 12	12	116	106	91
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Chemistry 12	12	50	46	92
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Chemistry 12	12	42	38	90
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Chemistry 12	12	91	87	96
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Chemistry 12	12	81	81	100
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Chemistry 12	12	124	116	94
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Chemistry 12	12	83	72	87
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Chemistry 12	12	60	57	95
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04399143	Coquitlam Open Learning 10-12	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444000	Continuing Ed SD 44	Chemistry 12	12	11	9	82
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Chemistry 12	12	68	63	93
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Chemistry 12	12	64	61	95
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444025	Handsworth Secondary School	Chemistry 12	12	47	41	87
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444026	Windsor Secondary	Chemistry 12	12	31	26	84
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444036	Carson Graham Secondary	Chemistry 12	12	58	49	84
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444047	Seycove Secondary Community	Chemistry 12	12	19	19	100
+2007/2008	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Chemistry 12	12	59	56	95
+2007/2008	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Chemistry 12	12	64	62	97
+2007/2008	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545081	Rockridge Secondary	Chemistry 12	12	27	24	89
+2007/2008	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Chemistry 12	12	17	17	100
+2007/2008	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04699160	SPIDER Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	047	Powell River	04747021	Brooks Secondary	Chemistry 12	12	32	30	94
+2007/2008	SCHOOL LEVEL	BC Public School	047	Powell River	04799161	Partners in Education Program (PIE)	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Chemistry 12	12	28	21	75
+2007/2008	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848021	Pemberton Secondary School	Chemistry 12	12	15	12	80
+2007/2008	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848022	Whistler Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	049	Central Coast	04949002	Sir Alexander Mackenzie Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	050	Haida Gwaii	05050001	George M Dawson Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Chemistry 12	12	22	22	100
+2007/2008	SCHOOL LEVEL	BC Public School	051	Boundary	05113010	Boundary Central Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252009	Prince Rupert Secondary	Chemistry 12	12	22	14	64
+2007/2008	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Chemistry 12	12	15	6	40
+2007/2008	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Chemistry 12	12	14	12	86
+2007/2008	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Chemistry 12	12	15	11	73
+2007/2008	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Chemistry 12	12	10	7	70
+2007/2008	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454011	Houston Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454013	Smithers Secondary	Chemistry 12	12	17	16	94
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757012	Duchess Park Secondary	Chemistry 12	12	24	22	92
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Chemistry 12	12	36	32	89
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Chemistry 12	12	42	30	71
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757074	Valemount Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757100	D P Todd Secondary	Chemistry 12	12	20	18	90
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757101	College Heights Secondary	Chemistry 12	12	23	17	74
+2007/2008	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05817008	Princeton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	South Peace Secondary	Chemistry 12	12	46	40	87
+2007/2008	SCHOOL LEVEL	BC Public School	059	Peace River South	05959011	Chetwynd Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	059	Peace River South	05959027	Tumbler Ridge Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Chemistry 12	12	40	37	93
+2007/2008	SCHOOL LEVEL	BC Public School	060	Peace River North	06060060	Hudson's Hope School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161000	Continuing Ed SD 61	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Chemistry 12	12	13	11	85
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Chemistry 12	12	30	28	93
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161048	Esquimalt High School	Chemistry 12	12	12	12	100
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161049	Mount Douglas Secondary	Chemistry 12	12	105	101	96
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Chemistry 12	12	49	48	98
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Chemistry 12	12	45	42	93
+2007/2008	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161064	Lambrick Park Secondary	Chemistry 12	12	26	24	92
+2007/2008	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Chemistry 12	12	41	39	95
+2007/2008	SCHOOL LEVEL	BC Public School	062	Sooke	06262033	Edward Milne Community School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Chemistry 12	12	34	34	100
+2007/2008	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Chemistry 12	12	72	67	93
+2007/2008	SCHOOL LEVEL	BC Public School	063	Saanich	06363022	Parkland Secondary School	Chemistry 12	12	23	23	100
+2007/2008	SCHOOL LEVEL	BC Public School	063	Saanich	06398007	South Island Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	064	Gulf Islands	06464010	Gulf Islands Secondary	Chemistry 12	12	13	12	92
+2007/2008	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Chemistry 12	12	82	75	91
+2007/2008	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715008	Princess Margaret Secondary	Chemistry 12	12	27	23	85
+2007/2008	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06777002	Summerland Secondary	Chemistry 12	12	17	15	88
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868001	Nanaimo District Secondary	Chemistry 12	12	10	9	90
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868002	Ladysmith Secondary	Chemistry 12	12	22	22	100
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868010	Dover Bay Secondary	Chemistry 12	12	58	57	98
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868011	John Barsby Community School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Chemistry 12	12	10	9	90
+2007/2008	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868015	Wellington Secondary	Chemistry 12	12	20	17	85
+2007/2008	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Chemistry 12	12	19	16	84
+2007/2008	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Chemistry 12	12	14	12	86
+2007/2008	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Chemistry 12	12	17	16	94
+2007/2008	SCHOOL LEVEL	BC Public School	070	Alberni	07070005	Ucluelet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Chemistry 12	12	23	21	91
+2007/2008	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Chemistry 12	12	60	59	98
+2007/2008	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Chemistry 12	12	14	12	86
+2007/2008	SCHOOL LEVEL	BC Public School	071	Comox Valley	07198008	North Island Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	072	Campbell River	07272010	Carihi Secondary	Chemistry 12	12	29	29	100
+2007/2008	SCHOOL LEVEL	BC Public School	072	Campbell River	07272012	Timberline Secondary School	Chemistry 12	12	17	16	94
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324012	South Kamloops Secondary	Chemistry 12	12	24	23	96
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324043	Brocklehurst Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324044	Nor Kam Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324045	Valleyview Secondary	Chemistry 12	12	12	12	100
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324055	Westsyde Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324070	Logan Lake Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07399103	@ KOOL	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	074	Gold Trail	07499134	Gold Trail Distributed Learning Program	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Chemistry 12	12	20	20	100
+2007/2008	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Chemistry 12	12	15	10	67
+2007/2008	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07832003	Hope Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07876003	Agassiz Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Chemistry 12	12	16	15	94
+2007/2008	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Chemistry 12	12	11	11	100
+2007/2008	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Chemistry 12	12	26	26	100
+2007/2008	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07966004	Lake Cowichan Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	081	Fort Nelson	08181013	Fort Nelson Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08280002	Mount Elizabeth Secondary	Chemistry 12	12	14	12	86
+2007/2008	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288024	Caledonia Sr Secondary	Chemistry 12	12	22	22	100
+2007/2008	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288028	Bear Valley School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08298009	North Coast Distance Education	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08321004	Pleasant Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383000	Gateway Community Learning Centre	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Chemistry 12	12	34	31	91
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389002	A L Fortune Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389010	Eagle River Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08399132	Educational Outreach Program	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	084	Vancouver Island West	08484012	Gold River Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	085	Vancouver Island North	08585018	North Island Secondary	Chemistry 12	12	12	11	92
+2007/2008	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156007	Fort St James Secondary	Chemistry 12	12	10	8	80
+2007/2008	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156008	Nechako Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09191023	Lakes District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09199085	Ebus Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09339006	Kitsilano Secondary (Francophone Prog)	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09344004	Ecole Andre Piolat	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09346017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09347021	Brooks Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09357012	Duchess Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09372010	Ecole Carihi	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09377002	Ecole Secondaire de Summerland	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09393002	Gabrielle-Roy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02296261	Vernon Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02396013	Immaculata Regional High School	Chemistry 12	12	16	15	94
+2007/2008	SCHOOL LEVEL	BC Independent School			02396023	Okanagan Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02396479	Heritage Christian School	Chemistry 12	12	13	11	85
+2007/2008	SCHOOL LEVEL	BC Independent School			02396738	Heritage Christian Online School (DL)	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02796177	Cariboo Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			02796801	West Coast Adventist DL School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03396181	Unity Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03396209	Timothy Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03396251	Highroad Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03396354	Mount Cheam Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03496020	Mennonite Educational Institute	Chemistry 12	12	30	30	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03496069	Abbotsford Christian School	Chemistry 12	12	11	11	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03496595	St John Brebeuf	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03596061	Fraser Valley Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03596289	Credo Christian Schools	Chemistry 12	12	10	10	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03596311	Langley Christian	Chemistry 12	12	14	14	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03696015	Fraser Valley Christian High	Chemistry 12	12	24	23	96
+2007/2008	SCHOOL LEVEL	BC Independent School			03696048	Relevant High	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03696166	Holy Cross Regional High School	Chemistry 12	12	27	26	96
+2007/2008	SCHOOL LEVEL	BC Independent School			03696309	White Rock Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03696394	Pacific Academy	Chemistry 12	12	38	32	84
+2007/2008	SCHOOL LEVEL	BC Independent School			03696476	Regent Christian Academy	Chemistry 12	12	10	10	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03696610	Southridge School	Chemistry 12	12	34	30	88
+2007/2008	SCHOOL LEVEL	BC Independent School			03696720	Traditional Learning Academy Online	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03796694	Southpointe Academy	Chemistry 12	12	14	14	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03896178	Richmond Christian School	Chemistry 12	12	19	18	95
+2007/2008	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Chemistry 12	12	24	23	96
+2007/2008	SCHOOL LEVEL	BC Independent School			03996004	Crofton House	Chemistry 12	12	10	9	90
+2007/2008	SCHOOL LEVEL	BC Independent School			03996007	Vancouver College	Chemistry 12	12	37	36	97
+2007/2008	SCHOOL LEVEL	BC Independent School			03996011	York House School	Chemistry 12	12	16	16	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03996019	Little Flower Academy	Chemistry 12	12	31	31	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03996022	Notre Dame Regional Secondary	Chemistry 12	12	19	17	89
+2007/2008	SCHOOL LEVEL	BC Independent School			03996030	St Patrick Regional Secondary	Chemistry 12	12	11	11	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03996319	Columbia College	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996435	St John's School	Chemistry 12	12	11	9	82
+2007/2008	SCHOOL LEVEL	BC Independent School			03996451	King David High School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996497	Canadian Gateway Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996527	St John's International	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996538	Royal Canadian College	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996601	West Coast Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Chemistry 12	12	20	20	100
+2007/2008	SCHOOL LEVEL	BC Independent School			03996659	Century High School	Chemistry 12	12	24	21	88
+2007/2008	SCHOOL LEVEL	BC Independent School			03996733	Pattison High School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04196031	St Thomas More Collegiate	Chemistry 12	12	39	39	100
+2007/2008	SCHOOL LEVEL	BC Independent School			04196766	Carver Christian High School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04296099	Maple Ridge Christian School	Chemistry 12	12	16	16	100
+2007/2008	SCHOOL LEVEL	BC Independent School			04296673	Meadowridge Secondary	Chemistry 12	12	22	22	100
+2007/2008	SCHOOL LEVEL	BC Independent School			04396349	Coquitlam College	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04396579	British Columbia Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04396588	Traditional Learning Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Chemistry 12	12	47	44	94
+2007/2008	SCHOOL LEVEL	BC Independent School			04496062	St Thomas Aquinas	Chemistry 12	12	27	26	96
+2007/2008	SCHOOL LEVEL	BC Independent School			04496551	Bodwell High School	Chemistry 12	12	31	29	94
+2007/2008	SCHOOL LEVEL	BC Independent School			04496803	Bodwell Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Chemistry 12	12	35	33	94
+2007/2008	SCHOOL LEVEL	BC Independent School			04596701	Mulgrave School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			05496091	Houston Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			05496124	Bulkley Valley Christian School	Chemistry 12	12	14	11	79
+2007/2008	SCHOOL LEVEL	BC Independent School			05796230	Cedars Christian School	Chemistry 12	12	17	12	71
+2007/2008	SCHOOL LEVEL	BC Independent School			06096473	Christian Life School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Chemistry 12	12	26	25	96
+2007/2008	SCHOOL LEVEL	BC Independent School			06196010	St Margaret's	Chemistry 12	12	10	10	100
+2007/2008	SCHOOL LEVEL	BC Independent School			06196021	Glenlyon Norfolk School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			06196084	Pacific Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Chemistry 12	12	23	22	96
+2007/2008	SCHOOL LEVEL	BC Independent School			06896730	Aspengrove School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07296335	Campbell River Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07396194	St Ann's Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07396280	Kamloops Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07996005	Brentwood College	Chemistry 12	12	19	18	95
+2007/2008	SCHOOL LEVEL	BC Independent School			07996006	Shawnigan Lake	Chemistry 12	12	37	33	89
+2007/2008	SCHOOL LEVEL	BC Independent School			07996017	Queen Margaret's	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07996421	Maxwell International School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07996680	Island Oak High School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			07996711	Lakeside Preparatory Academy	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			08296183	Centennial Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			08396240	King's Christian School	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			08396713	Anchor Academy (DL)	Chemistry 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			09196232	Northside Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	PROVINCE LEVEL	PROVINCE - Total					Chemistry 12	12	4613	4257	92
+2008/2009	PROVINCE LEVEL	BC Public School					Chemistry 12	12	4159	3851	93
+2008/2009	PROVINCE LEVEL	BC Independent School					Chemistry 12	12	454	406	89
+2008/2009	DISTRICT LEVEL	BC Public School	005	Southeast Kootenay			Chemistry 12	12	31	25	81
+2008/2009	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	008	Kootenay Lake			Chemistry 12	12	45	42	93
+2008/2009	DISTRICT LEVEL	BC Public School	019	Revelstoke			Chemistry 12	12	16	16	100
+2008/2009	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Chemistry 12	12	22	21	95
+2008/2009	DISTRICT LEVEL	BC Public School	022	Vernon			Chemistry 12	12	41	38	93
+2008/2009	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Chemistry 12	12	99	95	96
+2008/2009	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Chemistry 12	12	27	24	89
+2008/2009	DISTRICT LEVEL	BC Public School	028	Quesnel			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	033	Chilliwack			Chemistry 12	12	45	44	98
+2008/2009	DISTRICT LEVEL	BC Public School	034	Abbotsford			Chemistry 12	12	198	185	93
+2008/2009	DISTRICT LEVEL	BC Public School	035	Langley			Chemistry 12	12	70	67	96
+2008/2009	DISTRICT LEVEL	BC Public School	036	Surrey			Chemistry 12	12	421	400	95
+2008/2009	DISTRICT LEVEL	BC Public School	037	Delta			Chemistry 12	12	76	72	95
+2008/2009	DISTRICT LEVEL	BC Public School	038	Richmond			Chemistry 12	12	382	362	95
+2008/2009	DISTRICT LEVEL	BC Public School	039	Vancouver			Chemistry 12	12	610	566	93
+2008/2009	DISTRICT LEVEL	BC Public School	040	New Westminster			Chemistry 12	12	100	96	96
+2008/2009	DISTRICT LEVEL	BC Public School	041	Burnaby			Chemistry 12	12	242	225	93
+2008/2009	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Chemistry 12	12	45	43	96
+2008/2009	DISTRICT LEVEL	BC Public School	043	Coquitlam			Chemistry 12	12	330	303	92
+2008/2009	DISTRICT LEVEL	BC Public School	044	North Vancouver			Chemistry 12	12	131	118	90
+2008/2009	DISTRICT LEVEL	BC Public School	045	West Vancouver			Chemistry 12	12	52	49	94
+2008/2009	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	047	Powell River			Chemistry 12	12	24	24	100
+2008/2009	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Chemistry 12	12	13	13	100
+2008/2009	DISTRICT LEVEL	BC Public School	050	Haida Gwaii			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	051	Boundary			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	052	Prince Rupert			Chemistry 12	12	30	18	60
+2008/2009	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Chemistry 12	12	23	23	100
+2008/2009	DISTRICT LEVEL	BC Public School	054	Bulkley Valley			Chemistry 12	12	26	23	88
+2008/2009	DISTRICT LEVEL	BC Public School	057	Prince George			Chemistry 12	12	124	103	83
+2008/2009	DISTRICT LEVEL	BC Public School	058	Nicola-Similkameen			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	059	Peace River South			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	060	Peace River North			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Chemistry 12	12	257	245	95
+2008/2009	DISTRICT LEVEL	BC Public School	062	Sooke			Chemistry 12	12	31	31	100
+2008/2009	DISTRICT LEVEL	BC Public School	063	Saanich			Chemistry 12	12	98	78	80
+2008/2009	DISTRICT LEVEL	BC Public School	064	Gulf Islands			Chemistry 12	12	11	9	82
+2008/2009	DISTRICT LEVEL	BC Public School	067	Okanagan Skaha			Chemistry 12	12	86	82	95
+2008/2009	DISTRICT LEVEL	BC Public School	068	Nanaimo-Ladysmith			Chemistry 12	12	37	37	100
+2008/2009	DISTRICT LEVEL	BC Public School	069	Qualicum			Chemistry 12	12	18	14	78
+2008/2009	DISTRICT LEVEL	BC Public School	070	Alberni			Chemistry 12	12	12	12	100
+2008/2009	DISTRICT LEVEL	BC Public School	071	Comox Valley			Chemistry 12	12	82	79	96
+2008/2009	DISTRICT LEVEL	BC Public School	072	Campbell River			Chemistry 12	12	51	49	96
+2008/2009	DISTRICT LEVEL	BC Public School	073	Kamloops/Thompson			Chemistry 12	12	34	30	88
+2008/2009	DISTRICT LEVEL	BC Public School	074	Gold Trail			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	075	Mission			Chemistry 12	12	28	27	96
+2008/2009	DISTRICT LEVEL	BC Public School	078	Fraser-Cascade			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	079	Cowichan Valley			Chemistry 12	12	15	14	93
+2008/2009	DISTRICT LEVEL	BC Public School	082	Coast Mountains			Chemistry 12	12	21	19	90
+2008/2009	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Chemistry 12	12	70	55	79
+2008/2009	DISTRICT LEVEL	BC Public School	085	Vancouver Island North			Chemistry 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	091	Nechako Lakes			Chemistry 12	12	11	9	82
+2008/2009	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Chemistry 12	12	15	12	80
+2008/2009	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Chemistry 12	12	24	20	83
+2008/2009	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505033	Elkford Elementary Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505034	Fernie Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00505035	Sparwood Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00599078	Kootenay Educational Services	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00604015	David Thompson Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00618005	Golden Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Chemistry 12	12	34	32	94
+2008/2009	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807025	Mount Sentinel Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886006	Crawford Bay Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00898001	Distance Ed School of the Kootenays	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	019	Revelstoke	01919003	Revelstoke Secondary	Chemistry 12	12	16	16	100
+2008/2009	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02009010	Stanley Humphries Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011014	Rossland Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222007	W L Seaton Secondary	Chemistry 12	12	11	9	82
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Chemistry 12	12	14	14	100
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222027	Charles Bloom Elementary Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Chemistry 12	12	13	12	92
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Chemistry 12	12	17	16	94
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Chemistry 12	12	24	24	100
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Chemistry 12	12	38	37	97
+2008/2009	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727056	Peter Skene Ogden Secondary	Chemistry 12	12	20	17	85
+2008/2009	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	028	Quesnel	02828004	Quesnel Junior School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Chemistry 12	12	27	26	96
+2008/2009	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Chemistry 12	12	10	10	100
+2008/2009	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333043	GW Graham Middle Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	033	Chilliwack	03398003	Fraser Valley Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Chemistry 12	12	12	11	92
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Chemistry 12	12	52	52	100
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Chemistry 12	12	72	71	99
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Chemistry 12	12	24	23	96
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Chemistry 12	12	27	17	63
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03499101	Abbotsford Virtual School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Chemistry 12	12	12	10	83
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535020	Aldergrove Community Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535041	R E Mountain Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Chemistry 12	12	27	27	100
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535056	Langley Fundamental Middle/Secondary Sch	Chemistry 12	12	15	15	100
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03599050	Langley Education Centre	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636000	Continuing Ed SD 36	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Chemistry 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636041	Lord Tweedsmuir Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636045	Johnston Heights Secondary	Chemistry 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636047	Guildford Park Secondary	Chemistry 12	12	25	25	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636049	Semiahmoo Secondary	Chemistry 12	12	17	13	76
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636079	L A Matheson Secondary	Chemistry 12	12	10	9	90
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Chemistry 12	12	23	21	91
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Chemistry 12	12	23	21	91
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Chemistry 12	12	40	40	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Chemistry 12	12	29	29	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636150	Tamanawis Secondary	Chemistry 12	12	25	24	96
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Chemistry 12	12	29	28	97
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636164	Sullivan Heights Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Chemistry 12	12	25	24	96
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636175	Clayton Heights Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636232	Panorama Ridge Secondary	Chemistry 12	12	25	22	88
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636246	Princess Margaret Secondary	Chemistry 12	12	64	62	97
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03699142	Surrey Connect: A Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737021	Delview Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737034	Burnsview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Chemistry 12	12	21	18	86
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737038	Sands Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Chemistry 12	12	20	19	95
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03799170	Delta Access	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838000	Continuing Ed SD 38	Chemistry 12	12	14	10	71
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838024	R C Palmer Secondary	Chemistry 12	12	22	22	100
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838031	Hugh Boyd Secondary	Chemistry 12	12	13	13	100
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838033	Hugh McRoberts Secondary	Chemistry 12	12	25	23	92
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838042	J N Burnett Secondary	Chemistry 12	12	115	114	99
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838044	Matthew McNair Secondary	Chemistry 12	12	23	23	100
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Chemistry 12	12	83	79	95
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Chemistry 12	12	12	11	92
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Chemistry 12	12	17	15	88
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838064	A.R. MacNeill Secondary	Chemistry 12	12	30	27	90
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838065	Richmond Secondary	Chemistry 12	12	28	25	89
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939000	Continuing Ed SD 39	Chemistry 12	12	37	27	73
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939001	King George Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939003	Magee Secondary	Chemistry 12	12	19	18	95
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939004	Britannia Community Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Chemistry 12	12	39	38	97
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939007	John Oliver Secondary	Chemistry 12	12	37	26	70
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939008	Lord Byng Secondary	Chemistry 12	12	39	39	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939010	Templeton Secondary	Chemistry 12	12	23	18	78
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Chemistry 12	12	16	16	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939012	Point Grey Secondary	Chemistry 12	12	42	41	98
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939014	Gladstone Secondary	Chemistry 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Chemistry 12	12	26	24	92
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Chemistry 12	12	72	69	96
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939017	Sir Charles Tupper Secondary	Chemistry 12	12	20	19	95
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Chemistry 12	12	45	44	98
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939019	Prince of Wales Secondary	Chemistry 12	12	32	32	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939020	Windermere Community Secondary	Chemistry 12	12	18	17	94
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939022	Eric Hamber Secondary	Chemistry 12	12	74	71	96
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939024	University Hill Secondary	Chemistry 12	12	20	18	90
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03995051	University Transition Program	Chemistry 12	12	15	15	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03998004	Vancouver Learning Network	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	040	New Westminster	04040000	Continuing Ed SD 40	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Chemistry 12	12	96	93	97
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141000	Burnaby Continuing Education	Chemistry 12	12	10	8	80
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141001	Burnaby Central Secondary	Chemistry 12	12	29	26	90
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Chemistry 12	12	57	53	93
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141005	Alpha Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Chemistry 12	12	55	50	91
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Chemistry 12	12	21	21	100
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Chemistry 12	12	43	41	95
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141068	Byrne Creek Secondary	Chemistry 12	12	17	16	94
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242002	Garibaldi Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Chemistry 12	12	11	10	91
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242045	Samuel Robertson Technical Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343000	Continuing Ed SD 43	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343076	Centennial School	Chemistry 12	12	31	30	97
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Chemistry 12	12	32	29	91
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Chemistry 12	12	16	13	81
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Chemistry 12	12	41	37	90
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Chemistry 12	12	60	53	88
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Chemistry 12	12	88	83	94
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Chemistry 12	12	28	27	96
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Chemistry 12	12	25	23	92
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04399143	Coquitlam Open Learning 10-12	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444000	Continuing Ed SD 44	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Chemistry 12	12	57	51	89
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Chemistry 12	12	27	27	100
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444025	Handsworth Secondary School	Chemistry 12	12	16	14	88
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444026	Windsor Secondary	Chemistry 12	12	14	12	86
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444036	Carson Graham Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444047	Seycove Secondary Community	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04499176	North Vancouver Distributed Learning Sch	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Chemistry 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Chemistry 12	12	21	19	90
+2008/2009	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545081	Rockridge Secondary	Chemistry 12	12	14	13	93
+2008/2009	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	047	Powell River	04747021	Brooks Secondary	Chemistry 12	12	24	24	100
+2008/2009	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848021	Pemberton Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848022	Whistler Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	050	Haida Gwaii	05050012	Queen Charlotte Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	051	Boundary	05113010	Boundary Central Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252009	Prince Rupert Secondary	Chemistry 12	12	20	13	65
+2008/2009	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Chemistry 12	12	10	5	50
+2008/2009	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454013	Smithers Secondary	Chemistry 12	12	26	23	88
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757012	Duchess Park Secondary	Chemistry 12	12	10	6	60
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Chemistry 12	12	35	33	94
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Chemistry 12	12	43	32	74
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757074	Valemount Secondary	Chemistry 12	12	14	13	93
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757100	D P Todd Secondary	Chemistry 12	12	11	9	82
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757101	College Heights Secondary	Chemistry 12	12	11	10	91
+2008/2009	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05817008	Princeton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	South Peace Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	059	Peace River South	05959011	Chetwynd Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	059	Peace River South	05999102	South Peace Distributed Learning School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	060	Peace River North	06060060	Hudson's Hope School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161000	Continuing Ed SD 61	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Chemistry 12	12	13	12	92
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Chemistry 12	12	37	36	97
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161048	Esquimalt High School	Chemistry 12	12	22	22	100
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161049	Mount Douglas Secondary	Chemistry 12	12	101	100	99
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Chemistry 12	12	22	22	100
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Chemistry 12	12	55	46	84
+2008/2009	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161064	Lambrick Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Chemistry 12	12	28	28	100
+2008/2009	SCHOOL LEVEL	BC Public School	062	Sooke	06262033	Edward Milne Community School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Chemistry 12	12	13	12	92
+2008/2009	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Chemistry 12	12	57	41	72
+2008/2009	SCHOOL LEVEL	BC Public School	063	Saanich	06363022	Parkland Secondary School	Chemistry 12	12	27	24	89
+2008/2009	SCHOOL LEVEL	BC Public School	063	Saanich	06398007	South Island Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	064	Gulf Islands	06464010	Gulf Islands Secondary	Chemistry 12	12	11	9	82
+2008/2009	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Chemistry 12	12	79	75	95
+2008/2009	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715008	Princess Margaret Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06777002	Summerland Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868001	Nanaimo District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868007	Cedar Community Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868010	Dover Bay Secondary	Chemistry 12	12	21	21	100
+2008/2009	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868015	Wellington Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Chemistry 12	12	18	14	78
+2008/2009	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	070	Alberni	07070005	Ucluelet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Chemistry 12	12	22	20	91
+2008/2009	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Chemistry 12	12	39	39	100
+2008/2009	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Chemistry 12	12	21	20	95
+2008/2009	SCHOOL LEVEL	BC Public School	072	Campbell River	07272010	Carihi Secondary	Chemistry 12	12	32	31	97
+2008/2009	SCHOOL LEVEL	BC Public School	072	Campbell River	07272012	Timberline Secondary School	Chemistry 12	12	19	18	95
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324012	South Kamloops Secondary	Chemistry 12	12	13	13	100
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324043	Brocklehurst Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324045	Valleyview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324055	Westsyde Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07399103	@ KOOL	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	074	Gold Trail	07429015	Lillooet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	074	Gold Trail	07499134	Gold Trail Distributed Learning Program	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Chemistry 12	12	20	20	100
+2008/2009	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07832003	Hope Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08280002	Mount Elizabeth Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288006	Hazelton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288024	Caledonia Sr Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08321004	Pleasant Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Chemistry 12	12	61	48	79
+2008/2009	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08389002	A L Fortune Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	085	Vancouver Island North	08585026	Port Hardy Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156002	Fraser Lake Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156008	Nechako Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09191023	Lakes District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09339006	Kitsilano Secondary (Francophone Prog)	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09343092	Ecole des Pionniers	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09344004	Ecole Andre Piolat	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09346017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09347021	Brooks Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09377002	Ecole Secondaire de Summerland	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09393002	Gabrielle-Roy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			02296261	Vernon Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			02396013	Immaculata Regional High School	Chemistry 12	12	10	8	80
+2008/2009	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			02396738	Heritage Christian Online School (DL)	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03396251	Highroad Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03396354	Mount Cheam Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03496020	Mennonite Educational Institute	Chemistry 12	12	30	29	97
+2008/2009	SCHOOL LEVEL	BC Independent School			03496069	Abbotsford Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03596061	Fraser Valley Adventist Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03596289	Credo Christian Schools	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03596311	Langley Christian	Chemistry 12	12	13	11	85
+2008/2009	SCHOOL LEVEL	BC Independent School			03596376	King's School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03696015	Fraser Valley Christian High	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03696166	Holy Cross Regional High School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03696309	White Rock Christian Academy	Chemistry 12	12	12	12	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03696394	Pacific Academy	Chemistry 12	12	14	14	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03696476	Regent Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03696610	Southridge School	Chemistry 12	12	12	12	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03696720	Traditional Learning Academy Online	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03796694	Southpointe Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03896178	Richmond Christian School	Chemistry 12	12	24	17	71
+2008/2009	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Chemistry 12	12	16	16	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03996004	Crofton House	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996007	Vancouver College	Chemistry 12	12	21	21	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03996011	York House School	Chemistry 12	12	14	14	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03996019	Little Flower Academy	Chemistry 12	12	10	10	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03996022	Notre Dame Regional Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996030	St Patrick Regional Secondary	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996319	Columbia College	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996451	King David High School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996601	West Coast Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996659	Century High School	Chemistry 12	12	11	11	100
+2008/2009	SCHOOL LEVEL	BC Independent School			03996732	Pacific Torah Institute	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996733	Pattison High School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04196031	St Thomas More Collegiate	Chemistry 12	12	18	18	100
+2008/2009	SCHOOL LEVEL	BC Independent School			04196766	Carver Christian High School	Chemistry 12	12	14	8	57
+2008/2009	SCHOOL LEVEL	BC Independent School			04296400	Meadowridge School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04396349	Coquitlam College	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04396579	British Columbia Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04396588	Traditional Learning Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Chemistry 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Independent School			04496062	St Thomas Aquinas	Chemistry 12	12	14	13	93
+2008/2009	SCHOOL LEVEL	BC Independent School			04496551	Bodwell High School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04496803	Bodwell Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Chemistry 12	12	39	30	77
+2008/2009	SCHOOL LEVEL	BC Independent School			04596701	Mulgrave School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			05496091	Houston Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			05796491	Westside Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06196010	St Margaret's	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06196021	Glenlyon Norfolk School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06196084	Pacific Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Chemistry 12	12	20	18	90
+2008/2009	SCHOOL LEVEL	BC Independent School			06296461	Lighthouse Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			06896256	Nanaimo Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07296335	Campbell River Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07396194	St Ann's Academy	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07396280	Kamloops Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07996005	Brentwood College	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07996006	Shawnigan Lake	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			07996680	Island Oak High School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			08396240	King's Christian School	Chemistry 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			08396713	Anchor Academy (DL)	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	PROVINCE LEVEL	PROVINCE - Total					Chemistry 12	12	3587	3377	94
+2009/2010	PROVINCE LEVEL	BC Public School					Chemistry 12	12	3192	3006	94
+2009/2010	PROVINCE LEVEL	BC Independent School					Chemistry 12	12	395	371	94
+2009/2010	DISTRICT LEVEL	BC Public School	005	Southeast Kootenay			Chemistry 12	12	15	15	100
+2009/2010	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	008	Kootenay Lake			Chemistry 12	12	45	34	76
+2009/2010	DISTRICT LEVEL	BC Public School	010	Arrow Lakes			Chemistry 12	12	11	8	73
+2009/2010	DISTRICT LEVEL	BC Public School	019	Revelstoke			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Chemistry 12	12	19	19	100
+2009/2010	DISTRICT LEVEL	BC Public School	022	Vernon			Chemistry 12	12	29	27	93
+2009/2010	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Chemistry 12	12	86	84	98
+2009/2010	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Chemistry 12	12	16	15	94
+2009/2010	DISTRICT LEVEL	BC Public School	028	Quesnel			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	033	Chilliwack			Chemistry 12	12	67	62	93
+2009/2010	DISTRICT LEVEL	BC Public School	034	Abbotsford			Chemistry 12	12	181	181	100
+2009/2010	DISTRICT LEVEL	BC Public School	035	Langley			Chemistry 12	12	69	69	100
+2009/2010	DISTRICT LEVEL	BC Public School	036	Surrey			Chemistry 12	12	398	380	95
+2009/2010	DISTRICT LEVEL	BC Public School	037	Delta			Chemistry 12	12	62	61	98
+2009/2010	DISTRICT LEVEL	BC Public School	038	Richmond			Chemistry 12	12	323	307	95
+2009/2010	DISTRICT LEVEL	BC Public School	039	Vancouver			Chemistry 12	12	451	437	97
+2009/2010	DISTRICT LEVEL	BC Public School	040	New Westminster			Chemistry 12	12	85	81	95
+2009/2010	DISTRICT LEVEL	BC Public School	041	Burnaby			Chemistry 12	12	168	162	96
+2009/2010	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Chemistry 12	12	25	22	88
+2009/2010	DISTRICT LEVEL	BC Public School	043	Coquitlam			Chemistry 12	12	270	254	94
+2009/2010	DISTRICT LEVEL	BC Public School	044	North Vancouver			Chemistry 12	12	67	65	97
+2009/2010	DISTRICT LEVEL	BC Public School	045	West Vancouver			Chemistry 12	12	32	30	94
+2009/2010	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	047	Powell River			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Chemistry 12	12	11	11	100
+2009/2010	DISTRICT LEVEL	BC Public School	049	Central Coast			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	051	Boundary			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	052	Prince Rupert			Chemistry 12	12	30	17	57
+2009/2010	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Chemistry 12	12	33	25	76
+2009/2010	DISTRICT LEVEL	BC Public School	054	Bulkley Valley			Chemistry 12	12	10	10	100
+2009/2010	DISTRICT LEVEL	BC Public School	057	Prince George			Chemistry 12	12	23	21	91
+2009/2010	DISTRICT LEVEL	BC Public School	058	Nicola-Similkameen			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	059	Peace River South			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	060	Peace River North			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Chemistry 12	12	158	154	97
+2009/2010	DISTRICT LEVEL	BC Public School	062	Sooke			Chemistry 12	12	19	19	100
+2009/2010	DISTRICT LEVEL	BC Public School	063	Saanich			Chemistry 12	12	76	59	78
+2009/2010	DISTRICT LEVEL	BC Public School	064	Gulf Islands			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	067	Okanagan Skaha			Chemistry 12	12	88	74	84
+2009/2010	DISTRICT LEVEL	BC Public School	068	Nanaimo-Ladysmith			Chemistry 12	12	33	32	97
+2009/2010	DISTRICT LEVEL	BC Public School	069	Qualicum			Chemistry 12	12	23	21	91
+2009/2010	DISTRICT LEVEL	BC Public School	070	Alberni			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	071	Comox Valley			Chemistry 12	12	80	77	96
+2009/2010	DISTRICT LEVEL	BC Public School	072	Campbell River			Chemistry 12	12	54	44	81
+2009/2010	DISTRICT LEVEL	BC Public School	073	Kamloops/Thompson			Chemistry 12	12	18	18	100
+2009/2010	DISTRICT LEVEL	BC Public School	075	Mission			Chemistry 12	12	17	16	94
+2009/2010	DISTRICT LEVEL	BC Public School	079	Cowichan Valley			Chemistry 12	12	11	11	100
+2009/2010	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Chemistry 12	12	18	18	100
+2009/2010	DISTRICT LEVEL	BC Public School	084	Vancouver Island West			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	091	Nechako Lakes			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00501006	Sparwood Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Chemistry 12	12	14	14	100
+2009/2010	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807012	Salmo Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Chemistry 12	12	35	30	86
+2009/2010	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886018	J V Humphries Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	010	Arrow Lakes	01010006	Nakusp Secondary	Chemistry 12	12	11	8	73
+2009/2010	SCHOOL LEVEL	BC Public School	019	Revelstoke	01919003	Revelstoke Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02009010	Stanley Humphries Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Chemistry 12	12	13	13	100
+2009/2010	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011014	Rossland Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	022	Vernon	02222007	W L Seaton Secondary	Chemistry 12	12	14	13	93
+2009/2010	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Chemistry 12	12	11	10	91
+2009/2010	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323005	Central School Programs	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Chemistry 12	12	13	11	85
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Chemistry 12	12	23	23	100
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Chemistry 12	12	13	13	100
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Chemistry 12	12	10	10	100
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Chemistry 12	12	26	26	100
+2009/2010	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727056	Peter Skene Ogden Secondary	Chemistry 12	12	12	11	92
+2009/2010	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Chemistry 12	12	36	33	92
+2009/2010	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333043	GW Graham Middle Secondary	Chemistry 12	12	11	9	82
+2009/2010	SCHOOL LEVEL	BC Public School	033	Chilliwack	03398003	Fraser Valley Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Chemistry 12	12	57	57	100
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Chemistry 12	12	66	66	100
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Chemistry 12	12	29	29	100
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Chemistry 12	12	18	18	100
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03499101	Abbotsford Virtual School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535020	Aldergrove Community Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535029	Langley Fine Arts School	Chemistry 12	12	12	12	100
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535041	R E Mountain Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Chemistry 12	12	29	29	100
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03535056	Langley Fundamental Middle/Secondary Sch	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03599050	Langley Education Centre	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03599168	Langley Online and Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	035	Langley	03599173	Choices Program	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636000	Continuing Ed SD 36	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Chemistry 12	12	12	12	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636045	Johnston Heights Secondary	Chemistry 12	12	22	22	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636047	Guildford Park Secondary	Chemistry 12	12	25	25	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636049	Semiahmoo Secondary	Chemistry 12	12	15	13	87
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636079	L A Matheson Secondary	Chemistry 12	12	19	19	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Chemistry 12	12	27	27	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Chemistry 12	12	25	24	96
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Chemistry 12	12	46	45	98
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636150	Tamanawis Secondary	Chemistry 12	12	45	40	89
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Chemistry 12	12	15	15	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636164	Sullivan Heights Secondary	Chemistry 12	12	19	18	95
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Chemistry 12	12	32	31	97
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636175	Clayton Heights Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636232	Panorama Ridge Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636246	Princess Margaret Secondary	Chemistry 12	12	57	53	93
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03699142	Surrey Connect: A Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Chemistry 12	12	13	12	92
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737021	Delview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737034	Burnsview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Chemistry 12	12	12	12	100
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737038	Sands Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Chemistry 12	12	17	17	100
+2009/2010	SCHOOL LEVEL	BC Public School	037	Delta	03799170	Delta Access	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838000	Continuing Ed SD 38	Chemistry 12	12	11	7	64
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838024	R C Palmer Secondary	Chemistry 12	12	23	22	96
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838031	Hugh Boyd Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838033	Hugh McRoberts Secondary	Chemistry 12	12	23	23	100
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838042	J N Burnett Secondary	Chemistry 12	12	119	116	97
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838044	Matthew McNair Secondary	Chemistry 12	12	17	16	94
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Chemistry 12	12	43	42	98
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Chemistry 12	12	17	15	88
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838064	A.R. MacNeill Secondary	Chemistry 12	12	26	24	92
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838065	Richmond Secondary	Chemistry 12	12	27	26	96
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939000	Continuing Ed SD 39	Chemistry 12	12	12	11	92
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939003	Magee Secondary	Chemistry 12	12	19	18	95
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939004	Britannia Community Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Chemistry 12	12	30	28	93
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939007	John Oliver Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939008	Lord Byng Secondary	Chemistry 12	12	32	31	97
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939010	Templeton Secondary	Chemistry 12	12	17	16	94
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Chemistry 12	12	24	24	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939012	Point Grey Secondary	Chemistry 12	12	25	23	92
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939014	Gladstone Secondary	Chemistry 12	12	23	23	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Chemistry 12	12	20	19	95
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Chemistry 12	12	63	63	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939017	Sir Charles Tupper Secondary	Chemistry 12	12	26	26	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Chemistry 12	12	16	15	94
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939019	Prince of Wales Secondary	Chemistry 12	12	42	41	98
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939020	Windermere Community Secondary	Chemistry 12	12	15	14	93
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939022	Eric Hamber Secondary	Chemistry 12	12	45	45	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939024	University Hill Secondary	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03995051	University Transition Program	Chemistry 12	12	11	11	100
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03998004	Vancouver Learning Network	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Chemistry 12	12	85	81	95
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141000	Burnaby Continuing Education	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141001	Burnaby Central Secondary	Chemistry 12	12	24	24	100
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Chemistry 12	12	28	26	93
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141005	Alpha Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Chemistry 12	12	50	50	100
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Chemistry 12	12	24	24	100
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Chemistry 12	12	22	19	86
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141068	Byrne Creek Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04199145	Burnaby Online Program	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242002	Garibaldi Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242028	Arthur Peake Centre	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242045	Samuel Robertson Technical Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343000	Continuing Ed SD 43	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343076	Centennial School	Chemistry 12	12	29	29	100
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Chemistry 12	12	12	10	83
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Chemistry 12	12	31	29	94
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Chemistry 12	12	37	34	92
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Chemistry 12	12	83	80	96
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Chemistry 12	12	31	29	94
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Chemistry 12	12	24	21	88
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04399143	Coquitlam Open Learning 10-12	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04399179	LINC-CLC	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Chemistry 12	12	32	30	94
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444025	Handsworth Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444026	Windsor Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444036	Carson Graham Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444047	Seycove Secondary Community	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04499176	North Vancouver Distributed Learning Sch	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Chemistry 12	12	17	17	100
+2009/2010	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545081	Rockridge Secondary	Chemistry 12	12	13	11	85
+2009/2010	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	047	Powell River	04747021	Brooks Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848021	Pemberton Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848022	Whistler Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	049	Central Coast	04949002	Sir Alexander Mackenzie Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	051	Boundary	05113010	Boundary Central Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252009	Prince Rupert Secondary	Chemistry 12	12	28	16	57
+2009/2010	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Chemistry 12	12	20	16	80
+2009/2010	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454011	Houston Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454013	Smithers Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05499163	Bulkley Valley Education Connection	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	057	Prince George	05757012	Duchess Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	057	Prince George	05757100	D P Todd Secondary	Chemistry 12	12	10	9	90
+2009/2010	SCHOOL LEVEL	BC Public School	057	Prince George	05798005	CIDES - District 57 Connect	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05817008	Princeton Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05898002	South Central Interior Distance Ed	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	South Peace Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	060	Peace River North	06060060	Hudson's Hope School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161000	Continuing Ed SD 61	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Chemistry 12	12	13	13	100
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161048	Esquimalt High School	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161049	Mount Douglas Secondary	Chemistry 12	12	87	86	99
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Chemistry 12	12	15	13	87
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161064	Lambrick Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06199146	Home Learners' Link	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Chemistry 12	12	16	16	100
+2009/2010	SCHOOL LEVEL	BC Public School	062	Sooke	06262033	Edward Milne Community School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	062	Sooke	06299164	Juan de Fuca Distributed Learning	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Chemistry 12	12	12	11	92
+2009/2010	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Chemistry 12	12	64	48	75
+2009/2010	SCHOOL LEVEL	BC Public School	064	Gulf Islands	06464010	Gulf Islands Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Chemistry 12	12	70	61	87
+2009/2010	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715008	Princess Margaret Secondary	Chemistry 12	12	14	9	64
+2009/2010	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06777002	Summerland Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868001	Nanaimo District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868010	Dover Bay Secondary	Chemistry 12	12	21	21	100
+2009/2010	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868011	John Barsby Community School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868015	Wellington Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Chemistry 12	12	15	13	87
+2009/2010	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	070	Alberni	07070005	Ucluelet Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Chemistry 12	12	17	17	100
+2009/2010	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Chemistry 12	12	57	55	96
+2009/2010	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	071	Comox Valley	07198008	North Island Distance Education School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	072	Campbell River	07272010	Carihi Secondary	Chemistry 12	12	23	23	100
+2009/2010	SCHOOL LEVEL	BC Public School	072	Campbell River	07272012	Timberline Secondary School	Chemistry 12	12	31	21	68
+2009/2010	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324012	South Kamloops Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324043	Brocklehurst Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324045	Valleyview Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Chemistry 12	12	14	14	100
+2009/2010	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08321004	Pleasant Valley Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Chemistry 12	12	14	14	100
+2009/2010	SCHOOL LEVEL	BC Public School	084	Vancouver Island West	08484012	Gold River Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09191023	Lakes District Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09199085	Ebus Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09343092	Ecole des Pionniers	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09357012	Duchess Park Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09393004	Penticton Secondary School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			02396013	Immaculata Regional High School	Chemistry 12	12	21	18	86
+2009/2010	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			02396479	Heritage Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			02396738	Heritage Christian Online School (DL)	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			02796263	Maranatha Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03396251	Highroad Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03496020	Mennonite Educational Institute	Chemistry 12	12	42	41	98
+2009/2010	SCHOOL LEVEL	BC Independent School			03496069	Abbotsford Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03596289	Credo Christian Schools	Chemistry 12	12	13	13	100
+2009/2010	SCHOOL LEVEL	BC Independent School			03596311	Langley Christian	Chemistry 12	12	15	13	87
+2009/2010	SCHOOL LEVEL	BC Independent School			03696015	Fraser Valley Christian High	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03696166	Holy Cross Regional High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03696394	Pacific Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03696476	Regent Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03696610	Southridge School	Chemistry 12	12	24	22	92
+2009/2010	SCHOOL LEVEL	BC Independent School			03696720	Traditional Learning Academy Online	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03796694	Southpointe Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03896178	Richmond Christian School	Chemistry 12	12	23	20	87
+2009/2010	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996004	Crofton House	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996007	Vancouver College	Chemistry 12	12	22	21	95
+2009/2010	SCHOOL LEVEL	BC Independent School			03996011	York House School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996019	Little Flower Academy	Chemistry 12	12	12	12	100
+2009/2010	SCHOOL LEVEL	BC Independent School			03996022	Notre Dame Regional Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996030	St Patrick Regional Secondary	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996435	St John's School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996451	King David High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996527	St John's International	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996601	West Coast Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996659	Century High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996732	Pacific Torah Institute	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996733	Pattison High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04196031	St Thomas More Collegiate	Chemistry 12	12	12	12	100
+2009/2010	SCHOOL LEVEL	BC Independent School			04196169	Deer Lake SDA School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04196766	Carver Christian High School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04296099	Maple Ridge Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04296400	Meadowridge School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04396579	British Columbia Christian Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04396588	Traditional Learning Academy	Chemistry 12	12	10	9	90
+2009/2010	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Chemistry 12	12	11	11	100
+2009/2010	SCHOOL LEVEL	BC Independent School			04496062	St Thomas Aquinas	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			06096473	Christian Life School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			06196010	St Margaret's	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			06196021	Glenlyon Norfolk School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			06196084	Pacific Christian School	Chemistry 12	12	10	9	90
+2009/2010	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Chemistry 12	12	18	15	83
+2009/2010	SCHOOL LEVEL	BC Independent School			07296335	Campbell River Christian School	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			07396194	St Ann's Academy	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			07996005	Brentwood College	Chemistry 12	12	11	11	100
+2009/2010	SCHOOL LEVEL	BC Independent School			07996006	Shawnigan Lake	Chemistry 12	12	21	21	100
+2009/2010	SCHOOL LEVEL	BC Independent School			07996017	Queen Margaret's	Chemistry 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			07996812	Dwight International School	Chemistry 12	12	Msk	Msk	Msk
