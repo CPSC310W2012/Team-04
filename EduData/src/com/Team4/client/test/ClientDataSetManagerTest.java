@@ -10,7 +10,7 @@ import com.Team4.client.ClientDataSetManager;
 import com.Team4.client.DataSetNotPresentException;
 import com.google.gwt.junit.client.GWTTestCase;
 
-public class ClientDataSetManagerTest extends GWTTestCase{
+public class ClientDataSetManagerTest extends GWTTestCase {
 	public ClientDataSetManager dSetM;
 	public ClientDataSet dSet;
 	
