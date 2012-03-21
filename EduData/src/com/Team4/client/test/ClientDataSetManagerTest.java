@@ -1,8 +1,5 @@
 package com.Team4.client.test;
 
-
-import static org.junit.Assert.*;
-
 import java.util.Date;
 import java.util.Random;
 
@@ -11,14 +8,20 @@ import org.junit.Test;
 import com.Team4.client.ClientDataSet;
 import com.Team4.client.ClientDataSetManager;
 import com.Team4.client.DataSetNotPresentException;
+import com.google.gwt.junit.client.GWTTestCase;
 
-public class ClientDataSetManagerTest {
+public class ClientDataSetManagerTest extends GWTTestCase{
 	public ClientDataSetManager dSetM;
 	public ClientDataSet dSet;
 	
 	public Date today = new Date();
-	public int size = 1000;
+	public int size = 10;
 	public Random rand = new Random();
+
+	@Override
+	public String getModuleName() {
+		return "com.Team4.client.edudata";
+	}
 	
 	@Test
 	public void testAddDataSet() {
@@ -31,9 +34,10 @@ public class ClientDataSetManagerTest {
 			entries[a] = dSet;
 		}
 		
-		// Then we make sure that all of them were successfully added.
+		// Then we make sure that all of them were successfully added
+		// by checking if they exist in the DataSetManager.
 		for (int a = 0; a < size; a++) { 
-			assert( dSetM.listAll().contains( entries[a] ) );
+			assertTrue( dSetM.listAll().contains( entries[a] ) );
 		}
 	}
 	
@@ -80,12 +84,11 @@ public class ClientDataSetManagerTest {
 			thrown = true;
 		}
 		// If all went well, thrown will be true
-		assert(thrown == true);
+		assertTrue(thrown == true);
 	}
 	
 	public void testEmtpyRemoveDataSet() {
 		dSetM = new ClientDataSetManager();
-		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add no DataSets to the manager
 		
 		boolean thrown = false;
@@ -98,7 +101,7 @@ public class ClientDataSetManagerTest {
 			thrown = true;
 		}
 		// If all went well, thrown will be true
-		assert(thrown == true);
+		assertTrue(thrown == true);
 	}
 	
 	public void testGetDataSet() {
@@ -120,7 +123,7 @@ public class ClientDataSetManagerTest {
 		} catch (DataSetNotPresentException e) {
 			e.printStackTrace();
 		  }
-		assert (temp == entries[i]);
+		assertTrue(temp == entries[i]);
 		}
 	
 	public void testGetAbsentDataSet() {
@@ -145,12 +148,11 @@ public class ClientDataSetManagerTest {
 			thrown = true;
 		}
 		
-		assert (thrown == true);
+		assertTrue(thrown == true);
 	}
 	
 	public void testEmtpyGetDataSet() {
 		dSetM = new ClientDataSetManager();
-		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add no DataSets to the manager
 		
 		boolean thrown = false;
@@ -163,7 +165,7 @@ public class ClientDataSetManagerTest {
 			thrown = true;
 		}
 		// If all went well, thrown will be true
-		assert(thrown == true);
+		assertTrue(thrown == true);
 	}
 	
 	}

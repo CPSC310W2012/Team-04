@@ -1,5 +1,7 @@
 package com.Team4.client.test;
 
+import static org.junit.Assert.*;
+
 import java.util.Date;
 import java.util.Random;
 
@@ -22,7 +24,7 @@ public class ClientDataSetTest {
 		dSet = new ClientDataSet(id, "Booyah", today);
 		dSet.setName("Lollipop");
 		
-		assert(dSet.getName() == "Lollipop");
+		assertTrue(dSet.getName() == "Lollipop");
 	}
 	
 	/**
@@ -32,9 +34,9 @@ public class ClientDataSetTest {
 	public void testBasicGetters() {
 		dSet = new ClientDataSet(id, "Booyah", today);
 		
-		assert(dSet.getDataSetID() == id);
-		assert(dSet.getName() == "Booyah");
-		assert(dSet.getDateAdded() == today);
+		assertTrue(dSet.getDataSetID() == id);
+		assertTrue(dSet.getName() == "Booyah");
+		assertTrue(dSet.getDateAdded() == today);
 	}
 	
 	/**
@@ -53,7 +55,7 @@ public class ClientDataSetTest {
 		}
 		
 		for(int a = 0; a < size; a++) { // For every element in the array...
-			assert( dSet.listAll().contains(entries[a])); // We assert that it exists somewhere in the dataSet
+			assertTrue( dSet.listAll().contains(entries[a])); // We assert that it exists somewhere in the dataSet
 		}
 	}
 	
@@ -80,7 +82,7 @@ public class ClientDataSetTest {
 		for (ClientDataEntry de : dSet.listAll()) {
 			count++; // We count the # of DataEntries in the DataSet
 		}
-		assert(count == 0); // If all is well, there shouldn't be any
+		assertTrue(count == 0); // If all is well, there shouldn't be any
 	}
 	
 	/**
@@ -104,8 +106,8 @@ public class ClientDataSetTest {
 		
 		//And then we ensure they have been removed properly
 		for (ClientDataEntry de : dSet.listAll()) {
-			assert(de != entries[0]);
-			assert(de != entries[size - 1]);
+			assertTrue(de != entries[0]);
+			assertTrue(de != entries[size - 1]);
 		}
 	}
 	
@@ -129,7 +131,7 @@ public class ClientDataSetTest {
 		
 		// Now we check to see that the proper entry has been removed
 		for (ClientDataEntry de : dSet.listAll() ) {
-			assert(de != entries[i]);
+			assertTrue(de != entries[i]);
 		}
 	}
 }

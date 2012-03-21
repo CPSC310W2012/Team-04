@@ -15,10 +15,10 @@ public class ClientDataEntryTest {
 		String school = dEntry.getSchool();
 		String grade = dEntry.getGrade();
 		String course = dEntry.getCourse();
-		assert(id == "0");
-		assert(school == "Babahooha");
-		assert(grade == "12");
-		assert(course == "Astrophysics");
+		assertTrue(id == "0");
+		assertTrue(school == "Babahooha");
+		assertTrue(grade == "12");
+		assertTrue(course == "Astrophysics");
 	}
 	
 	/**
@@ -33,9 +33,9 @@ public class ClientDataEntryTest {
 		dEntry.setGrade("212");
 		dEntry.setCourse("Microbiology");
 		
-		assert(dEntry.getSchool() == "BalloBalla");
-		assert(dEntry.getGrade() == "212");
-		assert(dEntry.getCourse() == "Microbiology");
+		assertTrue(dEntry.getSchool() == "BallooBalla");
+		assertTrue(dEntry.getGrade() == "212");
+		assertTrue(dEntry.getCourse() == "Microbiology");
 	}
 	
 }

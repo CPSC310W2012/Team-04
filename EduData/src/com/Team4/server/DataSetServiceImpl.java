@@ -28,7 +28,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 		    }
 	}
 	
-	@Override
 	public void removeDataSet(Long dataSetID) throws DataSetNotPresentException {
 		PersistenceManager pm = getPersistenceManager();
 		try {
@@ -44,7 +43,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 		    }
 	}
 
-	@Override
 	public ArrayList<ClientDataSet> getDataSets() {
 		PersistenceManager pm = getPersistenceManager();
 	    ArrayList<ClientDataSet> dSets = new ArrayList<ClientDataSet>();
