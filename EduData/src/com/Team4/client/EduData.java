@@ -26,13 +26,17 @@ import com.google.gwt.event.dom.client.ClickEvent;
  */
 public class EduData implements EntryPoint {
 	private VerticalPanel displayset;
-	private ClientDataSetManager dSMngr;
+	private ClientDataSetManager dataSetManager;
 	private TabularUI tabMe;
 
 	public void onModuleLoad() {
-		dSMngr = new ClientDataSetManager();
+		dataSetManager = new ClientDataSetManager();
 		tabMe = new TabularUI();
-		this.generateDataSets();
+		
+		//ryanabooth - testing loading dataSets
+		dataSetManager.loadDataSets();
+		
+		//this.generateDataSets();
 		RootPanel root = RootPanel.get();
 
 		VerticalPanel sidebar = new VerticalPanel();
@@ -40,7 +44,7 @@ public class EduData implements EntryPoint {
 		root.add(sidebar, 0, 100);
 		sidebar.setSize("400px", "400px");
 		sidebar.setBorderWidth( 10 );
-		sidebar.add( tabMe.renderDataSetTable( dSMngr.listAll() ) );
+		sidebar.add( tabMe.renderDataSetTable( dataSetManager.listAll() ) );
 
 		// The panel that will display the TabularUI, the MapUI, and the AccountSettingsUI alternately.
 		displayset = new VerticalPanel();
@@ -48,12 +52,15 @@ public class EduData implements EntryPoint {
 		root.add(displayset, 400, 0);
 		displayset.setSize("580px", "480px");
 		displayset.setBorderWidth( 10 );
-		try {
-			displayset.add( tabMe.renderTable( dSMngr.getDataSet( (long) 1 ) ));
-		} catch (DataSetNotPresentException e) {
-			// TODO: Some kind of intelligent response to a missing DataSet
-			e.printStackTrace();
-		}
+		// TODO: add this back in once DataSets fixed
+//		
+//		try {
+//			
+//			//displayset.add( tabMe.renderTable( dataSetManager.getDataSet( (long) 1 ) ));
+//		} catch (DataSetNotPresentException e) {
+//			// TODO: Some kind of intelligent response to a missing DataSet
+//			e.printStackTrace();
+//		}
 		
 		
 		// TODO: What does this hideous block of code actually do?
@@ -136,7 +143,7 @@ public class EduData implements EntryPoint {
 				ds.addEntry(de);
 				count2++;
 			}
-		dSMngr.addDataSet(ds);
+		dataSetManager.addDataSet(ds);
 		count2 = 1;
 		count++;
 		}

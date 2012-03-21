@@ -51,11 +51,16 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 	      q.setOrdering("dateAdded");
 	      List<DataSet> DataSets = (List<DataSet>) q.execute();
 	      for (DataSet dSet : DataSets) {
+	    	  
 	    	System.out.println(dSet.getDataSetID().toString() + " " + dSet.getName() + " " + dSet.getDateAdded());
+	    	System.out.println( dSet.getDataSetID() );
 	        ClientDataSet cDSet = new ClientDataSet(dSet.getDataSetID(), dSet.getName(), dSet.getDateAdded());
 	        ArrayList<DataEntry> dataEntries = dSet.listAll();
+	        
+	        System.out.println(dataEntries.get(0).getID().getName());
+	        
 	        for (DataEntry dEntry : dataEntries ) {
-		    	System.out.println(dEntry.getID().getName() + " " + dEntry.getSchool() + " " + dEntry.getCourse() + " " + dEntry.getGrade());
+		    	//System.out.println(dEntry.getID().getName() + " " + dEntry.getSchool() + " " + dEntry.getCourse() + " " + dEntry.getGrade());
 	        	cDSet.addEntry( new ClientDataEntry( dEntry.getID().getName(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() ));
 	        }
 	        dSets.add(cDSet);
