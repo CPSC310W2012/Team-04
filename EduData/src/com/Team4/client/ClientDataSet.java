@@ -6,7 +6,11 @@ import java.util.Date;
 
 import com.Team4.client.EntryNotPresentException;
 
+<<<<<<< HEAD
 //testing push pull features. checking back in from ryans last commit
+=======
+// conflicting comment
+>>>>>>> conflict merging test
 
 public class ClientDataSet implements Serializable {
 
