@@ -6,20 +6,22 @@ import java.util.Date;
 
 import com.Team4.client.EntryNotPresentException;
 
-// still testing
-
+/**
+ * Client side DataSet object
+ * @author ryanabooth
+ */
 public class ClientDataSet implements Serializable {
 
 	private Long dataSetID;
 	private String name;
 	private Date dateAdded;
-	private ArrayList<ClientDataEntry> dataEntries;
+	private ClientDataEntry[] dataEntries;
 	
-	public ClientDataSet( Long dataSetID, String title, Date dAdded ) {
+	public ClientDataSet( Long dataSetID, String title, Date dAdded, int size ) {
 		this.dataSetID = dataSetID;
 		this.name = title;
 		this.dateAdded = dAdded;
-		this.dataEntries = new ArrayList<ClientDataEntry>();
+		this.dataEntries = new ClientDataEntry[size];
 	}
 	
 	public Long getDataSetID() {
@@ -34,19 +36,23 @@ public class ClientDataSet implements Serializable {
 		this.name = name;
 	}
 	
+	/**
+	 * @param entry - DataEntry to be added
+	 * @pre The correct size was used to instantiate this DataSet
+	 * 
+	 * */
 	public void addEntry( ClientDataEntry entry ) {
-		dataEntries.add(entry);
+		for( int i=0; i < dataEntries.length; i++) {
+			if( dataEntries[i] == null )
+				dataEntries[i] = entry;
+		}
 	}
 	
-	public void removeEntry( ClientDataEntry entry ) {
-		dataEntries.remove(entry);
-	}
-	
-	public ArrayList<ClientDataEntry> listAll() {
+	public ClientDataEntry[] listAll() {
 		return dataEntries;
 	}
 	
-	public ClientDataEntry getDataEntry( String id ) throws EntryNotPresentException{
+	public ClientDataEntry getDataEntry( String id ) throws EntryNotPresentException {
 	    for( ClientDataEntry entry : dataEntries ) {
 	    	if ( entry.getID().equals(id) )
 	    		return entry;

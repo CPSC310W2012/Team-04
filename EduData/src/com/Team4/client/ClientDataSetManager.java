@@ -7,11 +7,11 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public class ClientDataSetManager {
 
-	private ArrayList<ClientDataSet> dataSets;
+	private ArrayList<ClientDataSet> dataSets = new ArrayList<ClientDataSet>();
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	
 	public ClientDataSetManager() {
-		this.dataSets = new ArrayList<ClientDataSet>();
+		this.loadDataSets();
 	}
 	
 	public void addDataSet( ClientDataSet dSet ) {

@@ -29,7 +29,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add a bunch of DataSets to the DataSetManager...
 		for (int a = 0; a < size; a++) { 
-			dSet = new ClientDataSet((long) a, Integer.toString(a), today);
+			dSet = new ClientDataSet((long) a, Integer.toString(a), today, 1);
 			dSetM.addDataSet( dSet );
 			entries[a] = dSet;
 		}
@@ -47,7 +47,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add a bunch of DataSets to the DataSetManager...
 		for (int a = 0; a < size; a++) { 
-			dSet = new ClientDataSet((long) a, Integer.toString(a), today);
+			dSet = new ClientDataSet((long) a, Integer.toString(a), today,1);
 			dSetM.addDataSet( dSet );
 			entries[a] = dSet;
 		}
@@ -57,7 +57,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		try {
 			dSetM.removeDataSet( entries[i] );
 		} catch (DataSetNotPresentException e) {
-			System.out.println("Oh shit! Something seriously fucked up!");
+			System.out.println("DataSet not in Manager");
 		}
 		
 		// Finally, we assert that the removed DataSet is not present
@@ -69,14 +69,14 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add a bunch of DataSets to the DataSetManager...
 		for (int a = 0; a < size; a++) { 
-			dSet = new ClientDataSet((long) a, Integer.toString(a), today);
+			dSet = new ClientDataSet((long) a, Integer.toString(a), today, 1);
 			dSetM.addDataSet( dSet );
 			entries[a] = dSet;
 		}
 		
 		boolean thrown = false;
 		// We create a DataSet that is not present in the DataSetManager
-		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today); 
+		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today, 1); 
 		try {
 			dSetM.removeDataSet(dSet);
 		} catch (DataSetNotPresentException e) {
@@ -93,7 +93,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		
 		boolean thrown = false;
 		// We create a DataSet that is not present in the DataSetManager
-		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today); 
+		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today, 1); 
 		try {
 			dSetM.removeDataSet(dSet);
 		} catch (DataSetNotPresentException e) {
@@ -109,7 +109,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add a bunch of DataSets to the DataSetManager...
 		for (int a = 0; a < size; a++) { 
-			dSet = new ClientDataSet((long) a, Integer.toString(a), today);
+			dSet = new ClientDataSet((long) a, Integer.toString(a), today, 1);
 			dSetM.addDataSet( dSet );
 			entries[a] = dSet;
 		}
@@ -131,13 +131,13 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		ClientDataSet entries[] = new ClientDataSet[size];
 		// We add a bunch of DataSets to the DataSetManager...
 		for (int a = 0; a < size; a++) { 
-			dSet = new ClientDataSet((long) a, Integer.toString(a), today);
+			dSet = new ClientDataSet((long) a, Integer.toString(a), today, 1);
 			dSetM.addDataSet( dSet );
 			entries[a] = dSet;
 		}
 		
 		// Then we create a data set NOT contained by the DataSetManager
-		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today); 
+		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today, 1); 
 		
 		boolean thrown = false;
 		
@@ -157,7 +157,7 @@ public class ClientDataSetManagerTest extends GWTTestCase {
 		
 		boolean thrown = false;
 		// We create a DataSet that is not present in the DataSetManager...
-		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today); 
+		dSet = new ClientDataSet((long) size + 10, Integer.toString(size+10), today, 1); 
 		try {
 			dSetM.getDataSet(dSet.getDataSetID()); // And try to get it
 		} catch (DataSetNotPresentException e) {

@@ -1,6 +1,7 @@
 package com.Team4.client;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import com.google.gwt.cell.client.ButtonCell;
@@ -34,7 +35,15 @@ public class TabularUI {
 	 * */
 	public CellTable<ClientDataEntry> renderTable( ClientDataSet dSet ) {
 		CellTable<ClientDataEntry> table = new CellTable<ClientDataEntry>();
-		table.setRowData( 0 , dSet.listAll() );
+		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>();
+		ClientDataEntry[] array = dSet.listAll();
+		
+		// Convert the array of DataEntry's to a list for the table's input
+		for( ClientDataEntry entry : array ) {
+			entries.add(entry);
+	    }
+		
+		table.setRowData( 0 , entries );
 		return formatClientDataEntryCellTable( table );
 	}
 	

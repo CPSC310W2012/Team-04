@@ -45,25 +45,26 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 
 	public ArrayList<ClientDataSet> getDataSets() {
 		PersistenceManager pm = getPersistenceManager();
-	    ArrayList<ClientDataSet> dSets = new ArrayList<ClientDataSet>();
+		ArrayList<ClientDataSet> dSets;
 	    try {
 	      Query q = pm.newQuery(DataSet.class);
 	      q.setOrdering("dateAdded");
 	      List<DataSet> DataSets = (List<DataSet>) q.execute();
+	      final int DATASET_LIST_SIZE = DataSets.size();
+		  dSets = new ArrayList<ClientDataSet>();
+		  int i = 0;
+		  
 	      for (DataSet dSet : DataSets) {
 	    	  
-	    	System.out.println(dSet.getDataSetID().toString() + " " + dSet.getName() + " " + dSet.getDateAdded());
-	    	System.out.println( dSet.getDataSetID() );
-	        ClientDataSet cDSet = new ClientDataSet(dSet.getDataSetID(), dSet.getName(), dSet.getDateAdded());
 	        ArrayList<DataEntry> dataEntries = dSet.listAll();
-	        
-	        System.out.println(dataEntries.get(0).getID().getName());
-	        
+	        final int DATAENTRY_LIST_SIZE = dataEntries.size();
+	        ClientDataSet cDSet = new ClientDataSet(dSet.getDataSetID(), dSet.getName(), dSet.getDateAdded(), DATAENTRY_LIST_SIZE);
+	        	        
 	        for (DataEntry dEntry : dataEntries ) {
-		    	//System.out.println(dEntry.getID().getName() + " " + dEntry.getSchool() + " " + dEntry.getCourse() + " " + dEntry.getGrade());
 	        	cDSet.addEntry( new ClientDataEntry( dEntry.getID().getName(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() ));
 	        }
 	        dSets.add(cDSet);
+	        i++;
 	      }
 	    } finally {
 	      pm.close();

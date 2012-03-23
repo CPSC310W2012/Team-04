@@ -30,11 +30,9 @@ public class EduData implements EntryPoint {
 	private TabularUI tabMe;
 
 	public void onModuleLoad() {
+		// ryanabooth - should load datasets when constructed
 		dataSetManager = new ClientDataSetManager();
 		tabMe = new TabularUI();
-		
-		//ryanabooth - testing loading dataSets
-		dataSetManager.loadDataSets();
 		
 		//this.generateDataSets();
 		RootPanel root = RootPanel.get();
@@ -137,7 +135,7 @@ public class EduData implements EntryPoint {
 		Long count = (long) 1.0;
 		int count2 = 1;
 		while(count<5){
-		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date() );
+		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date(), 10 );
 			while(count2<10){
 				ClientDataEntry de = new ClientDataEntry( "" + count2, "Fake School " + count2, "grade " + count2, "course " + count2 );
 				ds.addEntry(de);

@@ -2,8 +2,13 @@ package com.Team4.client;
 
 import java.io.Serializable;
 
+/**
+ * Client side DataEntry object
+ * @author RBooth
+ */
 public class ClientDataEntry implements Serializable {
 
+	private static final long serialVersionUID = -7112259566352436829L;
 	private String entryID;
 	private String schoolName;
 	private String grade;
