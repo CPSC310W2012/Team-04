@@ -1,11 +1,12 @@
 package com.Team4.client;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
 import com.Team4.client.EntryNotPresentException;
 
-public class ClientDataSet {
+public class ClientDataSet implements Serializable {
 
 	private Long dataSetID;
 	private String name;
