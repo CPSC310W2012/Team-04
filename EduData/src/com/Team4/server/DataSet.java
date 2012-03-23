@@ -1,5 +1,6 @@
 package com.Team4.server;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.jdo.annotations.IdGeneratorStrategy;
@@ -12,7 +13,7 @@ import com.Team4.client.EntryNotPresentException;
 import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
-public class DataSet {
+public class DataSet implements Serializable {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)

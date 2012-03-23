@@ -1,6 +1,8 @@
 package com.Team4.client;
 
-public class ClientDataEntry {
+import java.io.Serializable;
+
+public class ClientDataEntry implements Serializable {
 
 	private String entryID;
 	private String schoolName;
