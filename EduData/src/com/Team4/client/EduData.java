@@ -34,9 +34,9 @@ public class EduData implements EntryPoint {
 		tabMe = new TabularUI();
 		
 		//ryanabooth - testing loading dataSets
-		dataSetManager.loadDataSets();
+		//dataSetManager.loadDataSets();
 		
-		//this.generateDataSets();
+		this.generateDataSets();
 		RootPanel root = RootPanel.get();
 
 		VerticalPanel sidebar = new VerticalPanel();
