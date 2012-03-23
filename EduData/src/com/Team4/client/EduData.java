@@ -131,20 +131,20 @@ public class EduData implements EntryPoint {
 	}
 
 
-	private void generateDataSets() {
-		Long count = (long) 1.0;
-		int count2 = 1;
-		while(count<5){
-		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date(), 10 );
-			while(count2<10){
-				ClientDataEntry de = new ClientDataEntry( "" + count2, "Fake School " + count2, "grade " + count2, "course " + count2 );
-				ds.addEntry(de);
-				count2++;
-			}
-		dataSetManager.addDataSet(ds);
-		count2 = 1;
-		count++;
-		}
-	}
+//	private void generateDataSets() {
+//		Long count = (long) 1.0;
+//		int count2 = 1;
+//		while(count<5){
+//		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date(), 10 );
+//			while(count2<10){
+//				ClientDataEntry de = new ClientDataEntry( "" + count2, "Fake School " + count2, "grade " + count2, "course " + count2 );
+//				ds.addEntry(de);
+//				count2++;
+//			}
+//		dataSetManager.addDataSet(ds);
+//		count2 = 1;
+//		count++;
+//		}
+//	}
 
 }

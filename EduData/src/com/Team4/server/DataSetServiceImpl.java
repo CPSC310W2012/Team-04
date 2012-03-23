@@ -48,9 +48,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 		ArrayList<ClientDataSet> dSets;
 	    try {
 	      Query q = pm.newQuery(DataSet.class);
-	      q.setOrdering("dateAdded");
 	      List<DataSet> DataSets = (List<DataSet>) q.execute();
-	      final int DATASET_LIST_SIZE = DataSets.size();
 		  dSets = new ArrayList<ClientDataSet>();
 		  int i = 0;
 		  
@@ -61,7 +59,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements DataSetS
 	        ClientDataSet cDSet = new ClientDataSet(dSet.getDataSetID(), dSet.getName(), dSet.getDateAdded(), DATAENTRY_LIST_SIZE);
 	        	        
 	        for (DataEntry dEntry : dataEntries ) {
-	        	cDSet.addEntry( new ClientDataEntry( dEntry.getID().getName(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() ));
+	        	cDSet.addEntry( dEntry.getID().getName(), dEntry.getSchool(), dEntry.getCourse(), dEntry.getGrade() );
 	        }
 	        dSets.add(cDSet);
 	        i++;

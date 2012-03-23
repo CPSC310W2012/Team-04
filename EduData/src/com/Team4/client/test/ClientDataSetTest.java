@@ -51,7 +51,7 @@ public class ClientDataSetTest {
 		// We add a bunch ClientDataEntries...
 		for(int a = 0; a < size; a++) {
 			dEntry = new ClientDataEntry(Integer.toString(a), "Test", "12", "Astrophysics" );
-			dSet.addEntry(dEntry);	
+			dSet.addEntry(Integer.toString(a), "Test", "12", "Astrophysics" );	
 			entries[a] = dEntry;
 		}
 		

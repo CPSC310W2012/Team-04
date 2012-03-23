@@ -35,18 +35,34 @@ public class TabularUI {
 	 * */
 	public CellTable<ClientDataEntry> renderTable( ClientDataSet dSet ) {
 		CellTable<ClientDataEntry> table = new CellTable<ClientDataEntry>();
-		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>();
-		ClientDataEntry[] array = dSet.listAll();
-		
-		// Convert the array of DataEntry's to a list for the table's input
-		for( ClientDataEntry entry : array ) {
-			entries.add(entry);
-	    }
+		ArrayList<ClientDataEntry> entries = this.getEntries( dSet );
 		
 		table.setRowData( 0 , entries );
 		return formatClientDataEntryCellTable( table );
 	}
 	
+	/**
+	 * This method converts the array of Strings in ClientDataSet to ClientDataEntry's,
+	 * so the CellTable can handle them
+	 * @author ryanabooth
+	 * @param dSet
+	 * @return list of DataEntries
+	 */
+	private ArrayList<ClientDataEntry> getEntries(ClientDataSet dSet) {
+		ArrayList<ClientDataEntry> returnList = new ArrayList<ClientDataEntry>();
+		String[][] entries = dSet.listAll();
+		for (int i = 0; i < entries.length; i++){
+			String ID = entries[i][0];
+			String schoolName = entries[i][1];
+			String grade = entries[i][2];
+			String course = entries[i][3];
+			
+			ClientDataEntry entry = new ClientDataEntry(ID, schoolName, grade, course);
+			returnList.add(entry);
+		}
+		return returnList;
+	}
+
 	/**
 	 * The publicly accessible method for displaying a collection of Data Sets in tabular form.
 	 * The method produces a popup window that displays the data in a table
