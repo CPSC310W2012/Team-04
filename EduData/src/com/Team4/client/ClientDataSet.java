@@ -1,7 +1,6 @@
 package com.Team4.client;
+import java.util.ArrayList;
 import java.util.Date;
-
-import com.Team4.client.EntryNotPresentException;
 
 /**
  * Client side DataSet object
@@ -12,19 +11,13 @@ public class ClientDataSet {
 	private Long dataSetID;
 	private String name;
 	private Date dateAdded;
+
+	private ArrayList<ClientDataEntry> dataEntries;
 	
-	// 2D String Array
-	// ROWS String entryID
-	// COLUMN String schoolName
-	// COLUMN String grade
-	// COLUMN String course
-	private String[][] dataEntries;
-	
-	public ClientDataSet( Long dataSetID, String title, Date dAdded, int size ) {
+	public ClientDataSet( Long dataSetID, String title, Date dAdded ) {
 		this.dataSetID = dataSetID;
 		this.name = title;
 		this.dateAdded = dAdded;
-		this.dataEntries = new String[size][4];
 	}
 	
 	public Long getDataSetID() {
@@ -38,50 +31,30 @@ public class ClientDataSet {
 	public void setName( String name ) {
 		this.name = name;
 	}
-
-	public Date getDateAdded() {
-		return dateAdded;
+	
+	public void addEntry( ClientDataEntry entry ) {
+		dataEntries.add(entry);
 	}
 	
-	/**
-	 * @param entry - DataEntry to be added
-	 * @pre The correct size was used to instantiate this DataSet
-	 * 
-	 * */
-	public void addEntry( String ID, String schoolName, String grade, String course ) {
-		for( int i=0; i < dataEntries.length; i++) {
-			if( dataEntries[i] == null )
-				dataEntries[i][0] = ID;
-				dataEntries[i][1] = schoolName;
-				dataEntries[i][2] = grade;
-				dataEntries[i][3] = course;
-		}
+	public void removeEntry( ClientDataEntry entry ) {
+		dataEntries.remove(entry);
 	}
 	
-	public String[][] listAll() {
+	public ArrayList<ClientDataEntry> listAll() {
 		return dataEntries;
 	}
 	
-	/**
-	 * @param id
-	 * @return Four element String array in the format ID, schoolName, grade, course
-	 * @throws EntryNotPresentException
-	 */
-	public String[] getDataEntry( String id ) throws EntryNotPresentException {
-		String[] dataEntry = new String[4];
-		
-	    for( int i = 0; i < dataEntries.length; i++ ) {
-	    	if ( dataEntries[i][0].equals(id) )
-	    	{
-				dataEntry[0] = dataEntries[i][0];
-				dataEntry[1] = dataEntries[i][1];
-				dataEntry[2] = dataEntries[i][2];
-				dataEntry[3] = dataEntries[i][3];
-	    		return dataEntry;
-	    	}
+	public ClientDataEntry getClientDataEntry( String id ) throws EntryNotPresentException{
+	    for( ClientDataEntry entry : dataEntries ) {
+	    	if ( entry.getID().equals(id) )
+	    		return entry;
 	    }
 	    
 	    throw new EntryNotPresentException("Entry not found.");
+	}
+
+	public Date getDateAdded() {
+		return dateAdded;
 	}
 	
 }

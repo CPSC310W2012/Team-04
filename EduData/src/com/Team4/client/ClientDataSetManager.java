@@ -1,5 +1,6 @@
 package com.Team4.client;
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
@@ -38,15 +39,67 @@ public class ClientDataSetManager {
 	}
 	
 	public void loadDataSets() {
-		dSService.getDataSets( new AsyncCallback<ArrayList<ClientDataSet>>() {
+		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
 
-			public void onSuccess(ArrayList<ClientDataSet> result) {
-				dataSets = result;				
+			public void onSuccess(ArrayList<Long> dataSetIDs) {
+				dataSets.clear();
+				for( Long id : dataSetIDs ) {
+					String name = this.retrieveDataSetName( id );
+					Date dateAdded = this.retrieveDataSetDateAdded( id );
+					ArrayList<ClientDataEntry> entries = this.retrieveDataSetEntries( id );
+					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
+					for( ClientDataEntry entry : entries ) {
+						addMe.addEntry(entry);
+					}
+					dataSets.add(addMe);
+				}
 			}
-		});
+
+			private String retrieveDataSetName(Long id) {
+				final String returnName;
+				dSService.getDataSetName( id, new AsyncCallback<String>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(String name) {
+						returnName = name;
+					}
+				});
+				return returnName;
+			}
+
+			private Date retrieveDataSetDateAdded(Long id) {
+				final Date returnDate;
+				dSService.getDateAdded( id, new AsyncCallback<Date>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(Date date) {
+						returnDate = date;
+					}
+				});
+				return returnDate;
+			}
+
+			private ArrayList<ClientDataEntry> retrieveDataSetEntries(Long id) {
+				ArrayList<ClientDataEntry> returnList;
+				dSService.getEntries( id, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(ArrayList<ClientDataEntry> entries) {
+						returnList = entries;
+					}
+				});
+				return returnList;
+			}
+			});
 	}
 
 	public ArrayList<ClientDataSet> listAll() {
