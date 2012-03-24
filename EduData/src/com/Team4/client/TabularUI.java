@@ -8,9 +8,13 @@ import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.Cell;
 import com.google.gwt.cell.client.CheckboxCell;
 import com.google.gwt.cell.client.FieldUpdater;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.view.client.MultiSelectionModel;
 
 /**
@@ -56,7 +60,7 @@ public class TabularUI {
 			String schoolName = entries[i][1];
 			String grade = entries[i][2];
 			String course = entries[i][3];
-			
+
 			ClientDataEntry entry = new ClientDataEntry(ID, schoolName, grade, course);
 			returnList.add(entry);
 		}
@@ -193,6 +197,14 @@ public class TabularUI {
 		 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
 		 * */
 		public void update(int index, Object object, Object value) {
+
+//			CellTable<ClientDataEntry> renderTable( (ClientDataSet) object );
+			DialogBox dBox = new DialogBox();
+
+			dBox.add( renderTable( (ClientDataSet) object ) );
+			dBox.setSize( "100%" , "100%" );
+			dBox.center();
+			
 			/**
 			 * TODO:
 			 * Implement the sequence of commands to display a DataSet in Tabular format

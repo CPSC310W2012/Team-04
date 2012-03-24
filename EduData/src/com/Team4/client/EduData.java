@@ -10,7 +10,10 @@ import java.util.Date;
 
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -27,47 +30,46 @@ import com.google.gwt.event.dom.client.ClickEvent;
 public class EduData implements EntryPoint {
 	private VerticalPanel displayset;
 	private ClientDataSetManager dataSetManager;
-	private TabularUI tabMe;
+	private TabularUI tabUI;
+	
+	private RootPanel root;
+	private HorizontalPanel basePanel;
+	private HorizontalPanel buttonPanel;
+	private VerticalPanel leftSidebarPanel;
+	private VerticalPanel dataSetPanel;
+	private VerticalPanel visualizePanel;
 
 	public void onModuleLoad() {
 		// ryanabooth - should load datasets when constructed
 		dataSetManager = new ClientDataSetManager();
-		tabMe = new TabularUI();
+		tabUI = new TabularUI();
 		
-		//this.generateDataSets();
-		RootPanel root = RootPanel.get();
-
-		VerticalPanel sidebar = new VerticalPanel();
-		sidebar.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		root.add(sidebar, 0, 100);
-		sidebar.setSize("400px", "400px");
-		sidebar.setBorderWidth( 10 );
-		sidebar.add( tabMe.renderDataSetTable( dataSetManager.listAll() ) );
-
-		// The panel that will display the TabularUI, the MapUI, and the AccountSettingsUI alternately.
-		displayset = new VerticalPanel();
-		displayset.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		root.add(displayset, 400, 0);
-		displayset.setSize("580px", "480px");
-		displayset.setBorderWidth( 10 );
-		// TODO: add this back in once DataSets fixed
-//		
-//		try {
-//			
-//			//displayset.add( tabMe.renderTable( dataSetManager.getDataSet( (long) 1 ) ));
-//		} catch (DataSetNotPresentException e) {
-//			// TODO: Some kind of intelligent response to a missing DataSet
-//			e.printStackTrace();
-//		}
+		root = RootPanel.get();
+		basePanel = new HorizontalPanel();
+		buttonPanel = new HorizontalPanel();
+		leftSidebarPanel = new VerticalPanel();
+		dataSetPanel = new VerticalPanel();
+		visualizePanel = new VerticalPanel();
 		
+		root.add(basePanel);
+		basePanel.add(leftSidebarPanel);
+		basePanel.add(visualizePanel);
+		leftSidebarPanel.add(buttonPanel);
+		leftSidebarPanel.add(dataSetPanel);
 		
-		// TODO: What does this hideous block of code actually do?
-		HorizontalPanel buttonPanel = new HorizontalPanel();
-		buttonPanel.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		root.add(buttonPanel, 0, 50);
-		buttonPanel.setSize("400px", "50px");
-		buttonPanel.setBorderWidth( 10 );
-
+		root.setSize( "100%" , "100%" );
+		basePanel.setSize( "100%" , "100%" );
+		leftSidebarPanel.setSize( "30%" , "100%" );
+		visualizePanel.setSize( "70%" , "100%" );
+		buttonPanel.setSize( "100%" , "20%" );
+		dataSetPanel.setSize( "100%" , "80%" );
+		
+		basePanel.setBorderWidth( 1 );
+		leftSidebarPanel.setBorderWidth( 1 );
+		visualizePanel.setBorderWidth( 1 );
+		buttonPanel.setBorderWidth( 1 );
+		dataSetPanel.setBorderWidth( 1 );
+		
 		Button importButton = new Button("Import");
 		buttonPanel.add(importButton);
 		buttonPanel.setCellVerticalAlignment(importButton, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -118,33 +120,44 @@ public class EduData implements EntryPoint {
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
-
-		HorizontalPanel eduDataTitlePanel = new HorizontalPanel();
-		eduDataTitlePanel.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		root.add(eduDataTitlePanel, 0, 0);
-		eduDataTitlePanel.setSize("400px", "50px");
-
-		Label lblEdudata = new Label("EduData");
-		eduDataTitlePanel.add(lblEdudata);
-		lblEdudata.setHeight("50px");
-
+		
+		this.generateDataSets();
+		
+		dataSetPanel.add(tabUI.renderDataSetTable(dataSetManager.listAll()));
+		
 	}
 
+	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
+		visualizePanel.clear();
+		visualizePanel.add( table );
+		table.setVisible( true );
+	}
 
-//	private void generateDataSets() {
+	private void generateDataSets() {
+		long ID = 0L;
+		for ( int a = 0 ; a < 10 ; a++ ) { // The number of DataSets we will create
+			ClientDataSet dSet = new ClientDataSet( ID , "DataSet " + a , new Date() , 10 );
+			for ( int b = 0 ; b < 10 ; b++ ) { // The number of Entries in each DataSet
+				dSet.addEntry( "" + b , "Fake School " + b , "Fake Grade" , "Fake Course");
+			}
+			dataSetManager.addDataSet( dSet );
+			ID ++;
+		}
+		
+		
+		
 //		Long count = (long) 1.0;
 //		int count2 = 1;
-//		while(count<5){
+//		while(count<15){
 //		ClientDataSet ds = new ClientDataSet( count, "DataSet " + count, new Date(), 10 );
-//			while(count2<10){
-//				ClientDataEntry de = new ClientDataEntry( "" + count2, "Fake School " + count2, "grade " + count2, "course " + count2 );
-//				ds.addEntry(de);
+//			while(count2 < 10){
+//				ds.addEntry("" + count2, "Fake School " + count2, "grade " + count2, "course " + count2);
 //				count2++;
 //			}
 //		dataSetManager.addDataSet(ds);
 //		count2 = 1;
 //		count++;
 //		}
-//	}
+	}
 
 }
