@@ -20,7 +20,8 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
  */
 public class SimpleMaps implements EntryPoint {
 
-  // GWT module entry point method.
+  protected DataSet dataSet;
+// GWT module entry point method.
   public void onModuleLoad() {
    /*
     * Asynchronously loads the Maps API.
@@ -31,7 +32,7 @@ public class SimpleMaps implements EntryPoint {
    */
    Maps.loadMapsApi("AIzaSyAvCH2X_Wm1SiuTL4xoYanROAjIFwSijig", "2", false, new Runnable() {
       public void run() {
-        buildUi();
+        buildUi(dataSet);
       }
     });
   }
