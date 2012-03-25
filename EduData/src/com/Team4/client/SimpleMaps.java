@@ -1,5 +1,9 @@
 package com.Team4.client;
 
+import java.util.ArrayList;
+
+import com.Team4.server.DataEntry;
+import com.Team4.server.DataSet;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.maps.client.InfoWindowContent;
@@ -25,15 +29,24 @@ public class SimpleMaps implements EntryPoint {
     * application on a public server, but a blank key will work for an
     * application served from localhost.
    */
-   Maps.loadMapsApi("", "2", false, new Runnable() {
+   Maps.loadMapsApi("AIzaSyAvCH2X_Wm1SiuTL4xoYanROAjIFwSijig", "2", false, new Runnable() {
       public void run() {
         buildUi();
       }
     });
   }
-
-  private void buildUi() {
+   // feed in dataset to display
+  private void buildUi(DataSet dataSet) {
     // Open a map centered on Cawker City, KS USA
+	  // get data sets school names 
+	  ArrayList<DataEntry> entries = dataSet.listAll();
+	  int i = 0; // change to iterator
+	  while(i<entries.size()){
+		  
+		  
+		i++;  
+	  }
+	  
     LatLng cawkerCity = LatLng.newInstance(39.509, -98.434);
 
     final MapWidget map = new MapWidget(cawkerCity, 2);
