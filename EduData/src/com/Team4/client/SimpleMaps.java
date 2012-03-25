@@ -38,29 +38,33 @@ public class SimpleMaps implements EntryPoint {
   }
    // feed in dataset to display
   private void buildUi(DataSet dataSet) {
-    // Open a map centered on Cawker City, KS USA
-	  // get data sets school names 
+    // Open a map plotting all the schools and their marks
+	  
+	  // center at vacouver long/lat - add to MapWidget params
+	  final MapWidget map = new MapWidget();
+	  map.setSize("100%", "100%");
+	// Add some controls for the zoom level
+	  map.addControl(new LargeMapControl());
+
+	  //Get all entries of data set
 	  ArrayList<DataEntry> entries = dataSet.listAll();
 	  int i = 0; // change to iterator
 	  while(i<entries.size()){
-		  
-		  
+		  //iterate through each data entry, create markers, and plot
+		  // TO-DO create school entry - get long/lat 
+		  LatLng school = LatLng.newInstance(39.509, -98.434);
+
+		    // Add a marker
+		    map.addOverlay(new Marker(school));
+
+		    // Add an info window to highlight a point of interest
+		    map.getInfoWindow().open(map.getCenter(),
+		        new InfoWindowContent("School entry grade stat"));
+
 		i++;  
 	  }
 	  
-    LatLng cawkerCity = LatLng.newInstance(39.509, -98.434);
-
-    final MapWidget map = new MapWidget(cawkerCity, 2);
-    map.setSize("100%", "100%");
-    // Add some controls for the zoom level
-    map.addControl(new LargeMapControl());
-
-    // Add a marker
-    map.addOverlay(new Marker(cawkerCity));
-
-    // Add an info window to highlight a point of interest
-    map.getInfoWindow().open(map.getCenter(),
-        new InfoWindowContent("World's Largest Ball of Sisal Twine"));
+    
 
     final DockLayoutPanel dock = new DockLayoutPanel(Unit.PX);
     dock.addNorth(map, 500);
