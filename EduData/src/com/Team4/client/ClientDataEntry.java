@@ -1,9 +1,10 @@
 package com.Team4.client;
 
-import java.io.Serializable;
-
-public class ClientDataEntry implements Serializable {
-
+/**
+ * Client side DataEntry object
+ * @author RBooth
+ */
+public class ClientDataEntry{
 	private String entryID;
 	private String schoolName;
 	private String grade;

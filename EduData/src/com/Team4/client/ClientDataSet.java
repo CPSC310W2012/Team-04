@@ -1,25 +1,23 @@
 package com.Team4.client;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
-import com.Team4.client.EntryNotPresentException;
-
-// still testing
-
-public class ClientDataSet implements Serializable {
-
+/**
+ * Client side DataSet object
+ * @author ryanabooth
+ */
+public class ClientDataSet {
+	
 	private Long dataSetID;
 	private String name;
 	private Date dateAdded;
+
 	private ArrayList<ClientDataEntry> dataEntries;
 	
 	public ClientDataSet( Long dataSetID, String title, Date dAdded ) {
 		this.dataSetID = dataSetID;
 		this.name = title;
 		this.dateAdded = dAdded;
-		this.dataEntries = new ArrayList<ClientDataEntry>();
 	}
 	
 	public Long getDataSetID() {
@@ -46,7 +44,7 @@ public class ClientDataSet implements Serializable {
 		return dataEntries;
 	}
 	
-	public ClientDataEntry getDataEntry( String id ) throws EntryNotPresentException{
+	public ClientDataEntry getClientDataEntry( String id ) throws EntryNotPresentException{
 	    for( ClientDataEntry entry : dataEntries ) {
 	    	if ( entry.getID().equals(id) )
 	    		return entry;

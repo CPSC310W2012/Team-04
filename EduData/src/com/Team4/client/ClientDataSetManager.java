@@ -1,5 +1,6 @@
 package com.Team4.client;
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
@@ -11,7 +12,8 @@ public class ClientDataSetManager {
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	
 	public ClientDataSetManager() {
-		this.dataSets = new ArrayList<ClientDataSet>();
+		dataSets = new ArrayList<ClientDataSet>();
+		this.loadDataSets();
 	}
 	
 	public void addDataSet( ClientDataSet dSet ) {
@@ -37,15 +39,68 @@ public class ClientDataSetManager {
 	}
 	
 	public void loadDataSets() {
-		dSService.getDataSets( new AsyncCallback<ArrayList<ClientDataSet>>() {
+		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
+			String returnName;
+			Date returnDate;
+			ArrayList<ClientDataEntry> returnList;
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
 
-			public void onSuccess(ArrayList<ClientDataSet> result) {
-				dataSets = result;				
+			public void onSuccess(ArrayList<Long> dataSetIDs) {
+				dataSets.clear();
+				for( Long id : dataSetIDs ) {
+					this.retrieveDataSetName( id );
+					String name = returnName;
+					this.retrieveDataSetDateAdded( id );
+					Date dateAdded = returnDate;
+					this.retrieveDataSetEntries( id );
+					ArrayList<ClientDataEntry> entries = returnList;
+					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
+					for( ClientDataEntry entry : entries ) {
+						addMe.addEntry(entry);
+					}
+					dataSets.add(addMe);
+				}
 			}
-		});
+
+			private void retrieveDataSetName(Long id) {
+				dSService.getDataSetName( id, new AsyncCallback<String>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(String name) {
+						returnName = name;
+					}
+				});
+			}
+
+			private void retrieveDataSetDateAdded(Long id) {
+				dSService.getDateAdded( id, new AsyncCallback<Date>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(Date date) {
+						returnDate = date;
+					}
+				});
+			}
+
+			private void retrieveDataSetEntries(Long id) {
+				
+				dSService.getEntries( id, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(ArrayList<ClientDataEntry> entries) {
+						returnList = entries;
+					}
+				});
+			}
+			});
 	}
 
 	public ArrayList<ClientDataSet> listAll() {

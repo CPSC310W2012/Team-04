@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="lib/commons-io-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/gwtupload-0.6.4.jar"/>
 	<classpathentry kind="lib" path="lib/gwtupload-gae-0.6.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-maps.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
