@@ -86,6 +86,7 @@ public class EduData implements EntryPoint {
 							UploadedInfo info = uploader.getServerInfo();
 							System.out.println(info.message);
 							uploadPanel.hide();
+							dataSetManager.loadDataSets();
 						}					    
 					});
 				}
@@ -121,7 +122,7 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
-		this.generateDataSets();
+//		this.generateDataSets();
 		
 		dataSetPanel.add(tabUI.renderDataSetTable(dataSetManager.listAll()));
 		
@@ -133,16 +134,16 @@ public class EduData implements EntryPoint {
 		table.setVisible( true );
 	}
 
-	private void generateDataSets() {
-		long ID = 0L;
-		for ( int a = 0 ; a < 10 ; a++ ) { // The number of DataSets we will create
-			ClientDataSet dSet = new ClientDataSet( ID , "DataSet " + a , new Date() , 10 );
-			for ( int b = 0 ; b < 10 ; b++ ) { // The number of Entries in each DataSet
-				dSet.addEntry( "" + b , "Fake School " + b , "Fake Grade" , "Fake Course");
-			}
-			dataSetManager.addDataSet( dSet );
-			ID ++;
-		}
+//	private void generateDataSets() {
+//		long ID = 0L;
+//		for ( int a = 0 ; a < 10 ; a++ ) { // The number of DataSets we will create
+//			ClientDataSet dSet = new ClientDataSet( ID , "DataSet " + a , new Date() );
+//			for ( int b = 0 ; b < 10 ; b++ ) { // The number of Entries in each DataSet
+//				dSet.addEntry( "" + b , "Fake School " + b , "Fake Grade" , "Fake Course");
+//			}
+//			dataSetManager.addDataSet( dSet );
+//			ID ++;
+//		}
 		
 		
 		
@@ -158,6 +159,5 @@ public class EduData implements EntryPoint {
 //		count2 = 1;
 //		count++;
 //		}
-	}
 
 }

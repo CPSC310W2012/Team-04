@@ -11,6 +11,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 public interface DataSetService extends RemoteService {
 	  public void removeDataSet(Long dataSetID) throws DataSetNotPresentException;
 //	  public ArrayList<ClientDataSet> getDataSets();
+	  public ClientDataEntry dummy( ClientDataEntry cde );
 	  public ArrayList<Long> getDataSetIDs();
 	  public String getDataSetName( Long id );
 	  public Date getDateAdded( Long id );

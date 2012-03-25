@@ -12,8 +12,8 @@ public class ClientDataSetManager {
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	
 	public ClientDataSetManager() {
-//		this.loadDataSets();
 		dataSets = new ArrayList<ClientDataSet>();
+		this.loadDataSets();
 	}
 	
 	public void addDataSet( ClientDataSet dSet ) {
@@ -40,6 +40,9 @@ public class ClientDataSetManager {
 	
 	public void loadDataSets() {
 		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
+			String returnName;
+			Date returnDate;
+			ArrayList<ClientDataEntry> returnList;
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
@@ -47,9 +50,12 @@ public class ClientDataSetManager {
 			public void onSuccess(ArrayList<Long> dataSetIDs) {
 				dataSets.clear();
 				for( Long id : dataSetIDs ) {
-					String name = this.retrieveDataSetName( id );
-					Date dateAdded = this.retrieveDataSetDateAdded( id );
-					ArrayList<ClientDataEntry> entries = this.retrieveDataSetEntries( id );
+					this.retrieveDataSetName( id );
+					String name = returnName;
+					this.retrieveDataSetDateAdded( id );
+					Date dateAdded = returnDate;
+					this.retrieveDataSetEntries( id );
+					ArrayList<ClientDataEntry> entries = returnList;
 					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
 					for( ClientDataEntry entry : entries ) {
 						addMe.addEntry(entry);
@@ -58,8 +64,7 @@ public class ClientDataSetManager {
 				}
 			}
 
-			private String retrieveDataSetName(Long id) {
-				final String returnName;
+			private void retrieveDataSetName(Long id) {
 				dSService.getDataSetName( id, new AsyncCallback<String>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
@@ -69,11 +74,9 @@ public class ClientDataSetManager {
 						returnName = name;
 					}
 				});
-				return returnName;
 			}
 
-			private Date retrieveDataSetDateAdded(Long id) {
-				final Date returnDate;
+			private void retrieveDataSetDateAdded(Long id) {
 				dSService.getDateAdded( id, new AsyncCallback<Date>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
@@ -83,11 +86,10 @@ public class ClientDataSetManager {
 						returnDate = date;
 					}
 				});
-				return returnDate;
 			}
 
-			private ArrayList<ClientDataEntry> retrieveDataSetEntries(Long id) {
-				ArrayList<ClientDataEntry> returnList;
+			private void retrieveDataSetEntries(Long id) {
+				
 				dSService.getEntries( id, new AsyncCallback<ArrayList<ClientDataEntry>>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
@@ -97,7 +99,6 @@ public class ClientDataSetManager {
 						returnList = entries;
 					}
 				});
-				return returnList;
 			}
 			});
 	}
