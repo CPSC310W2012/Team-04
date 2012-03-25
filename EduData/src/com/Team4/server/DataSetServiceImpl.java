@@ -30,7 +30,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		}
 	}
 
-	@Override
 	public void removeDataSet(Long dataSetID) throws DataSetNotPresentException {
 		PersistenceManager pm = getPersistenceManager();
 		try {
@@ -77,7 +76,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return PMF.getPersistenceManager();
 	}
 
-	@Override
 	public ArrayList<Long> getDataSetIDs() {
 		PersistenceManager pm = getPersistenceManager();
 		ArrayList<Long> dSetIDs;
@@ -95,7 +93,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return dSetIDs;
 	}
 
-	@Override
 	public String getDataSetName(Long id) {
 		PersistenceManager pm = getPersistenceManager();
 		String name = null;
@@ -113,7 +110,6 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return name;
 	}
 
-	@Override
 	public Date getDateAdded(Long id) {
 		PersistenceManager pm = getPersistenceManager();
 		Date dateAdded = null;
@@ -131,21 +127,26 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return dateAdded;
 	}
 
-	@Override
-	public ArrayList<ClientDataEntry> getEntries(Long id) {
+	public String[][] getEntries(Long id) {
 		PersistenceManager pm = getPersistenceManager();
-		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>();
-		entries.add( new ClientDataEntry("test", "test", "test", "test") );
+		String[][] entries;
 		try {
 			Query q = pm.newQuery(DataSet.class);
 			List<DataSet> DataSets = (List<DataSet>) q.execute();
-
+			// may want to remove this
+			entries = null;
 			for (DataSet dSet : DataSets) {
 				if (dSet.getDataSetID().equals(id)){
 					ArrayList<DataEntry> serverEntries = dSet.listAll();
+					final int NUMBER_OF_ENTRIES = serverEntries.size();
+					entries = new String[NUMBER_OF_ENTRIES][4];
+					int i = 0;
 					for (DataEntry dataEntry : serverEntries ){
-						ClientDataEntry addMe = new ClientDataEntry( dataEntry.getID().toString(), dataEntry.getSchool(), dataEntry.getGrade(), dataEntry.getCourse());
-						entries.add(addMe);
+						entries[i][0] = dataEntry.getID().toString();
+						entries[i][1] = dataEntry.getSchool();
+						entries[i][2] = dataEntry.getGrade();
+						entries[i][3] = dataEntry.getCourse();
+						i++;
 					}
 				}
 			}
@@ -155,8 +156,8 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return entries;
 	}
 	
-	public ClientDataEntry dummy (ClientDataEntry cde) {
-		return null;
-	}
+//	public ClientDataEntry dummy (ClientDataEntry cde) {
+//		return null;
+//	}
 
 }

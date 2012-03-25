@@ -2,8 +2,6 @@ package com.Team4.client;
 
 import java.util.ArrayList;
 
-import com.Team4.server.DataEntry;
-import com.Team4.server.DataSet;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.maps.client.InfoWindowContent;
@@ -20,7 +18,7 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
  */
 public class SimpleMaps implements EntryPoint {
 
-  protected DataSet dataSet;
+  protected ClientDataSet dataSet;
 // GWT module entry point method.
   public void onModuleLoad() {
    /*
@@ -37,7 +35,7 @@ public class SimpleMaps implements EntryPoint {
     });
   }
    // feed in dataset to display
-  private void buildUi(DataSet dataSet) {
+  private void buildUi(ClientDataSet dataSet) {
     // Open a map plotting all the schools and their marks
 	  
 	  // center at vancouver long/lat - add to MapWidget params
@@ -47,7 +45,7 @@ public class SimpleMaps implements EntryPoint {
 	  map.addControl(new LargeMapControl());
 
 	  //Get all entries of data set
-	  ArrayList<DataEntry> entries = dataSet.listAll();
+	  ArrayList<ClientDataEntry> entries = dataSet.listAll();
 	  int i = 0; // change to iterator
 	  while(i<entries.size()){
 		  //iterate through each data entry, create markers, and plot
