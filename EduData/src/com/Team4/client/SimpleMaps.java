@@ -40,7 +40,7 @@ public class SimpleMaps implements EntryPoint {
   private void buildUi(DataSet dataSet) {
     // Open a map plotting all the schools and their marks
 	  
-	  // center at vacouver long/lat - add to MapWidget params
+	  // center at vancouver long/lat - add to MapWidget params
 	  final MapWidget map = new MapWidget();
 	  map.setSize("100%", "100%");
 	// Add some controls for the zoom level
@@ -58,6 +58,7 @@ public class SimpleMaps implements EntryPoint {
 		    map.addOverlay(new Marker(school));
 
 		    // Add an info window to highlight a point of interest
+		    // Read API to find color change wrt grade point average
 		    map.getInfoWindow().open(map.getCenter(),
 		        new InfoWindowContent("School entry grade stat"));
 
