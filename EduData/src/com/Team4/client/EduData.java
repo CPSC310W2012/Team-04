@@ -11,9 +11,6 @@ import java.util.Date;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.maps.client.MapWidget;
-import com.google.gwt.maps.client.geom.LatLng;
-import com.google.gwt.maps.client.overlay.Marker;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
@@ -26,7 +23,6 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
-
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -42,26 +38,11 @@ public class EduData implements EntryPoint {
 	private VerticalPanel leftSidebarPanel;
 	private VerticalPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
-	private MapWidget map;
 
 	public void onModuleLoad() {
 		// ryanabooth - should load datasets when constructed
 		dataSetManager = new ClientDataSetManager();
 		tabUI = new TabularUI();
-		
-
-		/*Kaya
-		 * - adding default map directly centered on vancouver w/ marker
-		 * probably should make this into a method of its own
-		 * 
-		 * */
-		map = new MapWidget();
-		map.setSize("25%", "25%");
-		LatLng vancouver = LatLng.newInstance(49.150, -123.100);
-	    final MapWidget map = new MapWidget(vancouver, 2);
-	    map.addOverlay(new Marker(vancouver));
-		
-		
 		
 		root = RootPanel.get();
 		basePanel = new HorizontalPanel();
