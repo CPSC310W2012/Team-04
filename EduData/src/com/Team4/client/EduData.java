@@ -131,7 +131,7 @@ public class EduData implements EntryPoint {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
 			/*
 			 	this.generateDataSets();
-				ArrayList<Marker> markers = this.generateMarkers(dataSet);
+				ArrayList<Marker> markers = this.generateMarkers(dataSet); // create external or internal function?
 				Iterator<Marker> itr = markers.iterator();
 			    while (itr.hasNext()){
 			      map.addOverlay(itr.next());
