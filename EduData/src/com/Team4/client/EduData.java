@@ -68,10 +68,12 @@ public class EduData implements EntryPoint {
 		      }
 
 			private void buildMap() {
-				map = new MapWidget();
-				map.setSize("500px", "500px");
+				
 				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
-			    map.addOverlay(new Marker(vancouver));
+			    map = new MapWidget(vancouver, 8);
+				map.setSize("500px", "500px");
+				map.addControl(new LargeMapControl());
+				map.addOverlay(new Marker(vancouver));
 			}
 		    });
 
