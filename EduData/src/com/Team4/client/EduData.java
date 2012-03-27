@@ -9,10 +9,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
+import com.Team4.server.DataEntry;
+import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
+import com.google.gwt.maps.client.Maps;
+import com.google.gwt.maps.client.control.LargeMapControl;
 import com.google.gwt.maps.client.geom.LatLng;
 import com.google.gwt.maps.client.overlay.Marker;
 import com.google.gwt.user.cellview.client.CellTable;
@@ -20,6 +25,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
@@ -56,14 +62,19 @@ public class EduData implements EntryPoint {
 		 * probably should make this into a method of its own
 		 * 
 		 * */
-		map = new MapWidget();
-		map.setSize("500px", "500px");
-		LatLng vancouver = LatLng.newInstance(49.150, -123.100);
-	    final MapWidget map = new MapWidget(vancouver, 2);
-	    map.addOverlay(new Marker(vancouver));
-		
-		
-		
+		  Maps.loadMapsApi("AIzaSyAvCH2X_Wm1SiuTL4xoYanROAjIFwSijig", "2", false, new Runnable() {
+		      public void run() {
+		        buildMap();
+		      }
+
+			private void buildMap() {
+				map = new MapWidget();
+				map.setSize("500px", "500px");
+				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
+			    map.addOverlay(new Marker(vancouver));
+			}
+		    });
+
 		root = RootPanel.get();
 		basePanel = new HorizontalPanel();
 		buttonPanel = new HorizontalPanel();
@@ -137,7 +148,9 @@ public class EduData implements EntryPoint {
 			      map.addOverlay(itr.next());
 			    }
 			 */
-				
+				   visualizePanel.add(map);
+
+				  
 				
 			}
 		});
@@ -164,6 +177,7 @@ public class EduData implements EntryPoint {
 		table.setVisible( true );
 	}
 
+	
 //	private void generateDataSets() {
 //		long ID = 0L;
 //		for ( int a = 0 ; a < 10 ; a++ ) { // The number of DataSets we will create
