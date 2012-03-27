@@ -7,6 +7,7 @@ import gwtupload.client.SingleUploader;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
@@ -56,7 +57,7 @@ public class EduData implements EntryPoint {
 		 * 
 		 * */
 		map = new MapWidget();
-		map.setSize("25%", "25%");
+		map.setSize("500px", "500px");
 		LatLng vancouver = LatLng.newInstance(49.150, -123.100);
 	    final MapWidget map = new MapWidget(vancouver, 2);
 	    map.addOverlay(new Marker(vancouver));
@@ -128,6 +129,16 @@ public class EduData implements EntryPoint {
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
+			/*
+			 	this.generateDataSets();
+				ArrayList<Marker> markers = this.generateMarkers(dataSet);
+				Iterator<Marker> itr = markers.iterator();
+			    while (itr.hasNext()){
+			      map.addOverlay(itr.next());
+			    }
+			 */
+				
+				
 			}
 		});
 		buttonPanel.add(button);

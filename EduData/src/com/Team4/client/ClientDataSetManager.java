@@ -42,7 +42,7 @@ public class ClientDataSetManager {
 		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
 			String returnName;
 			Date returnDate;
-			ArrayList<ClientDataEntry> returnList;
+			String[][] returnList;
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
@@ -55,10 +55,11 @@ public class ClientDataSetManager {
 					this.retrieveDataSetDateAdded( id );
 					Date dateAdded = returnDate;
 					this.retrieveDataSetEntries( id );
-					ArrayList<ClientDataEntry> entries = returnList;
+					String[][] entries = returnList;
 					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
-					for( ClientDataEntry entry : entries ) {
-						addMe.addEntry(entry);
+					for( int i = 0; i < entries.length; i++ ) {
+						ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
+						addMe.addEntry(dataEntry);
 					}
 					dataSets.add(addMe);
 				}
@@ -90,12 +91,12 @@ public class ClientDataSetManager {
 
 			private void retrieveDataSetEntries(Long id) {
 				
-				dSService.getEntries( id, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+				dSService.getEntries( id, new AsyncCallback<String[][]>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
 					}
 
-					public void onSuccess(ArrayList<ClientDataEntry> entries) {
+					public void onSuccess(String[][] entries) {
 						returnList = entries;
 					}
 				});

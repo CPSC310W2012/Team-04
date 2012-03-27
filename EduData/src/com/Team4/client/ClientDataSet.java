@@ -15,6 +15,7 @@ public class ClientDataSet {
 	private ArrayList<ClientDataEntry> dataEntries;
 	
 	public ClientDataSet( Long dataSetID, String title, Date dAdded ) {
+		dataEntries = new ArrayList<ClientDataEntry>();
 		this.dataSetID = dataSetID;
 		this.name = title;
 		this.dateAdded = dAdded;
