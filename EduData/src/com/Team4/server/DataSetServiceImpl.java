@@ -84,7 +84,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		return dSets;
 	}
 
-	public ArrayList<ClientDataEntry> getEntries(Long id) {
+	public ArrayList<ClientDataEntry> getEntries() {
 		PersistenceManager pm = getPersistenceManager();
 		ArrayList<ClientDataEntry> cDEntries;
 		try {
@@ -92,10 +92,8 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 			List<DataEntry> entries = (List<DataEntry>) q.execute();
 			cDEntries = new ArrayList<ClientDataEntry>();
 			for (DataEntry dEntry : entries) {
-				if (dEntry.getDataSetID().equals(id)){
 						ClientDataEntry addMe = new ClientDataEntry( dEntry.getID().toString(), dEntry.getSchool(), dEntry.getGrade(), dEntry.getCourse(), dEntry.getDataSetID() );
 						cDEntries.add( addMe );
-					}
 			}
 		} finally {
 			pm.close();
