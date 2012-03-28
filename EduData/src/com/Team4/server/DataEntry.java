@@ -14,18 +14,21 @@ public class DataEntry implements Serializable {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	private Key entryID;
+	private Long entryID;
 	@Persistent
 	private String schoolName;
 	@Persistent
 	private String grade;
 	@Persistent
 	private String course;
+	@Persistent
+	private Long dataSetID;
 	
-	public DataEntry(String schName, String stGrade, String courseName){
+	public DataEntry(String schName, String stGrade, String courseName, Long dSetID){
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
+		this.dataSetID = dSetID;
 	}
 	
 	public String getSchool(){
@@ -44,12 +47,16 @@ public class DataEntry implements Serializable {
 		grade = stGrade;
 	}
 	
-	public Key getID(){
+	public Long getID(){
 		return entryID;
 	}
 	
 	public String getCourse(){	
 		return course;
+	}
+	
+	public Long getDataSetID(){
+		return this.dataSetID;
 	}
 	
 	public void setCourse(String courseName){

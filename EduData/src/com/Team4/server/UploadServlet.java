@@ -27,7 +27,6 @@ public class UploadServlet extends AppEngineUploadAction {
 					DataSet dSet;
 			    	
 					dSet = t.parseFile(item.getName(), item.getInputStream());
-					DataSetServiceImpl.addDataSet(dSet);
 					response = new String( "DataSet " + item.getName() + " imported." );
 
 				} catch (Exception e) {

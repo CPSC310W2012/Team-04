@@ -5,8 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ ClientDataEntryTest.class, ClientDataSetManagerTest.class,
-		ClientDataSetTest.class })
+@SuiteClasses({ ClientDataEntryTest.class, ClientDataSetTest.class })
 public class TestSuite {
 
 }

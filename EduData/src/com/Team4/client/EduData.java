@@ -7,11 +7,25 @@ import gwtupload.client.SingleUploader;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 
+import com.Team4.server.DataEntry;
+import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.maps.client.InfoWindowContent;
+import com.google.gwt.maps.client.MapWidget;
+import com.google.gwt.maps.client.Maps;
+import com.google.gwt.maps.client.control.LargeMapControl;
+import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.Size;
+import com.google.gwt.maps.client.overlay.Icon;
+import com.google.gwt.maps.client.overlay.Marker;
+import com.google.gwt.maps.client.overlay.MarkerOptions;
+import com.google.gwt.maps.client.overlay.Polygon;
+import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -19,6 +33,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
@@ -27,11 +42,11 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 
+
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class EduData implements EntryPoint {
-	private VerticalPanel displayset;
 	private TabularUI tabUI;
 	
 	private RootPanel root;
@@ -40,17 +55,38 @@ public class EduData implements EntryPoint {
 	private VerticalPanel leftSidebarPanel;
 	private VerticalPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
-	
+	private MapWidget map;
 	private ArrayList<ClientDataSet> dataSets;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
-
+	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
 		
 		tabUI = new TabularUI();
 		
+
+		/*Kaya
+		 * - adding default map directly centered on vancouver w/ marker
+		 * probably should make this into a method of its own
+		 * 
+		 * */
+		  Maps.loadMapsApi("AIzaSyC6ilLpJA3loHZ1kM7clv_0M-PauIBKBTA", "2", false, new Runnable() {
+		      public void run() {
+		        buildMap();
+		      }
+
+			private void buildMap() {
+				
+				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
+			    map = new MapWidget(vancouver, 8);
+//				map.setSize("500px", "500px");
+				map.addControl(new LargeMapControl());
+				map.addOverlay(new Marker(vancouver));
+			}
+		    });
+
 		root = RootPanel.get();
 		basePanel = new HorizontalPanel();
 		buttonPanel = new HorizontalPanel();
@@ -99,7 +135,7 @@ public class EduData implements EntryPoint {
 				}
 			});		
 		 
-		// Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
+		//	Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
@@ -122,13 +158,62 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
 		
+		//  Refreshes DataSet list
+		Button button99 = new Button("Refresh");
+		button99.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				loadDataSets();
+			}
+		});
+		buttonPanel.add(button99);
+		buttonPanel.setCellVerticalAlignment(button99, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonPanel.setCellHorizontalAlignment(button99, HasHorizontalAlignment.ALIGN_CENTER);
+		
 
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
+
+	
+				   visualizePanel.clear();
+				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				for ( ClientDataEntry dEntry : entries ) {
+				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+				    	
+				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
+
+				    		String url = "http://www.google.com/mapfiles/markerA.png";
+				    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
+				    		icon.setIconSize(Size.newInstance(20, 34));
+				    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+				    		Marker marker = new Marker(coordinate, ops);
+				    		map.addOverlay(marker);
+
+				    	}
+				    	
+				    }
+				   visualizePanel.add(map);
+				   map.setSize( "1000px", "600px");
 			}
+			
+			public ArrayList<ClientDataEntry> populateDummyData() {
+				
+				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+				Long i = new Long(1);
+				dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
+				dataSet.add( new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
+				dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
+				
+				dataSet.get(1).setLongitude(-124.2177);				
+				dataSet.get(1).setLatitude(48.2765);
+				dataSet.get(2).setLongitude(-124.2177);				
+				dataSet.get(2).setLatitude(50.2765);
+				
+				return dataSet;
+			}
+			
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -151,7 +236,25 @@ public class EduData implements EntryPoint {
 		visualizePanel.add( table );
 		table.setVisible( true );
 	}
-
+		
+		public ArrayList<ClientDataEntry> populateDummyData() {
+			
+			ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+			Long i = new Long(1);
+			dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
+			dataSet.add(new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
+			dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
+			
+			dataSet.get(1).setLongitude((float)-124.2177);				
+			dataSet.get(1).setLatitude((float)48.2765);
+			dataSet.get(2).setLongitude((float)-124.2177);				
+			dataSet.get(2).setLatitude((float)50.2765);
+			dataSet.get(3).setLongitude((float)-126.2177);				
+			dataSet.get(3).setLatitude((float)48.2765);
+			
+			return dataSet;
+		}
+		
 //	datasetmanager methods
 	
 	public void addDataSet( ClientDataSet dSet ) {
@@ -177,76 +280,37 @@ public class EduData implements EntryPoint {
 	}
 	
 	public void loadDataSets() {
-		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
-			String returnName;
-			Date returnDate;
-			Long currentID;
+		dSService.getDataSets( new AsyncCallback<ArrayList<ClientDataSet>>() {
 			
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
 
-			public void onSuccess(ArrayList<Long> dataSetIDs) {
-				if( !dataSetIDs.isEmpty() ) {
-					dataSets.clear();
-					for( Long id : dataSetIDs ) {
-						currentID = id;
-						this.retrieveDataSetName( id );
+			public void onSuccess(ArrayList<ClientDataSet> response) {
+				dataSets.clear();
+				if( !response.isEmpty() ) {
+					for( ClientDataSet addMe : response ) {
+						dataSets.add(addMe);
 					}
 				}
-			}
-
-			private void retrieveDataSetName(Long id) {
-				dSService.getDataSetName( id, new AsyncCallback<String>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(String name) {
-						returnName = name;
-						retrieveDataSetDateAdded( currentID );
-					}
-				});
-			}
-
-			private void retrieveDataSetDateAdded(Long id) {
-				dSService.getDateAdded( id, new AsyncCallback<Date>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(Date date) {
-						returnDate = date;
-						retrieveDataSetEntries( currentID );
-					}
-				});
-			}
-
-			private void retrieveDataSetEntries(Long id) {
-				
-				dSService.getEntries( id, new AsyncCallback<String[][]>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(String[][] entries) {
-						ClientDataSet addMe = new ClientDataSet(currentID, returnName, returnDate);
-						
-						for( int i = 0; i < entries.length; i++) {
-							ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
-							addMe.addEntry(dataEntry);
-						}
-
-						dataSets.add(addMe);
-
-						dataSetPanel.clear();
-						dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
-					}
-				
-					
-				});
-			}
+					dataSetPanel.clear();
+					dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
+				}
 			});
+		
+		Long i = new Long(1);
+		dSService.getEntries( i, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<ClientDataEntry> response) {
+				if( !response.isEmpty() ) {
+						visualizePanel.clear();
+						visualizePanel.add(tabUI.renderTable(response));
+				}
+			}});
 	}
 
 	public ArrayList<ClientDataSet> listAll() {
