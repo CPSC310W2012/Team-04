@@ -50,18 +50,19 @@ public class ClientDataSetManager {
 			public void onSuccess(ArrayList<Long> dataSetIDs) {
 				dataSets.clear();
 				for( Long id : dataSetIDs ) {
+//					System.out.println(id);
 					this.retrieveDataSetName( id );
 					String name = returnName;
 					this.retrieveDataSetDateAdded( id );
 					Date dateAdded = returnDate;
 					this.retrieveDataSetEntries( id );
-					String[][] entries = returnList;
-					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
-					for( int i = 0; i < entries.length; i++ ) {
-						ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
-						addMe.addEntry(dataEntry);
-					}
-					dataSets.add(addMe);
+//					String[][] entries = returnList;
+//					ClientDataSet addMe = new ClientDataSet(id, name, dateAdded);
+//					for( int i = 0; i < entries.length; i++ ) {
+//						ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
+//						addMe.addEntry(dataEntry);
+//					}
+//					dataSets.add(addMe);
 				}
 			}
 
@@ -72,6 +73,7 @@ public class ClientDataSetManager {
 					}
 
 					public void onSuccess(String name) {
+//						System.out.println(name);
 						returnName = name;
 					}
 				});
@@ -84,6 +86,7 @@ public class ClientDataSetManager {
 					}
 
 					public void onSuccess(Date date) {
+//						System.out.println(date.toString());
 						returnDate = date;
 					}
 				});

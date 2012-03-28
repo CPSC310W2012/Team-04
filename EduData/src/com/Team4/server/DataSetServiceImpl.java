@@ -138,15 +138,14 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 			for (DataSet dSet : DataSets) {
 				if (dSet.getDataSetID().equals(id)){
 					ArrayList<DataEntry> serverEntries = dSet.listAll();
-					final int NUMBER_OF_ENTRIES = serverEntries.size();
+					int NUMBER_OF_ENTRIES = serverEntries.size();
+//					System.out.println( NUMBER_OF_ENTRIES );
 					entries = new String[NUMBER_OF_ENTRIES][4];
-					int i = 0;
-					for (DataEntry dataEntry : serverEntries ){
-						entries[i][0] = dataEntry.getID().toString();
-						entries[i][1] = dataEntry.getSchool();
-						entries[i][2] = dataEntry.getGrade();
-						entries[i][3] = dataEntry.getCourse();
-						i++;
+					for ( int i = 0; i < serverEntries.size(); i++ ){
+						entries[i][0] = serverEntries.get(i).getID().toString();
+						entries[i][1] = serverEntries.get(i).getSchool();
+						entries[i][2] = serverEntries.get(i).getGrade();
+						entries[i][3] = serverEntries.get(i).getCourse();
 					}
 				}
 			}
