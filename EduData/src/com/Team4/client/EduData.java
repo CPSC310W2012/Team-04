@@ -139,10 +139,10 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				System.out.println( getSelectedDataSets( table ).size() + " Data Sets are selected. Bitch.");
-				for ( ClientDataSet dSet : getSelectedDataSets( table ) ) {
+				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
+				System.out.println( selected.size() + " Data Sets are selected. Bitch.");
+				for ( ClientDataSet dSet : selected ) {
 					try {
-						
 						removeDataSet( dSet );
 					} catch (DataSetNotPresentException e) {
 						// If the code reaches this point, then we are trying to remove a data set that no longer exists
@@ -151,7 +151,7 @@ public class EduData implements EntryPoint {
 					}
 				}
 				// At this point all selected DataSets have been removed, so we need to update the cell table
-				table.setRowData( listAll() );
+				table.setRowData( dataSets );
 			}
 		});
 		buttonPanel.add(button0);
@@ -163,6 +163,7 @@ public class EduData implements EntryPoint {
 		button99.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				loadDataSets();
+				System.out.println( "-------Refreshed--------");
 			}
 		});
 		buttonPanel.add(button99);
@@ -226,7 +227,7 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
-		table = tabUI.renderDataSetTable( listAll() );
+		table = tabUI.renderDataSetTable( dataSets );
 		dataSetPanel.add(table);
 		
 	}
@@ -256,10 +257,6 @@ public class EduData implements EntryPoint {
 		}
 		
 //	datasetmanager methods
-	
-	public void addDataSet( ClientDataSet dSet ) {
-		dataSets.add(dSet);
-	}
 
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {
@@ -294,11 +291,13 @@ public class EduData implements EntryPoint {
 					}
 				}
 					dataSetPanel.clear();
-					dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
+					dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
 				}
 			});
 		
-		Long i = new Long(1);
+		if( !dataSets.isEmpty() ) {
+			Long i = dataSets.get(0).getDataSetID();
+			
 		dSService.getEntries( i, new AsyncCallback<ArrayList<ClientDataEntry>>() {
 			
 			public void onFailure(Throwable error) {
@@ -311,10 +310,7 @@ public class EduData implements EntryPoint {
 						visualizePanel.add(tabUI.renderTable(response));
 				}
 			}});
-	}
-
-	public ArrayList<ClientDataSet> listAll() {
-		return dataSets;
+		}
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
@@ -326,7 +322,7 @@ public class EduData implements EntryPoint {
 	    throw new DataSetNotPresentException("Data Set not found.");
 	}
 	
-	public void handleError(Throwable error) {
+	private void handleError(Throwable error) {
 	    Window.alert(error.getMessage());
 	}
 
