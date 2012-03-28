@@ -24,9 +24,7 @@ public class UploadServlet extends AppEngineUploadAction {
 			if (false == item.isFormField()) {
 				try {
 					TxtHandler t = new TxtHandler();
-					DataSet dSet;
-			    	
-					dSet = t.parseFile(item.getName(), item.getInputStream());
+					t.parseFile(item.getName(), item.getInputStream());
 					response = new String( "DataSet " + item.getName() + " imported." );
 
 				} catch (Exception e) {
