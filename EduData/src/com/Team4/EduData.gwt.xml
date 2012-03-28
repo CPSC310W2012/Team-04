@@ -22,7 +22,6 @@
   
   <!-- Include GWTUpload library -->
   <inherits name="gwtupload.GWTUpload"/>
-  <stylesheet src="Upload.css"></stylesheet>
   <inherits name="com.google.gwt.maps.GoogleMaps" />
 
 </module>
