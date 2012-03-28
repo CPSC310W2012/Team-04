@@ -13,5 +13,5 @@ public interface DataSetService extends RemoteService {
 //	  public ArrayList<Long> getDataSetIDs();
 //	  public String getDataSetName( Long id );
 //	  public Date getDateAdded( Long id );
-	  public ArrayList<ClientDataEntry> getEntries( Long id );
+	  public ArrayList<ClientDataEntry> getEntries();
 }
