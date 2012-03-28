@@ -2,20 +2,23 @@ package com.Team4.client;
 import java.util.ArrayList;
 import java.util.Date;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  * Client side DataSet object
  * @author ryanabooth
  */
-public class ClientDataSet {
+public class ClientDataSet implements IsSerializable {
 	
 	private Long dataSetID;
 	private String name;
 	private Date dateAdded;
-
-	private ArrayList<ClientDataEntry> dataEntries;
+	
+	public ClientDataSet() {
+		
+	}
 	
 	public ClientDataSet( Long dataSetID, String title, Date dAdded ) {
-		dataEntries = new ArrayList<ClientDataEntry>();
 		this.dataSetID = dataSetID;
 		this.name = title;
 		this.dateAdded = dAdded;
@@ -31,27 +34,6 @@ public class ClientDataSet {
 	
 	public void setName( String name ) {
 		this.name = name;
-	}
-	
-	public void addEntry( ClientDataEntry entry ) {
-		dataEntries.add(entry);
-	}
-	
-	public void removeEntry( ClientDataEntry entry ) {
-		dataEntries.remove(entry);
-	}
-	
-	public ArrayList<ClientDataEntry> listAll() {
-		return dataEntries;
-	}
-	
-	public ClientDataEntry getClientDataEntry( String id ) throws EntryNotPresentException{
-	    for( ClientDataEntry entry : dataEntries ) {
-	    	if ( entry.getID().equals(id) )
-	    		return entry;
-	    }
-	    
-	    throw new EntryNotPresentException("Entry not found.");
 	}
 
 	public Date getDateAdded() {

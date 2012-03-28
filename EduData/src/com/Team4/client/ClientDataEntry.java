@@ -1,20 +1,27 @@
 package com.Team4.client;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  * Client side DataEntry object
  * @author RBooth
  */
-public class ClientDataEntry{
+public class ClientDataEntry implements IsSerializable {
 	private String entryID;
 	private String schoolName;
 	private String grade;
 	private String course;
+	private Long dataSetID;
 	
-	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName){
+	public ClientDataEntry(){
+	}
+	
+	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName, Long dataSetID){
 		this.entryID = entryID;
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
+		this.dataSetID = dataSetID;
 	}
 	
 	public String getSchool(){
@@ -35,6 +42,10 @@ public class ClientDataEntry{
 	
 	public String getID(){
 		return entryID;
+	}
+
+	public Long getDataSetID(){
+		return this.dataSetID;
 	}
 	
 	public String getCourse(){	

@@ -36,16 +36,8 @@ public class TabularUI {
 	 * @dSet The DataSet to be displayed
 	 * @return The newly formatted and filled table of DataEntries
 	 * */
-	public CellTable<ClientDataEntry> renderTable( ClientDataSet dSet ) {
+	public CellTable<ClientDataEntry> renderTable( ArrayList<ClientDataEntry> entries ) {
 		CellTable<ClientDataEntry> table = new CellTable<ClientDataEntry>();
-		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>();
-		ArrayList<ClientDataEntry> array = dSet.listAll();
-
-		// Convert the array of DataEntry's to a list for the table's input
-		for( ClientDataEntry entry : array ) {
-			entries.add(entry);
-	    }
-
 		table.setRowData( 0 , entries );
 		return formatClientDataEntryCellTable( table );
 	}
@@ -182,10 +174,10 @@ public class TabularUI {
 		 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
 		 * */
 		public void update(int index, Object object, Object value) {
-			PopupPanel pBox = new PopupPanel();
-			pBox.add( renderTable((ClientDataSet) object));
-			
-			pBox.center();
+//			PopupPanel pBox = new PopupPanel();
+//			pBox.add( renderTable((ClientDataSet) object));
+//			
+//			pBox.center();
 			
 		}
 

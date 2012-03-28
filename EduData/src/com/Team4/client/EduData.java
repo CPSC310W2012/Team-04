@@ -31,7 +31,6 @@ import com.google.gwt.event.dom.client.ClickEvent;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class EduData implements EntryPoint {
-	private VerticalPanel displayset;
 	private TabularUI tabUI;
 	
 	private RootPanel root;
@@ -47,8 +46,6 @@ public class EduData implements EntryPoint {
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
-		
-		System.out.println( "CHECK PLEASE: " + listAll().isEmpty());
 		
 		tabUI = new TabularUI();
 		
@@ -101,18 +98,26 @@ public class EduData implements EntryPoint {
 			});		
 		 
 		// Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
-		Button button0 = new Button("Remove Selected");
-		button0.addClickHandler(new ClickHandler() {
+//		Button button0 = new Button("Remove Selected");
+//		button0.addClickHandler(new ClickHandler() {
+//			public void onClick(ClickEvent event) {
+//				loadDataSets();
+//			}
+//		});
+//		buttonPanel.add(button0);
+//		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
+//		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
+		
+		//  Refreshes DataSet list
+		Button button99 = new Button("Refresh");
+		button99.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-//				dataSetManager.loadDataSets();
-//				dataSetPanel.clear();
-//				dataSetPanel.add(tabUI.renderDataSetTable(dataSetManager.listAll()));
-				System.out.println( "CHECK PLEASE: " + listAll().isEmpty());
+				loadDataSets();
 			}
 		});
-		buttonPanel.add(button0);
-		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
-		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
+		buttonPanel.add(button99);
+		buttonPanel.setCellVerticalAlignment(button99, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonPanel.setCellHorizontalAlignment(button99, HasHorizontalAlignment.ALIGN_CENTER);
 		
 
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
@@ -166,76 +171,38 @@ public class EduData implements EntryPoint {
 	}
 	
 	public void loadDataSets() {
-		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
-			String returnName;
-			Date returnDate;
-			Long currentID;
+		dSService.getDataSets( new AsyncCallback<ArrayList<ClientDataSet>>() {
 			
 			public void onFailure(Throwable error) {
 		        handleError(error);
 			}
 
-			public void onSuccess(ArrayList<Long> dataSetIDs) {
-				if( !dataSetIDs.isEmpty() ) {
-					dataSets.clear();
-					for( Long id : dataSetIDs ) {
-						currentID = id;
-						this.retrieveDataSetName( id );
+			public void onSuccess(ArrayList<ClientDataSet> response) {
+				dataSets.clear();
+				if( !response.isEmpty() ) {
+					for( ClientDataSet addMe : response ) {
+						dataSets.add(addMe);
 					}
 				}
-			}
-
-			private void retrieveDataSetName(Long id) {
-				dSService.getDataSetName( id, new AsyncCallback<String>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(String name) {
-						returnName = name;
-						retrieveDataSetDateAdded( currentID );
-					}
-				});
-			}
-
-			private void retrieveDataSetDateAdded(Long id) {
-				dSService.getDateAdded( id, new AsyncCallback<Date>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(Date date) {
-						returnDate = date;
-						retrieveDataSetEntries( currentID );
-					}
-				});
-			}
-
-			private void retrieveDataSetEntries(Long id) {
-				
-				dSService.getEntries( id, new AsyncCallback<String[][]>() {
-					public void onFailure(Throwable error) {
-				        handleError(error);
-					}
-
-					public void onSuccess(String[][] entries) {
-						ClientDataSet addMe = new ClientDataSet(currentID, returnName, returnDate);
-						
-						for( int i = 0; i < entries.length; i++) {
-							ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
-							addMe.addEntry(dataEntry);
-						}
-
-						dataSets.add(addMe);
-
-						dataSetPanel.clear();
-						dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
-					}
-				
-					
-				});
-			}
+					dataSetPanel.clear();
+					dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
+				}
 			});
+		
+		Long i = new Long(1);
+		dSService.getEntries( i, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<ClientDataEntry> response) {
+				if( !response.isEmpty() ) {
+						visualizePanel.clear();
+						visualizePanel.add(tabUI.renderTable(response));
+				}
+			}});
+		
 	}
 
 	public ArrayList<ClientDataSet> listAll() {
