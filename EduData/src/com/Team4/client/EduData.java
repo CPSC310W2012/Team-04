@@ -13,6 +13,7 @@ import com.Team4.server.DataEntry;
 import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
@@ -26,6 +27,8 @@ import com.google.gwt.maps.client.overlay.MarkerOptions;
 import com.google.gwt.maps.client.overlay.Polygon;
 import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.Label;
@@ -45,7 +48,6 @@ import com.google.gwt.event.dom.client.ClickEvent;
  */
 public class EduData implements EntryPoint {
 	private VerticalPanel displayset;
-	private ClientDataSetManager dataSetManager;
 	private TabularUI tabUI;
 	
 	private RootPanel root;
@@ -54,11 +56,20 @@ public class EduData implements EntryPoint {
 	private VerticalPanel leftSidebarPanel;
 	private VerticalPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
+<<<<<<< HEAD
 	private MapWidget map;
 	
+=======
+	
+	private ArrayList<ClientDataSet> dataSets;
+	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
+	private CellTable<ClientDataSet> table;
+
+>>>>>>> 4b1b1aa521e3d409cab9b3981d9a784ac61547f4
 	public void onModuleLoad() {
-		// ryanabooth - should load datasets when constructed
-		dataSetManager = new ClientDataSetManager();
+		dataSets = new ArrayList<ClientDataSet>();
+		loadDataSets();
+		
 		tabUI = new TabularUI();
 		
 
@@ -124,7 +135,7 @@ public class EduData implements EntryPoint {
 							UploadedInfo info = uploader.getServerInfo();
 							System.out.println(info.message);
 							uploadPanel.hide();
-							dataSetManager.loadDataSets();
+							loadDataSets();
 						}					    
 					});
 				}
@@ -134,7 +145,19 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				// TODO: Implement the remove DataSet sequence. Call on the TabUI to see what DataSets are selected
+				System.out.println( getSelectedDataSets( table ).size() + " Data Sets are selected. Bitch.");
+				for ( ClientDataSet dSet : getSelectedDataSets( table ) ) {
+					try {
+						
+						removeDataSet( dSet );
+					} catch (DataSetNotPresentException e) {
+						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+						// In other words, we don't care.
+						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+					}
+				}
+				// At this point all selected DataSets have been removed, so we need to update the cell table
+				table.setRowData( listAll() );
 			}
 		});
 		buttonPanel.add(button0);
@@ -197,9 +220,8 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
-//		this.generateDataSets();
-		
-		dataSetPanel.add(tabUI.renderDataSetTable(dataSetManager.listAll()));
+		table = tabUI.renderDataSetTable( listAll() );
+		dataSetPanel.add(table);
 		
 	}
 
@@ -209,6 +231,7 @@ public class EduData implements EntryPoint {
 		table.setVisible( true );
 	}
 
+<<<<<<< HEAD
 	
 //	private void generateDataSets() {
 //		long ID = 0L;
@@ -250,5 +273,133 @@ public class EduData implements EntryPoint {
 //		count2 = 1;
 //		count++;
 //		}
+=======
+//	datasetmanager methods
+	
+	public void addDataSet( ClientDataSet dSet ) {
+		dataSets.add(dSet);
+	}
 
+	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
+		for( ClientDataSet iter : dataSets ) {
+			if( iter.getDataSetID() == dSet.getDataSetID() ) {
+				dataSets.remove(iter);
+				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(Void ignore) {
+					}
+				});
+				return iter;
+			}
+		}
+		throw new DataSetNotPresentException( "Data set not found.");
+	}
+	
+	public void loadDataSets() {
+		dSService.getDataSetIDs( new AsyncCallback<ArrayList<Long>>() {
+			String returnName;
+			Date returnDate;
+			Long currentID;
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<Long> dataSetIDs) {
+				if( !dataSetIDs.isEmpty() ) {
+					dataSets.clear();
+					for( Long id : dataSetIDs ) {
+						currentID = id;
+						this.retrieveDataSetName( id );
+					}
+				}
+			}
+
+			private void retrieveDataSetName(Long id) {
+				dSService.getDataSetName( id, new AsyncCallback<String>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+>>>>>>> 4b1b1aa521e3d409cab9b3981d9a784ac61547f4
+
+					public void onSuccess(String name) {
+						returnName = name;
+						retrieveDataSetDateAdded( currentID );
+					}
+				});
+			}
+
+			private void retrieveDataSetDateAdded(Long id) {
+				dSService.getDateAdded( id, new AsyncCallback<Date>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(Date date) {
+						returnDate = date;
+						retrieveDataSetEntries( currentID );
+					}
+				});
+			}
+
+			private void retrieveDataSetEntries(Long id) {
+				
+				dSService.getEntries( id, new AsyncCallback<String[][]>() {
+					public void onFailure(Throwable error) {
+				        handleError(error);
+					}
+
+					public void onSuccess(String[][] entries) {
+						ClientDataSet addMe = new ClientDataSet(currentID, returnName, returnDate);
+						
+						for( int i = 0; i < entries.length; i++) {
+							ClientDataEntry dataEntry = new ClientDataEntry( entries[i][0], entries[i][1], entries[i][2], entries[i][3]);
+							addMe.addEntry(dataEntry);
+						}
+
+						dataSets.add(addMe);
+
+						dataSetPanel.clear();
+						dataSetPanel.add(tabUI.renderDataSetTable(listAll()));
+					}
+				
+					
+				});
+			}
+			});
+	}
+
+	public ArrayList<ClientDataSet> listAll() {
+		return dataSets;
+	}
+
+	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
+	    for( ClientDataSet dSet : dataSets ) {
+	    	if ( dSet.getDataSetID() == id )
+	    		return dSet;
+	    }
+
+	    throw new DataSetNotPresentException("Data Set not found.");
+	}
+	
+	public void handleError(Throwable error) {
+	    Window.alert(error.getMessage());
+	}
+
+	/**
+	 * Returns an ArrayList of all selected ClientDataSets in the table
+	 * @author Tristan
+	 * @param table The table to iterate through for selected sets
+	 * @return All selected sets in the table
+	 * */	
+	public ArrayList<ClientDataSet> getSelectedDataSets( CellTable<ClientDataSet> cTable ) {
+		ArrayList<ClientDataSet> selectedSets = new ArrayList<ClientDataSet>();
+		for ( ClientDataSet dSet : cTable.getVisibleItems() ) // For every item in the CellTable...
+			if ( cTable.getSelectionModel().isSelected( dSet )) // ...if it is selected...
+				selectedSets.add((ClientDataSet) dSet ); // ... add the set to the set of selected sets
+		return selectedSets;
+	}
 }
