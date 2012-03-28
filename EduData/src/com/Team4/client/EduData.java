@@ -59,6 +59,8 @@ public class EduData implements EntryPoint {
 	private ArrayList<ClientDataSet> dataSets;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
+
+
 	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
@@ -81,9 +83,7 @@ public class EduData implements EntryPoint {
 				
 				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
 			    map = new MapWidget(vancouver, 8);
-//				map.setSize("500px", "500px");
 				map.addControl(new LargeMapControl());
-				map.addOverlay(new Marker(vancouver));
 			}
 		    });
 
@@ -184,7 +184,8 @@ public class EduData implements EntryPoint {
 	
 				   visualizePanel.clear();
 				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
-				for ( ClientDataEntry dEntry : entries ) {
+				/*
+				   for ( ClientDataEntry dEntry : entries ) {
 				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 				    	
 				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
@@ -199,6 +200,9 @@ public class EduData implements EntryPoint {
 				    	}
 				    	
 				    }
+				*/
+				   //renderMap(selectedDataSets);
+				   
 				   visualizePanel.add(map);
 				   map.setSize( "1000px", "600px");
 			}
@@ -220,6 +224,11 @@ public class EduData implements EntryPoint {
 			}
 			
 		});
+		
+		
+		
+		
+		
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button, HasHorizontalAlignment.ALIGN_CENTER);
@@ -236,6 +245,48 @@ public class EduData implements EntryPoint {
 		
 	}
 
+	
+	/*
+	 * Plot data set entries on map
+	 */
+	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
+
+		   for ( ClientDataEntry dEntry : entries) {
+		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+		    	int grade = Integer.parseInt(dEntry.getGrade());
+		    	if(grade >= 86){ // A
+		    		
+		    		//get proper course icon
+		    		String course = dEntry.getCourse();	
+		    		String url = "http://www.google.com/mapfiles/markerA.png";
+		    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
+		    		icon.setIconSize(Size.newInstance(20, 34));
+		    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+		    		Marker marker = new Marker(coordinate, ops);
+		    		map.addOverlay(marker);
+		    	}
+		    	else if(grade >= 73 && grade <= 85){//B
+		    		
+		    	}
+		    	else if(67 >= grade && grade <= 72){//C+
+		    		
+		    	}
+		    	else if (grade >= 60 && grade <= 66){//C
+		    			
+		    	}
+		    	else if (grade >= 50 && grade <= 59){//C-
+		    		
+		    		
+		    	}
+		    	else{// F
+		    		
+		    	}
+		    }
+		return map;
+		
+		
+	}
+	
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
 		visualizePanel.add( table );
