@@ -11,6 +11,9 @@ import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
+import com.google.gwt.user.client.ui.DialogBox;
+import com.google.gwt.user.client.ui.PopupPanel;
+import com.google.gwt.view.client.DefaultSelectionEventManager;
 import com.google.gwt.view.client.MultiSelectionModel;
 
 /**
@@ -64,7 +67,7 @@ public class TabularUI {
 	 * @return An ArrayList of all selected ClientDataSets
 	 * */
 	public ArrayList<ClientDataSet> getSelectedDataSets() {
-		return (ArrayList<ClientDataSet>) selectionModel.getSelectedSet();
+		return null;
 		// TODO: Add test cases to ensure that this cast works correctly. As far as I can tell, ArrayList and Set have the same methods, so there should be no trouble here 
 	}
 
@@ -137,7 +140,7 @@ public class TabularUI {
 		Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
 			@Override
 			public Boolean getValue(ClientDataSet object) {
-				return null;
+				return false;
 			}
 		};
 
@@ -160,6 +163,8 @@ public class TabularUI {
 		table.addColumn( dateAddedColumn, "Date Added" );
 		table.addColumn( tabUI, "Tabular View" );
 
+		table.setSelectionModel(selectionModel, DefaultSelectionEventManager.<ClientDataSet> createCheckboxManager());
+
 		return table;
 	}
 
@@ -177,12 +182,11 @@ public class TabularUI {
 		 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
 		 * */
 		public void update(int index, Object object, Object value) {
-			/**
-			 * TODO:
-			 * Implement the sequence of commands to display a DataSet in Tabular format
-			 * at this point, object represents the DataSet to be displayed
-			 * */
-
+			PopupPanel pBox = new PopupPanel();
+			pBox.add( renderTable((ClientDataSet) object));
+			
+			pBox.center();
+			
 		}
 
 	}
