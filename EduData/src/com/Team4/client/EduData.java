@@ -19,7 +19,12 @@ import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.Maps;
 import com.google.gwt.maps.client.control.LargeMapControl;
 import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.Size;
+import com.google.gwt.maps.client.overlay.Icon;
 import com.google.gwt.maps.client.overlay.Marker;
+import com.google.gwt.maps.client.overlay.MarkerOptions;
+import com.google.gwt.maps.client.overlay.Polygon;
+import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
@@ -50,7 +55,7 @@ public class EduData implements EntryPoint {
 	private VerticalPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
 	private MapWidget map;
-
+	
 	public void onModuleLoad() {
 		// ryanabooth - should load datasets when constructed
 		dataSetManager = new ClientDataSetManager();
@@ -62,7 +67,7 @@ public class EduData implements EntryPoint {
 		 * probably should make this into a method of its own
 		 * 
 		 * */
-		  Maps.loadMapsApi("AIzaSyAvCH2X_Wm1SiuTL4xoYanROAjIFwSijig", "2", false, new Runnable() {
+		  Maps.loadMapsApi("AIzaSyC6ilLpJA3loHZ1kM7clv_0M-PauIBKBTA", "2", false, new Runnable() {
 		      public void run() {
 		        buildMap();
 		      }
@@ -71,7 +76,7 @@ public class EduData implements EntryPoint {
 				
 				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
 			    map = new MapWidget(vancouver, 8);
-				map.setSize("500px", "500px");
+//				map.setSize("500px", "500px");
 				map.addControl(new LargeMapControl());
 				map.addOverlay(new Marker(vancouver));
 			}
@@ -142,19 +147,44 @@ public class EduData implements EntryPoint {
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
-			/*
-			 	this.generateDataSets();
-				ArrayList<Marker> markers = this.generateMarkers(dataSet); // create external or internal function?
-				Iterator<Marker> itr = markers.iterator();
-			    while (itr.hasNext()){
-			      map.addOverlay(itr.next());
-			    }
-			 */
-				   visualizePanel.add(map);
 
-				  
-				
+	
+				   visualizePanel.clear();
+				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				for ( ClientDataEntry dEntry : entries ) {
+				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+				    	
+				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
+
+				    		String url = "http://www.google.com/mapfiles/markerA.png";
+				    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
+				    		icon.setIconSize(Size.newInstance(20, 34));
+				    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+				    		Marker marker = new Marker(coordinate, ops);
+				    		map.addOverlay(marker);
+
+				    	}
+				    	
+				    }
+				   visualizePanel.add(map);
+				   map.setSize( "1000px", "600px");
 			}
+			
+			public ArrayList<ClientDataEntry> populateDummyData() {
+				
+				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+				dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12"));
+				dataSet.add(new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess"));
+				dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12"));
+				
+				dataSet.get(1).setLongitude(-124.2177);				
+				dataSet.get(1).setLatitude(48.2765);
+				dataSet.get(2).setLongitude(-124.2177);				
+				dataSet.get(2).setLatitude(50.2765);
+				
+				return dataSet;
+			}
+			
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -191,7 +221,22 @@ public class EduData implements EntryPoint {
 //			ID ++;
 //		}
 		
-		
+		public ArrayList<ClientDataEntry> populateDummyData() {
+			
+			ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+			dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12"));
+			dataSet.add(new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess"));
+			dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12"));
+			
+			dataSet.get(1).setLongitude((float)-124.2177);				
+			dataSet.get(1).setLatitude((float)48.2765);
+			dataSet.get(2).setLongitude((float)-124.2177);				
+			dataSet.get(2).setLatitude((float)50.2765);
+			dataSet.get(3).setLongitude((float)-126.2177);				
+			dataSet.get(3).setLatitude((float)48.2765);
+			
+			return dataSet;
+		}
 		
 //		Long count = (long) 1.0;
 //		int count2 = 1;

@@ -30,7 +30,7 @@ public class Map implements EntryPoint {
     * application on a public server, but a blank key will work for an
     * application served from localhost.
    */
-   Maps.loadMapsApi("AIzaSyAvCH2X_Wm1SiuTL4xoYanROAjIFwSijig", "2", false, new Runnable() {
+   Maps.loadMapsApi("AIzaSyC6ilLpJA3loHZ1kM7clv_0M-PauIBKBTA", "2", false, new Runnable() {
       public void run() {
         buildUi(dataSet);
       }

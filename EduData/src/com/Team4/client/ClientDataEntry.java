@@ -9,12 +9,16 @@ public class ClientDataEntry{
 	private String schoolName;
 	private String grade;
 	private String course;
+	private double longitude;
+	private double latitude;
 	
 	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName){
 		this.entryID = entryID;
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
+		setLongitude(0);
+		setLatitude(0);
 	}
 	
 	public String getSchool(){
@@ -50,6 +54,22 @@ public class ClientDataEntry{
 			return true;
 		else
 			return false;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public double getLatitude() {
+		return latitude;
 	}
 	
 }
