@@ -254,38 +254,58 @@ public class EduData implements EntryPoint {
 		   for ( ClientDataEntry dEntry : entries) {
 		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
+		    	String url = "";
 		    	if(grade >= 86){ // A
 		    		
-		    		//get proper course icon
-		    		String course = dEntry.getCourse();	
-		    		String url = "http://www.google.com/mapfiles/markerA.png";
-		    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
-		    		icon.setIconSize(Size.newInstance(20, 34));
-		    		MarkerOptions ops = MarkerOptions.newInstance(icon);
-		    		Marker marker = new Marker(coordinate, ops);
-		    		map.addOverlay(marker);
 		    	}
 		    	else if(grade >= 73 && grade <= 85){//B
-		    		
+		    		url = "http://www.google.com/mapfiles/markerA.png";
 		    	}
 		    	else if(67 >= grade && grade <= 72){//C+
-		    		
+		    		url = "http://www.google.com/mapfiles/markerA.png";
 		    	}
 		    	else if (grade >= 60 && grade <= 66){//C
-		    			
+		    		url = "http://www.google.com/mapfiles/markerA.png";	
 		    	}
 		    	else if (grade >= 50 && grade <= 59){//C-
-		    		
-		    		
+		    		url = "http://www.google.com/mapfiles/markerA.png";	
 		    	}
 		    	else{// F
-		    		
+		    		url = "http://www.google.com/mapfiles/markerA.png";	
 		    	}
+		    	
+		    	Icon icon = Icon.newInstance(url);
+	    		icon.setIconSize(Size.newInstance(40, 40));
+	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		Marker marker = new Marker(coordinate, ops);
+	    		map.addOverlay(marker);
+		    	
 		    }
 		return map;
 		
 		
 	}
+	/*
+	public ClientDataSet getCumulativeGrade(ArrayList<ClientDataSet> dataSets) throws DataSetNotPresentException{
+		ClientDataSet sumSet = new ClientDataSet();
+		for(ClientDataSet data : dataSets){
+			Long id = data.getDataSetID();
+				ArrayList<ClientDataEntry> ent = dSService.getEntries(id, asyncCallback);
+				for(ClientDataEntry dEntry: ent){
+					int grade = Integer.parseInt(dEntry.getGrade());
+					String school = dEntry.getSchool();
+					
+					//TO DO
+					
+					
+				}
+		}
+
+		return sumSet;
+		
+	}
+
+*/	
 	
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
@@ -363,6 +383,7 @@ public class EduData implements EntryPoint {
 				if( !response.isEmpty() ) {
 						visualizePanel.clear();
 						visualizePanel.add(tabUI.renderTable(response));
+						
 				}
 			}});
 		}
