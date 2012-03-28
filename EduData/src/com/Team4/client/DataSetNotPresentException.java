@@ -1,5 +1,7 @@
 package com.Team4.client;
 
+import com.google.gwt.user.client.Window;
+
 @SuppressWarnings("serial")
 public class DataSetNotPresentException extends Exception {
 	
@@ -8,7 +10,7 @@ public class DataSetNotPresentException extends Exception {
 	}
 	
 	public DataSetNotPresentException(String message) {
-		super(message);
+		Window.alert(message);
 	}
 
 }
