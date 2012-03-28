@@ -39,28 +39,4 @@ public class ClientDataSetTest {
 		assertTrue(dSet.getName() == "Booyah");
 		assertTrue(dSet.getDateAdded() == today);
 	}
-	
-	/**
-	 * Here we ensure that the AddEntry function works
-	 * */
-	@Test
-	public void testAddEntry() {
-		dSet = new ClientDataSet(id, "Booyah", today);
-		ClientDataEntry[] entries = new ClientDataEntry[size];
-
-		// We add a bunch ClientDataEntries...
-		for(int a = 0; a < size; a++) {
-			dEntry = new ClientDataEntry(Integer.toString(a), "Test", "12", "Astrophysics" );
-			dSet.addEntry( dEntry );	
-			entries[a] = dEntry;
-		}
-		
-		for(int a = 0; a < size; a++) { // For every element in the array...
-			try {
-				dSet.getClientDataEntry(entries[a].getID()); // We assume that no exception should be thrown,
-			} catch (EntryNotPresentException e) {	   // because every DataEntry should be present.
-				e.printStackTrace();
-			}
-		}
-	}
 }

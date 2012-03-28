@@ -10,7 +10,7 @@ public class ClientDataEntryTest {
 	
 	@Test
 	public void testGetters() {
-		dEntry = new ClientDataEntry("0", "Babahooha", "12", "Astrophysics");
+		dEntry = new ClientDataEntry("0", "Babahooha", "12", "Astrophysics", new Long(1) );
 		String id = dEntry.getID();
 		String school = dEntry.getSchool();
 		String grade = dEntry.getGrade();
@@ -27,7 +27,7 @@ public class ClientDataEntryTest {
 	 * */
 	@Test
 	public void testSetters() {
-		dEntry = new ClientDataEntry("0", "Ringaling", "12", "Astrophysics");
+		dEntry = new ClientDataEntry("0", "Ringaling", "12", "Astrophysics", new Long(1));
 		
 		dEntry.setSchoolName("BallooBalla");
 		dEntry.setGrade("212");

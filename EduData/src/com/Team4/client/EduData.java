@@ -7,11 +7,25 @@ import gwtupload.client.SingleUploader;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 
+import com.Team4.server.DataEntry;
+import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.maps.client.InfoWindowContent;
+import com.google.gwt.maps.client.MapWidget;
+import com.google.gwt.maps.client.Maps;
+import com.google.gwt.maps.client.control.LargeMapControl;
+import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.Size;
+import com.google.gwt.maps.client.overlay.Icon;
+import com.google.gwt.maps.client.overlay.Marker;
+import com.google.gwt.maps.client.overlay.MarkerOptions;
+import com.google.gwt.maps.client.overlay.Polygon;
+import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -19,6 +33,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
@@ -26,6 +41,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
+
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -39,16 +55,38 @@ public class EduData implements EntryPoint {
 	private VerticalPanel leftSidebarPanel;
 	private VerticalPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
-	
+	private MapWidget map;
 	private ArrayList<ClientDataSet> dataSets;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
-
+	private CellTable<ClientDataSet> table;
+	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
 		
 		tabUI = new TabularUI();
 		
+
+		/*Kaya
+		 * - adding default map directly centered on vancouver w/ marker
+		 * probably should make this into a method of its own
+		 * 
+		 * */
+		  Maps.loadMapsApi("AIzaSyC6ilLpJA3loHZ1kM7clv_0M-PauIBKBTA", "2", false, new Runnable() {
+		      public void run() {
+		        buildMap();
+		      }
+
+			private void buildMap() {
+				
+				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
+			    map = new MapWidget(vancouver, 8);
+//				map.setSize("500px", "500px");
+				map.addControl(new LargeMapControl());
+				map.addOverlay(new Marker(vancouver));
+			}
+		    });
+
 		root = RootPanel.get();
 		basePanel = new HorizontalPanel();
 		buttonPanel = new HorizontalPanel();
@@ -97,16 +135,28 @@ public class EduData implements EntryPoint {
 				}
 			});		
 		 
-		// Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
-//		Button button0 = new Button("Remove Selected");
-//		button0.addClickHandler(new ClickHandler() {
-//			public void onClick(ClickEvent event) {
-//				loadDataSets();
-//			}
-//		});
-//		buttonPanel.add(button0);
-//		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
-//		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
+		//	Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
+		Button button0 = new Button("Remove Selected");
+		button0.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				System.out.println( getSelectedDataSets( table ).size() + " Data Sets are selected. Bitch.");
+				for ( ClientDataSet dSet : getSelectedDataSets( table ) ) {
+					try {
+						
+						removeDataSet( dSet );
+					} catch (DataSetNotPresentException e) {
+						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+						// In other words, we don't care.
+						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+					}
+				}
+				// At this point all selected DataSets have been removed, so we need to update the cell table
+				table.setRowData( listAll() );
+			}
+		});
+		buttonPanel.add(button0);
+		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
+		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
 		
 		//  Refreshes DataSet list
 		Button button99 = new Button("Refresh");
@@ -125,7 +175,45 @@ public class EduData implements EntryPoint {
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
+
+	
+				   visualizePanel.clear();
+				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				for ( ClientDataEntry dEntry : entries ) {
+				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+				    	
+				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
+
+				    		String url = "http://www.google.com/mapfiles/markerA.png";
+				    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
+				    		icon.setIconSize(Size.newInstance(20, 34));
+				    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+				    		Marker marker = new Marker(coordinate, ops);
+				    		map.addOverlay(marker);
+
+				    	}
+				    	
+				    }
+				   visualizePanel.add(map);
+				   map.setSize( "1000px", "600px");
 			}
+			
+			public ArrayList<ClientDataEntry> populateDummyData() {
+				
+				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+				Long i = new Long(1);
+				dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
+				dataSet.add( new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
+				dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
+				
+				dataSet.get(1).setLongitude(-124.2177);				
+				dataSet.get(1).setLatitude(48.2765);
+				dataSet.get(2).setLongitude(-124.2177);				
+				dataSet.get(2).setLatitude(50.2765);
+				
+				return dataSet;
+			}
+			
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -138,6 +226,9 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
+		table = tabUI.renderDataSetTable( listAll() );
+		dataSetPanel.add(table);
+		
 	}
 
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
@@ -145,7 +236,25 @@ public class EduData implements EntryPoint {
 		visualizePanel.add( table );
 		table.setVisible( true );
 	}
-
+		
+		public ArrayList<ClientDataEntry> populateDummyData() {
+			
+			ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
+			Long i = new Long(1);
+			dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
+			dataSet.add(new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
+			dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
+			
+			dataSet.get(1).setLongitude((float)-124.2177);				
+			dataSet.get(1).setLatitude((float)48.2765);
+			dataSet.get(2).setLongitude((float)-124.2177);				
+			dataSet.get(2).setLatitude((float)50.2765);
+			dataSet.get(3).setLongitude((float)-126.2177);				
+			dataSet.get(3).setLatitude((float)48.2765);
+			
+			return dataSet;
+		}
+		
 //	datasetmanager methods
 	
 	public void addDataSet( ClientDataSet dSet ) {
@@ -202,7 +311,6 @@ public class EduData implements EntryPoint {
 						visualizePanel.add(tabUI.renderTable(response));
 				}
 			}});
-		
 	}
 
 	public ArrayList<ClientDataSet> listAll() {
@@ -218,8 +326,21 @@ public class EduData implements EntryPoint {
 	    throw new DataSetNotPresentException("Data Set not found.");
 	}
 	
-	private void handleError(Throwable error) {
+	public void handleError(Throwable error) {
 	    Window.alert(error.getMessage());
 	}
 
+	/**
+	 * Returns an ArrayList of all selected ClientDataSets in the table
+	 * @author Tristan
+	 * @param table The table to iterate through for selected sets
+	 * @return All selected sets in the table
+	 * */	
+	public ArrayList<ClientDataSet> getSelectedDataSets( CellTable<ClientDataSet> cTable ) {
+		ArrayList<ClientDataSet> selectedSets = new ArrayList<ClientDataSet>();
+		for ( ClientDataSet dSet : cTable.getVisibleItems() ) // For every item in the CellTable...
+			if ( cTable.getSelectionModel().isSelected( dSet )) // ...if it is selected...
+				selectedSets.add((ClientDataSet) dSet ); // ... add the set to the set of selected sets
+		return selectedSets;
+	}
 }
