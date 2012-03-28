@@ -156,7 +156,7 @@ public class TabularUI {
 
 		};
 		// Here we add our displayListener to listen for clicks on the Display buttons
-		tabUI.setFieldUpdater( new DisplayListener() ); // TODO: Should be a variable?
+		tabUI.setFieldUpdater( new DisplayListener() );
 
 		table.addColumn( selectColumn, 	"" ); // The check-box column
 		table.addColumn( dataSetNameColumn, "Data Set Name" );

@@ -43,12 +43,11 @@ public class EduData implements EntryPoint {
 	
 	private ArrayList<ClientDataSet> dataSets;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
+	private CellTable<ClientDataSet> table;
 
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
-		
-		System.out.println( "CHECK PLEASE: " + listAll().isEmpty());
 		
 		tabUI = new TabularUI();
 		
@@ -104,10 +103,19 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-//				dataSetManager.loadDataSets();
-//				dataSetPanel.clear();
-//				dataSetPanel.add(tabUI.renderDataSetTable(dataSetManager.listAll()));
-				System.out.println( "CHECK PLEASE: " + listAll().isEmpty());
+				System.out.println( getSelectedDataSets( table ).size() + " Data Sets are selected. Bitch.");
+				for ( ClientDataSet dSet : getSelectedDataSets( table ) ) {
+					try {
+						
+						removeDataSet( dSet );
+					} catch (DataSetNotPresentException e) {
+						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+						// In other words, we don't care.
+						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+					}
+				}
+				// At this point all selected DataSets have been removed, so we need to update the cell table
+				table.setRowData( listAll() );
 			}
 		});
 		buttonPanel.add(button0);
@@ -132,6 +140,9 @@ public class EduData implements EntryPoint {
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
+		
+		table = tabUI.renderDataSetTable( listAll() );
+		dataSetPanel.add(table);
 		
 	}
 
@@ -251,8 +262,21 @@ public class EduData implements EntryPoint {
 	    throw new DataSetNotPresentException("Data Set not found.");
 	}
 	
-	private void handleError(Throwable error) {
+	public void handleError(Throwable error) {
 	    Window.alert(error.getMessage());
 	}
 
+	/**
+	 * Returns an ArrayList of all selected ClientDataSets in the table
+	 * @author Tristan
+	 * @param table The table to iterate through for selected sets
+	 * @return All selected sets in the table
+	 * */	
+	public ArrayList<ClientDataSet> getSelectedDataSets( CellTable<ClientDataSet> cTable ) {
+		ArrayList<ClientDataSet> selectedSets = new ArrayList<ClientDataSet>();
+		for ( ClientDataSet dSet : cTable.getVisibleItems() ) // For every item in the CellTable...
+			if ( cTable.getSelectionModel().isSelected( dSet )) // ...if it is selected...
+				selectedSets.add((ClientDataSet) dSet ); // ... add the set to the set of selected sets
+		return selectedSets;
+	}
 }
