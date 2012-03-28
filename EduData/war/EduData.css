@@ -5,7 +5,7 @@
 h1 {
   font-size: 2em;
   font-weight: bold;
-  color: #777777;
+  color: #8095b2;
   margin: 40px 0px 70px;
   text-align: center;
 }
@@ -26,6 +26,10 @@ h1 {
 
 .serverResponseLabelError {
   color: red;
+}
+
+.background {
+	color: black;
 }
 
 /** Set ids using widget.getElement().setId("idOfElement") */

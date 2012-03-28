@@ -95,6 +95,10 @@ public class EduData implements EntryPoint {
 		visualizePanel = new VerticalPanel();
 		
 		root.add(basePanel);
+		root.addStyleName("background");
+		basePanel.addStyleName("background");
+		leftSidebarPanel.addStyleName("background");
+		visualizePanel.addStyleName("background");
 		basePanel.add(leftSidebarPanel);
 		basePanel.add(visualizePanel);
 		leftSidebarPanel.add(buttonPanel);
