@@ -5,6 +5,8 @@ import gwtupload.client.IUploader.OnFinishUploaderHandler;
 import gwtupload.client.IUploader.UploadedInfo;
 import gwtupload.client.SingleUploader;
 import java.util.ArrayList;
+import java.util.Arrays;
+
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.Cell;
 import com.google.gwt.cell.client.CheckboxCell;
@@ -30,6 +32,7 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.PopupPanel;
@@ -216,7 +219,7 @@ public class EduData implements EntryPoint {
 		Button button_1 = new Button("Statistics");
 		buttonPanel.add(button_1);
 		button_1.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {			
+			public void onClick(ClickEvent event) {	
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				if( selected.size() > 1 ) {
 					Window.alert( "One DataSet at a time please." );
@@ -234,12 +237,29 @@ public class EduData implements EntryPoint {
 					}
 					double[] input = new double[grades.size()];
 					int i = 0;
+					int sum = 0;
 					for( Integer grade : grades ) {
 						input[i] = grade;
+						sum = sum + grade;
 						i++;
-						System.out.println(input[i]);
 					}
 
+					/**
+					 * Get stats
+					 */
+					int mid;
+					double median = 0;
+					int mean = 0;
+					//median
+					Arrays.sort(input);
+					mid = grades.size()/2;
+					median = input[mid];
+					
+					//mean
+					mean = sum/grades.size();
+				
+					
+					
 //					double maxFreq = new Max().evaluate(frequency);
 //					ArrayList<Integer> mode = new ArrayList<Integer>();
 //					for( i = 0; i < 101; i++ ) {
@@ -247,20 +267,20 @@ public class EduData implements EntryPoint {
 //							mode.add(i);
 //						}
 //					}
-//					double mean = new Mean().evaluate(input);
-//					double median = new Median().evaluate(input);
 //					double stdDev = new StandardDeviation().evaluate(input);
 					
-					FlexTable statsFlexTable = new FlexTable();
-					statsFlexTable.setText(0, 0, "Mode");
-					statsFlexTable.setText(1, 0, "Mean");
-					statsFlexTable.setText(2, 0, "Median");
-					statsFlexTable.setText(3, 0, "Standard Deviation");
-//					statsFlexTable.setText(0, 1, "" + mode.toString());
-//					statsFlexTable.setText(1, 1, "" + mean);
-//					statsFlexTable.setText(2, 1, "" + median);
-//					statsFlexTable.setText(3, 1, "" + stdDev);
 					
+					
+					FlexTable statsFlexTable = new FlexTable();
+					statsFlexTable.setText(0, 0, "Mean");
+					statsFlexTable.setText(1, 0, "Median");
+					statsFlexTable.setText(0, 1, "" + mean);
+					statsFlexTable.setText(1, 1, "" + median);
+					System.out.println( "Flex Table Made" );
+					PopupPanel dBox2 = new PopupPanel();
+					
+					//add here 
+					Window.alert( "Mean : " + mean + " Median : " + median );
 				}
 			}
 		});
@@ -669,7 +689,7 @@ public class EduData implements EntryPoint {
 						renderMe.add( cdEntry );
 					}
 				}
-				System.out.println(renderMe.size());
+//				System.out.println(renderMe.size());
 				CellTable<ClientDataEntry> w = renderDataEntryTable( renderMe );
 				w.setWidth( "800px" );
 //				w.setHeight( "600px" );
