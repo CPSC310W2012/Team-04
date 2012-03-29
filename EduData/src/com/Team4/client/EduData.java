@@ -17,15 +17,20 @@ import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.layout.client.Layout.Alignment;
 import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.Maps;
 import com.google.gwt.maps.client.control.LargeMapControl;
+import com.google.gwt.maps.client.event.MarkerClickHandler;
 import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.LatLngBounds;
+import com.google.gwt.maps.client.geom.Point;
 import com.google.gwt.maps.client.geom.Size;
 import com.google.gwt.maps.client.overlay.Icon;
 import com.google.gwt.maps.client.overlay.Marker;
 import com.google.gwt.maps.client.overlay.MarkerOptions;
+import com.google.gwt.maps.client.overlay.Overlay;
 import com.google.gwt.maps.client.overlay.Polygon;
 import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
@@ -42,6 +47,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.ScrollPanel;
+import com.google.gwt.user.client.ui.UIObject;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.view.client.DefaultSelectionEventManager;
@@ -68,6 +74,7 @@ public class EduData implements EntryPoint {
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
 	
+	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
@@ -86,12 +93,30 @@ public class EduData implements EntryPoint {
 		      }
 
 			private void buildMap() {
-				
-				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
+				 final LatLng vancouver = LatLng.newInstance(49.150, -123.110);
 			    map = new MapWidget(vancouver, 8);
-//				map.setSize("500px", "500px");
+				map.setSize( "900px", "460px");
 				map.addControl(new LargeMapControl());
-				map.addOverlay(new Marker(vancouver));
+				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
+
+				
+	    		icon.setIconSize(Size.newInstance(28, 40));
+	    		
+	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		ops.setClickable(true);
+
+	    		Marker marker = new Marker(vancouver, ops);
+	    		marker.setLatLng(vancouver);
+	    		
+	    		marker.setImage("http://www.rushfeed.com/rush/310/a.png"); //this does not work for some reason
+	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
+	    			   public void onClick(MarkerClickEvent event) { 
+	    				   map.getInfoWindow().open(vancouver, new InfoWindowContent("School entry grade stat"));
+	    			   } 
+	    			}); 
+	    		map.addOverlay(new Marker(vancouver));
+	    		map.addOverlay(marker);
+				visualizePanel.add(map);
 			}
 		    });
 
@@ -115,9 +140,9 @@ public class EduData implements EntryPoint {
 		root.setSize( "100%" , "100%" );
 		basePanel.setSize( "100%" , "100%" );
 		leftSidebarPanel.setSize( "30%" , "100%" );
-		visualizePanel.setSize( "70%" , "100%" );
-		buttonPanel.setSize( "100%" , "20%" );
-		dataSetPanel.setSize( "450px" , "80%" );
+		visualizePanel.setSize( "100%" , "70%" );
+		buttonPanel.setSize( "100%" , "50px" );
+		dataSetPanel.setSize( "450px" , "400px" );
 		
 		basePanel.setBorderWidth( 1 );
 		leftSidebarPanel.setBorderWidth( 1 );
@@ -150,12 +175,13 @@ public class EduData implements EntryPoint {
 		//	Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {
-				System.out.println( "THIS REMOVE BUTTON HAS BEEN TOUCHED :O ");
+			public void onClick(ClickEvent event) {		
+				System.out.println( "THIS REMOVE BUTTON HAS BEEN TOUCHED :O ");		
 				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
 				for ( ClientDataSet dSet : selected ) {
 					try {
 						removeDataSet( dSet );
+						System.out.println( dSet.getName() + " removed.");
 					} catch (DataSetNotPresentException e) {
 						// If the code reaches this point, then we are trying to remove a data set that no longer exists
 						// In other words, we don't care.
@@ -187,12 +213,13 @@ public class EduData implements EntryPoint {
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {
+			public void onClick(ClickEvent event) {			
+				System.out.println( "Visualize button clicked" );
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
 
 	
-				   visualizePanel.clear();
-
+				visualizePanel.clear();
+				visualizePanel.add(map);
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
@@ -211,31 +238,10 @@ public class EduData implements EntryPoint {
 				    	
 				    }
 				*/
-				 
-				
 				   //visualizePanel.add(renderMap(dataSet));
 
-				   visualizePanel.add(map);
-
-				   map.setSize( "1000px", "600px");
+	
 			}
-			/*
-			public ArrayList<ClientDataEntry> populateDummyData() {
-				
-				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
-				Long i = new Long(1);
-				dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
-				dataSet.add( new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
-				dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
-				
-				dataSet.get(1).setLongitude(-124.2177);				
-				dataSet.get(1).setLatitude(48.2765);
-				dataSet.get(2).setLongitude(-124.2177);				
-				dataSet.get(2).setLatitude(50.2765);
-				
-				return dataSet;
-			}
-			*/
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -248,20 +254,25 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
+		for ( int a = 0 ; a < 5 ; a++ ) {
+			buttonPanel.getWidget( a ).setHeight( "100%" );
+			buttonPanel.getWidget( a ).setWidth( "90px" );
+			
+		}
+		
 		table = tabUI.renderDataSetTable( dataSets );
 		dataSetPanel.add(table);
 		
 	}
-
-
+	
 	
 	/*
 	 * Plot data set entries on map
 	 */
 	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
 
-		   for ( ClientDataEntry dEntry : entries) {
-		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+		   for ( final ClientDataEntry dEntry : entries) {
+		    	final LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
 		    	String url = "http://www.rushfeed.com/rush/310/";
 		    	if(grade >= 86){ // A
@@ -284,12 +295,19 @@ public class EduData implements EntryPoint {
 		    	}
 		    	
 		    	Icon icon = Icon.newInstance(url);
-	    		icon.setIconSize(Size.newInstance(40, 40));
+	    		icon.setIconSize(Size.newInstance(28, 40));
 	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		ops.setClickable(true);
 	    		Marker marker = new Marker(coordinate, ops);
+	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
+	    			   public void onClick(MarkerClickEvent event) { 
+	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("School:"+ dEntry.getSchool() + " Course:"+dEntry.getCourse() + " Grade: "+ dEntry.getGrade()));
+	    			   } 
+	    			}); 
+	    		
 	    		map.addOverlay(marker);
-		    	
-		    }
+		   }
+		    
 		return map;
 		
 		
@@ -365,6 +383,7 @@ public class EduData implements EntryPoint {
 					}
 
 					public void onSuccess(Void ignore) {
+						System.out.println( "DataSet successfully removed." );
 					}
 				});
 				return iter;
@@ -539,7 +558,7 @@ public class EduData implements EntryPoint {
 			TextColumn<ClientDataSet> dateAddedColumn = new TextColumn<ClientDataSet>() {
 				@Override
 				public String getValue( ClientDataSet d ) {
-					return ( intToMonth(d.getDateAdded().getMonth()) + " " + d.getDateAdded().getDay() );
+					return ( d.getDateAdded().toString() );
 				}
 			};
 
@@ -572,7 +591,7 @@ public class EduData implements EntryPoint {
 			table.addColumn( tabUI, "Tabular View" );
 
 			table.setSelectionModel(selectionModel, DefaultSelectionEventManager.<ClientDataSet> createCheckboxManager());
-
+			
 			return table;
 		}
 
@@ -592,27 +611,6 @@ public class EduData implements EntryPoint {
 			public void update(int index, Object object, Object value) {
 				
 			}
-
 		}
-		
-		public String intToMonth( int i ) {
-			switch( i ) {
-			case 1: return "January";
-			case 2: return "February";
-			case 3: return "March";
-			case 4: return "April";
-			case 5: return "May";
-			case 6: return "June";
-			case 7: return "July";
-			case 8: return "August";
-			case 9: return "September";
-			case 10: return "October";
-			case 11: return "November";
-			case 12: return "December";
-			}
-			return "Invalid Date";
-		}
-
-
 	}
 }
