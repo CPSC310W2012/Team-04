@@ -21,12 +21,13 @@ public class ClientDataEntry implements IsSerializable {
 	}
 	
 	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName, Long dataSetID){
-		
 		this.entryID = entryID;
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
 		this.dataSetID = dataSetID;
+		longitude = 0.0;
+		latitude = 0.0;
 
 	}
 	
@@ -70,11 +71,9 @@ public class ClientDataEntry implements IsSerializable {
 			return false;
 	}
 
-
 	public double getLongitude() {
 		return longitude;
 	}
-
 
 	public double getLatitude() {
 		return latitude;

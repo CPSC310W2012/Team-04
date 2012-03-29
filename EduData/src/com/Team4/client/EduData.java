@@ -39,8 +39,6 @@ import com.google.gwt.view.client.MultiSelectionModel;
 import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.SelectionEvent;
-import com.google.gwt.event.logical.shared.SelectionHandler;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -66,8 +64,8 @@ public class EduData implements EntryPoint {
 		dataSets = new ArrayList<ClientDataSet>();
 		entries = new ArrayList<ClientDataEntry>();
 		mapPoints = new ArrayList<MapPoint>();
-		loadDataSets();
 		loadMapPoints();
+		loadDataSets();
 		
 		tabUI = new TabularUI();
 		
@@ -86,7 +84,7 @@ public class EduData implements EntryPoint {
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
 			   
-			    map.setSize("500px", "500px");
+			    map.setSize("650px", "500px");
 
 				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
 
@@ -96,6 +94,7 @@ public class EduData implements EntryPoint {
 	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
 	    		ops.setClickable(true);
 
+	    		map.addControl(new LargeMapControl());
 	    		Marker marker = new Marker(vancouver, ops);
 	    		
 	    		map.addOverlay(marker);
@@ -180,23 +179,6 @@ public class EduData implements EntryPoint {
 		buttonPanel.add(button0);
 		buttonPanel.setCellVerticalAlignment(button0, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button0, HasHorizontalAlignment.ALIGN_CENTER);
-		
-		//  Refreshes DataSet list
-		Button button99 = new Button("Refresh");
-		button99.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {
-//				dataSetPanel.clear();
-//				dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
-//				System.out.println( "-------Refreshed--------");
-				for( ClientDataEntry cdEntry : entries ) {
-					System.out.println( cdEntry.getLatitude() + " " + cdEntry.getLongitude() );
-				}
-			}
-		});
-		buttonPanel.add(button99);
-		buttonPanel.setCellVerticalAlignment(button99, HasVerticalAlignment.ALIGN_MIDDLE);
-		buttonPanel.setCellHorizontalAlignment(button99, HasHorizontalAlignment.ALIGN_CENTER);
-		
 
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
@@ -234,9 +216,9 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
-		for ( int a = 0 ; a < 5 ; a++ ) {
+		for ( int a = 0 ; a < 4 ; a++ ) {
 			buttonPanel.getWidget( a ).setHeight( "50px" );
-			buttonPanel.getWidget( a ).setWidth( "90px" );
+			buttonPanel.getWidget( a ).setWidth( "112.5px" );
 		}
 		
 		table = tabUI.renderDataSetTable( dataSets );
@@ -250,8 +232,11 @@ public class EduData implements EntryPoint {
 	 */
 	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
 
-		   for ( final ClientDataEntry dEntry : entries) {
-		    	final LatLng coordinate = LatLng.newInstance(dEntry.getLatitude()+0.016, dEntry.getLongitude()-0.011);
+		   for ( ClientDataEntry dEntry : entries) {
+			   final String school = dEntry.getSchool();
+			   final String course = dEntry.getCourse();
+			   final String displayGrade = dEntry.getGrade();
+		    	final LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
 		    	String url = "http://www.rushfeed.com/rush/310/";
 		    	if(grade >= 86){ // A
@@ -280,7 +265,7 @@ public class EduData implements EntryPoint {
 	    		Marker marker = new Marker(coordinate, ops);
 	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
 	    			   public void onClick(MarkerClickEvent event) { 
-	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("School:"+ dEntry.getSchool() + " Course:"+dEntry.getCourse() + " Grade: "+ dEntry.getGrade()));
+	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("School:"+ school + " Course:"+ course + " Grade: " + displayGrade ));
 	    			   } 
 	    			}); 
 	    		//LatLng adjusted = LatLng.newInstance(coordinate.getLatitude()+0.016,coordinate.getLongitude()-0.011);
@@ -513,10 +498,19 @@ public class EduData implements EntryPoint {
 					return d.getGrade();
 				}
 			};
+			
+			// The column that will display the school name
+			TextColumn<ClientDataEntry> longitudeLatitudeColumn = new TextColumn<ClientDataEntry>() {
+				@Override
+				public String getValue( ClientDataEntry d ) {
+					return d.getLatitude() + ", " + d.getLongitude();
+				}
+			};
 
 			table.addColumn( schoolNameColumn , "School Name" );
 			table.addColumn( courseNameColumn , "Course Name" );
 			table.addColumn( courseGradeColumn , "Grade" );
+			table.addColumn( longitudeLatitudeColumn, "Latitude, Longitude");
 
 			return table;
 		}
@@ -528,7 +522,17 @@ public class EduData implements EntryPoint {
 		 * @return The newly formatted CellTable
 		 * */
 		private CellTable formatDataSetCellTable( CellTable<ClientDataSet> table ) {
-
+			
+			// The checkbox column that will be used to remove and visualize DataSets
+			Cell<Boolean> cbCell = new CheckboxCell();
+			
+			Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
+				@Override
+				public Boolean getValue(ClientDataSet object) {
+					return false;
+				}
+			};
+			
 			// The column that will display the DataSet name
 			TextColumn<ClientDataSet> dataSetNameColumn = new TextColumn<ClientDataSet>() {
 				@Override
@@ -542,16 +546,6 @@ public class EduData implements EntryPoint {
 				@Override
 				public String getValue( ClientDataSet d ) {
 					return ( d.getDateAdded().toString() );
-				}
-			};
-
-			// The checkbox column that will be used to remove and visualize DataSets
-			Cell<Boolean> cbCell = new CheckboxCell();
-			
-			Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
-				@Override
-				public Boolean getValue(ClientDataSet object) {
-					return false;
 				}
 			};
 
@@ -593,11 +587,20 @@ public class EduData implements EntryPoint {
 
 			/**
 			 * This function gets called whenever the "Display" buttons next to each DataSet in the DataSet Table is called
+			 * @author tsebens
 			 * @index The current index of the DataSet
 			 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
 			 * */
 			public void update(int index, Object object, Object value) {
-				visualizePanel.add( renderDataEntryTable(entries) );
+				visualizePanel.clear();
+				ClientDataSet cDSet = (ClientDataSet) object;
+				ArrayList<ClientDataEntry> renderMe = new ArrayList<ClientDataEntry>();
+				for( ClientDataEntry cdEntry : entries ) {
+					if( cdEntry.getDataSetID().equals( cDSet.getDataSetID() ) ){
+						renderMe.add( cdEntry );
+					}
+				}
+				visualizePanel.add( renderDataEntryTable( renderMe ) );
 			}
 		}
 	}

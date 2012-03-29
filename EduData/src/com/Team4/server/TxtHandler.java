@@ -56,8 +56,10 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 		        	// Check formatting
 		        	if(toks[1].equals("SCHOOL LEVEL") && toks[2].equals("BC Public School")){
 		        		// Make a new Data Entry based on parsed data
+		        		if( !toks[11].equals("Msk") ) {
 		        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
 		        		DataSetServiceImpl.addDataEntry(dataEntry);
+		        		}
 		        	}
 		        	// Read next line
 		        	line = br.readLine();

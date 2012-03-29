@@ -31,6 +31,8 @@ public class DataEntry implements Serializable {
 		grade = stGrade;
 		course = courseName;
 		this.dataSetID = dSetID;
+		longitude = 0.0;
+		latitude = 0.0;
 	}
 	
 	public String getSchool(){
