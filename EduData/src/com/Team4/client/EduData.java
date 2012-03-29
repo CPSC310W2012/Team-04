@@ -5,12 +5,6 @@ import gwtupload.client.IUploader.OnFinishUploaderHandler;
 import gwtupload.client.IUploader.UploadedInfo;
 import gwtupload.client.SingleUploader;
 import java.util.ArrayList;
-
-import org.apache.commons.math3.stat.descriptive.moment.Mean;
-import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
-import org.apache.commons.math3.stat.descriptive.rank.Max;
-import org.apache.commons.math3.stat.descriptive.rank.Median;
-
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.Cell;
 import com.google.gwt.cell.client.CheckboxCell;
@@ -212,7 +206,7 @@ public class EduData implements EntryPoint {
 		
 		Button button_1 = new Button("Statistics");
 		buttonPanel.add(button_1);
-		button.addClickHandler(new ClickHandler() {
+		button_1.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {			
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				if( selected.size() > 1 ) {
@@ -234,28 +228,29 @@ public class EduData implements EntryPoint {
 					for( Integer grade : grades ) {
 						input[i] = grade;
 						i++;
+						System.out.println(input[i]);
 					}
 
-					double maxFreq = new Max().evaluate(frequency);
-					ArrayList<Integer> mode = new ArrayList<Integer>();
-					for( i = 0; i < 101; i++ ) {
-						if( frequency[i] == maxFreq ) {
-							mode.add(i);
-						}
-					}
-					double mean = new Mean().evaluate(input);
-					double median = new Median().evaluate(input);
-					double stdDev = new StandardDeviation().evaluate(input);
+//					double maxFreq = new Max().evaluate(frequency);
+//					ArrayList<Integer> mode = new ArrayList<Integer>();
+//					for( i = 0; i < 101; i++ ) {
+//						if( frequency[i] == maxFreq ) {
+//							mode.add(i);
+//						}
+//					}
+//					double mean = new Mean().evaluate(input);
+//					double median = new Median().evaluate(input);
+//					double stdDev = new StandardDeviation().evaluate(input);
 					
 					FlexTable statsFlexTable = new FlexTable();
 					statsFlexTable.setText(0, 0, "Mode");
 					statsFlexTable.setText(1, 0, "Mean");
 					statsFlexTable.setText(2, 0, "Median");
 					statsFlexTable.setText(3, 0, "Standard Deviation");
-					statsFlexTable.setText(0, 1, "" + mode.toString());
-					statsFlexTable.setText(1, 1, "" + mean);
-					statsFlexTable.setText(2, 1, "" + median);
-					statsFlexTable.setText(3, 1, "" + stdDev);
+//					statsFlexTable.setText(0, 1, "" + mode.toString());
+//					statsFlexTable.setText(1, 1, "" + mean);
+//					statsFlexTable.setText(2, 1, "" + median);
+//					statsFlexTable.setText(3, 1, "" + stdDev);
 					
 				}
 			}
