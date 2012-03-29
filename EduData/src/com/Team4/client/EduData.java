@@ -141,7 +141,7 @@ public class EduData implements EntryPoint {
 		basePanel.setSize( "100%" , "100%" );
 		leftSidebarPanel.setSize( "30%" , "100%" );
 		visualizePanel.setSize( "100%" , "70%" );
-		buttonPanel.setSize( "100%" , "50px" );
+		buttonPanel.setSize( "100%" , "100%" );
 		dataSetPanel.setSize( "450px" , "400px" );
 		
 		basePanel.setBorderWidth( 1 );
@@ -219,8 +219,7 @@ public class EduData implements EntryPoint {
 	
 				visualizePanel.clear();
 				visualizePanel.add(map);
-<<<<<<< HEAD
-=======
+
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
@@ -239,7 +238,6 @@ public class EduData implements EntryPoint {
 				    	
 				    }
 				*/
->>>>>>> 8b1b4bed63109d72067a36ddffd919c6590b66ff
 				 
 				
 				   //visualizePanel.add(renderMap(dataSet));
@@ -259,9 +257,8 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
 		for ( int a = 0 ; a < 5 ; a++ ) {
-			buttonPanel.getWidget( a ).setHeight( "100%" );
+			buttonPanel.getWidget( a ).setHeight( "50px" );
 			buttonPanel.getWidget( a ).setWidth( "90px" );
-			
 		}
 		
 		table = tabUI.renderDataSetTable( dataSets );
