@@ -1,60 +1,43 @@
 package com.Team4.client;
-// March 22 2012
+
 import gwtupload.client.IUploader;
 import gwtupload.client.IUploader.OnFinishUploaderHandler;
 import gwtupload.client.IUploader.UploadedInfo;
 import gwtupload.client.SingleUploader;
-
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import com.Team4.server.DataEntry;
-import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.Cell;
 import com.google.gwt.cell.client.CheckboxCell;
 import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.layout.client.Layout.Alignment;
 import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.Maps;
 import com.google.gwt.maps.client.control.LargeMapControl;
 import com.google.gwt.maps.client.event.MarkerClickHandler;
 import com.google.gwt.maps.client.geom.LatLng;
-import com.google.gwt.maps.client.geom.LatLngBounds;
-import com.google.gwt.maps.client.geom.Point;
 import com.google.gwt.maps.client.geom.Size;
 import com.google.gwt.maps.client.overlay.Icon;
 import com.google.gwt.maps.client.overlay.Marker;
 import com.google.gwt.maps.client.overlay.MarkerOptions;
-import com.google.gwt.maps.client.overlay.Overlay;
-import com.google.gwt.maps.client.overlay.Polygon;
-import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DockLayoutPanel;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.ScrollPanel;
-import com.google.gwt.user.client.ui.UIObject;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.view.client.DefaultSelectionEventManager;
 import com.google.gwt.view.client.MultiSelectionModel;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
-
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -71,13 +54,17 @@ public class EduData implements EntryPoint {
 	private MapWidget map;
 	private ArrayList<ClientDataSet> dataSets;
 	private ArrayList<ClientDataEntry> entries;
+	private ArrayList<MapPoint> mapPoints;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
 	
 	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
+		entries = new ArrayList<ClientDataEntry>();
+		mapPoints = new ArrayList<MapPoint>();
 		loadDataSets();
+		loadMapPoints();
 		
 		tabUI = new TabularUI();
 		
@@ -167,6 +154,7 @@ public class EduData implements EntryPoint {
 							System.out.println(info.message);
 							uploadPanel.hide();
 							loadDataSets();
+							loadMapPoints();
 						}					    
 					});
 				}
@@ -200,9 +188,12 @@ public class EduData implements EntryPoint {
 		Button button99 = new Button("Refresh");
 		button99.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				dataSetPanel.clear();
-				dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
-				System.out.println( "-------Refreshed--------");
+//				dataSetPanel.clear();
+//				dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
+//				System.out.println( "-------Refreshed--------");
+				for( ClientDataEntry cdEntry : entries ) {
+					System.out.println( cdEntry.getLatitude() + " " + cdEntry.getLongitude() );
+				}
 			}
 		});
 		buttonPanel.add(button99);
@@ -399,17 +390,49 @@ public class EduData implements EntryPoint {
 				}
 			});
 		
-//		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
-//			
-//			public void onFailure(Throwable error) {
-//		        handleError(error);
-//			}
-//
-//			public void onSuccess(ArrayList<ClientDataEntry> response) {
-//				if( !response.isEmpty() ) {
-//					entries = response;
-//				}
-//			}});
+		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<ClientDataEntry> response) {
+				if( !response.isEmpty() ) {
+					entries = response;
+					if( !mapPoints.isEmpty() ) {
+						addLocationData();
+					}
+				}
+			}});
+	}
+	
+	private void addLocationData() {
+		for( ClientDataEntry dEntry : entries ) {
+			for( MapPoint mp : mapPoints ) {
+				if( mp.getSchoolName().equals( dEntry.getSchool() ) ) {
+					dEntry.setLatitude( mp.getLatitude() );
+					dEntry.setLongitude( mp.getLongitude() );
+				}
+			}
+		}
+	}
+	
+	private void loadMapPoints() {
+		dSService.getMapPoints( new AsyncCallback<ArrayList<MapPoint>>() {
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<MapPoint> response) {
+					mapPoints.clear();
+					if( !response.isEmpty() ) {
+						for( MapPoint addMe : response ) {
+							mapPoints.add(addMe);
+						}
+					}
+				}
+			});
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{

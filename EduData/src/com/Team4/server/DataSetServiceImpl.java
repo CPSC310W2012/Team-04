@@ -110,15 +110,19 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		}
 	}
 	
-	public static List<MapPoint> getMapPoints() {
+	public ArrayList<com.Team4.client.MapPoint> getMapPoints() {
 		PersistenceManager pm = PMF.getPersistenceManager();
-		List<MapPoint> entries;
+		ArrayList<com.Team4.client.MapPoint> returnList = new ArrayList<com.Team4.client.MapPoint>();
 		try {
 			Query q = pm.newQuery(MapPoint.class);
-			entries = (List<MapPoint>) q.execute();
+			List<MapPoint> entries = (List<MapPoint>) q.execute();
+			for (MapPoint mp : entries) {
+				com.Team4.client.MapPoint addMe = new com.Team4.client.MapPoint( mp.getSchoolName(), mp.getLatitude(), mp.getLongitude() );
+				returnList.add( addMe );
+			}
 		} finally {
 			pm.close();
 		}
-		return entries;
+		return returnList;
 	}
 }
