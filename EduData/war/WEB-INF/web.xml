@@ -7,15 +7,6 @@
   </welcome-file-list>
   
   <!-- Servlets -->
-    <servlet>
-    <servlet-name>loginService</servlet-name>
-    <servlet-class>com.Team4.server.LoginServiceImpl</servlet-class>
-  </servlet>
-  
-    <servlet-mapping>
-    <servlet-name>loginService</servlet-name>
-    <url-pattern>/edudata/login</url-pattern>
-  </servlet-mapping>
   
   <servlet>
     <servlet-name>dataSetService</servlet-name>
