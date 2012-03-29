@@ -17,6 +17,7 @@ import com.google.gwt.maps.client.Maps;
 import com.google.gwt.maps.client.control.LargeMapControl;
 import com.google.gwt.maps.client.event.MarkerClickHandler;
 import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.Point;
 import com.google.gwt.maps.client.geom.Size;
 import com.google.gwt.maps.client.overlay.Icon;
 import com.google.gwt.maps.client.overlay.Marker;
@@ -61,6 +62,10 @@ public class EduData implements EntryPoint {
 	
 	
 	public void onModuleLoad() {
+	 loadEduData();
+	}
+		
+	public void loadEduData() {
 		dataSets = new ArrayList<ClientDataSet>();
 		entries = new ArrayList<ClientDataEntry>();
 		mapPoints = new ArrayList<MapPoint>();
@@ -84,9 +89,9 @@ public class EduData implements EntryPoint {
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
 			   
-			    map.setSize("650px", "500px");
+			    map.setSize("800px", "500px");
 
-				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
+				Icon icon = Icon.newInstance();
 
 				
 	    		icon.setIconSize(Size.newInstance(28, 40));
@@ -185,7 +190,6 @@ public class EduData implements EntryPoint {
 		button.addClickHandler(new ClickHandler() {
 
 			public void onClick(ClickEvent event) {			
-				System.out.println( "Visualize button clicked" );
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				if( selected.size() > 1 ) {
 					Window.alert( "Only one DataSet can be mapped at a time." );
@@ -231,6 +235,8 @@ public class EduData implements EntryPoint {
 	 * Plot data set entries on map
 	 */
 	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
+		
+			map.clearOverlays();
 
 		   for ( ClientDataEntry dEntry : entries) {
 			   final String school = dEntry.getSchool();
@@ -238,21 +244,18 @@ public class EduData implements EntryPoint {
 			   final String displayGrade = dEntry.getGrade();
 		    	final LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
-		    	String url = "http://www.rushfeed.com/rush/310/";
+		    	String url = "images/";
 		    	if(grade >= 86){ // A
 		    		url = url+"a.png";
 		    	}
 		    	else if(grade >= 73 && grade <= 85){//B
 		    		url = url+"b.png";
 		    	}
-		    	else if(67 >= grade && grade <= 72){//C+
-		    		url = url+"c+.png";
-		    	}
-		    	else if (grade >= 60 && grade <= 66){//C
+		    	else if (grade >= 60 && grade <= 72){//C
 		    		url = url+"c.png";	
 		    	}
 		    	else if (grade >= 50 && grade <= 59){//C-
-		    		url = url+"c-.png";	
+		    		url = url+"d.png";	
 		    	}
 		    	else{// F
 		    		url = url+"f.png";	
@@ -260,6 +263,7 @@ public class EduData implements EntryPoint {
 		    	
 		    	Icon icon = Icon.newInstance(url);
 	    		icon.setIconSize(Size.newInstance(28, 40));
+	    		icon.setIconAnchor( Point.newInstance(7, 14) );
 	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
 	    		ops.setClickable(true);
 	    		Marker marker = new Marker(coordinate, ops);
