@@ -175,8 +175,8 @@ public class EduData implements EntryPoint {
 		//	Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {				
-				System.out.println( "Remove button clicked" );
+			public void onClick(ClickEvent event) {		
+				System.out.println( "THIS REMOVE BUTTON HAS BEEN TOUCHED :O ");		
 				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
 				for ( ClientDataSet dSet : selected ) {
 					try {
@@ -200,7 +200,8 @@ public class EduData implements EntryPoint {
 		Button button99 = new Button("Refresh");
 		button99.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				loadDataSets();
+				dataSetPanel.clear();
+				dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
 				System.out.println( "-------Refreshed--------");
 			}
 		});
@@ -373,6 +374,11 @@ public class EduData implements EntryPoint {
 		for( ClientDataSet iter : dataSets ) {
 			if( iter.getDataSetID() == dSet.getDataSetID() ) {
 				dataSets.remove(iter);
+				for( ClientDataEntry dEntry : entries) {
+					if( dEntry.getDataSetID().equals( iter.getDataSetID() )) {
+						entries.remove( dEntry );
+					}
+				}
 				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
@@ -407,17 +413,17 @@ public class EduData implements EntryPoint {
 				}
 			});
 		
-		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
-			
-			public void onFailure(Throwable error) {
-		        handleError(error);
-			}
-
-			public void onSuccess(ArrayList<ClientDataEntry> response) {
-				if( !response.isEmpty() ) {
-					entries = response;
-				}
-			}});
+//		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
+//			
+//			public void onFailure(Throwable error) {
+//		        handleError(error);
+//			}
+//
+//			public void onSuccess(ArrayList<ClientDataEntry> response) {
+//				if( !response.isEmpty() ) {
+//					entries = response;
+//				}
+//			}});
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{

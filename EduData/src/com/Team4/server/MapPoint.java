@@ -15,11 +15,11 @@ public class MapPoint implements Serializable {
 	@Persistent
 	private String schoolName;
 	@Persistent
-	private Long latitude;
+	private double latitude;
 	@Persistent
-	private Long longitude;
+	private double longitude;
 	
-	public MapPoint( String name, Long latit, Long longit ) {
+	public MapPoint( String name, double latit, double longit ) {
 		schoolName = name;
 		latitude = latit;
 		longitude = longit;
@@ -37,16 +37,16 @@ public class MapPoint implements Serializable {
 	public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
 	}
-	public Long getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(Long latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
-	public Long getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(Long longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 	
