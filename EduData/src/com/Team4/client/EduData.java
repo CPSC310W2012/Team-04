@@ -215,32 +215,22 @@ public class EduData implements EntryPoint {
 		button.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {			
 				System.out.println( "Visualize button clicked" );
-				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
-
-	
-				visualizePanel.clear();
-				visualizePanel.add(map);
-				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
-				/*
-				   for ( ClientDataEntry dEntry : entries ) {
-				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
-				    	
-				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
-
-				    		String url = "http://www.google.com/mapfiles/markerA.png";
-				    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
-				    		icon.setIconSize(Size.newInstance(20, 34));
-				    		MarkerOptions ops = MarkerOptions.newInstance(icon);
-				    		Marker marker = new Marker(coordinate, ops);
-				    		map.addOverlay(marker);
-
-				    	}
-				    	
-				    }
-				*/
-				   //visualizePanel.add(renderMap(dataSet));
-
-	
+				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
+				if( selected.size() > 1 ) {
+					Window.alert( "Only one DataSet can be mapped at a time." );
+				}
+				else {
+					ArrayList<ClientDataEntry> renderMe = new ArrayList<ClientDataEntry>();
+					for( ClientDataSet dataSet : selected ) {
+						for( ClientDataEntry dataEntry : entries ) {
+							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
+								renderMe.add( dataEntry );
+							}
+						}
+					}
+					visualizePanel.clear();
+					visualizePanel.add(renderMap( renderMe ));
+				}
 			}
 		});
 		buttonPanel.add(button);
@@ -315,9 +305,8 @@ public class EduData implements EntryPoint {
 	/*
 	 * Renders a map according to the dataSet passed
 	 * */
-	public MapWidget renderMap(ClientDataSet dSet){
-		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>(); // should be replaced with getEntries()
-		return plotEntries(entries);
+	public MapWidget renderMap(ArrayList<ClientDataEntry> renderMe){
+		return plotEntries(renderMe);
 	}
 	
 	/*
