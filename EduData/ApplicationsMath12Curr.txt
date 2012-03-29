@@ -1,0 +1,37 @@
+SCHOOL_YEAR	DATA_LEVEL	PUBLIC_OR_INDEPENDENT	DISTRICT_NUMBER	DISTRICT_NAME	SCHOOL_NUMBER	SCHOOL_NAME	EXAM_SUBJECT	GRADE	NUMBER_OF_EXAM_WRITERS	NUMBER_OF_C_MINUS_OR_BETTER	PERCENT_OF_C_MINUS_OR_BETTER
+2010/2011	PROVINCE LEVEL	PROVINCE - Total					Applications Of Mathematics 12	12	88	56	64
+2010/2011	PROVINCE LEVEL	BC Public School					Applications Of Mathematics 12	12	87	55	63
+2010/2011	PROVINCE LEVEL	BC Independent School					Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	033	Chilliwack			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	034	Abbotsford			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	035	Langley			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	038	Richmond			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	039	Vancouver			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	044	North Vancouver			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	063	Saanich			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	069	Qualicum			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	071	Comox Valley			Applications Of Mathematics 12	12	54	29	54
+2010/2011	DISTRICT LEVEL	BC Public School	075	Mission			Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03899175	Richmond Virtual School	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Applications Of Mathematics 12	12	11	9	82
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Applications Of Mathematics 12	12	42	19	45
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Applications Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Applications Of Mathematics 12	12	Msk	Msk	Msk

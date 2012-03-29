@@ -1,0 +1,336 @@
+SCHOOL_YEAR	DATA_LEVEL	PUBLIC_OR_INDEPENDENT	DISTRICT_NUMBER	DISTRICT_NAME	SCHOOL_NUMBER	SCHOOL_NAME	EXAM_SUBJECT	GRADE	NUMBER_OF_EXAM_WRITERS	NUMBER_OF_C_MINUS_OR_BETTER	PERCENT_OF_C_MINUS_OR_BETTER
+2006/2007	PROVINCE LEVEL	PROVINCE - Total					Geology 12	12	1035	973	94
+2006/2007	PROVINCE LEVEL	BC Public School					Geology 12	12	960	903	94
+2006/2007	PROVINCE LEVEL	BC Independent School					Geology 12	12	75	70	93
+2006/2007	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Geology 12	12	20	17	85
+2006/2007	DISTRICT LEVEL	BC Public School	022	Vernon			Geology 12	12	43	43	100
+2006/2007	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Geology 12	12	38	37	97
+2006/2007	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Geology 12	12	10	9	90
+2006/2007	DISTRICT LEVEL	BC Public School	033	Chilliwack			Geology 12	12	52	46	88
+2006/2007	DISTRICT LEVEL	BC Public School	034	Abbotsford			Geology 12	12	68	64	94
+2006/2007	DISTRICT LEVEL	BC Public School	035	Langley			Geology 12	12	27	23	85
+2006/2007	DISTRICT LEVEL	BC Public School	036	Surrey			Geology 12	12	79	73	92
+2006/2007	DISTRICT LEVEL	BC Public School	037	Delta			Geology 12	12	38	38	100
+2006/2007	DISTRICT LEVEL	BC Public School	038	Richmond			Geology 12	12	17	17	100
+2006/2007	DISTRICT LEVEL	BC Public School	039	Vancouver			Geology 12	12	64	62	97
+2006/2007	DISTRICT LEVEL	BC Public School	040	New Westminster			Geology 12	12	68	67	99
+2006/2007	DISTRICT LEVEL	BC Public School	041	Burnaby			Geology 12	12	19	18	95
+2006/2007	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Geology 12	12	53	46	87
+2006/2007	DISTRICT LEVEL	BC Public School	043	Coquitlam			Geology 12	12	116	112	97
+2006/2007	DISTRICT LEVEL	BC Public School	044	North Vancouver			Geology 12	12	48	42	88
+2006/2007	DISTRICT LEVEL	BC Public School	045	West Vancouver			Geology 12	12	47	45	96
+2006/2007	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Geology 12	12	16	16	100
+2006/2007	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Geology 12	12	16	16	100
+2006/2007	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Geology 12	12	16	16	100
+2006/2007	DISTRICT LEVEL	BC Public School	057	Prince George			Geology 12	12	37	30	81
+2006/2007	DISTRICT LEVEL	BC Public School	059	Peace River South			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	060	Peace River North			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	062	Sooke			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	070	Alberni			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	071	Comox Valley			Geology 12	12	22	22	100
+2006/2007	DISTRICT LEVEL	BC Public School	075	Mission			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	082	Coast Mountains			Geology 12	12	Msk	Msk	Msk
+2006/2007	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Geology 12	12	20	17	85
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Geology 12	12	26	26	100
+2006/2007	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Geology 12	12	17	17	100
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Geology 12	12	32	32	100
+2006/2007	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Geology 12	12	10	9	90
+2006/2007	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Geology 12	12	35	29	83
+2006/2007	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Geology 12	12	17	17	100
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Geology 12	12	22	20	91
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Geology 12	12	21	21	100
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Geology 12	12	24	22	92
+2006/2007	SCHOOL LEVEL	BC Public School	034	Abbotsford	03499055	Bakerview Ctr for Learning - Alt	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Geology 12	12	16	13	81
+2006/2007	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Geology 12	12	11	10	91
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Geology 12	12	14	13	93
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Geology 12	12	41	41	100
+2006/2007	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Geology 12	12	15	11	73
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Geology 12	12	12	12	100
+2006/2007	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Geology 12	12	26	26	100
+2006/2007	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Geology 12	12	17	17	100
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Geology 12	12	22	21	95
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Geology 12	12	30	29	97
+2006/2007	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Geology 12	12	12	12	100
+2006/2007	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Geology 12	12	67	66	99
+2006/2007	SCHOOL LEVEL	BC Public School	040	New Westminster	04099124	Sigma	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Geology 12	12	19	18	95
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Geology 12	12	19	16	84
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Geology 12	12	10	7	70
+2006/2007	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Geology 12	12	15	14	93
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Geology 12	12	31	30	97
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Geology 12	12	25	25	100
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Geology 12	12	49	46	94
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Geology 12	12	25	24	96
+2006/2007	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Geology 12	12	23	18	78
+2006/2007	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Geology 12	12	20	20	100
+2006/2007	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Geology 12	12	27	25	93
+2006/2007	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Geology 12	12	16	16	100
+2006/2007	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Geology 12	12	16	16	100
+2006/2007	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Geology 12	12	16	16	100
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Geology 12	12	17	15	88
+2006/2007	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Geology 12	12	20	15	75
+2006/2007	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	Dawson Creek Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Geology 12	12	22	22	100
+2006/2007	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288024	Caledonia Sr Secondary	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09339006	Kitsilano Secondary (Francophone Prog)	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Geology 12	12	18	18	100
+2006/2007	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Geology 12	12	Msk	Msk	Msk
+2006/2007	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Geology 12	12	15	12	80
+2006/2007	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Geology 12	12	18	16	89
+2006/2007	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Geology 12	12	18	18	100
+2006/2007	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Geology 12	12	Msk	Msk	Msk
+2007/2008	PROVINCE LEVEL	PROVINCE - Total					Geology 12	12	632	566	90
+2007/2008	PROVINCE LEVEL	BC Public School					Geology 12	12	601	537	89
+2007/2008	PROVINCE LEVEL	BC Independent School					Geology 12	12	31	29	94
+2007/2008	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Geology 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	022	Vernon			Geology 12	12	21	21	100
+2007/2008	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Geology 12	12	14	12	86
+2007/2008	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Geology 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	033	Chilliwack			Geology 12	12	12	12	100
+2007/2008	DISTRICT LEVEL	BC Public School	034	Abbotsford			Geology 12	12	59	58	98
+2007/2008	DISTRICT LEVEL	BC Public School	035	Langley			Geology 12	12	21	17	81
+2007/2008	DISTRICT LEVEL	BC Public School	036	Surrey			Geology 12	12	90	72	80
+2007/2008	DISTRICT LEVEL	BC Public School	037	Delta			Geology 12	12	13	13	100
+2007/2008	DISTRICT LEVEL	BC Public School	038	Richmond			Geology 12	12	16	14	88
+2007/2008	DISTRICT LEVEL	BC Public School	039	Vancouver			Geology 12	12	51	50	98
+2007/2008	DISTRICT LEVEL	BC Public School	040	New Westminster			Geology 12	12	21	21	100
+2007/2008	DISTRICT LEVEL	BC Public School	041	Burnaby			Geology 12	12	20	20	100
+2007/2008	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Geology 12	12	18	15	83
+2007/2008	DISTRICT LEVEL	BC Public School	043	Coquitlam			Geology 12	12	59	54	92
+2007/2008	DISTRICT LEVEL	BC Public School	044	North Vancouver			Geology 12	12	28	27	96
+2007/2008	DISTRICT LEVEL	BC Public School	045	West Vancouver			Geology 12	12	24	19	79
+2007/2008	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Geology 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Geology 12	12	17	16	94
+2007/2008	DISTRICT LEVEL	BC Public School	057	Prince George			Geology 12	12	46	29	63
+2007/2008	DISTRICT LEVEL	BC Public School	059	Peace River South			Geology 12	12	Msk	Msk	Msk
+2007/2008	DISTRICT LEVEL	BC Public School	060	Peace River North			Geology 12	12	19	18	95
+2007/2008	DISTRICT LEVEL	BC Public School	071	Comox Valley			Geology 12	12	18	18	100
+2007/2008	DISTRICT LEVEL	BC Public School	075	Mission			Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Geology 12	12	18	17	94
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Geology 12	12	21	21	100
+2007/2008	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Geology 12	12	20	20	100
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Geology 12	12	11	8	73
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Geology 12	12	15	13	87
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Geology 12	12	35	23	66
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Geology 12	12	35	31	89
+2007/2008	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Geology 12	12	16	14	88
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Geology 12	12	12	11	92
+2007/2008	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Geology 12	12	39	39	100
+2007/2008	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Geology 12	12	21	21	100
+2007/2008	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Geology 12	12	20	20	100
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Geology 12	12	14	12	86
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Geology 12	12	13	13	100
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Geology 12	12	32	28	88
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Geology 12	12	19	19	100
+2007/2008	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Geology 12	12	22	17	77
+2007/2008	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Geology 12	12	17	16	94
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Geology 12	12	24	19	79
+2007/2008	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Geology 12	12	22	10	45
+2007/2008	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	Dawson Creek Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Geology 12	12	19	18	95
+2007/2008	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Geology 12	12	18	18	100
+2007/2008	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Geology 12	12	Msk	Msk	Msk
+2007/2008	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Geology 12	12	16	14	88
+2007/2008	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Geology 12	12	Msk	Msk	Msk
+2008/2009	PROVINCE LEVEL	PROVINCE - Total					Geology 12	12	241	216	90
+2008/2009	PROVINCE LEVEL	BC Public School					Geology 12	12	236	213	90
+2008/2009	PROVINCE LEVEL	BC Independent School					Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	022	Vernon			Geology 12	12	13	12	92
+2008/2009	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	033	Chilliwack			Geology 12	12	14	14	100
+2008/2009	DISTRICT LEVEL	BC Public School	034	Abbotsford			Geology 12	12	39	37	95
+2008/2009	DISTRICT LEVEL	BC Public School	035	Langley			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	036	Surrey			Geology 12	12	20	18	90
+2008/2009	DISTRICT LEVEL	BC Public School	037	Delta			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	038	Richmond			Geology 12	12	12	12	100
+2008/2009	DISTRICT LEVEL	BC Public School	039	Vancouver			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	040	New Westminster			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	041	Burnaby			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	043	Coquitlam			Geology 12	12	20	19	95
+2008/2009	DISTRICT LEVEL	BC Public School	044	North Vancouver			Geology 12	12	22	21	95
+2008/2009	DISTRICT LEVEL	BC Public School	045	West Vancouver			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	057	Prince George			Geology 12	12	21	11	52
+2008/2009	DISTRICT LEVEL	BC Public School	059	Peace River South			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	060	Peace River North			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	062	Sooke			Geology 12	12	Msk	Msk	Msk
+2008/2009	DISTRICT LEVEL	BC Public School	071	Comox Valley			Geology 12	12	10	9	90
+2008/2009	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Geology 12	12	17	17	100
+2008/2009	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727047	Columneetza Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Geology 12	12	14	14	100
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Geology 12	12	34	32	94
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	035	Langley	03599092	James Anderson Learning Centre	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Geology 12	12	18	16	89
+2008/2009	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Geology 12	12	12	12	100
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Geology 12	12	19	18	95
+2008/2009	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Geology 12	12	18	9	50
+2008/2009	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	Dawson Creek Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Geology 12	12	10	9	90
+2008/2009	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Geology 12	12	17	17	100
+2008/2009	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09339006	Kitsilano Secondary (Francophone Prog)	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Geology 12	12	Msk	Msk	Msk
+2008/2009	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Geology 12	12	Msk	Msk	Msk
+2009/2010	PROVINCE LEVEL	PROVINCE - Total					Geology 12	12	138	129	93
+2009/2010	PROVINCE LEVEL	BC Public School					Geology 12	12	137	128	93
+2009/2010	PROVINCE LEVEL	BC Independent School					Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	022	Vernon			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	033	Chilliwack			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	034	Abbotsford			Geology 12	12	27	27	100
+2009/2010	DISTRICT LEVEL	BC Public School	036	Surrey			Geology 12	12	13	12	92
+2009/2010	DISTRICT LEVEL	BC Public School	038	Richmond			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	039	Vancouver			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	040	New Westminster			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	041	Burnaby			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	043	Coquitlam			Geology 12	12	12	11	92
+2009/2010	DISTRICT LEVEL	BC Public School	044	North Vancouver			Geology 12	12	30	26	87
+2009/2010	DISTRICT LEVEL	BC Public School	045	West Vancouver			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	059	Peace River South			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	060	Peace River North			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	062	Sooke			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	071	Comox Valley			Geology 12	12	Msk	Msk	Msk
+2009/2010	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Geology 12	12	22	22	100
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Geology 12	12	30	26	87
+2009/2010	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	Dawson Creek Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Geology 12	12	Msk	Msk	Msk
+2009/2010	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Geology 12	12	Msk	Msk	Msk
+2010/2011	PROVINCE LEVEL	PROVINCE - Total					Geology 12	12	140	130	93
+2010/2011	PROVINCE LEVEL	BC Public School					Geology 12	12	135	125	93
+2010/2011	PROVINCE LEVEL	BC Independent School					Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	022	Vernon			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	033	Chilliwack			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	034	Abbotsford			Geology 12	12	27	25	93
+2010/2011	DISTRICT LEVEL	BC Public School	035	Langley			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	036	Surrey			Geology 12	12	17	16	94
+2010/2011	DISTRICT LEVEL	BC Public School	038	Richmond			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	039	Vancouver			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	040	New Westminster			Geology 12	12	14	14	100
+2010/2011	DISTRICT LEVEL	BC Public School	041	Burnaby			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	043	Coquitlam			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	044	North Vancouver			Geology 12	12	21	18	86
+2010/2011	DISTRICT LEVEL	BC Public School	045	West Vancouver			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	057	Prince George			Geology 12	12	12	10	83
+2010/2011	DISTRICT LEVEL	BC Public School	071	Comox Valley			Geology 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Geology 12	12	22	22	100
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Geology 12	12	14	14	100
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Geology 12	12	15	12	80
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Geology 12	12	12	10	83
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Geology 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Geology 12	12	Msk	Msk	Msk
