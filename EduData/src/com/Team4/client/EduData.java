@@ -130,6 +130,7 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(importButton, HasHorizontalAlignment.ALIGN_CENTER);
 		 importButton.addClickHandler(new ClickHandler() {
 				public void onClick(ClickEvent event) {
+					Window.alert("Import school location data with filename locations.txt");
 					final PopupPanel uploadPanel = new PopupPanel();
 					SingleUploader defaultUploader = new SingleUploader();
 				    uploadPanel.add(defaultUploader);
@@ -193,10 +194,6 @@ public class EduData implements EntryPoint {
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
-=======
-				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
-				for ( ClientDataEntry dEntry : entries ) {
->>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 				    	
 				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
@@ -211,7 +208,6 @@ public class EduData implements EntryPoint {
 				    	}
 				    	
 				    }
-<<<<<<< HEAD
 				*/
 				 
 				
