@@ -16,24 +16,18 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 
 	private DataSet dataSet;
-	private int count;
 	
 	public TxtHandler(){};
 	
 	public void parseFile(String fileName, InputStream fstream) throws Exception{
 	    try{
-	    	
-	    	if( !fileName.equals("locations.txt") ) {
-		    	dataSet = new DataSet(fileName);
-		    	DataSetServiceImpl.addDataSet(dataSet);
-	    	}
 
 	    	DataInputStream in = new DataInputStream(fstream);
 	    	BufferedReader br = new BufferedReader(new InputStreamReader(in));
 	    	String line = br.readLine();
 	    	
 	    	if( fileName.equals("locations.txt") ) {
-        		System.out.println("inside the if statement");
+	    		int i = 1;
 		    	// Skip first line - just headers
 		    	line = br.readLine();
 		    	while (line != null) {
@@ -41,33 +35,37 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	        		String[] toks = line.split("\\t+");
 	        		
 	        		// Make a map point from school name, latitude and longitude
-		    		MapPoint mp = new MapPoint( toks[0], Long.parseLong( toks[1] ), Long.parseLong( toks[2] ) );
-	        		System.out.println("" + mp.getSchoolName() + " --- " + mp.getLatitude() + " --- " + mp.getLongitude() );
+		    		MapPoint mp = new MapPoint( toks[0], Double.parseDouble( toks[1] ), Double.parseDouble( toks[2] ) );
 		    		DataSetServiceImpl.addMapPoint( mp );
 		    		
 		    		// Read the next line in
 		    		line = br.readLine();
+		    		i++;
 			    }
 	    	}
 	    	
 	    	else {
+		    	dataSet = new DataSet(fileName);
+		    	DataSetServiceImpl.addDataSet(dataSet);
         		
 		    	while (line != null) {
 		        
 		        	String[] toks = line.split("\\t+");
+		        	List<MapPoint> points = null;
 		            
 		        	if(toks[1].equals("SCHOOL LEVEL") && toks[2].equals("BC Public School")){
-		        		
-//		        		String entrySchoolName = toks[6];
-//		        		List<MapPoint> points = DataSetServiceImpl.getMapPoints();
-//		        		for( MapPoint mp : points ) {
-//		        			if( entrySchoolName.equals(mp.getSchoolName()) ) {
+
+		        		String entrySchoolName = toks[6];
+		        		points = DataSetServiceImpl.getMapPoints();
+		        		for( MapPoint mp : points ) {
+		        			if( entrySchoolName.equals(mp.getSchoolName()) ) {
 				        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
-//				        		dataEntry.setLatitude( mp.getLatitude() );
-//				        		dataEntry.setLongitude( mp.getLongitude() );
+				        		dataEntry.setLatitude( mp.getLatitude() );
+				        		dataEntry.setLongitude( mp.getLongitude() );
 				        		DataSetServiceImpl.addDataEntry(dataEntry);
-//		        			}
-//		        		}
+		        			}
+		        		}
+
 		        	}
 		        	line = br.readLine();
 		        }
@@ -76,7 +74,7 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	    	in.close();
 	    
 	    }catch (Exception e){
-	      System.err.println("End of File");
+	      System.err.println(e.getMessage());
 	    }
 	}
 	
