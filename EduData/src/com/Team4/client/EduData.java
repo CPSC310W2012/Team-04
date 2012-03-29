@@ -62,10 +62,7 @@ public class EduData implements EntryPoint {
 	
 	
 	public void onModuleLoad() {
-	 loadEduData();
-	}
-		
-	public void loadEduData() {
+
 		dataSets = new ArrayList<ClientDataSet>();
 		entries = new ArrayList<ClientDataEntry>();
 		mapPoints = new ArrayList<MapPoint>();
@@ -88,11 +85,8 @@ public class EduData implements EntryPoint {
 			private void buildMap() {
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
-			   
 			    map.setSize("800px", "500px");
-
 				Icon icon = Icon.newInstance();
-
 				
 	    		icon.setIconSize(Size.newInstance(28, 40));
 	    		
@@ -166,19 +160,17 @@ public class EduData implements EntryPoint {
 			public void onClick(ClickEvent event) {		
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				for ( ClientDataSet dSet : selected ) {
-					System.out.println( dSet.getName() );
+					try {
+						removeDataSet( dSet );
+						System.out.println( dSet.getName() + " removed.");
+					} catch (DataSetNotPresentException e) {
+						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+						// In other words, we don't care.
+						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+					}
 				}
-//					try {
-//						removeDataSet( dSet );
-//						System.out.println( dSet.getName() + " removed.");
-//					} catch (DataSetNotPresentException e) {
-//						// If the code reaches this point, then we are trying to remove a data set that no longer exists
-//						// In other words, we don't care.
-//						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
-//					}
-//				}
-//				// At this point all selected DataSets have been removed, so we need to update the cell table
-//				table.setRowData( dataSets );
+				// At this point all selected DataSets have been removed, so we need to update the cell table
+				table.setRowData( dataSets );
 			}
 		});
 		buttonPanel.add(button0);
@@ -213,9 +205,7 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button, HasHorizontalAlignment.ALIGN_CENTER);
 		
-		
-		// Here we define and implement the Account Info button. When clicked, this button will open a menu that allows the user to view/edit their account information.
-		Button button_1 = new Button("Account Info");
+		Button button_1 = new Button("Stats");
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
