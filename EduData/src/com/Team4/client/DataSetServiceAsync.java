@@ -13,5 +13,5 @@ public interface DataSetServiceAsync {
 //	  public void getDataSetIDs(AsyncCallback<ArrayList<Long>> asyncCallback);
 //	  public void getDataSetName( Long id, AsyncCallback<String> asyncCallback );
 //	  public void getDateAdded( Long id, AsyncCallback<Date> asyncCallback );
-	  public void getEntries( Long id, AsyncCallback<ArrayList<ClientDataEntry>> asyncCallback );
+	  public void getEntries( AsyncCallback<ArrayList<ClientDataEntry>> asyncCallback );
 }

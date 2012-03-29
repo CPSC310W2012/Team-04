@@ -8,10 +8,12 @@ import gwtupload.client.SingleUploader;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
-
 import com.Team4.server.DataEntry;
 import com.Team4.server.DataSet;
 import com.google.gwt.cell.client.ButtonCell;
+import com.google.gwt.cell.client.Cell;
+import com.google.gwt.cell.client.CheckboxCell;
+import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
@@ -27,6 +29,8 @@ import com.google.gwt.maps.client.overlay.MarkerOptions;
 import com.google.gwt.maps.client.overlay.Polygon;
 import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
+import com.google.gwt.user.cellview.client.Column;
+import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
@@ -37,8 +41,11 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.view.client.DefaultSelectionEventManager;
+import com.google.gwt.view.client.MultiSelectionModel;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 
@@ -53,14 +60,13 @@ public class EduData implements EntryPoint {
 	private HorizontalPanel basePanel;
 	private HorizontalPanel buttonPanel;
 	private VerticalPanel leftSidebarPanel;
-	private VerticalPanel dataSetPanel;
+	private ScrollPanel dataSetPanel;
 	private VerticalPanel visualizePanel;
 	private MapWidget map;
 	private ArrayList<ClientDataSet> dataSets;
+	private ArrayList<ClientDataEntry> entries;
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
-
-
 	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
@@ -83,7 +89,9 @@ public class EduData implements EntryPoint {
 				
 				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
 			    map = new MapWidget(vancouver, 8);
+//				map.setSize("500px", "500px");
 				map.addControl(new LargeMapControl());
+				map.addOverlay(new Marker(vancouver));
 			}
 		    });
 
@@ -91,7 +99,7 @@ public class EduData implements EntryPoint {
 		basePanel = new HorizontalPanel();
 		buttonPanel = new HorizontalPanel();
 		leftSidebarPanel = new VerticalPanel();
-		dataSetPanel = new VerticalPanel();
+		dataSetPanel = new ScrollPanel();
 		visualizePanel = new VerticalPanel();
 		
 		root.add(basePanel);
@@ -109,13 +117,12 @@ public class EduData implements EntryPoint {
 		leftSidebarPanel.setSize( "30%" , "100%" );
 		visualizePanel.setSize( "70%" , "100%" );
 		buttonPanel.setSize( "100%" , "20%" );
-		dataSetPanel.setSize( "100%" , "80%" );
+		dataSetPanel.setSize( "450px" , "80%" );
 		
 		basePanel.setBorderWidth( 1 );
 		leftSidebarPanel.setBorderWidth( 1 );
 		visualizePanel.setBorderWidth( 1 );
 		buttonPanel.setBorderWidth( 1 );
-		dataSetPanel.setBorderWidth( 1 );
 		
 		Button importButton = new Button("Import");
 		buttonPanel.add(importButton);
@@ -144,7 +151,6 @@ public class EduData implements EntryPoint {
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
-				System.out.println( selected.size() + " Data Sets are selected. Bitch.");
 				for ( ClientDataSet dSet : selected ) {
 					try {
 						removeDataSet( dSet );
@@ -183,9 +189,14 @@ public class EduData implements EntryPoint {
 
 	
 				   visualizePanel.clear();
+<<<<<<< HEAD
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
+=======
+				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				for ( ClientDataEntry dEntry : entries ) {
+>>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 				    	
 				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
@@ -200,10 +211,14 @@ public class EduData implements EntryPoint {
 				    	}
 				    	
 				    }
+<<<<<<< HEAD
 				*/
 				 
 				
 				   //visualizePanel.add(renderMap(dataSet));
+=======
+				   visualizePanel.add(map);
+>>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 				   map.setSize( "1000px", "600px");
 			}
 			/*
@@ -224,11 +239,6 @@ public class EduData implements EntryPoint {
 			}
 			*/
 		});
-		
-		
-		
-		
-		
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button, HasHorizontalAlignment.ALIGN_CENTER);
@@ -245,6 +255,7 @@ public class EduData implements EntryPoint {
 		
 	}
 
+<<<<<<< HEAD
 	
 	/*
 	 * Plot data set entries on map
@@ -315,6 +326,8 @@ public class EduData implements EntryPoint {
 
 */	
 	
+=======
+>>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
 		visualizePanel.add( table );
@@ -378,10 +391,7 @@ public class EduData implements EntryPoint {
 				}
 			});
 		
-		if( !dataSets.isEmpty() ) {
-			Long i = dataSets.get(0).getDataSetID();
-			
-		dSService.getEntries( i, new AsyncCallback<ArrayList<ClientDataEntry>>() {
+		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
 			
 			public void onFailure(Throwable error) {
 		        handleError(error);
@@ -389,12 +399,9 @@ public class EduData implements EntryPoint {
 
 			public void onSuccess(ArrayList<ClientDataEntry> response) {
 				if( !response.isEmpty() ) {
-						visualizePanel.clear();
-						visualizePanel.add(tabUI.renderTable(response));
-						
+					entries = response;
 				}
 			}});
-		}
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
@@ -422,5 +429,189 @@ public class EduData implements EntryPoint {
 			if ( cTable.getSelectionModel().isSelected( dSet )) // ...if it is selected...
 				selectedSets.add((ClientDataSet) dSet ); // ... add the set to the set of selected sets
 		return selectedSets;
+	}
+	
+	/**
+	 * The TabularUI class
+	 * This class serves to create, format, and display pop-up windows. 
+	 * @author Tristan Sebens
+	 * */
+	private class TabularUI {
+
+		private MultiSelectionModel<ClientDataSet> selectionModel = new MultiSelectionModel<ClientDataSet>();
+
+		/**
+		 * The TabularUI constructor
+		 * */
+		public TabularUI() {}
+
+		/**
+		 * The publicly accessible method for displaying a Data Set in tabular form.
+		 * The method produces a popup window that displays the data in a table
+		 * @dSet The DataSet to be displayed
+		 * @return The newly formatted and filled table of DataEntries
+		 * */
+		public CellTable<ClientDataEntry> renderDataEntryTable( ArrayList<ClientDataEntry> entries ) {
+			CellTable<ClientDataEntry> table = new CellTable<ClientDataEntry>();
+			table.setRowData( 0 , entries );
+			return formatClientDataEntryCellTable( table );
+		}
+
+		/**
+		 * The publicly accessible method for displaying a collection of Data Sets in tabular form.
+		 * The method produces a popup window that displays the data in a table
+		 * @dSet The DataSet to be displayed
+		 * @return The formatted and filled table of DataSets
+		 * */
+		public CellTable<ClientDataSet> renderDataSetTable( ArrayList<ClientDataSet> dSets ) {
+			CellTable<ClientDataSet> table = new CellTable<ClientDataSet>();
+			table.setRowData( 0 , dSets );
+			return formatDataSetCellTable( table );
+		}
+
+		/**
+		 * The publicly accessible method for retrieving the currently selected DataSets
+		 * @return An ArrayList of all selected ClientDataSets
+		 * */
+		public ArrayList<ClientDataSet> getSelectedDataSets() {
+			return null;
+			// TODO: Add test cases to ensure that this cast works correctly. As far as I can tell, ArrayList and Set have the same methods, so there should be no trouble here 
+		}
+
+		/**
+		 * Helper method to the TabularUI class
+		 * Adds the necessary columns for displaying the entries of a DataSet to the CellTable
+		 * @param table The CellTable to add the columns to
+		 * @return The newly formatted CellTable
+		 * */
+		private CellTable<ClientDataEntry> formatClientDataEntryCellTable( CellTable<ClientDataEntry> table ) {
+
+			// The column that will display the school name
+			TextColumn<ClientDataEntry> schoolNameColumn = new TextColumn<ClientDataEntry>() {
+				@Override
+				public String getValue( ClientDataEntry d ) {
+					return d.getSchool();
+				}
+			};
+
+			// The column to display the course name
+			TextColumn<ClientDataEntry> courseNameColumn = new TextColumn<ClientDataEntry>() {
+				@Override
+				public String getValue( ClientDataEntry d ) {
+					return d.getCourse();
+				}
+			};
+
+
+			// The column that will display the grade
+			TextColumn<ClientDataEntry> courseGradeColumn = new TextColumn<ClientDataEntry>() {
+				@Override
+				public String getValue( ClientDataEntry d ) {
+					return d.getGrade();
+				}
+			};
+
+			table.addColumn( schoolNameColumn , "School Name" );
+			table.addColumn( courseNameColumn , "Course Name" );
+			table.addColumn( courseGradeColumn , "Grade" );
+
+			return table;
+		}
+
+		/**
+		 * Helper method to the TabularUI class
+		 * Adds the necessary columns to the CellTable to display a set of DataSets
+		 * @param table The CellTable to add the columns to
+		 * @return The newly formatted CellTable
+		 * */
+		private CellTable formatDataSetCellTable( CellTable<ClientDataSet> table ) {
+
+			// The column that will display the DataSet name
+			TextColumn<ClientDataSet> dataSetNameColumn = new TextColumn<ClientDataSet>() {
+				@Override
+				public String getValue( ClientDataSet d ) {
+					return d.getName();
+				}
+			};
+
+			// The column to display the date added
+			TextColumn<ClientDataSet> dateAddedColumn = new TextColumn<ClientDataSet>() {
+				@Override
+				public String getValue( ClientDataSet d ) {
+					return ( intToMonth(d.getDateAdded().getMonth()) + " " + d.getDateAdded().getDay() );
+				}
+			};
+
+			// The checkbox column that will be used to remove and visualize DataSets
+			Cell<Boolean> cbCell = new CheckboxCell();
+			Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
+				@Override
+				public Boolean getValue(ClientDataSet object) {
+					return false;
+				}
+			};
+
+			// The column that will hold the "Display" buttons. Whenever one is clicked, the corresponding DataSet will be displayed in tabular form
+			ButtonCell buttonCell = new ButtonCell();
+			Column<ClientDataSet, String> tabUI = new Column<ClientDataSet, String>(buttonCell) {
+
+				@Override
+				public String getValue(ClientDataSet object) {
+					return "Display";
+				}
+
+
+			};
+			// Here we add our displayListener to listen for clicks on the Display buttons
+			tabUI.setFieldUpdater( new DisplayListener() );
+
+			table.addColumn( selectColumn, 	"" ); // The check-box column
+			table.addColumn( dataSetNameColumn, "Data Set Name" );
+			table.addColumn( dateAddedColumn, "Date Added" );
+			table.addColumn( tabUI, "Tabular View" );
+
+			table.setSelectionModel(selectionModel, DefaultSelectionEventManager.<ClientDataSet> createCheckboxManager());
+
+			return table;
+		}
+
+
+		/**
+		 * Helper class to the TabularUI
+		 * This class listens for clicks made on the "Display" buttons next to each DataSet in the DataSet Table.
+		 * When one is clicked, the update function is called
+		 * */
+		private class DisplayListener implements FieldUpdater {
+
+			/**
+			 * This function gets called whenever the "Display" buttons next to each DataSet in the DataSet Table is called
+			 * @index The current index of the DataSet
+			 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
+			 * */
+			public void update(int index, Object object, Object value) {
+				
+			}
+
+		}
+		
+		public String intToMonth( int i ) {
+			switch( i ) {
+			case 1: return "January";
+			case 2: return "February";
+			case 3: return "March";
+			case 4: return "April";
+			case 5: return "May";
+			case 6: return "June";
+			case 7: return "July";
+			case 8: return "August";
+			case 9: return "September";
+			case 10: return "October";
+			case 11: return "November";
+			case 12: return "December";
+			}
+			return "Invalid Date";
+		}
+
+
 	}
 }
