@@ -12,7 +12,5 @@
 	<classpathentry kind="lib" path="lib/gwtupload-0.6.4.jar"/>
 	<classpathentry kind="lib" path="lib/gwtupload-gae-0.6.4.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-maps.jar"/>
-	<classpathentry kind="lib" path="lib/commons-math3-3.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
