@@ -1,5 +1,7 @@
 package com.Team4.client;
 
+import java.io.IOException;
+
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
@@ -17,17 +19,22 @@ public class ClientDataEntry implements IsSerializable {
 	}
 	private double longitude;
 	private double latitude;
+	private GeoCoord geo;
 	
 	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName, Long dataSetID){
+		
 		this.entryID = entryID;
 		schoolName = schName;
 		grade = stGrade;
 		course = courseName;
 		this.dataSetID = dataSetID;
-		setLongitude(0);
-		setLatitude(0);
+		geo = new GeoCoord();
+		latitude = geo.getLatitude(schName);
+		longitude = geo.getLongitude(schName);
+
 	}
 	
+
 	public String getSchool(){
 		return schoolName;
 	}
@@ -67,17 +74,11 @@ public class ClientDataEntry implements IsSerializable {
 			return false;
 	}
 
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
-	}
 
 	public double getLongitude() {
 		return longitude;
 	}
 
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
 
 	public double getLatitude() {
 		return latitude;

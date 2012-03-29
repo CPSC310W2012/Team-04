@@ -22,9 +22,7 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 
 	    	DataInputStream in = new DataInputStream(fstream);
 	       
-	    	BufferedReader br = new BufferedReader(new InputStreamReader(in));
-
-	    	//Map<String, String> m = new LinkedHashMap<String, String>();	    	
+	    	BufferedReader br = new BufferedReader(new InputStreamReader(in));    	
 	        
 	    	String line = br.readLine();
 	        
@@ -33,14 +31,8 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	        	String[] toks = line.split("\\t+");
 	            
 	        	if(toks[1].equals("SCHOOL LEVEL") && toks[2].equals("BC Public School")){
-	        	
-	        		
-	        		// Test - correct data entry values
 	        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
 	        		DataSetServiceImpl.addDataEntry(dataEntry);
-	        	
-	        		//Test - match toks[] and DataEntry
-	        	
 	        	}
 	        	line = br.readLine();
 	        }
@@ -53,11 +45,4 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 		return dataSet;
 	}
 	
-//	Old Test
-//	public static void main(String [ ] args) throws Exception
-//	{
-//	      TxtHandler hdl = new TxtHandler();
-//	      hdl.parseFile("Chemistry12Hist.txt");
-//	}
-//	
 }

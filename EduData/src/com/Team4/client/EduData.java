@@ -183,7 +183,7 @@ public class EduData implements EntryPoint {
 
 	
 				   visualizePanel.clear();
-				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
 				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
@@ -201,12 +201,12 @@ public class EduData implements EntryPoint {
 				    	
 				    }
 				*/
-				   //renderMap(selectedDataSets);
-				   
-				   visualizePanel.add(map);
+				 
+				
+				   //visualizePanel.add(renderMap(dataSet));
 				   map.setSize( "1000px", "600px");
 			}
-			
+			/*
 			public ArrayList<ClientDataEntry> populateDummyData() {
 				
 				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
@@ -222,7 +222,7 @@ public class EduData implements EntryPoint {
 				
 				return dataSet;
 			}
-			
+			*/
 		});
 		
 		
@@ -256,7 +256,7 @@ public class EduData implements EntryPoint {
 		    	int grade = Integer.parseInt(dEntry.getGrade());
 		    	String url = "";
 		    	if(grade >= 86){ // A
-		    		
+		    		url = "http://www.google.com/mapfiles/markerA.png";
 		    	}
 		    	else if(grade >= 73 && grade <= 85){//B
 		    		url = "http://www.google.com/mapfiles/markerA.png";
@@ -286,6 +286,14 @@ public class EduData implements EntryPoint {
 		
 	}
 	/*
+	 * Renders a map according to the dataSet passed
+	 * */
+	public MapWidget renderMap(ClientDataSet dSet){
+		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>(); // should be replaced with getEntries()
+		return plotEntries(entries);
+	}
+	
+	/*
 	public ClientDataSet getCumulativeGrade(ArrayList<ClientDataSet> dataSets) throws DataSetNotPresentException{
 		ClientDataSet sumSet = new ClientDataSet();
 		for(ClientDataSet data : dataSets){
@@ -312,7 +320,7 @@ public class EduData implements EntryPoint {
 		visualizePanel.add( table );
 		table.setVisible( true );
 	}
-		
+		/*
 		public ArrayList<ClientDataEntry> populateDummyData() {
 			
 			ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
@@ -330,7 +338,7 @@ public class EduData implements EntryPoint {
 			
 			return dataSet;
 		}
-		
+		*/
 //	datasetmanager methods
 
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
