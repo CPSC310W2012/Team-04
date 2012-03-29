@@ -2,6 +2,10 @@ package com.Team4.client;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+/**
+ * @author kgajos
+ * Storage class for longitude and latitude data
+ */
 public class MapPoint implements IsSerializable {
 	
 	private Long id;

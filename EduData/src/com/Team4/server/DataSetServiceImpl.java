@@ -15,6 +15,10 @@ import com.Team4.client.DataSetNotPresentException;
 import com.Team4.client.DataSetService;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
+/**
+ * @author ryanabooth
+ * Main server class used for various RPC calls in EduData
+ */
 public class DataSetServiceImpl extends RemoteServiceServlet implements
 		DataSetService {
 

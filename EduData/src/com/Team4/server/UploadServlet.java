@@ -8,6 +8,10 @@ import org.apache.commons.fileupload.FileItem;
 import gwtupload.server.exceptions.UploadActionException;
 import gwtupload.server.gae.AppEngineUploadAction;
 
+/**
+ * @author ryanabooth
+ * File upload servlet - passes files to parser for handling
+ */
 @SuppressWarnings("serial")
 public class UploadServlet extends AppEngineUploadAction {
 

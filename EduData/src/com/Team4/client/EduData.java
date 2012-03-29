@@ -45,6 +45,12 @@ import com.google.gwt.event.dom.client.ClickEvent;
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
+/**
+ * @author achowchow
+ * @author tsebens
+ * @author kgajos
+ * @author ryanabooth
+ */
 public class EduData implements EntryPoint {
 	private TabularUI tabUI;
 	
@@ -196,7 +202,9 @@ public class EduData implements EntryPoint {
 					for( ClientDataSet dataSet : selected ) {
 						for( ClientDataEntry dataEntry : entries ) {
 							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
+								if( !(dataEntry.getLatitude() == 0.0) ) {
 								renderMe.add( dataEntry );
+								}
 							}
 						}
 					}
@@ -312,11 +320,9 @@ public class EduData implements EntryPoint {
 	    		Marker marker = new Marker(coordinate, ops);
 	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
 	    			   public void onClick(MarkerClickEvent event) { 
-	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("School:"+ school + " Course:"+ course + " Grade: " + displayGrade ));
+	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("\nSchool: "+ school + "\nCourse:"+ course + "\nGrade: " + displayGrade ));
 	    			   } 
-	    			}); 
-	    		//LatLng adjusted = LatLng.newInstance(coordinate.getLatitude()+0.016,coordinate.getLongitude()-0.011);
-	    		//marker.setLatLng(adjusted);
+	    			});
 	    		map.addOverlay(marker);
 		   }
 		    
@@ -338,6 +344,13 @@ public class EduData implements EntryPoint {
 		table.setVisible( true );
 	}
 
+	/**
+	 * @author ryanabooth
+	 * @author achowchow
+	 * @param dSet
+	 * @return The ClientDataSet that was removed
+	 * @throws DataSetNotPresentException
+	 */
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {
 			if( iter.getDataSetID() == dSet.getDataSetID() ) {
@@ -362,6 +375,11 @@ public class EduData implements EntryPoint {
 		throw new DataSetNotPresentException( "Data set not found.");
 	}
 	
+	/**
+	 * @author ryanabooth
+	 * @author achowchow
+	 * Loads in all DataSets and DataEntries from the server
+	 */
 	public void loadDataSets() {
 		dSService.getDataSets( new AsyncCallback<ArrayList<ClientDataSet>>() {
 			
@@ -397,6 +415,11 @@ public class EduData implements EntryPoint {
 			}});
 	}
 	
+	/**
+	 * @author ryanabooth
+	 * @author achowchow
+	 * Adds the longitude and latitude data to all the entries that have it available
+	 */
 	private void addLocationData() {
 		for( ClientDataEntry dEntry : entries ) {
 			for( MapPoint mp : mapPoints ) {
@@ -408,6 +431,11 @@ public class EduData implements EntryPoint {
 		}
 	}
 	
+	/**
+	 * @author ryanabooth
+	 * @author achowchow
+	 * Loads all the Map Points from the server
+	 */
 	private void loadMapPoints() {
 		dSService.getMapPoints( new AsyncCallback<ArrayList<MapPoint>>() {
 			
@@ -426,6 +454,11 @@ public class EduData implements EntryPoint {
 			});
 		}
 
+	/**
+	 * @param id
+	 * @return ClientDataSet with the specified ID
+	 * @throws DataSetNotPresentException
+	 */
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
 	    for( ClientDataSet dSet : dataSets ) {
 	    	if ( dSet.getDataSetID() == id )
@@ -442,7 +475,7 @@ public class EduData implements EntryPoint {
 	/**
 	 * The TabularUI class
 	 * This class serves to create, format, and display pop-up windows. 
-	 * @author Tristan Sebens
+	 * @author tsebens
 	 * */
 	private class TabularUI {
 
