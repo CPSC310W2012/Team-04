@@ -49,7 +49,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 			Query q = pm.newQuery(DataSet.class);
 			List<DataSet> DataSets = (List<DataSet>) q.execute();
 			for (DataSet dataSet : DataSets) {
-				if (dataSetID == dataSet.getDataSetID()) {
+				if (dataSetID.equals( dataSet.getDataSetID() ) ) {
 					pm.deletePersistent(dataSet);
 				}
 			}
@@ -57,7 +57,7 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 			Query q2 = pm.newQuery(DataEntry.class);
 			List<DataEntry> DataEntries = (List<DataEntry>) q2.execute();
 			for (DataEntry dataEntry : DataEntries) {
-				if (dataSetID == dataEntry.getDataSetID()) {
+				if (dataSetID.equals( dataEntry.getDataSetID() ) ) {
 					pm.deletePersistent(dataEntry);
 				}
 			}

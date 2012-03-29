@@ -31,6 +31,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockPanel;
+import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
@@ -165,19 +166,19 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {		
-//				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
-//				for ( ClientDataSet dSet : selected ) {
-//					try {
-//						removeDataSet( dSet );
-//						System.out.println( dSet.getName() + " removed.");
-//					} catch (DataSetNotPresentException e) {
-//						// If the code reaches this point, then we are trying to remove a data set that no longer exists
-//						// In other words, we don't care.
-//						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
-//					}
-//				}
-//				// At this point all selected DataSets have been removed, so we need to update the cell table
-//				table.setRowData( dataSets );
+				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
+				for ( ClientDataSet dSet : selected ) {
+					try {
+						removeDataSet( dSet );
+						System.out.println( dSet.getName() + " removed.");
+					} catch (DataSetNotPresentException e) {
+						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+						// In other words, we don't care.
+						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+					}
+				}
+				// At this point all selected DataSets have been removed, so we need to update the cell table
+				loadDataSets();
 			}
 		});
 		buttonPanel.add(button0);
@@ -337,7 +338,7 @@ public class EduData implements EntryPoint {
 	    		Marker marker = new Marker(coordinate, ops);
 	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
 	    			   public void onClick(MarkerClickEvent event) { 
-	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("\nSchool: "+ school + "\nCourse:"+ course + "\nGrade: " + displayGrade ));
+	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("\nSchool: "+ school + "\nCourse: "+ course + "\nGrade: " + displayGrade ));
 	    			   } 
 	    			});
 	    		map.addOverlay(marker);
@@ -369,14 +370,6 @@ public class EduData implements EntryPoint {
 	 * @throws DataSetNotPresentException
 	 */
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
-		for( ClientDataSet iter : dataSets ) {
-			if( iter.getDataSetID() == dSet.getDataSetID() ) {
-				dataSets.remove(iter);
-				for( ClientDataEntry dEntry : entries) {
-					if( dEntry.getDataSetID().equals( iter.getDataSetID() )) {
-						entries.remove( dEntry );
-					}
-				}
 				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
@@ -386,11 +379,8 @@ public class EduData implements EntryPoint {
 						System.out.println( "DataSet successfully removed." );
 					}
 				});
-				return iter;
-			}
+				return dSet;
 		}
-		throw new DataSetNotPresentException( "Data set not found.");
-	}
 	
 	/**
 	 * @author ryanabooth
