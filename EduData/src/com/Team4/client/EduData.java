@@ -159,18 +159,23 @@ public class EduData implements EntryPoint {
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {		
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
-				for ( ClientDataSet dSet : selected ) {
-					try {
-						removeDataSet( dSet );
-						System.out.println( dSet.getName() + " removed.");
-					} catch (DataSetNotPresentException e) {
-						// If the code reaches this point, then we are trying to remove a data set that no longer exists
-						// In other words, we don't care.
-						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
-					}
+				if( selected.size() > 1 ) {
+					Window.alert( "Only one DataSet can be deleted at a time." );
 				}
-				// At this point all selected DataSets have been removed, so we need to update the cell table
-				table.setRowData( dataSets );
+				else {
+					for ( ClientDataSet dSet : selected ) {
+						try {
+							removeDataSet( dSet );
+							System.out.println( dSet.getName() + " removed.");
+						} catch (DataSetNotPresentException e) {
+							// If the code reaches this point, then we are trying to remove a data set that no longer exists
+							// In other words, we don't care.
+							// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+						}
+					}
+					// At this point all selected DataSets have been removed, so we need to update the cell table
+					table.setRowData( dataSets );
+				}
 			}
 		});
 		buttonPanel.add(button0);
@@ -311,12 +316,12 @@ public class EduData implements EntryPoint {
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {
 			if( iter.getDataSetID() == dSet.getDataSetID() ) {
-				dataSets.remove(iter);
 				for( ClientDataEntry dEntry : entries) {
 					if( dEntry.getDataSetID().equals( iter.getDataSetID() )) {
 						entries.remove( dEntry );
 					}
 				}
+				dataSets.remove(iter);
 				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);

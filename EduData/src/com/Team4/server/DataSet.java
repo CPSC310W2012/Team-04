@@ -12,6 +12,10 @@ import javax.jdo.annotations.PrimaryKey;
 import com.Team4.client.EntryNotPresentException;
 import com.google.appengine.api.datastore.Key;
 
+/**
+ * @author ryanabooth
+ * Metadata class used to describe groups of Data Entries
+ */
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class DataSet implements Serializable {
 
