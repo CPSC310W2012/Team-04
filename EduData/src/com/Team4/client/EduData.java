@@ -5,6 +5,12 @@ import gwtupload.client.IUploader.OnFinishUploaderHandler;
 import gwtupload.client.IUploader.UploadedInfo;
 import gwtupload.client.SingleUploader;
 import java.util.ArrayList;
+
+import org.apache.commons.math3.stat.descriptive.moment.Mean;
+import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
+import org.apache.commons.math3.stat.descriptive.rank.Max;
+import org.apache.commons.math3.stat.descriptive.rank.Median;
+
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.Cell;
 import com.google.gwt.cell.client.CheckboxCell;
@@ -181,7 +187,6 @@ public class EduData implements EntryPoint {
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
-
 			public void onClick(ClickEvent event) {			
 				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				if( selected.size() > 1 ) {
@@ -199,7 +204,6 @@ public class EduData implements EntryPoint {
 					visualizePanel.clear();
 					visualizePanel.add(renderMap( renderMe ));
 				}
-
 			}
 		});
 		buttonPanel.add(button);
@@ -208,6 +212,54 @@ public class EduData implements EntryPoint {
 		
 		Button button_1 = new Button("Statistics");
 		buttonPanel.add(button_1);
+		button.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {			
+				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
+				if( selected.size() > 1 ) {
+					Window.alert( "One DataSet at a time please." );
+				}
+				else {
+					ArrayList<Integer> grades = new ArrayList<Integer>();
+					double[] frequency = new double[101];
+					for( ClientDataSet dataSet : selected ) {
+						for( ClientDataEntry dataEntry : entries ) {
+							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
+								grades.add( Integer.parseInt( dataEntry.getGrade() ) );
+								frequency[Integer.parseInt( dataEntry.getGrade() )]++;
+							}
+						}
+					}
+					double[] input = new double[grades.size()];
+					int i = 0;
+					for( Integer grade : grades ) {
+						input[i] = grade;
+						i++;
+					}
+
+					double maxFreq = new Max().evaluate(frequency);
+					ArrayList<Integer> mode = new ArrayList<Integer>();
+					for( i = 0; i < 101; i++ ) {
+						if( frequency[i] == maxFreq ) {
+							mode.add(i);
+						}
+					}
+					double mean = new Mean().evaluate(input);
+					double median = new Median().evaluate(input);
+					double stdDev = new StandardDeviation().evaluate(input);
+					
+					FlexTable statsFlexTable = new FlexTable();
+					statsFlexTable.setText(0, 0, "Mode");
+					statsFlexTable.setText(1, 0, "Mean");
+					statsFlexTable.setText(2, 0, "Median");
+					statsFlexTable.setText(3, 0, "Standard Deviation");
+					statsFlexTable.setText(0, 1, "" + mode.toString());
+					statsFlexTable.setText(1, 1, "" + mean);
+					statsFlexTable.setText(2, 1, "" + median);
+					statsFlexTable.setText(3, 1, "" + stdDev);
+					
+				}
+			}
+		});
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
 		
@@ -302,34 +354,11 @@ public class EduData implements EntryPoint {
 		return plotEntries(renderMe);
 	}
 	
-	/*
-	public ClientDataSet getCumulativeGrade(ArrayList<ClientDataSet> dataSets) throws DataSetNotPresentException{
-		ClientDataSet sumSet = new ClientDataSet();
-		for(ClientDataSet data : dataSets){
-			Long id = data.getDataSetID();
-				ArrayList<ClientDataEntry> ent = dSService.getEntries(id, asyncCallback);
-				for(ClientDataEntry dEntry: ent){
-					int grade = Integer.parseInt(dEntry.getGrade());
-					String school = dEntry.getSchool();
-					
-					//TO DO
-					
-					
-				}
-		}
-
-		return sumSet;
-		
-	}
-
-*/	
-	
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
 		visualizePanel.add( table );
 		table.setVisible( true );
 	}
-//	datasetmanager methods
 
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {
@@ -480,7 +509,6 @@ public class EduData implements EntryPoint {
 				temp.add( dSet );
 			}
 			return temp;
-			// TODO: Add test cases to ensure that this cast works correctly. As far as I can tell, ArrayList and Set have the same methods, so there should be no trouble here 
 		}
 
 		/**
