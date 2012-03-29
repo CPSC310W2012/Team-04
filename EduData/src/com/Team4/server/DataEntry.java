@@ -7,6 +7,10 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+/**
+ * @author ryanabooth
+ * Basic Java object that holds the data for each school
+ */
 @PersistenceCapable
 public class DataEntry implements Serializable {
 

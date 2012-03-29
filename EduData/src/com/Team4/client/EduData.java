@@ -52,7 +52,7 @@ public class EduData implements EntryPoint {
 	private HorizontalPanel buttonPanel;
 	private VerticalPanel leftSidebarPanel;
 	private ScrollPanel dataSetPanel;
-	private ScrollPanel visualizePanel;
+	private VerticalPanel visualizePanel;
 	private MapWidget map;
 	private ArrayList<ClientDataSet> dataSets;
 	private ArrayList<ClientDataEntry> entries;
@@ -86,7 +86,6 @@ public class EduData implements EntryPoint {
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
 			    map.setSize("800px", "500px");
-			   
 				Icon icon = Icon.newInstance();
 				
 	    		icon.setIconSize(Size.newInstance(28, 40));
@@ -107,9 +106,13 @@ public class EduData implements EntryPoint {
 		buttonPanel = new HorizontalPanel();
 		leftSidebarPanel = new VerticalPanel();
 		dataSetPanel = new ScrollPanel();
-		visualizePanel = new ScrollPanel();
+		visualizePanel = new VerticalPanel();
 		
 		root.add(basePanel);
+		root.addStyleName("background");
+		basePanel.addStyleName("background");
+		leftSidebarPanel.addStyleName("background");
+		visualizePanel.addStyleName("background");
 		basePanel.add(leftSidebarPanel);
 		basePanel.add(visualizePanel);
 		leftSidebarPanel.add(buttonPanel);
@@ -118,12 +121,13 @@ public class EduData implements EntryPoint {
 		root.setSize( "100%" , "100%" );
 		basePanel.setSize( "100%" , "100%" );
 		leftSidebarPanel.setSize( "30%" , "100%" );
-		visualizePanel.setSize( "800px" , "600px" );
+		visualizePanel.setSize( "100%" , "70%" );
 		buttonPanel.setSize( "100%" , "50px" );
 		dataSetPanel.setSize( "450px" , "400px" );
 		
 		basePanel.setBorderWidth( 1 );
 		leftSidebarPanel.setBorderWidth( 1 );
+		visualizePanel.setBorderWidth( 1 );
 		buttonPanel.setBorderWidth( 1 );
 		
 		Button importButton = new Button("Import");
@@ -154,19 +158,24 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {		
-//				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
-//				for ( ClientDataSet dSet : selected ) {
-//					try {
-//						removeDataSet( dSet );
-//						System.out.println( dSet.getName() + " removed.");
-//					} catch (DataSetNotPresentException e) {
-//						// If the code reaches this point, then we are trying to remove a data set that no longer exists
-//						// In other words, we don't care.
-//						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
-//					}
-//				}
-//				// At this point all selected DataSets have been removed, so we need to update the cell table
-//				table.setRowData( dataSets );
+				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
+				if( selected.size() > 1 ) {
+					Window.alert( "Only one DataSet can be deleted at a time." );
+				}
+				else {
+					for ( ClientDataSet dSet : selected ) {
+						try {
+							removeDataSet( dSet );
+							System.out.println( dSet.getName() + " removed.");
+						} catch (DataSetNotPresentException e) {
+							// If the code reaches this point, then we are trying to remove a data set that no longer exists
+							// In other words, we don't care.
+							// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+						}
+					}
+					// At this point all selected DataSets have been removed, so we need to update the cell table
+					table.setRowData( dataSets );
+				}
 			}
 		});
 		buttonPanel.add(button0);
@@ -201,32 +210,10 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
 		buttonPanel.setCellHorizontalAlignment(button, HasHorizontalAlignment.ALIGN_CENTER);
 		
-		Button button_1 = new Button("Statistics");
+		Button button_1 = new Button("Stats");
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
-		
-		button_1.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {			
-				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
-				if( selected.size() > 1 ) {
-					Window.alert( "You may only view statistics for one dataset at a time." );
-				}
-				else {
-					ArrayList<ClientDataEntry> renderMe = new ArrayList<ClientDataEntry>();
-					for( ClientDataSet dataSet : selected ) {
-						for( ClientDataEntry dataEntry : entries ) {
-							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
-								renderMe.add( dataEntry );
-							}
-						}
-					}
-
-					
-				}
-
-			}
-		});
 		
 		for ( int a = 0 ; a < 4 ; a++ ) {
 			buttonPanel.getWidget( a ).setHeight( "50px" );
@@ -329,12 +316,12 @@ public class EduData implements EntryPoint {
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {
 		for( ClientDataSet iter : dataSets ) {
 			if( iter.getDataSetID() == dSet.getDataSetID() ) {
-				dataSets.remove(iter);
 				for( ClientDataEntry dEntry : entries) {
 					if( dEntry.getDataSetID().equals( iter.getDataSetID() )) {
 						entries.remove( dEntry );
 					}
 				}
+				dataSets.remove(iter);
 				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);

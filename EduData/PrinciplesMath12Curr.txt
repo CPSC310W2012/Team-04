@@ -1,0 +1,376 @@
+SCHOOL_YEAR	DATA_LEVEL	PUBLIC_OR_INDEPENDENT	DISTRICT_NUMBER	DISTRICT_NAME	SCHOOL_NUMBER	SCHOOL_NAME	EXAM_SUBJECT	GRADE	NUMBER_OF_EXAM_WRITERS	NUMBER_OF_C_MINUS_OR_BETTER	PERCENT_OF_C_MINUS_OR_BETTER
+2010/2011	PROVINCE LEVEL	PROVINCE - Total					Principles Of Mathematics 12	12	6538	6116	94
+2010/2011	PROVINCE LEVEL	BC Public School					Principles Of Mathematics 12	12	5820	5463	94
+2010/2011	PROVINCE LEVEL	BC Independent School					Principles Of Mathematics 12	12	718	653	91
+2010/2011	DISTRICT LEVEL	BC Public School	005	Southeast Kootenay			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	006	Rocky Mountain			Principles Of Mathematics 12	12	10	9	90
+2010/2011	DISTRICT LEVEL	BC Public School	008	Kootenay Lake			Principles Of Mathematics 12	12	25	24	96
+2010/2011	DISTRICT LEVEL	BC Public School	010	Arrow Lakes			Principles Of Mathematics 12	12	13	9	69
+2010/2011	DISTRICT LEVEL	BC Public School	019	Revelstoke			Principles Of Mathematics 12	12	19	19	100
+2010/2011	DISTRICT LEVEL	BC Public School	020	Kootenay-Columbia			Principles Of Mathematics 12	12	34	33	97
+2010/2011	DISTRICT LEVEL	BC Public School	022	Vernon			Principles Of Mathematics 12	12	80	78	98
+2010/2011	DISTRICT LEVEL	BC Public School	023	Central Okanagan			Principles Of Mathematics 12	12	80	79	99
+2010/2011	DISTRICT LEVEL	BC Public School	027	Cariboo-Chilcotin			Principles Of Mathematics 12	12	12	12	100
+2010/2011	DISTRICT LEVEL	BC Public School	028	Quesnel			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	033	Chilliwack			Principles Of Mathematics 12	12	39	36	92
+2010/2011	DISTRICT LEVEL	BC Public School	034	Abbotsford			Principles Of Mathematics 12	12	301	284	94
+2010/2011	DISTRICT LEVEL	BC Public School	035	Langley			Principles Of Mathematics 12	12	133	120	90
+2010/2011	DISTRICT LEVEL	BC Public School	036	Surrey			Principles Of Mathematics 12	12	786	750	95
+2010/2011	DISTRICT LEVEL	BC Public School	037	Delta			Principles Of Mathematics 12	12	192	170	89
+2010/2011	DISTRICT LEVEL	BC Public School	038	Richmond			Principles Of Mathematics 12	12	738	702	95
+2010/2011	DISTRICT LEVEL	BC Public School	039	Vancouver			Principles Of Mathematics 12	12	855	809	95
+2010/2011	DISTRICT LEVEL	BC Public School	040	New Westminster			Principles Of Mathematics 12	12	105	100	95
+2010/2011	DISTRICT LEVEL	BC Public School	041	Burnaby			Principles Of Mathematics 12	12	296	274	93
+2010/2011	DISTRICT LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows			Principles Of Mathematics 12	12	84	75	89
+2010/2011	DISTRICT LEVEL	BC Public School	043	Coquitlam			Principles Of Mathematics 12	12	452	428	95
+2010/2011	DISTRICT LEVEL	BC Public School	044	North Vancouver			Principles Of Mathematics 12	12	171	167	98
+2010/2011	DISTRICT LEVEL	BC Public School	045	West Vancouver			Principles Of Mathematics 12	12	59	59	100
+2010/2011	DISTRICT LEVEL	BC Public School	046	Sunshine Coast			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	047	Powell River			Principles Of Mathematics 12	12	33	33	100
+2010/2011	DISTRICT LEVEL	BC Public School	048	Sea to Sky			Principles Of Mathematics 12	12	50	44	88
+2010/2011	DISTRICT LEVEL	BC Public School	049	Central Coast			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	050	Haida Gwaii			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	051	Boundary			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	052	Prince Rupert			Principles Of Mathematics 12	12	40	27	68
+2010/2011	DISTRICT LEVEL	BC Public School	053	Okanagan Similkameen			Principles Of Mathematics 12	12	12	11	92
+2010/2011	DISTRICT LEVEL	BC Public School	054	Bulkley Valley			Principles Of Mathematics 12	12	51	50	98
+2010/2011	DISTRICT LEVEL	BC Public School	057	Prince George			Principles Of Mathematics 12	12	33	33	100
+2010/2011	DISTRICT LEVEL	BC Public School	058	Nicola-Similkameen			Principles Of Mathematics 12	12	28	22	79
+2010/2011	DISTRICT LEVEL	BC Public School	059	Peace River South			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	060	Peace River North			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	061	Greater Victoria			Principles Of Mathematics 12	12	279	260	93
+2010/2011	DISTRICT LEVEL	BC Public School	062	Sooke			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	063	Saanich			Principles Of Mathematics 12	12	107	105	98
+2010/2011	DISTRICT LEVEL	BC Public School	064	Gulf Islands			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	067	Okanagan Skaha			Principles Of Mathematics 12	12	141	133	94
+2010/2011	DISTRICT LEVEL	BC Public School	068	Nanaimo-Ladysmith			Principles Of Mathematics 12	12	83	79	95
+2010/2011	DISTRICT LEVEL	BC Public School	069	Qualicum			Principles Of Mathematics 12	12	17	15	88
+2010/2011	DISTRICT LEVEL	BC Public School	070	Alberni			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	071	Comox Valley			Principles Of Mathematics 12	12	127	109	86
+2010/2011	DISTRICT LEVEL	BC Public School	072	Campbell River			Principles Of Mathematics 12	12	96	83	86
+2010/2011	DISTRICT LEVEL	BC Public School	073	Kamloops/Thompson			Principles Of Mathematics 12	12	25	24	96
+2010/2011	DISTRICT LEVEL	BC Public School	074	Gold Trail			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	075	Mission			Principles Of Mathematics 12	12	73	71	97
+2010/2011	DISTRICT LEVEL	BC Public School	078	Fraser-Cascade			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	079	Cowichan Valley			Principles Of Mathematics 12	12	23	21	91
+2010/2011	DISTRICT LEVEL	BC Public School	082	Coast Mountains			Principles Of Mathematics 12	12	26	23	88
+2010/2011	DISTRICT LEVEL	BC Public School	083	North Okanagan-Shuswap			Principles Of Mathematics 12	12	16	15	94
+2010/2011	DISTRICT LEVEL	BC Public School	085	Vancouver Island North			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	091	Nechako Lakes			Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	DISTRICT LEVEL	BC Public School	093	Conseil scolaire francophone			Principles Of Mathematics 12	12	18	16	89
+2010/2011	SCHOOL LEVEL	BC Public School	005	Southeast Kootenay	00502001	Mount Baker Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00603008	Selkirk Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00604015	David Thompson Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	006	Rocky Mountain	00618005	Golden Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807012	Salmo Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807013	L V Rogers Secondary	Principles Of Mathematics 12	12	18	18	100
+2010/2011	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00807025	Mount Sentinel Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	008	Kootenay Lake	00886007	Prince Charles Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	010	Arrow Lakes	01010006	Nakusp Secondary	Principles Of Mathematics 12	12	13	9	69
+2010/2011	SCHOOL LEVEL	BC Public School	019	Revelstoke	01919003	Revelstoke Secondary	Principles Of Mathematics 12	12	19	19	100
+2010/2011	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02009010	Stanley Humphries Secondary	Principles Of Mathematics 12	12	14	14	100
+2010/2011	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011012	J Lloyd Crowe Secondary	Principles Of Mathematics 12	12	19	18	95
+2010/2011	SCHOOL LEVEL	BC Public School	020	Kootenay-Columbia	02011014	Rossland Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222007	W L Seaton Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222017	Vernon Secondary	Principles Of Mathematics 12	12	18	18	100
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222022	Kalamalka Secondary	Principles Of Mathematics 12	12	54	52	96
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222025	Clarence Fulton Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	022	Vernon	02222027	Charles Bloom Elementary Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323028	George Elliot Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323044	Rutland Senior Secondary	Principles Of Mathematics 12	12	14	14	100
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323051	Mount Boucherie Senior Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323059	Okanagan Mission Secondary	Principles Of Mathematics 12	12	39	38	97
+2010/2011	SCHOOL LEVEL	BC Public School	023	Central Okanagan	02323076	Kelowna Secondary	Principles Of Mathematics 12	12	22	22	100
+2010/2011	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727000	GROW Continuing Education Centre	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727056	Peter Skene Ogden Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	027	Cariboo-Chilcotin	02727069	Williams Lake Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	028	Quesnel	02828034	Correlieu Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333012	Chilliwack Secondary	Principles Of Mathematics 12	12	14	13	93
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333018	Sardis Secondary	Principles Of Mathematics 12	12	10	9	90
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03333043	GW Graham Middle Secondary	Principles Of Mathematics 12	12	12	12	100
+2010/2011	SCHOOL LEVEL	BC Public School	033	Chilliwack	03398003	Fraser Valley Distance Education School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434000	Bakerview Ctr for Learning - CE	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434022	Abbotsford Collegiate	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434038	Yale Secondary	Principles Of Mathematics 12	12	72	72	100
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434041	W J Mouat Secondary	Principles Of Mathematics 12	12	88	87	99
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434052	Rick Hansen Secondary	Principles Of Mathematics 12	12	84	77	92
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434054	Robert Bateman Secondary	Principles Of Mathematics 12	12	30	28	93
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434061	Abbotsford Traditional Senior Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03434062	ASIA - Sumas Mountain 6-9	Principles Of Mathematics 12	12	12	9	75
+2010/2011	SCHOOL LEVEL	BC Public School	034	Abbotsford	03499101	Abbotsford Virtual School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535019	Langley Secondary	Principles Of Mathematics 12	12	17	16	94
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535020	Aldergrove Community Secondary School	Principles Of Mathematics 12	12	32	27	84
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535034	D W Poppy Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535036	Brookswood Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535041	R E Mountain Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535050	Walnut Grove Secondary	Principles Of Mathematics 12	12	31	30	97
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535056	Langley Fundamental Middle/Secondary Sch	Principles Of Mathematics 12	12	13	13	100
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03535060	Langley Fine Arts Secondary	Principles Of Mathematics 12	12	11	9	82
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03599050	Langley Education Centre	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03599168	Langley Online and Distributed Learning	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	035	Langley	03599173	Choices Program	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636000	Continuing Ed SD 36	Principles Of Mathematics 12	12	21	18	86
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636022	Queen Elizabeth Secondary	Principles Of Mathematics 12	12	15	14	93
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636028	North Surrey Secondary	Principles Of Mathematics 12	12	27	25	93
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636041	Lord Tweedsmuir Secondary	Principles Of Mathematics 12	12	13	13	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636045	Johnston Heights Secondary	Principles Of Mathematics 12	12	45	45	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636047	Guildford Park Secondary	Principles Of Mathematics 12	12	69	67	97
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636049	Semiahmoo Secondary	Principles Of Mathematics 12	12	76	72	95
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636079	L A Matheson Secondary	Principles Of Mathematics 12	12	13	13	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636105	Earl Marriott Secondary	Principles Of Mathematics 12	12	25	25	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636106	Frank Hurt Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636114	Enver Creek Secondary	Principles Of Mathematics 12	12	27	27	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636141	Fraser Heights Secondary	Principles Of Mathematics 12	12	124	118	95
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636150	Tamanawis Secondary	Principles Of Mathematics 12	12	58	57	98
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636156	Elgin Park Secondary	Principles Of Mathematics 12	12	44	40	91
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636164	Sullivan Heights Secondary	Principles Of Mathematics 12	12	22	22	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636167	Fleetwood Park Secondary	Principles Of Mathematics 12	12	59	58	98
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636175	Clayton Heights Secondary	Principles Of Mathematics 12	12	17	16	94
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636232	Panorama Ridge Secondary	Principles Of Mathematics 12	12	58	49	84
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636246	Princess Margaret Secondary	Principles Of Mathematics 12	12	19	17	89
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03636248	Kwantlen Park Secondary	Principles Of Mathematics 12	12	37	37	100
+2010/2011	SCHOOL LEVEL	BC Public School	036	Surrey	03699142	Surrey Connect Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737003	Delta Secondary	Principles Of Mathematics 12	12	34	30	88
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737012	North Delta Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737021	Delview Secondary	Principles Of Mathematics 12	12	38	31	82
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737034	Burnsview Secondary	Principles Of Mathematics 12	12	15	13	87
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737037	South Delta Secondary	Principles Of Mathematics 12	12	36	35	97
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737038	Sands Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03737040	Seaquam Secondary	Principles Of Mathematics 12	12	53	49	92
+2010/2011	SCHOOL LEVEL	BC Public School	037	Delta	03799170	Delta Access	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838000	Continuing Ed SD 38	Principles Of Mathematics 12	12	13	8	62
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838024	R C Palmer Secondary	Principles Of Mathematics 12	12	64	56	88
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838031	Hugh Boyd Secondary	Principles Of Mathematics 12	12	25	24	96
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838033	Hugh McRoberts Secondary	Principles Of Mathematics 12	12	84	84	100
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838042	J N Burnett Secondary	Principles Of Mathematics 12	12	138	137	99
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838044	Matthew McNair Secondary	Principles Of Mathematics 12	12	54	51	94
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838045	Steveston-London Secondary	Principles Of Mathematics 12	12	132	127	96
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838058	Cambie Secondary	Principles Of Mathematics 12	12	12	10	83
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838062	Robert Alexander McMath Secondary	Principles Of Mathematics 12	12	48	48	100
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838064	A.R. MacNeill Secondary	Principles Of Mathematics 12	12	49	41	84
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03838065	Richmond Secondary	Principles Of Mathematics 12	12	114	111	97
+2010/2011	SCHOOL LEVEL	BC Public School	038	Richmond	03899175	Richmond Virtual School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939000	Continuing Ed SD 39	Principles Of Mathematics 12	12	32	27	84
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939001	King George Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939003	Magee Secondary	Principles Of Mathematics 12	12	62	62	100
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939004	Britannia Community Secondary	Principles Of Mathematics 12	12	12	9	75
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939006	Kitsilano Secondary	Principles Of Mathematics 12	12	39	38	97
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939007	John Oliver Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939008	Lord Byng Secondary	Principles Of Mathematics 12	12	88	88	100
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939010	Templeton Secondary	Principles Of Mathematics 12	12	38	37	97
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939011	Vancouver Technical Secondary	Principles Of Mathematics 12	12	45	44	98
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939012	Point Grey Secondary	Principles Of Mathematics 12	12	47	45	96
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939014	Gladstone Secondary	Principles Of Mathematics 12	12	45	44	98
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939015	Sir Winston Churchill Secondary	Principles Of Mathematics 12	12	37	34	92
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939016	Killarney Secondary	Principles Of Mathematics 12	12	66	60	91
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939017	Sir Charles Tupper Secondary	Principles Of Mathematics 12	12	43	43	100
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939018	David Thompson Secondary	Principles Of Mathematics 12	12	62	50	81
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939019	Prince of Wales Secondary	Principles Of Mathematics 12	12	69	66	96
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939020	Windermere Community Secondary	Principles Of Mathematics 12	12	30	28	93
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939022	Eric Hamber Secondary	Principles Of Mathematics 12	12	63	60	95
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03939024	University Hill Secondary	Principles Of Mathematics 12	12	45	42	93
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03995051	University Transition Program	Principles Of Mathematics 12	12	18	18	100
+2010/2011	SCHOOL LEVEL	BC Public School	039	Vancouver	03998004	Vancouver Learning Network	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	040	New Westminster	04040000	Continuing Ed SD 40	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	040	New Westminster	04040008	New Westminster Secondary	Principles Of Mathematics 12	12	101	96	95
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141000	Burnaby Continuing Education	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141001	Burnaby Central Secondary	Principles Of Mathematics 12	12	18	17	94
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141002	Burnaby North Secondary	Principles Of Mathematics 12	12	59	55	93
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141005	Alpha Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141007	Cariboo Hill Secondary	Principles Of Mathematics 12	12	18	16	89
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141011	Moscrop Secondary	Principles Of Mathematics 12	12	67	62	93
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141062	Burnaby South Secondary	Principles Of Mathematics 12	12	31	29	94
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141063	Burnaby Mountain Secondary	Principles Of Mathematics 12	12	55	55	100
+2010/2011	SCHOOL LEVEL	BC Public School	041	Burnaby	04141068	Byrne Creek Secondary	Principles Of Mathematics 12	12	34	30	88
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242000	Continuing Ed SD 42	Principles Of Mathematics 12	12	10	5	50
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242001	Maple Ridge Secondary	Principles Of Mathematics 12	12	26	25	96
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242003	Pitt Meadows Secondary	Principles Of Mathematics 12	12	18	16	89
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242004	Westview Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242038	Thomas Haney Centre	Principles Of Mathematics 12	12	22	21	95
+2010/2011	SCHOOL LEVEL	BC Public School	042	Maple Ridge-Pitt Meadows	04242045	Samuel Robertson Technical Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343000	Continuing Ed SD 43	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343076	Centennial School	Principles Of Mathematics 12	12	48	48	100
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343080	Dr. Charles Best Secondary School	Principles Of Mathematics 12	12	71	67	94
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343088	Port Moody Secondary	Principles Of Mathematics 12	12	17	15	88
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343125	Gleneagle Secondary School	Principles Of Mathematics 12	12	65	62	95
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343127	Heritage Woods Secondary	Principles Of Mathematics 12	12	41	38	93
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343130	Pinetree Secondary School	Principles Of Mathematics 12	12	135	128	95
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343132	Riverside Secondary	Principles Of Mathematics 12	12	36	34	94
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04343136	Terry Fox Secondary	Principles Of Mathematics 12	12	28	27	96
+2010/2011	SCHOOL LEVEL	BC Public School	043	Coquitlam	04399143	Coquitlam Open Learning 10-12	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444000	Continuing Ed SD 44	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444012	Sutherland Secondary	Principles Of Mathematics 12	12	31	29	94
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444022	Argyle Secondary	Principles Of Mathematics 12	12	40	39	98
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444025	Handsworth Secondary School	Principles Of Mathematics 12	12	54	54	100
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444026	Windsor Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444036	Carson Graham Secondary	Principles Of Mathematics 12	12	19	19	100
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04444047	Seycove Secondary Community	Principles Of Mathematics 12	12	17	16	94
+2010/2011	SCHOOL LEVEL	BC Public School	044	North Vancouver	04499176	North Vancouver Distributed Learning Sch	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545010	Sentinel Secondary	Principles Of Mathematics 12	12	30	30	100
+2010/2011	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545015	West Vancouver Secondary	Principles Of Mathematics 12	12	10	10	100
+2010/2011	SCHOOL LEVEL	BC Public School	045	West Vancouver	04545081	Rockridge Secondary	Principles Of Mathematics 12	12	19	19	100
+2010/2011	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646008	Elphinstone Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646012	Pender Harbour Elem-Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	046	Sunshine Coast	04646017	Chatelech Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	047	Powell River	04747021	Brooks Secondary	Principles Of Mathematics 12	12	33	33	100
+2010/2011	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848004	Howe Sound Secondary	Principles Of Mathematics 12	12	36	30	83
+2010/2011	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848021	Pemberton Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	048	Sea to Sky	04848022	Whistler Secondary	Principles Of Mathematics 12	12	13	13	100
+2010/2011	SCHOOL LEVEL	BC Public School	049	Central Coast	04949002	Sir Alexander Mackenzie Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	050	Haida Gwaii	05050012	Queen Charlotte Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	051	Boundary	05112002	Grand Forks Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	051	Boundary	05113010	Boundary Central Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252009	Prince Rupert Secondary	Principles Of Mathematics 12	12	39	26	67
+2010/2011	SCHOOL LEVEL	BC Public School	052	Prince Rupert	05252018	Charles Hays Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314001	Southern Okanagan Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05314008	Osoyoos Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	053	Okanagan Similkameen	05316004	Similkameen Elem-Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454011	Houston Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	054	Bulkley Valley	05454013	Smithers Secondary	Principles Of Mathematics 12	12	46	45	98
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757012	Duchess Park Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757036	Prince George Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757047	Kelly Road Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757100	D P Todd Secondary	Principles Of Mathematics 12	12	14	14	100
+2010/2011	SCHOOL LEVEL	BC Public School	057	Prince George	05757101	College Heights Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05817008	Princeton Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	058	Nicola-Similkameen	05831005	Merritt Secondary	Principles Of Mathematics 12	12	25	19	76
+2010/2011	SCHOOL LEVEL	BC Public School	059	Peace River South	05959008	Dawson Creek Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	060	Peace River North	06060015	North Peace Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	060	Peace River North	06060060	Hudson's Hope School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161000	Continuing Ed SD 61	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161018	Victoria High School	Principles Of Mathematics 12	12	34	25	74
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161024	Oak Bay Secondary	Principles Of Mathematics 12	12	44	43	98
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161048	Esquimalt High School	Principles Of Mathematics 12	12	18	16	89
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161049	Mount Douglas Secondary	Principles Of Mathematics 12	12	116	112	97
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161057	Reynolds Secondary	Principles Of Mathematics 12	12	31	31	100
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161063	Spectrum Community	Principles Of Mathematics 12	12	10	9	90
+2010/2011	SCHOOL LEVEL	BC Public School	061	Greater Victoria	06161064	Lambrick Park Secondary	Principles Of Mathematics 12	12	25	24	96
+2010/2011	SCHOOL LEVEL	BC Public School	062	Sooke	06262013	Belmont Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	062	Sooke	06299043	Byte Alternate Program	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	063	Saanich	06363020	Stelly's Secondary School	Principles Of Mathematics 12	12	22	22	100
+2010/2011	SCHOOL LEVEL	BC Public School	063	Saanich	06363021	Claremont Secondary School	Principles Of Mathematics 12	12	74	72	97
+2010/2011	SCHOOL LEVEL	BC Public School	063	Saanich	06363022	Parkland Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	063	Saanich	06398007	South Island Distance Education School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	064	Gulf Islands	06464010	Gulf Islands Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715002	Penticton Secondary	Principles Of Mathematics 12	12	93	88	95
+2010/2011	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06715008	Princess Margaret Secondary	Principles Of Mathematics 12	12	42	39	93
+2010/2011	SCHOOL LEVEL	BC Public School	067	Okanagan Skaha	06777002	Summerland Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868001	Nanaimo District Secondary	Principles Of Mathematics 12	12	19	19	100
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868002	Ladysmith Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868010	Dover Bay Secondary	Principles Of Mathematics 12	12	52	50	96
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868011	John Barsby Community School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868013	Woodlands Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	068	Nanaimo-Ladysmith	06868015	Wellington Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	069	Qualicum	06969012	Ecole Secondaire Ballenas Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	069	Qualicum	06969014	Kwalikum Secondary	Principles Of Mathematics 12	12	11	11	100
+2010/2011	SCHOOL LEVEL	BC Public School	069	Qualicum	06999094	Collaborative Education Alternative Prg.	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	070	Alberni	07070001	Alberni District Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	070	Alberni	07070005	Ucluelet Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171040	Georges P Vanier Secondary	Principles Of Mathematics 12	12	28	26	93
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171041	Highland Secondary	Principles Of Mathematics 12	12	42	32	76
+2010/2011	SCHOOL LEVEL	BC Public School	071	Comox Valley	07171054	Mark R. Isfeld Senior Secondary	Principles Of Mathematics 12	12	57	51	89
+2010/2011	SCHOOL LEVEL	BC Public School	072	Campbell River	07272000	Continuing Ed SD 72	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	072	Campbell River	07272010	Carihi Secondary	Principles Of Mathematics 12	12	25	24	96
+2010/2011	SCHOOL LEVEL	BC Public School	072	Campbell River	07272012	Timberline Secondary School	Principles Of Mathematics 12	12	70	58	83
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324012	South Kamloops Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324044	Nor Kam Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324045	Valleyview Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324055	Westsyde Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07324057	Sa-hali Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07326005	Clearwater Secondary School	Principles Of Mathematics 12	12	10	9	90
+2010/2011	SCHOOL LEVEL	BC Public School	073	Kamloops/Thompson	07399103	@ KOOL	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	074	Gold Trail	07429015	Lillooet Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	074	Gold Trail	07430016	Ashcroft Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	075	Mission	07575014	Mission Secondary	Principles Of Mathematics 12	12	13	13	100
+2010/2011	SCHOOL LEVEL	BC Public School	075	Mission	07575022	Hatzic Secondary School	Principles Of Mathematics 12	12	28	27	96
+2010/2011	SCHOOL LEVEL	BC Public School	075	Mission	07575033	Heritage Park Secondary	Principles Of Mathematics 12	12	32	31	97
+2010/2011	SCHOOL LEVEL	BC Public School	078	Fraser-Cascade	07832003	Hope Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965009	Cowichan Secondary	Principles Of Mathematics 12	12	17	15	88
+2010/2011	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965033	Chemainus Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	079	Cowichan Valley	07965039	Frances Kelsey Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08280002	Mount Elizabeth Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288006	Hazelton Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	082	Coast Mountains	08288024	Caledonia Sr Secondary	Principles Of Mathematics 12	12	15	15	100
+2010/2011	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08321004	Pleasant Valley Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08383035	Salmon Arm Secondary	Principles Of Mathematics 12	12	12	12	100
+2010/2011	SCHOOL LEVEL	BC Public School	083	North Okanagan-Shuswap	08399132	Educational Outreach Program	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	085	Vancouver Island North	08585018	North Island Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	091	Nechako Lakes	09156008	Nechako Valley Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09344004	Ecole Andre Piolat	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09346017	Chatelech Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09347021	Brooks Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09357012	Duchess Park Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09361060	l'ecole Victor Brodeur	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09372010	Ecole Carihi	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Public School	093	Conseil scolaire francophone	09393004	Penticton Secondary School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			00596715	Fernie Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			02296261	Vernon Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			02396013	Immaculata Regional High School	Principles Of Mathematics 12	12	36	31	86
+2010/2011	SCHOOL LEVEL	BC Independent School			02396281	Kelowna Christian School	Principles Of Mathematics 12	12	18	17	94
+2010/2011	SCHOOL LEVEL	BC Independent School			02396479	Heritage Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			02396738	Heritage Christian Online School (DL)	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03396209	Timothy Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03396251	Highroad Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03396354	Mount Cheam Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03496020	Mennonite Educational Institute	Principles Of Mathematics 12	12	55	52	95
+2010/2011	SCHOOL LEVEL	BC Independent School			03496069	Abbotsford Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03496595	St John Brebeuf	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03596289	Credo Christian Schools	Principles Of Mathematics 12	12	18	11	61
+2010/2011	SCHOOL LEVEL	BC Independent School			03596311	Langley Christian	Principles Of Mathematics 12	12	24	21	88
+2010/2011	SCHOOL LEVEL	BC Independent School			03596376	King's School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03696015	Fraser Valley Christian High	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03696166	Holy Cross Regional High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03696266	Surrey Christian	Principles Of Mathematics 12	12	15	15	100
+2010/2011	SCHOOL LEVEL	BC Independent School			03696309	White Rock Christian Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03696394	Pacific Academy	Principles Of Mathematics 12	12	32	26	81
+2010/2011	SCHOOL LEVEL	BC Independent School			03696610	Southridge School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03796694	Southpointe Academy	Principles Of Mathematics 12	12	24	18	75
+2010/2011	SCHOOL LEVEL	BC Independent School			03896178	Richmond Christian School	Principles Of Mathematics 12	12	20	20	100
+2010/2011	SCHOOL LEVEL	BC Independent School			03996002	St George's School	Principles Of Mathematics 12	12	20	19	95
+2010/2011	SCHOOL LEVEL	BC Independent School			03996004	Crofton House	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996007	Vancouver College	Principles Of Mathematics 12	12	27	27	100
+2010/2011	SCHOOL LEVEL	BC Independent School			03996011	York House School	Principles Of Mathematics 12	12	19	19	100
+2010/2011	SCHOOL LEVEL	BC Independent School			03996019	Little Flower Academy	Principles Of Mathematics 12	12	28	28	100
+2010/2011	SCHOOL LEVEL	BC Independent School			03996022	Notre Dame Regional Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996030	St Patrick Regional Secondary	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996319	Columbia College	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996435	St John's School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996451	King David High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996527	St John's International	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996538	Royal Canadian College	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996645	West Point Grey Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996659	Century High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996732	Pacific Torah Institute	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996733	Pattison High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			03996805	Pacific Torah Institute International	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04196031	St Thomas More Collegiate	Principles Of Mathematics 12	12	29	29	100
+2010/2011	SCHOOL LEVEL	BC Independent School			04196766	Carver Christian High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04296099	Maple Ridge Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04296400	Meadowridge School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04396349	Coquitlam College	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04396588	Traditional Learning Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04396629	Archbishop Carney Secondary	Principles Of Mathematics 12	12	26	26	100
+2010/2011	SCHOOL LEVEL	BC Independent School			04496062	St Thomas Aquinas	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04496551	Bodwell High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			04596367	Collingwood School	Principles Of Mathematics 12	12	38	38	100
+2010/2011	SCHOOL LEVEL	BC Independent School			05496124	Bulkley Valley Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			05796230	Cedars Christian School	Principles Of Mathematics 12	12	10	9	90
+2010/2011	SCHOOL LEVEL	BC Independent School			05796491	Westside Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			06096473	Christian Life School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			06196008	St Michaels University School - Senior	Principles Of Mathematics 12	12	12	12	100
+2010/2011	SCHOOL LEVEL	BC Independent School			06196010	St Margaret's	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			06196021	Glenlyon Norfolk School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			06196084	Pacific Christian School	Principles Of Mathematics 12	12	21	20	95
+2010/2011	SCHOOL LEVEL	BC Independent School			06196341	St Andrew's Regional High	Principles Of Mathematics 12	12	34	33	97
+2010/2011	SCHOOL LEVEL	BC Independent School			06896256	Nanaimo Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			06896650	Malaspina International High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07296335	Campbell River Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07396194	St Ann's Academy	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07596034	Seminary of Christ the King	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07996005	Brentwood College	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07996006	Shawnigan Lake	Principles Of Mathematics 12	12	28	27	96
+2010/2011	SCHOOL LEVEL	BC Independent School			07996086	Duncan Christian School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07996680	Island Oak High School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			07996812	Dwight International School	Principles Of Mathematics 12	12	Msk	Msk	Msk
+2010/2011	SCHOOL LEVEL	BC Independent School			08396240	King's Christian School	Principles Of Mathematics 12	12	21	13	62
+2010/2011	SCHOOL LEVEL	BC Independent School			08396714	Christian Homelearners eStreams	Principles Of Mathematics 12	12	Msk	Msk	Msk
