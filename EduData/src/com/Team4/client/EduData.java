@@ -137,7 +137,7 @@ public class EduData implements EntryPoint {
 		basePanel.setSize( "100%" , "100%" );
 		leftSidebarPanel.setSize( "30%" , "100%" );
 		visualizePanel.setSize( "100%" , "70%" );
-		buttonPanel.setSize( "100%" , "100%" );
+		buttonPanel.setSize( "100%" , "50px" );
 		dataSetPanel.setSize( "450px" , "400px" );
 		
 		basePanel.setBorderWidth( 1 );
@@ -213,7 +213,7 @@ public class EduData implements EntryPoint {
 
 			public void onClick(ClickEvent event) {			
 				System.out.println( "Visualize button clicked" );
-				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
+				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				if( selected.size() > 1 ) {
 					Window.alert( "Only one DataSet can be mapped at a time." );
 				}
