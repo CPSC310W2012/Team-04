@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.Team4.client.FileHandler;
@@ -45,33 +46,25 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	    	}
 	    	
 	    	else {
+		    	// Save Data Set metadata
 		    	dataSet = new DataSet(fileName);
 		    	DataSetServiceImpl.addDataSet(dataSet);
-        		
+		    	
 		    	while (line != null) {
-		        
 		        	String[] toks = line.split("\\t+");
-		        	List<MapPoint> points = null;
 		            
+		        	// Check formatting
 		        	if(toks[1].equals("SCHOOL LEVEL") && toks[2].equals("BC Public School")){
-
-		        		String entrySchoolName = toks[6];
-		        		points = DataSetServiceImpl.getMapPoints();
-		        		for( MapPoint mp : points ) {
-		        			if( entrySchoolName.equals(mp.getSchoolName()) ) {
-				        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
-				        		dataEntry.setLatitude( mp.getLatitude() );
-				        		dataEntry.setLongitude( mp.getLongitude() );
-				        		DataSetServiceImpl.addDataEntry(dataEntry);
-		        			}
-		        		}
-
+		        		// Make a new Data Entry based on parsed data
+		        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
+		        		DataSetServiceImpl.addDataEntry(dataEntry);
 		        	}
+		        	// Read next line
 		        	line = br.readLine();
 		        }
+		    	
+		    	in.close();
 	    	}
-	
-	    	in.close();
 	    
 	    }catch (Exception e){
 	      System.err.println(e.getMessage());
