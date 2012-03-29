@@ -257,27 +257,6 @@ public class EduData implements EntryPoint {
 					
 					//mean
 					mean = sum/grades.size();
-				
-					
-					
-//					double maxFreq = new Max().evaluate(frequency);
-//					ArrayList<Integer> mode = new ArrayList<Integer>();
-//					for( i = 0; i < 101; i++ ) {
-//						if( frequency[i] == maxFreq ) {
-//							mode.add(i);
-//						}
-//					}
-//					double stdDev = new StandardDeviation().evaluate(input);
-					
-					
-					
-					FlexTable statsFlexTable = new FlexTable();
-					statsFlexTable.setText(0, 0, "Mean");
-					statsFlexTable.setText(1, 0, "Median");
-					statsFlexTable.setText(0, 1, "" + mean);
-					statsFlexTable.setText(1, 1, "" + median);
-					System.out.println( "Flex Table Made" );
-					PopupPanel dBox2 = new PopupPanel();
 					
 					//add here 
 					Window.alert( "Mean : " + mean + " Median : " + median );
@@ -286,28 +265,6 @@ public class EduData implements EntryPoint {
 		});
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
-		
-		button_1.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {			
-				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
-				if( selected.size() > 1 ) {
-					Window.alert( "You may only view statistics for one dataset at a time." );
-				}
-				else {
-					ArrayList<ClientDataEntry> renderMe = new ArrayList<ClientDataEntry>();
-					for( ClientDataSet dataSet : selected ) {
-						for( ClientDataEntry dataEntry : entries ) {
-							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
-								renderMe.add( dataEntry );
-							}
-						}
-					}
-
-					
-				}
-
-			}
-		});
 		
 		for ( int a = 0 ; a < 4 ; a++ ) {
 			buttonPanel.getWidget( a ).setHeight( "50px" );
