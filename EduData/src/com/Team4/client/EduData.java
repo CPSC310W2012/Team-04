@@ -189,8 +189,14 @@ public class EduData implements EntryPoint {
 
 	
 				   visualizePanel.clear();
+
+				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				/*
+				   for ( ClientDataEntry dEntry : entries ) {
+=======
 				   ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				for ( ClientDataEntry dEntry : entries ) {
+>>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 				    	
 				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
@@ -205,10 +211,17 @@ public class EduData implements EntryPoint {
 				    	}
 				    	
 				    }
+<<<<<<< HEAD
+				*/
+				 
+				
+				   //visualizePanel.add(renderMap(dataSet));
+
 				   visualizePanel.add(map);
+
 				   map.setSize( "1000px", "600px");
 			}
-			
+			/*
 			public ArrayList<ClientDataEntry> populateDummyData() {
 				
 				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
@@ -224,7 +237,7 @@ public class EduData implements EntryPoint {
 				
 				return dataSet;
 			}
-			
+			*/
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -242,12 +255,83 @@ public class EduData implements EntryPoint {
 		
 	}
 
+
+	
+	/*
+	 * Plot data set entries on map
+	 */
+	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
+
+		   for ( ClientDataEntry dEntry : entries) {
+		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+		    	int grade = Integer.parseInt(dEntry.getGrade());
+		    	String url = "http://www.rushfeed.com/rush/310/";
+		    	if(grade >= 86){ // A
+		    		url = url+"a.png";
+		    	}
+		    	else if(grade >= 73 && grade <= 85){//B
+		    		url = url+"b.png";
+		    	}
+		    	else if(67 >= grade && grade <= 72){//C+
+		    		url = url+"c+.png";
+		    	}
+		    	else if (grade >= 60 && grade <= 66){//C
+		    		url = url+"c.png";	
+		    	}
+		    	else if (grade >= 50 && grade <= 59){//C-
+		    		url = url+"c-.png";	
+		    	}
+		    	else{// F
+		    		url = url+"f.png";	
+		    	}
+		    	
+		    	Icon icon = Icon.newInstance(url);
+	    		icon.setIconSize(Size.newInstance(40, 40));
+	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		Marker marker = new Marker(coordinate, ops);
+	    		map.addOverlay(marker);
+		    	
+		    }
+		return map;
+		
+		
+	}
+	/*
+	 * Renders a map according to the dataSet passed
+	 * */
+	public MapWidget renderMap(ClientDataSet dSet){
+		ArrayList<ClientDataEntry> entries = new ArrayList<ClientDataEntry>(); // should be replaced with getEntries()
+		return plotEntries(entries);
+	}
+	
+	/*
+	public ClientDataSet getCumulativeGrade(ArrayList<ClientDataSet> dataSets) throws DataSetNotPresentException{
+		ClientDataSet sumSet = new ClientDataSet();
+		for(ClientDataSet data : dataSets){
+			Long id = data.getDataSetID();
+				ArrayList<ClientDataEntry> ent = dSService.getEntries(id, asyncCallback);
+				for(ClientDataEntry dEntry: ent){
+					int grade = Integer.parseInt(dEntry.getGrade());
+					String school = dEntry.getSchool();
+					
+					//TO DO
+					
+					
+				}
+		}
+
+		return sumSet;
+		
+	}
+
+*/	
+	
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
 		visualizePanel.add( table );
 		table.setVisible( true );
 	}
-		
+		/*
 		public ArrayList<ClientDataEntry> populateDummyData() {
 			
 			ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
@@ -265,7 +349,7 @@ public class EduData implements EntryPoint {
 			
 			return dataSet;
 		}
-		
+		*/
 //	datasetmanager methods
 
 	public ClientDataSet removeDataSet( ClientDataSet dSet ) throws DataSetNotPresentException {

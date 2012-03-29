@@ -49,7 +49,6 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	        		DataEntry dataEntry = new DataEntry(toks[6], toks[11], toks[7], dataSet.getDataSetID());
 	        		DataSetServiceImpl.addDataEntry(dataEntry);
 	        		}
-	        	
 	        	}
 	        	line = br.readLine();
 	        }
@@ -61,11 +60,4 @@ public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 	    }
 	}
 	
-//	Old Test
-//	public static void main(String [ ] args) throws Exception
-//	{
-//	      TxtHandler hdl = new TxtHandler();
-//	      hdl.parseFile("Chemistry12Hist.txt");
-//	}
-//	
 }
