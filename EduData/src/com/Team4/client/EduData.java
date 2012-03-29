@@ -17,6 +17,7 @@ import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.layout.client.Layout.Alignment;
 import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.Maps;
@@ -73,6 +74,7 @@ public class EduData implements EntryPoint {
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
 	
+	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
@@ -91,11 +93,18 @@ public class EduData implements EntryPoint {
 		      }
 
 			private void buildMap() {
+<<<<<<< HEAD
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
 			   
 			    map.setSize("500px", "500px");
 				//map.addControl(new LargeMapControl());
+=======
+				 final LatLng vancouver = LatLng.newInstance(49.150, -123.110);
+			    map = new MapWidget(vancouver, 8);
+				map.setSize( "900px", "460px");
+				map.addControl(new LargeMapControl());
+>>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
 				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
 
 				
@@ -107,6 +116,7 @@ public class EduData implements EntryPoint {
 	    		Marker marker = new Marker(vancouver, ops);
 	    		
 	    		map.addOverlay(marker);
+				visualizePanel.add(map);
 			}
 		    });
 
@@ -130,9 +140,9 @@ public class EduData implements EntryPoint {
 		root.setSize( "100%" , "100%" );
 		basePanel.setSize( "100%" , "100%" );
 		leftSidebarPanel.setSize( "30%" , "100%" );
-		visualizePanel.setSize( "70%" , "100%" );
-		buttonPanel.setSize( "100%" , "20%" );
-		dataSetPanel.setSize( "450px" , "80%" );
+		visualizePanel.setSize( "100%" , "70%" );
+		buttonPanel.setSize( "100%" , "100%" );
+		dataSetPanel.setSize( "450px" , "400px" );
 		
 		basePanel.setBorderWidth( 1 );
 		leftSidebarPanel.setBorderWidth( 1 );
@@ -165,11 +175,13 @@ public class EduData implements EntryPoint {
 		//	Here we define and implement the Remove button. When clicked, this button will remove all selected DataSets from the DataSetManager
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {
+			public void onClick(ClickEvent event) {		
+				System.out.println( "THIS REMOVE BUTTON HAS BEEN TOUCHED :O ");		
 				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
 				for ( ClientDataSet dSet : selected ) {
 					try {
 						removeDataSet( dSet );
+						System.out.println( dSet.getName() + " removed.");
 					} catch (DataSetNotPresentException e) {
 						// If the code reaches this point, then we are trying to remove a data set that no longer exists
 						// In other words, we don't care.
@@ -188,7 +200,8 @@ public class EduData implements EntryPoint {
 		Button button99 = new Button("Refresh");
 		button99.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
-				loadDataSets();
+				dataSetPanel.clear();
+				dataSetPanel.add(tabUI.renderDataSetTable(dataSets));
 				System.out.println( "-------Refreshed--------");
 			}
 		});
@@ -200,6 +213,7 @@ public class EduData implements EntryPoint {
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
+<<<<<<< HEAD
 			public void onClick(ClickEvent event) {
 				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
 	
@@ -226,8 +240,27 @@ public class EduData implements EntryPoint {
 				dataSet.get(2).setLatitude(50.2765);
 				
 				return dataSet;
+=======
+			public void onClick(ClickEvent event) {			
+				System.out.println( "Visualize button clicked" );
+				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
+				if( selected.size() > 1 ) {
+					Window.alert( "Only one DataSet can be mapped at a time." );
+				}
+				else {
+					ArrayList<ClientDataEntry> renderMe = new ArrayList<ClientDataEntry>();
+					for( ClientDataSet dataSet : selected ) {
+						for( ClientDataEntry dataEntry : entries ) {
+							if( dataEntry.getDataSetID().equals( dataSet.getDataSetID() ) ) {
+								renderMe.add( dataEntry );
+							}
+						}
+					}
+					visualizePanel.clear();
+					visualizePanel.add(renderMap( renderMe ));
+				}
+>>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
 			}
-			*/
 		});
 		buttonPanel.add(button);
 		buttonPanel.setCellVerticalAlignment(button, HasVerticalAlignment.ALIGN_MIDDLE);
@@ -239,6 +272,11 @@ public class EduData implements EntryPoint {
 		buttonPanel.add(button_1);
 		buttonPanel.setCellHorizontalAlignment(button_1, HasHorizontalAlignment.ALIGN_CENTER);
 		buttonPanel.setCellVerticalAlignment(button_1, HasVerticalAlignment.ALIGN_MIDDLE);
+		
+		for ( int a = 0 ; a < 5 ; a++ ) {
+			buttonPanel.getWidget( a ).setHeight( "50px" );
+			buttonPanel.getWidget( a ).setWidth( "90px" );
+		}
 		
 		table = tabUI.renderDataSetTable( dataSets );
 		dataSetPanel.add(table);
@@ -296,9 +334,14 @@ public class EduData implements EntryPoint {
 	/*
 	 * Renders a map according to the dataSet passed
 	 * */
+<<<<<<< HEAD
 	public MapWidget renderMap(ClientDataSet dSet){
 		//ArrayList<ClientDataEntry> entries = dSet.getEntries(); // should be replaced with getEntries()
 		return plotEntries(entries);
+=======
+	public MapWidget renderMap(ArrayList<ClientDataEntry> renderMe){
+		return plotEntries(renderMe);
+>>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
 	}
 	
 	/*
@@ -334,12 +377,18 @@ public class EduData implements EntryPoint {
 		for( ClientDataSet iter : dataSets ) {
 			if( iter.getDataSetID() == dSet.getDataSetID() ) {
 				dataSets.remove(iter);
+				for( ClientDataEntry dEntry : entries) {
+					if( dEntry.getDataSetID().equals( iter.getDataSetID() )) {
+						entries.remove( dEntry );
+					}
+				}
 				dSService.removeDataSet( dSet.getDataSetID(), new AsyncCallback<Void>() {
 					public void onFailure(Throwable error) {
 				        handleError(error);
 					}
 
 					public void onSuccess(Void ignore) {
+						System.out.println( "DataSet successfully removed." );
 					}
 				});
 				return iter;
@@ -367,17 +416,17 @@ public class EduData implements EntryPoint {
 				}
 			});
 		
-		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
-			
-			public void onFailure(Throwable error) {
-		        handleError(error);
-			}
-
-			public void onSuccess(ArrayList<ClientDataEntry> response) {
-				if( !response.isEmpty() ) {
-					entries = response;
-				}
-			}});
+//		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
+//			
+//			public void onFailure(Throwable error) {
+//		        handleError(error);
+//			}
+//
+//			public void onSuccess(ArrayList<ClientDataEntry> response) {
+//				if( !response.isEmpty() ) {
+//					entries = response;
+//				}
+//			}});
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
@@ -514,7 +563,7 @@ public class EduData implements EntryPoint {
 			TextColumn<ClientDataSet> dateAddedColumn = new TextColumn<ClientDataSet>() {
 				@Override
 				public String getValue( ClientDataSet d ) {
-					return ( intToMonth(d.getDateAdded().getMonth()) + " " + d.getDateAdded().getDay() );
+					return ( d.getDateAdded().toString() );
 				}
 			};
 
@@ -547,7 +596,7 @@ public class EduData implements EntryPoint {
 			table.addColumn( tabUI, "Tabular View" );
 
 			table.setSelectionModel(selectionModel, DefaultSelectionEventManager.<ClientDataSet> createCheckboxManager());
-
+			
 			return table;
 		}
 
@@ -567,27 +616,6 @@ public class EduData implements EntryPoint {
 			public void update(int index, Object object, Object value) {
 				
 			}
-
 		}
-		
-		public String intToMonth( int i ) {
-			switch( i ) {
-			case 1: return "January";
-			case 2: return "February";
-			case 3: return "March";
-			case 4: return "April";
-			case 5: return "May";
-			case 6: return "June";
-			case 7: return "July";
-			case 8: return "August";
-			case 9: return "September";
-			case 10: return "October";
-			case 11: return "November";
-			case 12: return "December";
-			}
-			return "Invalid Date";
-		}
-
-
 	}
 }
