@@ -2,6 +2,7 @@ package com.Team4.client;
 
 import java.io.IOException;
 
+import com.Team4.client.GeoCoord;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**

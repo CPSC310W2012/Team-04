@@ -22,11 +22,15 @@ import com.google.gwt.maps.client.InfoWindowContent;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.Maps;
 import com.google.gwt.maps.client.control.LargeMapControl;
+import com.google.gwt.maps.client.event.MarkerClickHandler;
 import com.google.gwt.maps.client.geom.LatLng;
+import com.google.gwt.maps.client.geom.LatLngBounds;
+import com.google.gwt.maps.client.geom.Point;
 import com.google.gwt.maps.client.geom.Size;
 import com.google.gwt.maps.client.overlay.Icon;
 import com.google.gwt.maps.client.overlay.Marker;
 import com.google.gwt.maps.client.overlay.MarkerOptions;
+import com.google.gwt.maps.client.overlay.Overlay;
 import com.google.gwt.maps.client.overlay.Polygon;
 import com.google.gwt.maps.client.overlay.PolygonOptions;
 import com.google.gwt.user.cellview.client.CellTable;
@@ -43,6 +47,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.ScrollPanel;
+import com.google.gwt.user.client.ui.UIObject;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.view.client.DefaultSelectionEventManager;
@@ -69,6 +74,7 @@ public class EduData implements EntryPoint {
 	private final DataSetServiceAsync dSService = GWT.create(DataSetService.class);
 	private CellTable<ClientDataSet> table;
 	
+	
 	public void onModuleLoad() {
 		dataSets = new ArrayList<ClientDataSet>();
 		loadDataSets();
@@ -87,12 +93,29 @@ public class EduData implements EntryPoint {
 		      }
 
 			private void buildMap() {
-				
-				LatLng vancouver = LatLng.newInstance(49.150, -123.100);
+				 final LatLng vancouver = LatLng.newInstance(49.150, -123.110);
 			    map = new MapWidget(vancouver, 8);
 				map.setSize( "900px", "460px");
 				map.addControl(new LargeMapControl());
-				map.addOverlay(new Marker(vancouver));
+				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
+
+				
+	    		icon.setIconSize(Size.newInstance(28, 40));
+	    		
+	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		ops.setClickable(true);
+
+	    		Marker marker = new Marker(vancouver, ops);
+	    		marker.setLatLng(vancouver);
+	    		
+	    		marker.setImage("http://www.rushfeed.com/rush/310/a.png"); //this does not work for some reason
+	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
+	    			   public void onClick(MarkerClickEvent event) { 
+	    				   map.getInfoWindow().open(vancouver, new InfoWindowContent("School entry grade stat"));
+	    			   } 
+	    			}); 
+	    		map.addOverlay(new Marker(vancouver));
+	    		map.addOverlay(marker);
 				visualizePanel.add(map);
 			}
 		    });
@@ -196,6 +219,8 @@ public class EduData implements EntryPoint {
 	
 				visualizePanel.clear();
 				visualizePanel.add(map);
+<<<<<<< HEAD
+=======
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
@@ -214,6 +239,7 @@ public class EduData implements EntryPoint {
 				    	
 				    }
 				*/
+>>>>>>> 8b1b4bed63109d72067a36ddffd919c6590b66ff
 				 
 				
 				   //visualizePanel.add(renderMap(dataSet));
@@ -242,16 +268,15 @@ public class EduData implements EntryPoint {
 		dataSetPanel.add(table);
 		
 	}
-
-
+	
 	
 	/*
 	 * Plot data set entries on map
 	 */
 	public MapWidget plotEntries(ArrayList<ClientDataEntry> entries){
 
-		   for ( ClientDataEntry dEntry : entries) {
-		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+		   for ( final ClientDataEntry dEntry : entries) {
+		    	final LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
 		    	String url = "http://www.rushfeed.com/rush/310/";
 		    	if(grade >= 86){ // A
@@ -274,12 +299,19 @@ public class EduData implements EntryPoint {
 		    	}
 		    	
 		    	Icon icon = Icon.newInstance(url);
-	    		icon.setIconSize(Size.newInstance(40, 40));
+	    		icon.setIconSize(Size.newInstance(28, 40));
 	    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+	    		ops.setClickable(true);
 	    		Marker marker = new Marker(coordinate, ops);
+	    		marker.addMarkerClickHandler(new MarkerClickHandler() { 
+	    			   public void onClick(MarkerClickEvent event) { 
+	    				   map.getInfoWindow().open(coordinate, new InfoWindowContent("School:"+ dEntry.getSchool() + " Course:"+dEntry.getCourse() + " Grade: "+ dEntry.getGrade()));
+	    			   } 
+	    			}); 
+	    		
 	    		map.addOverlay(marker);
-		    	
-		    }
+		   }
+		    
 		return map;
 		
 		
