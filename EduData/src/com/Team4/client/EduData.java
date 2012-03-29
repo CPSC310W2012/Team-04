@@ -189,7 +189,7 @@ public class EduData implements EntryPoint {
 
 	
 				   visualizePanel.clear();
-<<<<<<< HEAD
+
 				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
 				/*
 				   for ( ClientDataEntry dEntry : entries ) {
@@ -216,9 +216,9 @@ public class EduData implements EntryPoint {
 				 
 				
 				   //visualizePanel.add(renderMap(dataSet));
-=======
+
 				   visualizePanel.add(map);
->>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
+
 				   map.setSize( "1000px", "600px");
 			}
 			/*
@@ -255,7 +255,7 @@ public class EduData implements EntryPoint {
 		
 	}
 
-<<<<<<< HEAD
+
 	
 	/*
 	 * Plot data set entries on map
@@ -265,24 +265,24 @@ public class EduData implements EntryPoint {
 		   for ( ClientDataEntry dEntry : entries) {
 		    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
 		    	int grade = Integer.parseInt(dEntry.getGrade());
-		    	String url = "";
+		    	String url = "http://www.rushfeed.com/rush/310/";
 		    	if(grade >= 86){ // A
-		    		url = "http://www.google.com/mapfiles/markerA.png";
+		    		url = url+"a.png";
 		    	}
 		    	else if(grade >= 73 && grade <= 85){//B
-		    		url = "http://www.google.com/mapfiles/markerA.png";
+		    		url = url+"b.png";
 		    	}
 		    	else if(67 >= grade && grade <= 72){//C+
-		    		url = "http://www.google.com/mapfiles/markerA.png";
+		    		url = url+"c+.png";
 		    	}
 		    	else if (grade >= 60 && grade <= 66){//C
-		    		url = "http://www.google.com/mapfiles/markerA.png";	
+		    		url = url+"c.png";	
 		    	}
 		    	else if (grade >= 50 && grade <= 59){//C-
-		    		url = "http://www.google.com/mapfiles/markerA.png";	
+		    		url = url+"c-.png";	
 		    	}
 		    	else{// F
-		    		url = "http://www.google.com/mapfiles/markerA.png";	
+		    		url = url+"f.png";	
 		    	}
 		    	
 		    	Icon icon = Icon.newInstance(url);
@@ -326,8 +326,6 @@ public class EduData implements EntryPoint {
 
 */	
 	
-=======
->>>>>>> e14b34ba603e3ec8de2cd40edf7708f7ead2551b
 	public void updateVisualizePanel( CellTable<ClientDataEntry> table ) {
 		visualizePanel.clear();
 		visualizePanel.add( table );

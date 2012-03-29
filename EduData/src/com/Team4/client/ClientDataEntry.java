@@ -29,6 +29,15 @@ public class ClientDataEntry implements IsSerializable {
 		course = courseName;
 		this.dataSetID = dataSetID;
 		geo = new GeoCoord();
+		try {
+			geo.geoFile();
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		latitude = geo.getLatitude(schName);
 		longitude = geo.getLongitude(schName);
 
