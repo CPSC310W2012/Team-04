@@ -13,6 +13,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 /**
  * @author kgajos
  * @author ryanabooth
+ * File reader for location data and Data Sets
  */
 public class TxtHandler extends RemoteServiceServlet implements FileHandler{
 

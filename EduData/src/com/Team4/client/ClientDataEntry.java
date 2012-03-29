@@ -6,7 +6,8 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
  * Client side DataEntry object
- * @author RBooth
+ * Holds data for each school's point
+ * @author ryanabooth
  */
 public class ClientDataEntry implements IsSerializable {
 	private String entryID;

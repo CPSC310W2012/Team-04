@@ -6,6 +6,10 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+/**
+ * @author ryanabooth
+ * Server-side storage of longitude and latitude data
+ */
 @PersistenceCapable
 public class MapPoint implements Serializable {
 

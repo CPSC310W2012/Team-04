@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * @author tsebens
+ */
 public class ClientDataEntryTest {
 	// Shared instances of the classes to test
 	ClientDataEntry dEntry;

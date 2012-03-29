@@ -11,6 +11,9 @@ import com.Team4.client.ClientDataEntry;
 import com.Team4.client.ClientDataSet;
 import com.Team4.client.EntryNotPresentException;
 
+/**
+ * @author tsebens
+ */
 public class ClientDataSetTest {
 	ClientDataSet dSet;
 	ClientDataEntry dEntry;

@@ -6,6 +6,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
  * Client side DataSet object
+ * Holds metadata for a group of entries
  * @author ryanabooth
  */
 public class ClientDataSet implements IsSerializable {
