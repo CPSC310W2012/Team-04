@@ -152,6 +152,7 @@ public class EduData implements EntryPoint {
 		buttonPanel.setCellHorizontalAlignment(importButton, HasHorizontalAlignment.ALIGN_CENTER);
 		 importButton.addClickHandler(new ClickHandler() {
 				public void onClick(ClickEvent event) {
+					Window.alert("Import school location data with filename locations.txt");
 					final PopupPanel uploadPanel = new PopupPanel();
 					SingleUploader defaultUploader = new SingleUploader();
 				    uploadPanel.add(defaultUploader);
@@ -212,6 +213,27 @@ public class EduData implements EntryPoint {
 	
 				   visualizePanel.clear();
 
+<<<<<<< HEAD
+=======
+				 //  ArrayList<ClientDataEntry> entries = this.populateDummyData(); // create external or internal function?
+				/*
+				   for ( ClientDataEntry dEntry : entries ) {
+				    	LatLng coordinate = LatLng.newInstance(dEntry.getLatitude(), dEntry.getLongitude());
+				    	
+				    	if(Integer.parseInt(dEntry.getGrade()) <= 100){
+
+				    		String url = "http://www.google.com/mapfiles/markerA.png";
+				    		Icon icon = Icon.newInstance("http://www.spikee.com/wp-content/uploads/r2d2-usb-hub.gif");
+				    		icon.setIconSize(Size.newInstance(20, 34));
+				    		MarkerOptions ops = MarkerOptions.newInstance(icon);
+				    		Marker marker = new Marker(coordinate, ops);
+				    		map.addOverlay(marker);
+
+				    	}
+				    	
+				    }
+				*/
+>>>>>>> 8b1b4bed63109d72067a36ddffd919c6590b66ff
 				 
 				
 				   //visualizePanel.add(renderMap(dataSet));

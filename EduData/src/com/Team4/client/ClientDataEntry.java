@@ -15,12 +15,11 @@ public class ClientDataEntry implements IsSerializable {
 	private String grade;
 	private String course;
 	private Long dataSetID;
+	private double longitude;
+	private double latitude;
 	
 	public ClientDataEntry(){
 	}
-	private double longitude;
-	private double latitude;
-	private GeoCoord geo;
 	
 	public ClientDataEntry(String entryID, String schName, String stGrade, String courseName, Long dataSetID){
 		
@@ -29,18 +28,6 @@ public class ClientDataEntry implements IsSerializable {
 		grade = stGrade;
 		course = courseName;
 		this.dataSetID = dataSetID;
-		geo = new GeoCoord();
-		try {
-			geo.geoFile();
-		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		latitude = geo.getLatitude(schName);
-		longitude = geo.getLongitude(schName);
 
 	}
 	
@@ -93,5 +80,12 @@ public class ClientDataEntry implements IsSerializable {
 	public double getLatitude() {
 		return latitude;
 	}
-	
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
 }

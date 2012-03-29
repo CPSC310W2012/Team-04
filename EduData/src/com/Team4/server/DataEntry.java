@@ -7,8 +7,6 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-import com.google.appengine.api.datastore.Key;
-
 @PersistenceCapable
 public class DataEntry implements Serializable {
 
@@ -23,6 +21,10 @@ public class DataEntry implements Serializable {
 	private String course;
 	@Persistent
 	private Long dataSetID;
+	@Persistent
+	private double longitude;
+	@Persistent
+	private double latitude;
 	
 	public DataEntry(String schName, String stGrade, String courseName, Long dSetID){
 		schoolName = schName;
@@ -68,6 +70,22 @@ public class DataEntry implements Serializable {
 			return true;
 		else
 			return false;
+	}
+	
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public double getLatitude() {
+		return latitude;
 	}
 	
 }

@@ -100,4 +100,25 @@ public class DataSetServiceImpl extends RemoteServiceServlet implements
 		}
 		return cDEntries;
 	}
+
+	public static void addMapPoint(MapPoint mp) {
+		PersistenceManager pm = PMF.getPersistenceManager();
+		try {
+			pm.makePersistent(mp);
+		} finally {
+			pm.close();
+		}
+	}
+	
+	public static List<MapPoint> getMapPoints() {
+		PersistenceManager pm = PMF.getPersistenceManager();
+		List<MapPoint> entries;
+		try {
+			Query q = pm.newQuery(MapPoint.class);
+			entries = (List<MapPoint>) q.execute();
+		} finally {
+			pm.close();
+		}
+		return entries;
+	}
 }
