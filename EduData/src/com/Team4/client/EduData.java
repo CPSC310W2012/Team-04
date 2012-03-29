@@ -93,18 +93,11 @@ public class EduData implements EntryPoint {
 		      }
 
 			private void buildMap() {
-<<<<<<< HEAD
 				 final LatLng vancouver = LatLng.newInstance(49.150+0.016, -123.110-0.011);
 			    map = new MapWidget(vancouver, 11);
 			   
 			    map.setSize("500px", "500px");
-				//map.addControl(new LargeMapControl());
-=======
-				 final LatLng vancouver = LatLng.newInstance(49.150, -123.110);
-			    map = new MapWidget(vancouver, 8);
-				map.setSize( "900px", "460px");
-				map.addControl(new LargeMapControl());
->>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
+
 				Icon icon = Icon.newInstance("http://www.rushfeed.com/rush/310/b.png");
 
 				
@@ -213,34 +206,7 @@ public class EduData implements EntryPoint {
 		// Here we define and implement the Visualize button. When clicked, this button will call upon the MapUI to display all selected DataSets on the Map.
 		Button button = new Button("Visualize Selected");
 		button.addClickHandler(new ClickHandler() {
-<<<<<<< HEAD
-			public void onClick(ClickEvent event) {
-				// TODO: Implement the MapUI visualize sequence. Call on the TabUI to see what DataSets are selected
-	
-				   visualizePanel.clear();
 
-				   //visualizePanel.add(renderMap(dataSet)); --- this is what its supposed to call
-
-				   visualizePanel.add(map);  // not this
-
-				   map.setSize( "1000px", "600px");
-			}
-			/*
-			public ArrayList<ClientDataEntry> populateDummyData() {
-				
-				ArrayList<ClientDataEntry> dataSet = new ArrayList<ClientDataEntry>();
-				Long i = new Long(1);
-				dataSet.add( new ClientDataEntry("1", "Lochdale Elementary", "98", "Particle Physics 12", i));
-				dataSet.add( new ClientDataEntry("2", "West Woodland Elementary", "78", "Intermediate Chess", i));
-				dataSet.add( new ClientDataEntry("3", "Haines High School", "96", "Math12", i));
-				
-				dataSet.get(1).setLongitude(-124.2177);				
-				dataSet.get(1).setLatitude(48.2765);
-				dataSet.get(2).setLongitude(-124.2177);				
-				dataSet.get(2).setLatitude(50.2765);
-				
-				return dataSet;
-=======
 			public void onClick(ClickEvent event) {			
 				System.out.println( "Visualize button clicked" );
 				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
@@ -259,7 +225,7 @@ public class EduData implements EntryPoint {
 					visualizePanel.clear();
 					visualizePanel.add(renderMap( renderMe ));
 				}
->>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
+
 			}
 		});
 		buttonPanel.add(button);
@@ -334,14 +300,9 @@ public class EduData implements EntryPoint {
 	/*
 	 * Renders a map according to the dataSet passed
 	 * */
-<<<<<<< HEAD
-	public MapWidget renderMap(ClientDataSet dSet){
-		//ArrayList<ClientDataEntry> entries = dSet.getEntries(); // should be replaced with getEntries()
-		return plotEntries(entries);
-=======
+
 	public MapWidget renderMap(ArrayList<ClientDataEntry> renderMe){
 		return plotEntries(renderMe);
->>>>>>> 7168f30b13c5136da32a4f314cec824f64f225cf
 	}
 	
 	/*
