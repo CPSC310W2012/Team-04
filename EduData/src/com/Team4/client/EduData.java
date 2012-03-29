@@ -52,8 +52,11 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.view.client.DefaultSelectionEventManager;
 import com.google.gwt.view.client.MultiSelectionModel;
+import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.SelectionEvent;
+import com.google.gwt.event.logical.shared.SelectionHandler;
 
 
 /**
@@ -176,20 +179,21 @@ public class EduData implements EntryPoint {
 		Button button0 = new Button("Remove Selected");
 		button0.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {		
-				System.out.println( "THIS REMOVE BUTTON HAS BEEN TOUCHED :O ");		
-				ArrayList<ClientDataSet> selected = getSelectedDataSets( table );
+				ArrayList<ClientDataSet> selected = tabUI.getSelectedDataSets();
 				for ( ClientDataSet dSet : selected ) {
-					try {
-						removeDataSet( dSet );
-						System.out.println( dSet.getName() + " removed.");
-					} catch (DataSetNotPresentException e) {
-						// If the code reaches this point, then we are trying to remove a data set that no longer exists
-						// In other words, we don't care.
-						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
-					}
+					System.out.println( dSet.getName() );
 				}
-				// At this point all selected DataSets have been removed, so we need to update the cell table
-				table.setRowData( dataSets );
+//					try {
+//						removeDataSet( dSet );
+//						System.out.println( dSet.getName() + " removed.");
+//					} catch (DataSetNotPresentException e) {
+//						// If the code reaches this point, then we are trying to remove a data set that no longer exists
+//						// In other words, we don't care.
+//						// TODO: Add some intelligent response to trying to remove a DataSet that doesn't exist
+//					}
+//				}
+//				// At this point all selected DataSets have been removed, so we need to update the cell table
+//				table.setRowData( dataSets );
 			}
 		});
 		buttonPanel.add(button0);
@@ -413,17 +417,17 @@ public class EduData implements EntryPoint {
 				}
 			});
 		
-//		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
-//			
-//			public void onFailure(Throwable error) {
-//		        handleError(error);
-//			}
-//
-//			public void onSuccess(ArrayList<ClientDataEntry> response) {
-//				if( !response.isEmpty() ) {
-//					entries = response;
-//				}
-//			}});
+		dSService.getEntries( new AsyncCallback<ArrayList<ClientDataEntry>>() {
+			
+			public void onFailure(Throwable error) {
+		        handleError(error);
+			}
+
+			public void onSuccess(ArrayList<ClientDataEntry> response) {
+				if( !response.isEmpty() ) {
+					entries = response;
+				}
+			}});
 	}
 
 	public ClientDataSet getDataSet( Long id ) throws DataSetNotPresentException{
@@ -439,20 +443,6 @@ public class EduData implements EntryPoint {
 	    Window.alert(error.getMessage());
 	}
 
-	/**
-	 * Returns an ArrayList of all selected ClientDataSets in the table
-	 * @author Tristan
-	 * @param table The table to iterate through for selected sets
-	 * @return All selected sets in the table
-	 * */	
-	public ArrayList<ClientDataSet> getSelectedDataSets( CellTable<ClientDataSet> cTable ) {
-		ArrayList<ClientDataSet> selectedSets = new ArrayList<ClientDataSet>();
-		for ( ClientDataSet dSet : cTable.getVisibleItems() ) // For every item in the CellTable...
-			if ( cTable.getSelectionModel().isSelected( dSet )) // ...if it is selected...
-				selectedSets.add((ClientDataSet) dSet ); // ... add the set to the set of selected sets
-		return selectedSets;
-	}
-	
 	/**
 	 * The TabularUI class
 	 * This class serves to create, format, and display pop-up windows. 
@@ -496,7 +486,11 @@ public class EduData implements EntryPoint {
 		 * @return An ArrayList of all selected ClientDataSets
 		 * */
 		public ArrayList<ClientDataSet> getSelectedDataSets() {
-			return null;
+			ArrayList<ClientDataSet> temp = new ArrayList<ClientDataSet>();
+			for ( ClientDataSet dSet : selectionModel.getSelectedSet() ) {
+				temp.add( dSet );
+			}
+			return temp;
 			// TODO: Add test cases to ensure that this cast works correctly. As far as I can tell, ArrayList and Set have the same methods, so there should be no trouble here 
 		}
 
@@ -566,6 +560,7 @@ public class EduData implements EntryPoint {
 
 			// The checkbox column that will be used to remove and visualize DataSets
 			Cell<Boolean> cbCell = new CheckboxCell();
+			
 			Column<ClientDataSet, Boolean> selectColumn = new Column<ClientDataSet, Boolean>(cbCell) {
 				@Override
 				public Boolean getValue(ClientDataSet object) {
@@ -581,8 +576,6 @@ public class EduData implements EntryPoint {
 				public String getValue(ClientDataSet object) {
 					return "Display";
 				}
-
-
 			};
 			// Here we add our displayListener to listen for clicks on the Display buttons
 			tabUI.setFieldUpdater( new DisplayListener() );
@@ -593,6 +586,13 @@ public class EduData implements EntryPoint {
 			table.addColumn( tabUI, "Tabular View" );
 
 			table.setSelectionModel(selectionModel, DefaultSelectionEventManager.<ClientDataSet> createCheckboxManager());
+			table.getSelectionModel().addSelectionChangeHandler( new SelectionChangeEvent.Handler() {
+				
+				@Override
+				public void onSelectionChange(SelectionChangeEvent event) {
+					// Method that fires anytime a change is made the to the selection in the DataSetPanel
+				}
+			});
 			
 			return table;
 		}
@@ -611,7 +611,7 @@ public class EduData implements EntryPoint {
 			 * @object The DataSet that has been clicked. Needs to be cast as a ClientDataSet
 			 * */
 			public void update(int index, Object object, Object value) {
-				
+				visualizePanel.add( renderDataEntryTable(entries) );
 			}
 		}
 	}
